@@ -1,0 +1,315 @@
+{
+  "history": [
+
+  ],
+  "current": {
+    "key": "2026-2-3",
+    "season": 2026,
+    "week": 3,
+    "label": "Week 3",
+    "game": {
+      "legs": [
+        {
+          "ev": {
+            "id": "401872953",
+            "date": "2026-09-27T17:00Z",
+            "shortName": "LAC @ BUF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "2",
+          "oppAbbr": "LAC",
+          "ml": -345,
+          "model": 0.7809999999999999,
+          "market": 0.7440690150970525,
+          "edge": 0.03693098490294744,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401872962",
+            "date": "2026-09-28T00:20Z",
+            "shortName": "LAR @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "14",
+          "oppAbbr": "DEN",
+          "ml": -130,
+          "model": 0.642,
+          "market": 0.5427435387673957,
+          "edge": 0.09925646123260434,
+          "steam": false
+        },
+        {
+          "ev": {
+            "id": "401872949",
+            "date": "2026-09-27T17:00Z",
+            "shortName": "CAR @ CLE",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "5",
+                      "abbreviation": "CLE"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "29",
+                      "abbreviation": "CAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "29",
+          "oppAbbr": "CLE",
+          "ml": -142,
+          "model": 0.637,
+          "market": 0.5634920634920635,
+          "edge": 0.07350793650793652,
+          "steam": true
+        }
+      ],
+      "odds": "+289"
+    },
+    "prop": {
+      "legs": [
+        {
+          "ev": {
+            "id": "401872963",
+            "date": "2026-09-29T00:15Z",
+            "shortName": "PHI @ CHI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "21",
+                      "abbreviation": "PHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4428850",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 44.5,
+          "open": 37.5,
+          "games": [
+            {
+              "v": 74.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 73.0,
+              "opp": "WSH"
+            }
+          ],
+          "avg": 73.5,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": 7.0,
+          "moveAgrees": 1,
+          "edge": 0.651685393258427,
+          "name": "Dontayvion Wicks",
+          "pos": "WR",
+          "teamAbbr": "PHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428850.png",
+          "score": 0.88
+        },
+        {
+          "ev": {
+            "id": "401872962",
+            "date": "2026-09-28T00:20Z",
+            "shortName": "LAR @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3128429",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 36.5,
+          "open": 41.5,
+          "games": [
+            {
+              "v": 25.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 11.0,
+              "opp": "KC"
+            }
+          ],
+          "avg": 18.0,
+          "side": "under",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": -5.0,
+          "moveAgrees": 1,
+          "edge": 0.5068493150684932,
+          "name": "Courtland Sutton",
+          "pos": "WR",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
+          "score": 0.7868493150684931
+        },
+        {
+          "ev": {
+            "id": "401872953",
+            "date": "2026-09-27T17:00Z",
+            "shortName": "LAC @ BUF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429025",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 2.5,
+          "open": 3.5,
+          "games": [
+            {
+              "v": 1.0,
+              "opp": "LV"
+            },
+            {
+              "v": 2.0,
+              "opp": "ARI"
+            }
+          ],
+          "avg": 1.5,
+          "side": "under",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.4,
+          "name": "Quentin Johnston",
+          "pos": "WR",
+          "teamAbbr": "LAC",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429025.png",
+          "score": 0.68
+        }
+      ],
+      "odds": "+596"
+    },
+    "locked": false,
+    "lockAt": "2026-09-27T13:00:00Z"
+  },
+  "totals": {
+    "game": {
+      "w": 0,
+      "l": 0,
+      "units": 0
+    },
+    "prop": {
+      "w": 0,
+      "l": 0,
+      "units": 0
+    }
+  },
+  "updated": "2026-09-26T01:31:06Z"
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The NW Wire</title>
+  <meta name="description" content="Nick W.'s live dashboard: NBA, NFL, betting lines, fantasy football, NBA trade lab, Aspen ski season, markets, and world news." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=8" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="logo">NW</a>
+    <span class="brand">The NW Wire</span>
+    <nav class="nav-links" id="navLinks">
+      <a href="#wire">Wire</a>
+      <a href="#betting">Betting</a>
+      <a href="#fantasy">Fantasy</a>
+      <a href="#trade">Trade Lab</a>
+      <a href="#aspen">Aspen</a>
+      <a href="#teams">Teams</a>
+      <a href="#news">News</a>
+      <a href="#markets">Markets</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <!-- ================= HOME ================= -->
+  <main id="home">
+
+    <!-- MASTHEAD -->
+    <section class="masthead" id="top">
+      <canvas id="snow" aria-hidden="true"></canvas>
+      <div class="masthead-inner">
+        <div>
+          <p class="label" id="edition">// Live edition</p>
+          <h1 class="dateline" id="dateline">Today</h1>
+        </div>
+        <div class="status">
+          <p><span class="dot"></span> Live · updated <strong id="updated">—</strong></p>
+          <p class="soft">Next refresh in <span id="countdown">60</span>s</p>
+          <button class="btn btn-glass" id="alertBtn">🔔 Desktop alerts: off</button>
+        </div>
+      </div>
+      <svg class="ridgeline" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="r1" d="M0,120 L0,70 L120,40 L210,75 L330,20 L420,60 L520,35 L640,80 L760,25 L860,65 L980,30 L1080,70 L1200,38 L1310,72 L1440,45 L1440,120 Z" />
+        <path class="r2" d="M0,120 L0,95 L150,70 L260,98 L390,60 L500,92 L610,72 L740,100 L880,66 L1000,96 L1130,74 L1260,100 L1380,80 L1440,92 L1440,120 Z" />
+      </svg>
+    </section>
+
+    <!-- MY TEAMS -->
+    <section class="band band-mine" id="mine">
+      <p class="label">// My teams</p>
+      <div class="my-teams" id="myTeams">
+        <div class="team-card skeleton-card"></div><div class="team-card skeleton-card"></div>
+      </div>
+    </section>
+
+    <!-- 01 WIRE + SCORES -->
+    <section class="band band-wire" id="wire">
+      <div class="sec-head">
+        <p class="kicker"><i>📡</i>01 · Breaking</p>
+        <h2 class="big">The <span class="acc">Wire</span></h2>
+        <p class="sec-sub">Every NBA &amp; NFL trade, signing, release, injury update, and story, newest first. Live scores on the right.</p>
+      </div>
+      <div class="wire-grid reveal">
+        <div>
+          <div class="filters">
+            <div class="chips" id="leagueChips">
+              <button class="chip on" data-v="all">All</button>
+              <button class="chip" data-v="nba">NBA</button>
+              <button class="chip" data-v="nfl">NFL</button>
+              <button class="chip" data-v="mine">★ My teams</button>
+            </div>
+            <div class="chips" id="kindChips">
+              <button class="chip on" data-v="all">Everything</button>
+              <button class="chip" data-v="trade">Trades</button>
+              <button class="chip" data-v="signing">Signings</button>
+              <button class="chip" data-v="release">Releases</button>
+              <button class="chip" data-v="injury">Injuries</button>
+              <button class="chip" data-v="news">News</button>
+            </div>
+          </div>
+          <ul class="wire card-box" id="wireList">
+            <li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li>
+          </ul>
+        </div>
+        <aside id="scores">
+          <div class="head-row tight"><h3 class="mid">Scores</h3>
+            <div class="chips" id="scoreChips">
+              <button class="chip on" data-v="nfl">NFL</button>
+              <button class="chip" data-v="nba">NBA</button>
+            </div>
+          </div>
+          <div class="scores" id="scoreList">
+            <div class="game skeleton-game"></div><div class="game skeleton-game"></div><div class="game skeleton-game"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 02 BETTING -->
+    <section class="band band-bet" id="betting">
+      <div class="sec-head row">
+        <div>
+          <p class="kicker"><i>💰</i>02 · Sportsbook</p>
+          <h2 class="big">Betting <span class="acc">Board</span></h2>
+        </div>
+        <div class="bet-actions">
+          <div class="chips" id="betChips">
+            <button class="chip on" data-v="nfl">NFL</button>
+            <button class="chip" data-v="nba">NBA</button>
+          </div>
+          <a class="btn btn-fd" href="https://sportsbook.fanduel.com" target="_blank" rel="noopener">Open FanDuel ↗</a>
+        </div>
+      </div>
+
+      <p class="bets-intro">🎯 <strong>This week's 2 bets:</strong> a 3-leg game parlay and a 3-leg player prop parlay, rebuilt automatically from the latest data.</p>
+      <div class="record card-box" id="record" hidden></div>
+      <div class="parlay-row reveal">
+        <article class="parlay card-box" id="parlay">
+          <div class="skeleton-row"></div><div class="skeleton-row"></div><div class="skeleton-row"></div>
+        </article>
+        <article class="prop card-box" id="prop">
+          <div class="skeleton-row"></div><div class="skeleton-row"></div><div class="skeleton-row"></div>
+        </article>
+      </div>
+      <aside class="card-box experts reveal">
+        <h3 class="mini-head">🎙️ What the experts are saying</h3>
+        <p class="muted tiny">This week's picks columns from around the web.</p>
+        <div class="news-list compact expert-grid" id="expertNews"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+      </aside>
+
+      <h3 class="mid sub-title">All lines</h3>
+      <p class="muted small legend">Spread · Total · Moneyline from DraftKings. <span class="move up">▲</span><span class="move down">▼</span> shows movement since open. % is the implied win probability.</p>
+      <div class="bet-layout reveal">
+        <div class="lines" id="lines"><div class="line-card skeleton-card"></div><div class="line-card skeleton-card"></div></div>
+        <aside class="calc card-box">
+          <p class="label">// Bet calculator</p>
+          <h3 class="mid">Payout</h3>
+          <label>Stake ($)<input type="number" id="calcStake" value="10" min="0" step="1" /></label>
+          <label>Odds (American) · add legs for a parlay
+            <div id="calcLegs"><input type="text" class="leg" value="-110" /></div>
+          </label>
+          <button class="btn btn-small" id="addLeg" type="button">+ Add leg</button>
+          <div class="calc-out" id="calcOut"></div>
+          <p class="muted tiny">21+. Odds are for information only. Gambling problem? Call 1-800-GAMBLER.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 03 FANTASY -->
+    <section class="band band-ff" id="fantasy">
+      <div class="sec-head row">
+        <div>
+          <p class="kicker"><i>🏈</i><span id="ffWeek">03 · Fantasy football</span></p>
+          <h2 class="big">Fantasy <span class="acc">HQ</span></h2>
+        </div>
+        <div class="kickoff card-box" id="kickoff"></div>
+      </div>
+      <div class="ff-grid reveal">
+        <div class="card-box ff-panel">
+          <h3 class="mini-head">🔥 Players to watch</h3>
+          <p class="muted tiny">Most-added players on Sleeper in the last 24 hours.</p>
+          <ol class="ff-list" id="ffAdds"><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li></ol>
+        </div>
+        <div class="card-box ff-panel">
+          <h3 class="mini-head">🧊 Cooling off</h3>
+          <p class="muted tiny">Most-dropped players on Sleeper in the last 24 hours.</p>
+          <ol class="ff-list" id="ffDrops"><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li></ol>
+        </div>
+        <div class="card-box ff-panel">
+          <h3 class="mini-head">🎯 Vegas-implied points</h3>
+          <p class="muted tiny">Projected team scores from this week's spread and total. Higher means a better week for that offense.</p>
+          <ol class="ff-list implied" id="ffImplied"><li class="skeleton-row"></li><li class="skeleton-row"></li><li class="skeleton-row"></li></ol>
+        </div>
+      </div>
+      <div class="ff-bottom reveal">
+        <div class="card-box ff-panel">
+          <div class="head-row tight">
+            <h3 class="mini-head">🚑 Injury watch</h3>
+            <div class="chips" id="ffPosChips">
+              <button class="chip on" data-v="all">All</button>
+              <button class="chip" data-v="QB">QB</button>
+              <button class="chip" data-v="RB">RB</button>
+              <button class="chip" data-v="WR">WR</button>
+              <button class="chip" data-v="TE">TE</button>
+            </div>
+          </div>
+          <div class="inj-table" id="ffInjuries"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+        </div>
+        <div class="card-box ff-panel">
+          <h3 class="mini-head">📰 Fantasy headlines</h3>
+          <div class="news-list compact" id="ffNews"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 TRADE LAB TEASER -->
+    <section class="band band-trade" id="tradeTeaser">
+      <div class="trade-teaser reveal">
+        <div>
+          <p class="kicker"><i>🔁</i>04 · NBA Trade Lab</p>
+          <h2 class="big">Build a <span class="acc">Trade</span></h2>
+          <p class="sec-sub">Pick any two NBA teams, swap players, and see if the deal works under the salary-matching rules, plus the stats changing hands.</p>
+          <a class="btn btn-acc" href="#trade">Open the Trade Lab →</a>
+        </div>
+        <div class="teaser-logos" id="teaserLogos"></div>
+      </div>
+    </section>
+
+    <!-- 05 ASPEN -->
+    <section class="band band-aspen section-dark" id="aspen">
+      <div class="sec-head row">
+        <div>
+          <p class="kicker"><i>⛷️</i>05 · Ski season</p>
+          <h2 class="big">Aspen <span class="acc">Snow Report</span></h2>
+        </div>
+        <div class="countdown-box" id="openingBox"></div>
+      </div>
+      <div class="mountains reveal" id="mountains">
+        <div class="mtn skeleton-dark"></div><div class="mtn skeleton-dark"></div><div class="mtn skeleton-dark"></div><div class="mtn skeleton-dark"></div>
+      </div>
+      <p class="soft small note">Summit-elevation weather model data from Open-Meteo. For official lift &amp; trail status see
+        <a href="https://www.aspensnowmass.com" target="_blank" rel="noopener">aspensnowmass.com</a>.</p>
+      <h3 class="mid light">Aspen News</h3>
+      <div class="news-list dark" id="aspenNews"></div>
+    </section>
+
+    <!-- 06 ALL TEAMS -->
+    <section class="band band-teams" id="teams">
+      <div class="sec-head row">
+        <div>
+          <p class="kicker"><i>🏟️</i>06 · Directory</p>
+          <h2 class="big">All <span class="acc">Teams</span></h2>
+        </div>
+        <input type="search" id="teamSearch" placeholder="Search teams…" aria-label="Search teams" />
+      </div>
+      <div class="chips" id="dirChips">
+        <button class="chip on" data-v="nba">NBA · 30</button>
+        <button class="chip" data-v="nfl">NFL · 32</button>
+      </div>
+      <div class="team-grid reveal" id="teamGrid"></div>
+    </section>
+
+    <!-- 07 LEAGUE NEWS -->
+    <section class="band band-news" id="news">
+      <div class="sec-head">
+        <p class="kicker"><i>📰</i>07 · Headlines</p>
+        <h2 class="big">League <span class="acc">News</span></h2>
+      </div>
+      <div class="two-col reveal">
+        <div><h3 class="mid">NBA</h3><div class="news-list" id="nbaNews"></div></div>
+        <div><h3 class="mid">NFL</h3><div class="news-list" id="nflNews"></div></div>
+      </div>
+    </section>
+
+    <!-- 08 WORLD -->
+    <section class="band band-world" id="world">
+      <div class="sec-head">
+        <p class="kicker"><i>🌎</i>08 · World</p>
+        <h2 class="big">Around the <span class="acc">World</span></h2>
+      </div>
+      <div class="world-grid reveal" id="worldNews"></div>
+    </section>
+
+    <!-- 09 MARKETS -->
+    <section class="band band-markets" id="markets">
+      <div class="sec-head">
+        <p class="kicker"><i>📈</i>09 · Markets</p>
+        <h2 class="big">The <span class="acc">Market</span></h2>
+      </div>
+      <div class="tape card-box" id="tickerTape"></div>
+      <div class="markets-grid reveal">
+        <div class="panel tv-panel" id="tvQuotes"></div>
+        <div class="panel tv-panel" id="tvChart"></div>
+      </div>
+      <div class="two-col">
+        <div><h3 class="mid">Market Headlines</h3><div class="news-list" id="marketNews"></div></div>
+        <div><h3 class="mid">Marvell (MRVL) Watch</h3><div class="news-list" id="mrvlNews"></div></div>
+      </div>
+      <p class="muted small note">Quotes via TradingView. Not financial advice.</p>
+    </section>
+  </main>
+
+  <!-- ================= TEAM PAGE / TRADE LAB ================= -->
+  <main id="teamPage" hidden></main>
+  <main id="tradePage" hidden></main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Nick W. · The NW Wire</span>
+    <span>Data: ESPN · DraftKings · Sleeper · Open-Meteo · TradingView · BBC · CNBC · Aspen Times · Google News</span>
+  </footer>
+
+  <script src="js/teams.js?v=8"></script>
+  <script src="js/players.js?v=8"></script>
+  <script src="js/app.js?v=8"></script>
+  <script src="js/trade.js?v=8"></script>
+</body>
+</html>

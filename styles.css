@@ -744,3 +744,7 @@ button, input { font: inherit; color: inherit; }
   .ld strong { font-size: 1.35rem; }
   .mu-team img { width: 46px; height: 46px; }
 }
+
+/* Breaking moves picked out of headlines */
+.breaking { font-family: var(--mono); font-size: 0.58rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #fff; background: linear-gradient(90deg, #d0453a, #e0671f); padding: 0.1rem 0.5rem; border-radius: 999px; animation: pulse-b 2s ease-in-out 3; }
+@keyframes pulse-b { 50% { opacity: 0.6; } }

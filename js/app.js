@@ -111,6 +111,18 @@ function classify(desc) {
   return "signing";
 }
 
+// ESPN's official transaction log updates in daily batches, so breaking moves are
+// picked out of the headlines instead. Only headlines that report an actual move are kept.
+const MOVE_WORDS = /\b(trade[sd]?|trading|acquir(e|es|ed|ing)|deal|agree[sd]?|agreement|signs?|signed|re-signs?|re-signed|extension|waive[sd]?|releases?|released|claims?|claimed)\b/i;
+const NOT_A_MOVE = /\?|buzz|rumou?r|tracker|grades?|odds|rank|best|worst|could|should|would|might|why |what |how |who |latest|takeaways|predict|mock|fantasy|bet|pick|reflects|reacts|reaction|talks|discuss|explains|says|stall|believes|worried/i;
+function breakingMove(headline) {
+  if (!MOVE_WORDS.test(headline) || NOT_A_MOVE.test(headline)) return null;
+  const h = headline.toLowerCase();
+  if (/trad|acquir|deal/.test(h)) return "trade";
+  if (/waive|release/.test(h)) return "release";
+  return "signing";
+}
+
 async function loadWire() {
   const jobs = [];
   for (const lg of ["nba", "nfl"]) {
@@ -136,6 +148,15 @@ async function loadWire() {
       }
       return out;
     }));
+  }
+  for (const lg of ["nba", "nfl"]) {
+    jobs.push(espn(lg, "news?limit=40").then((d) => (d.articles || []).flatMap((a) => {
+      const kind = breakingMove(a.headline || "");
+      return kind ? [{
+        lg, kind, breaking: true, text: a.headline, date: parseDate(a.published),
+        teamId: (a.categories || []).find((c) => c.type === "team")?.teamId,
+      }] : [];
+    })));
   }
   const results = await Promise.allSettled(jobs);
   const items = results.flatMap((r) => (r.status === "fulfilled" ? r.value : []));
@@ -164,17 +185,19 @@ function renderWire() {
     const text = it.link ? `<a class="txt" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.text)}</a>` : `<p class="txt">${esc(it.text)}</p>`;
     return `<li class="item${it.isNew ? " new" : ""}${isMine(it.lg, it.teamId) ? " mine" : ""}">
       ${logo}
-      <div><div class="meta-row"><span class="kind ${it.kind}">${it.kind}</span><span class="lg">${it.lg.toUpperCase()}${t ? " · " + esc(t.abbr) : ""}</span></div>${text}</div>
+      <div><div class="meta-row">${it.breaking ? `<span class="breaking">🚨 Breaking</span>` : ""}<span class="kind ${it.kind}">${it.kind}</span><span class="lg">${it.lg.toUpperCase()}${t ? " · " + esc(t.abbr) : ""}</span></div>${text}</div>
       <time>${esc(ago(it.date))}</time></li>`;
   }).join("") : `<li class="empty">Nothing matches these filters right now.</li>`;
 }
 
 function notify(fresh) {
   if (!("Notification" in window) || Notification.permission !== "granted") return;
-  const top = fresh.filter((f) => f.kind !== "news" || isMine(f.lg, f.teamId)).slice(0, 3);
+  // Most important first: trades, then anything involving my teams, then other moves, then injuries.
+  const rank = (f) => (f.kind === "trade" ? 0 : isMine(f.lg, f.teamId) ? 1 : f.kind === "injury" ? 3 : 2);
+  const top = [...fresh].sort((a, b) => rank(a) - rank(b) || (b.breaking ? 1 : 0) - (a.breaking ? 1 : 0)).slice(0, 3);
   for (const f of top) {
     const t = f.teamId && team(f.lg, f.teamId);
-    new Notification(`${f.lg.toUpperCase()} ${f.kind}${t ? " · " + t.short : ""}`, { body: f.text, icon: t?.logo });
+    new Notification(`${f.breaking ? "🚨 " : ""}${f.lg.toUpperCase()} ${f.kind}${t ? " · " + t.short : ""}`, { body: f.text, icon: t?.logo });
   }
 }
 
@@ -1032,14 +1055,18 @@ function init() {
   initEffects();
 
   const alertBtn = $("#alertBtn");
+  const showAlerts = () => { alertBtn.textContent = `🔔 Desktop alerts: ${alertsOn ? "on" : "off"}`; alertBtn.classList.toggle("on", alertsOn); };
   if (!("Notification" in window)) alertBtn.hidden = true;
+  // Remember the choice in this browser, as long as permission is still granted.
+  try { alertsOn = localStorage.getItem("nw-alerts") === "on" && Notification.permission === "granted"; } catch { alertsOn = false; }
+  showAlerts();
   alertBtn.addEventListener("click", async () => {
     if (!alertsOn && Notification.permission !== "granted") {
       if ((await Notification.requestPermission()) !== "granted") return;
     }
     alertsOn = !alertsOn;
-    alertBtn.textContent = `🔔 Desktop alerts: ${alertsOn ? "on" : "off"}`;
-    alertBtn.classList.toggle("on", alertsOn);
+    try { localStorage.setItem("nw-alerts", alertsOn ? "on" : "off"); } catch { /* private mode */ }
+    showAlerts();
   });
 
   renderDirectory();

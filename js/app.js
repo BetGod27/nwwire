@@ -8,6 +8,7 @@ const MY_TEAMS = [
 const SLEEPER = "https://api.sleeper.app/v1/";
 const SPORTS_REFRESH = 60;        // seconds: wire, scores, my teams
 const SLOW_REFRESH = 10 * 60;     // seconds: weather, RSS feeds
+const INJURY_REFRESH = 5 * 60;    // seconds: full NBA/NFL injury reports (the biggest download)
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
 const PATH = { nba: "basketball/nba", nfl: "football/nfl" };
 const RSS = "https://api.rss2json.com/v1/api.json?rss_url=";
@@ -97,6 +98,7 @@ const failMsg = (what) => `<p class="empty">Couldn't load ${what} right now. Ret
 const wire = { items: [], seen: new Set(), first: true, league: "all", kind: "all" };
 let alertsOn = false;
 let injuryCache = { nba: [], nfl: [] };
+const injuryAt = { nba: 0, nfl: 0 };
 let txCache = { nba: [], nfl: [] };
 
 function classify(desc) {
@@ -118,7 +120,9 @@ async function loadWire() {
         lg, kind: classify(t.description), text: t.description, date: parseDate(t.date), teamId: t.team?.id,
       }));
     }));
-    jobs.push(espn(lg, "injuries").then((d) => {
+    // Injury reports are large and change slowly: re-fetch every 5 minutes, reuse the last copy otherwise.
+    const fresh = Date.now() - (injuryAt[lg] || 0) < INJURY_REFRESH * 1000;
+    jobs.push((fresh ? Promise.resolve({ injuries: injuryCache[lg] }) : espn(lg, "injuries").then((d) => { injuryAt[lg] = Date.now(); return d; })).then((d) => {
       injuryCache[lg] = d.injuries || [];
       const out = [];
       const cutoff = Date.now() - 7 * 86400e3;
@@ -915,7 +919,9 @@ function route() {
 
 // ---------- Refresh loop ----------
 let countdown = SPORTS_REFRESH;
+let lastSports = 0, lastSlow = 0;
 async function refreshSports() {
+  lastSports = Date.now();
   // Wire fills the injury cache; boards feed scores, lines, and fantasy.
   await Promise.allSettled([loadWire(), loadBoards()]);
   for (const fn of [renderScores, renderLines, renderImplied, renderFfInjuries, renderKickoff]) {
@@ -929,6 +935,7 @@ async function refreshSports() {
 }
 let expertsLoaded = false;
 function refreshSlow() {
+  lastSlow = Date.now();
   if (expertsLoaded) loadExperts();
   loadRecord();
   loadTrending();
@@ -1050,13 +1057,23 @@ function init() {
   loadMarkets();
   refreshSports();
   refreshSlow();
+  // Pause refreshing while the tab is hidden (phone locked, other tab) to save data and battery.
+  // Desktop alerts keep it running in the background.
+  const paused = () => document.hidden && !alertsOn;
   setInterval(() => {
+    if (paused()) return;
     countdown -= 1;
     $("#countdown").textContent = Math.max(0, countdown);
     if (countdown <= 0) { countdown = SPORTS_REFRESH; refreshSports(); }
   }, 1000);
-  setInterval(refreshSlow, SLOW_REFRESH * 1000);
-  setInterval(renderWire, 60 * 1000); // keep "x min ago" labels fresh
+  setInterval(() => { if (!paused() && Date.now() - lastSlow >= SLOW_REFRESH * 1000) refreshSlow(); }, 30 * 1000);
+  setInterval(() => { if (!paused()) renderWire(); }, 60 * 1000); // keep "x min ago" labels fresh
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) return;
+    // Back on the page: catch up right away if anything is stale.
+    if (Date.now() - lastSports >= SPORTS_REFRESH * 1000) { countdown = SPORTS_REFRESH; refreshSports(); }
+    if (Date.now() - lastSlow >= SLOW_REFRESH * 1000) refreshSlow();
+  });
 
   window.addEventListener("hashchange", route);
   route();

@@ -152,7 +152,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 44.5,
+          "line": 42.5,
           "open": 37.5,
           "games": [
             {
@@ -168,9 +168,9 @@
           "side": "over",
           "hits": 2,
           "hitRate": 1.0,
-          "move": 7.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.651685393258427,
+          "edge": 0.7294117647058823,
           "name": "Dontayvion Wicks",
           "pos": "WR",
           "teamAbbr": "PHI",
@@ -210,7 +210,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 35.5,
           "open": 41.5,
           "games": [
             {
@@ -226,14 +226,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 1.0,
-          "move": -4.0,
+          "move": -6.0,
           "moveAgrees": 1,
-          "edge": 0.52,
+          "edge": 0.49295774647887325,
           "name": "Courtland Sutton",
           "pos": "WR",
           "teamAbbr": "DEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
-          "score": 0.7999999999999999
+          "score": 0.7729577464788732
         },
         {
           "ev": {
@@ -311,5 +311,5 @@
       "units": 0
     }
   },
-  "updated": "2026-09-26T15:27:05Z"
+  "updated": "2026-09-26T18:30:12Z"
 }

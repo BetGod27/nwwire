@@ -210,7 +210,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 36.5,
+          "line": 37.5,
           "open": 41.5,
           "games": [
             {
@@ -226,14 +226,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 1.0,
-          "move": -5.0,
+          "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.5068493150684932,
+          "edge": 0.52,
           "name": "Courtland Sutton",
           "pos": "WR",
           "teamAbbr": "DEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
-          "score": 0.7868493150684931
+          "score": 0.7999999999999999
         },
         {
           "ev": {
@@ -311,5 +311,5 @@
       "units": 0
     }
   },
-  "updated": "2026-09-26T01:31:06Z"
+  "updated": "2026-09-26T03:52:11Z"
 }

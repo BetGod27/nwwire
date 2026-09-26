@@ -38,10 +38,10 @@
           "key": "home",
           "teamId": "2",
           "oppAbbr": "LAC",
-          "ml": -345,
+          "ml": -340,
           "model": 0.7809999999999999,
-          "market": 0.7440690150970525,
-          "edge": 0.03693098490294744,
+          "market": 0.740871613663133,
+          "edge": 0.040128386336866884,
           "steam": true
         },
         {
@@ -115,68 +115,10 @@
           "steam": true
         }
       ],
-      "odds": "+289"
+      "odds": "+290"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401872963",
-            "date": "2026-09-29T00:15Z",
-            "shortName": "PHI @ CHI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "21",
-                      "abbreviation": "PHI"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4428850",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 42.5,
-          "open": 37.5,
-          "games": [
-            {
-              "v": 74.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 73.0,
-              "opp": "WSH"
-            }
-          ],
-          "avg": 73.5,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 1.0,
-          "move": 5.0,
-          "moveAgrees": 1,
-          "edge": 0.7294117647058823,
-          "name": "Dontayvion Wicks",
-          "pos": "WR",
-          "teamAbbr": "PHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428850.png",
-          "score": 0.88
-        },
         {
           "ev": {
             "id": "401872962",
@@ -237,64 +179,64 @@
         },
         {
           "ev": {
-            "id": "401872953",
+            "id": "401872956",
             "date": "2026-09-27T17:00Z",
-            "shortName": "LAC @ BUF",
+            "shortName": "TEN @ NYG",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
+                      "id": "19",
+                      "abbreviation": "NYG"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
+                      "id": "10",
+                      "abbreviation": "TEN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4429025",
-          "type": "Total Receptions (incl. overtime)",
+          "ath": "4871023",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
           },
-          "line": 2.5,
-          "open": 3.5,
+          "line": 38.5,
+          "open": 46.5,
           "games": [
             {
-              "v": 1.0,
-              "opp": "LV"
+              "v": 27.0,
+              "opp": "PHI"
             },
             {
-              "v": 2.0,
-              "opp": "ARI"
+              "v": 38.0,
+              "opp": "NYJ"
             }
           ],
-          "avg": 1.5,
+          "avg": 32.5,
           "side": "under",
           "hits": 2,
           "hitRate": 1.0,
-          "move": -1.0,
+          "move": -8.0,
           "moveAgrees": 1,
-          "edge": 0.4,
-          "name": "Quentin Johnston",
+          "edge": 0.15584415584415584,
+          "name": "Carnell Tate",
           "pos": "WR",
-          "teamAbbr": "LAC",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429025.png",
-          "score": 0.68
+          "teamAbbr": "TEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4871023.png",
+          "score": 0.43584415584415587
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-09-27T13:00:00Z"
@@ -311,5 +253,5 @@
       "units": 0
     }
   },
-  "updated": "2026-09-26T18:30:12Z"
+  "updated": "2026-09-26T21:27:01Z"
 }

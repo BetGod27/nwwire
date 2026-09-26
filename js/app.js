@@ -114,7 +114,7 @@ function classify(desc) {
 // ESPN's official transaction log updates in daily batches, so breaking moves are
 // picked out of the headlines instead. Only headlines that report an actual move are kept.
 const MOVE_WORDS = /\b(trade[sd]?|trading|acquir(e|es|ed|ing)|deal|agree[sd]?|agreement|signs?|signed|re-signs?|re-signed|extension|waive[sd]?|releases?|released|claims?|claimed)\b/i;
-const NOT_A_MOVE = /\?|buzz|rumou?r|tracker|grades?|odds|rank|best|worst|could|should|would|might|why |what |how |who |latest|takeaways|predict|mock|fantasy|bet|pick|reflects|reacts|reaction|talks|discuss|explains|says|stall|believes|worried/i;
+const NOT_A_MOVE = /\?|buzz|rumou?r|tracker|grades?|odds|rank|best|worst|could|should|would|might|why |what |how |who |latest|takeaways|predict|mock|fantasy|bet|pick|reflects|reacts|reaction|talks|discuss|explains|says|stall|believes|worried|admission|admits|getting traded|former|fit|message|target|future|video|news:|update:|interested|eyeing|pursuing|linked/i;
 function breakingMove(headline) {
   if (!MOVE_WORDS.test(headline) || NOT_A_MOVE.test(headline)) return null;
   const h = headline.toLowerCase();
@@ -122,6 +122,102 @@ function breakingMove(headline) {
   if (/waive|release/.test(h)) return "release";
   return "signing";
 }
+
+// Breaking moves come from ESPN headlines (every refresh) plus Google News, which picks up
+// HoopsHype, theScore, RealGM, beat writers, etc. minutes before ESPN (every 2 minutes).
+// Reports of the same move are merged into one item: same league, kind, and teams named.
+const BREAKING_REFRESH = 2 * 60;
+const BREAKING_KEEP = 24 * 3600e3;
+const gnews = (q) => `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+// Google sorts searches by relevance and the relay returns 10 items, so use short, recent windows.
+const BREAKING_FEEDS = {
+  nba: [gnews("NBA trade OR traded when:2h"), gnews("NBA signs OR waived OR released when:3h")],
+  nfl: [gnews("NFL trade OR traded when:2h"), gnews("NFL signs OR released OR waived when:3h")],
+};
+const TEAM_ALIASES = { Timberwolves: "Wolves", "Trail Blazers": "Blazers", "76ers": "Sixers", Cavaliers: "Cavs", Mavericks: "Mavs" };
+const breakingNews = { nba: [], nfl: [] }, breakingAt = { nba: 0, nfl: 0 };
+
+// Teams named in a headline, in the order they appear.
+function teamsIn(lg, text) {
+  const found = [];
+  const place = (t) => t.name.replace(t.short, "").trim();
+  for (const t of TEAMS[lg]) {
+    // City names count too ("Charlotte"), unless two teams share the city (LA, New York).
+    const city = place(t);
+    const uniqueCity = city && TEAMS[lg].filter((o) => place(o) === city).length === 1 ? city : null;
+    const names = [t.short, t.name, TEAM_ALIASES[t.short], uniqueCity].filter(Boolean);
+    let at = -1;
+    for (const n of names) {
+      const m = new RegExp(`\\b${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").exec(text);
+      if (m && (at < 0 || m.index < at)) at = m.index;
+    }
+    if (at >= 0) found.push([at, t.id]);
+  }
+  return found.sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+}
+
+async function loadBreaking(lg) {
+  const espnJob = espn(lg, "news?limit=40").then((d) => (d.articles || []).map((a) => ({
+    title: a.headline || "", source: "ESPN", date: parseDate(a.published),
+  })));
+  if (Date.now() - breakingAt[lg] >= BREAKING_REFRESH * 1000) {
+    breakingAt[lg] = Date.now();
+    const got = (await Promise.allSettled(BREAKING_FEEDS[lg].map((f) => rss(f, 0)))).flatMap((r) => (r.status === "fulfilled" ? r.value : []));
+    const seen = new Set(breakingNews[lg].map((r) => r.title + r.source));
+    for (const i of got) {
+      const cut = i.title.lastIndexOf(" - "); // Google titles end with " - Outlet"
+      const r = { title: cut > 0 ? i.title.slice(0, cut) : i.title, source: cut > 0 ? i.title.slice(cut + 3) : "News", date: parseDate(i.pubDate) };
+      if (!seen.has(r.title + r.source)) { seen.add(r.title + r.source); breakingNews[lg].push(r); }
+    }
+    // Remember the last 24 hours of reports so items don't vanish when they age out of the search window.
+    breakingNews[lg] = breakingNews[lg].filter((r) => r.date && Date.now() - r.date < BREAKING_KEEP);
+    saveBreaking();
+  }
+  const reports = [...(await espnJob.catch(() => [])), ...breakingNews[lg]];
+
+  const groups = new Map();
+  for (const r of reports.sort((a, b) => (a.date || 0) - (b.date || 0))) {
+    const kind = breakingMove(r.title);
+    const teams = kind && teamsIn(lg, r.title);
+    if (!kind || !teams.length) continue;
+    const key = `${lg}|${kind}|${[...teams].sort().join(",")}`;
+    const g = groups.get(key);
+    if (g) { if (!g.sources.includes(r.source)) g.sources.push(r.source); continue; }
+    groups.set(key, { lg, kind, breaking: true, key: "b|" + key, text: r.title, date: r.date, teamId: teams[0], teams, sources: [r.source] });
+  }
+  const logged = officialTrades(lg);
+  return [...groups.values()].filter((g) =>
+    // Credible: ESPN, a "Report:/Sources:" headline, or at least two outlets saying the same thing.
+    (g.sources.includes("ESPN") || g.sources.length >= 2 || /^(report|sources?)\b/i.test(g.text)) &&
+    // Already in the official log (an older trade people are still writing about): skip.
+    !(g.kind === "trade" && logged.some((pair) => g.teams.every((t) => pair.has(t)))));
+}
+
+// Team sets from official trades in the last two weeks, e.g. {CHA, ATL} for "Acquired ... from Atlanta".
+function officialTrades(lg) {
+  const cutoff = Date.now() - 14 * 86400e3;
+  return txCache[lg].filter((t) => /trad|acquired/i.test(t.description) && parseDate(t.date) > cutoff).map((t) => {
+    const set = new Set([t.team?.id]);
+    for (const tm of TEAMS[lg]) {
+      const place = tm.name.replace(tm.short, "").trim();
+      if (place && new RegExp(`\\b${place}\\b`, "i").test(t.description)) set.add(tm.id);
+      if (new RegExp(`\\b${tm.short}\\b`, "i").test(t.description)) set.add(tm.id);
+    }
+    return set;
+  });
+}
+
+function saveBreaking() {
+  try { localStorage.setItem("nw-breaking", JSON.stringify(breakingNews)); } catch { /* storage unavailable */ }
+}
+function restoreBreaking() {
+  try {
+    const d = JSON.parse(localStorage.getItem("nw-breaking") || "{}");
+    for (const lg of ["nba", "nfl"]) breakingNews[lg] = (d[lg] || []).map((r) => ({ ...r, date: new Date(r.date) }))
+      .filter((r) => Date.now() - r.date < BREAKING_KEEP);
+  } catch { /* start fresh */ }
+}
+restoreBreaking();
 
 async function loadWire() {
   const jobs = [];
@@ -149,23 +245,16 @@ async function loadWire() {
       return out;
     }));
   }
-  for (const lg of ["nba", "nfl"]) {
-    jobs.push(espn(lg, "news?limit=40").then((d) => (d.articles || []).flatMap((a) => {
-      const kind = breakingMove(a.headline || "");
-      return kind ? [{
-        lg, kind, breaking: true, text: a.headline, date: parseDate(a.published),
-        teamId: (a.categories || []).find((c) => c.type === "team")?.teamId,
-      }] : [];
-    })));
-  }
   const results = await Promise.allSettled(jobs);
+  // After the official log loads, so breaking items it already covers can be skipped.
+  results.push(...(await Promise.allSettled(["nba", "nfl"].map(loadBreaking))));
   const items = results.flatMap((r) => (r.status === "fulfilled" ? r.value : []));
   if (!items.length) { $("#wireList").innerHTML = `<li>${failMsg("the wire")}</li>`; return; }
 
   items.sort((a, b) => (b.date || 0) - (a.date || 0));
   const fresh = [];
   for (const it of items) {
-    it.key = [it.lg, it.kind, it.text, it.teamId].join("|");
+    it.key = it.key || [it.lg, it.kind, it.text, it.teamId].join("|"); // breaking items keep their merged key
     if (!wire.seen.has(it.key)) { wire.seen.add(it.key); if (!wire.first) { it.isNew = true; fresh.push(it); } }
   }
   wire.items = items;
@@ -175,14 +264,17 @@ async function loadWire() {
 }
 
 function renderWire() {
+  // Breaking trades from the last 6 hours stay pinned at the top.
+  const pinned = (it) => (it.breaking && it.kind === "trade" && Date.now() - it.date < 6 * 3600e3 ? 1 : 0);
   const list = wire.items.filter((it) =>
     (wire.league === "all" || (wire.league === "mine" ? isMine(it.lg, it.teamId) : it.lg === wire.league)) &&
     (wire.kind === "all" || it.kind === wire.kind)
-  ).slice(0, 150);
+  ).sort((a, b) => pinned(b) - pinned(a)).slice(0, 150);
   $("#wireList").innerHTML = list.length ? list.map((it) => {
     const t = it.teamId && team(it.lg, it.teamId);
     const logo = t ? `<a href="#team-${it.lg}-${t.id}" title="${esc(t.name)}"><img src="${t.logo}" alt="${esc(t.abbr)}" loading="lazy"></a>` : `<span></span>`;
-    const text = it.link ? `<a class="txt" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.text)}</a>` : `<p class="txt">${esc(it.text)}</p>`;
+    const src = it.sources ? `<span class="src">via ${esc(it.sources[0])}${it.sources.length > 1 ? ` +${it.sources.length - 1} more` : ""}</span>` : "";
+    const text = it.link ? `<a class="txt" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.text)}</a>` : `<p class="txt">${esc(it.text)}${src}</p>`;
     return `<li class="item${it.isNew ? " new" : ""}${isMine(it.lg, it.teamId) ? " mine" : ""}">
       ${logo}
       <div><div class="meta-row">${it.breaking ? `<span class="breaking">🚨 Breaking</span>` : ""}<span class="kind ${it.kind}">${it.kind}</span><span class="lg">${it.lg.toUpperCase()}${t ? " · " + esc(t.abbr) : ""}</span></div>${text}</div>

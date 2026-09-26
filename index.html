@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=9" />
+  <link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
 
@@ -22,7 +22,7 @@
       <a href="#trade">Trade Lab</a>
       <a href="#aspen">Aspen</a>
       <a href="#teams">Teams</a>
-      <a href="#news">News</a>
+      <a href="#standings">Standings</a>
       <a href="#markets">Markets</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
@@ -64,7 +64,7 @@
       <div class="sec-head">
         <p class="kicker"><i>📡</i>01 · Breaking</p>
         <h2 class="big">The <span class="acc">Wire</span></h2>
-        <p class="sec-sub">Every NBA &amp; NFL trade, signing, release, injury update, and story, newest first. Live scores on the right.</p>
+        <p class="sec-sub">Every NBA &amp; NFL trade, signing, release, and injury update, newest first. Live scores on the right.</p>
       </div>
       <div class="wire-grid reveal">
         <div>
@@ -81,7 +81,6 @@
               <button class="chip" data-v="signing">Signings</button>
               <button class="chip" data-v="release">Releases</button>
               <button class="chip" data-v="injury">Injuries</button>
-              <button class="chip" data-v="news">News</button>
             </div>
           </div>
           <ul class="wire card-box" id="wireList">
@@ -246,15 +245,21 @@
       <div class="team-grid reveal" id="teamGrid"></div>
     </section>
 
-    <!-- 07 LEAGUE NEWS -->
-    <section class="band band-news" id="news">
-      <div class="sec-head">
-        <p class="kicker"><i>📰</i>07 · Headlines</p>
-        <h2 class="big">League <span class="acc">News</span></h2>
+    <!-- 07 STANDINGS -->
+    <section class="band band-news" id="standings">
+      <div class="sec-head row">
+        <div>
+          <p class="kicker"><i>🏆</i>07 · Standings</p>
+          <h2 class="big">League <span class="acc">Standings</span></h2>
+        </div>
+        <div class="chips" id="standingsChips">
+          <button class="chip on" data-v="nfl">NFL</button>
+          <button class="chip" data-v="nba">NBA</button>
+        </div>
       </div>
-      <div class="two-col reveal">
-        <div><h3 class="mid">NBA</h3><div class="news-list" id="nbaNews"></div></div>
-        <div><h3 class="mid">NFL</h3><div class="news-list" id="nflNews"></div></div>
+      <p class="muted small st-note" id="standingsNote"></p>
+      <div class="st-grid nfl reveal" id="standingsGrid">
+        <div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div>
       </div>
     </section>
 
@@ -295,9 +300,10 @@
     <span>Data: ESPN · DraftKings · Sleeper · Open-Meteo · TradingView · BBC · CNBC · Aspen Times · Google News</span>
   </footer>
 
-  <script src="js/teams.js?v=9"></script>
-  <script src="js/players.js?v=9"></script>
-  <script src="js/app.js?v=9"></script>
-  <script src="js/trade.js?v=9"></script>
+  <script src="js/teams.js?v=10"></script>
+  <script src="js/players.js?v=10"></script>
+  <script src="js/app.js?v=10"></script>
+  <script src="js/trade.js?v=10"></script>
+  <script src="js/teamviz.js?v=10"></script>
 </body>
 </html>

@@ -136,10 +136,6 @@ async function loadWire() {
       }
       return out;
     }));
-    jobs.push(espn(lg, "news?limit=40").then((d) => (d.articles || []).map((a) => ({
-      lg, kind: "news", text: a.headline, link: a.links?.web?.href, date: parseDate(a.published),
-      teamId: (a.categories || []).find((c) => c.type === "team")?.teamId,
-    }))));
   }
   const results = await Promise.allSettled(jobs);
   const items = results.flatMap((r) => (r.status === "fulfilled" ? r.value : []));
@@ -670,43 +666,32 @@ function gameCard(ev, lg) {
 async function loadMyTeams() {
   const cards = await Promise.all(MY_TEAMS.map(async ({ lg, id }) => {
     const base = team(lg, id);
-    const [info, news] = await Promise.allSettled([espn(lg, `teams/${id}`), espn(lg, `news?team=${id}&limit=4`)]);
-    const t = info.status === "fulfilled" ? info.value.team : {};
+    const t = await espn(lg, `teams/${id}`).then((d) => d.team).catch(() => ({}));
     const record = t.record?.items?.[0]?.summary || "";
     const next = t.nextEvent?.[0];
-    let nextHtml = `<div class="next-game"><span>Next game</span><strong>TBD</strong></div>`;
-    if (next) {
-      const st = next.competitions?.[0]?.status?.type;
-      const label = st?.state === "in" ? "● LIVE · " + st.shortDetail : st?.state === "post" ? st.shortDetail : fmtGameTime(next.date);
-      const boardGame = (boards[lg]?.events || []).find((e) => e.id === next.id);
-      const odds = boardGame?.competitions[0].odds?.[0];
-      const pill = odds?.details ? `<span class="line-pill" title="${esc(odds.provider?.displayName || "")} line">${esc(odds.details)}${odds.overUnder ? " · O/U " + odds.overUnder : ""}</span>` : "";
-      nextHtml = `<div class="next-game"><span>${st?.state === "in" ? "Now" : "Next up"}</span><strong>${esc(next.shortName)}</strong>${pill}<span>${esc(label)}</span></div>`;
-    }
+    const viz = await teamViz(lg, id, next?.id);
+    const boardGame = next && (boards[lg]?.events || []).find((e) => e.id === next.id);
+    const odds = boardGame?.competitions[0].odds?.[0];
+    const pill = odds?.details ? `<span class="line-pill" title="${esc(odds.provider?.displayName || "")} line">${esc(odds.details)}${odds.overUnder ? " · O/U " + odds.overUnder : ""}</span>` : "";
     const inj = (injuryCache[lg].find((x) => x.id === String(id))?.injuries || []).filter((i) => i.status !== "Active");
     const injHtml = inj.length
       ? `<p class="inj-line"><b>Injuries (${inj.length}):</b> ${inj.slice(0, 5).map((i) => `${esc(i.athlete?.displayName)} (${esc(i.status)})`).join(", ")}${inj.length > 5 ? "…" : ""}</p>`
       : `<p class="inj-line">No players on the injury report.</p>`;
-    const arts = news.status === "fulfilled" ? news.value.articles || [] : [];
-    const newsHtml = arts.length ? `<ul class="mini-list">${arts.map((a) => `<li><time>${esc(ago(a.published))}</time><a href="${esc(a.links?.web?.href)}" target="_blank" rel="noopener">${esc(a.headline)}</a></li>`).join("")}</ul>` : `<p class="empty">No recent stories.</p>`;
     return `<article class="team-card" style="--tc:#${base.color}">
       <a class="team-card-top" href="#team-${lg}-${id}">
         <img src="${base.logo}" alt="">
         <div><h3>${esc(base.name)}</h3><p>${lg.toUpperCase()}${record ? " · " + esc(record) : ""}${t.standingSummary ? " · " + esc(t.standingSummary) : ""}</p></div>
         <span class="go">Team page →</span>
       </a>
-      <div class="team-card-body">${nextHtml}${injHtml}${newsHtml}</div>
+      <div class="team-card-body">
+        ${last5Html(viz.last5)}
+        ${matchupHtml(lg, next, viz.prob, pill)}
+        ${leadersHtml(viz.leaders)}
+        ${injHtml}
+      </div>
     </article>`;
   }));
   $("#myTeams").innerHTML = cards.join("");
-}
-
-// ---------- League headlines ----------
-async function loadLeagueNews(lg, el) {
-  try {
-    const d = await espn(lg, "news?limit=8");
-    $(el).innerHTML = (d.articles || []).map((a) => newsItem(a.headline, a.links?.web?.href, a.published, a.description, a.images?.[0]?.url)).join("");
-  } catch { $(el).innerHTML = failMsg("headlines"); }
 }
 
 // ---------- RSS sections ----------
@@ -840,8 +825,10 @@ async function showTeam(lg, id) {
       <div>
         <p class="label">// Moves</p><h2 class="mid">Transactions &amp; Injuries</h2>
         <ul class="wire card-box" id="tmWire"><li class="skeleton-row"></li><li class="skeleton-row"></li></ul>
-        <p class="label" style="margin-top:2.5rem">// Latest</p><h2 class="mid">News</h2>
-        <div class="news-list" id="tmNews"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+        <p class="label" style="margin-top:2.5rem">// At a glance</p><h2 class="mid">Form &amp; Leaders</h2>
+        <div class="card-box glance" id="tmGlance"><div class="skeleton-row"></div><div class="skeleton-row"></div></div>
+        <p class="label" style="margin-top:2.5rem">// Standings</p><h2 class="mid">Where they stand</h2>
+        <div id="tmStandings"><div class="skeleton-row"></div></div>
       </div>
       <aside>
         <div class="side-block"><p class="label">// Up next</p><h2 class="mid">Schedule</h2><ul class="sched card-box" id="tmNext"><li class="skeleton-row"></li></ul></div>
@@ -849,16 +836,22 @@ async function showTeam(lg, id) {
       </aside>
     </section>`;
 
-  const [info, sched, news] = await Promise.allSettled([
-    espn(lg, `teams/${id}`), espn(lg, `teams/${id}/schedule`), espn(lg, `news?team=${id}&limit=12`),
+  const [info, sched] = await Promise.allSettled([
+    espn(lg, `teams/${id}`), espn(lg, `teams/${id}/schedule`),
     !injuryCache[lg].length || !txCache[lg].length ? loadWire() : null,
   ]);
   if (location.hash !== `#team-${lg}-${id}`) return; // navigated away while loading
 
+  const next = info.status === "fulfilled" ? info.value.team.nextEvent?.[0] : null;
   if (info.status === "fulfilled") {
     const t = info.value.team;
     $("#tmRecord").textContent = [t.record?.items?.[0]?.summary, t.standingSummary].filter(Boolean).join(" · ");
   }
+  Promise.all([teamViz(lg, id, next?.id), teamStandingsHtml(lg, id)]).then(([viz, standingsHtml]) => {
+    if (location.hash !== `#team-${lg}-${id}`) return;
+    $("#tmGlance").innerHTML = last5Html(viz.last5) + matchupHtml(lg, next, viz.prob, "") + leadersHtml(viz.leaders);
+    $("#tmStandings").innerHTML = standingsHtml || `<p class="empty">Standings unavailable right now.</p>`;
+  });
 
   // Transactions + injuries for this team
   const moves = txCache[lg].filter((t) => t.team?.id === String(id)).map((t) => ({ kind: classify(t.description), text: t.description, date: parseDate(t.date) }));
@@ -869,10 +862,6 @@ async function showTeam(lg, id) {
   const all = [...moves, ...inj].sort((a, b) => (b.date || 0) - (a.date || 0));
   $("#tmWire").innerHTML = all.length ? all.map((m) => `<li class="item"><span></span><div><div class="meta-row"><span class="kind ${m.kind}">${m.kind}</span></div><p class="txt">${esc(m.text)}</p></div><time>${esc(ago(m.date))}</time></li>`).join("")
     : `<li class="empty">No recent transactions or injuries reported.</li>`;
-
-  $("#tmNews").innerHTML = news.status === "fulfilled" && news.value.articles?.length
-    ? news.value.articles.map((a) => newsItem(a.headline, a.links?.web?.href, a.published, a.description, a.images?.[0]?.url)).join("")
-    : `<p class="empty">No recent stories.</p>`;
 
   if (sched.status === "fulfilled") {
     const evs = sched.value.events || [];
@@ -940,8 +929,7 @@ function refreshSlow() {
   loadRecord();
   loadTrending();
   loadRss([FEEDS.fantasy], "#ffNews", { limit: 6, images: false });
-  loadLeagueNews("nba", "#nbaNews");
-  loadLeagueNews("nfl", "#nflNews");
+  renderStandings();
   loadAspen();
   loadRss([FEEDS.aspenSki, FEEDS.aspenTimes], "#aspenNews", { limit: 8, images: false, dedupe: true });
   loadRss([FEEDS.markets], "#marketNews", { limit: 6, images: false });
@@ -1027,6 +1015,7 @@ function init() {
     .map((t) => `<a href="#trade" title="${esc(t.name)}"><img src="${t.logo}" alt="" loading="lazy"></a>`).join("");
   initChips("#ffPosChips", (v) => { ffPos = v; renderFfInjuries(); });
   initChips("#dirChips", (v) => { dirLeague = v; renderDirectory(); });
+  initChips("#standingsChips", (v) => { standingsLeague = v; renderStandings(); });
   $("#teamSearch").addEventListener("input", renderDirectory);
 
   // Bet calculator

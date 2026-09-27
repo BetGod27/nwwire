@@ -11,41 +11,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401872958",
-            "date": "2026-09-27T20:05Z",
-            "shortName": "ARI @ SF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "25",
-          "oppAbbr": "ARI",
-          "ml": -395,
-          "model": 0.899,
-          "market": 0.7659021045164341,
-          "edge": 0.13309789548356588,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401872953",
             "date": "2026-09-27T17:00Z",
             "shortName": "LAC @ BUF",
@@ -73,10 +38,10 @@
           "key": "home",
           "teamId": "2",
           "oppAbbr": "LAC",
-          "ml": -340,
+          "ml": -325,
           "model": 0.7809999999999999,
-          "market": 0.740871613663133,
-          "edge": 0.040128386336866884,
+          "market": 0.7335423197492164,
+          "edge": 0.04745768025078356,
           "steam": true
         },
         {
@@ -113,9 +78,44 @@
           "market": 0.5427435387673957,
           "edge": 0.09925646123260434,
           "steam": false
+        },
+        {
+          "ev": {
+            "id": "401872949",
+            "date": "2026-09-27T17:00Z",
+            "shortName": "CAR @ CLE",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "5",
+                      "abbreviation": "CLE"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "29",
+                      "abbreviation": "CAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "29",
+          "oppAbbr": "CLE",
+          "ml": -135,
+          "model": 0.637,
+          "market": 0.551441114716549,
+          "edge": 0.08555888528345101,
+          "steam": false
         }
       ],
-      "odds": "+187"
+      "odds": "+303"
     },
     "prop": {
       "legs": [
@@ -253,5 +253,5 @@
       "units": 0
     }
   },
-  "updated": "2026-09-27T03:28:32Z"
+  "updated": "2026-09-27T06:33:04Z"
 }

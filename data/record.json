@@ -43,7 +43,8 @@
           "market": 0.740871613663133,
           "edge": 0.040128386336866884,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "24-16"
         },
         {
           "ev": {
@@ -115,10 +116,13 @@
           "market": 0.551441114716549,
           "edge": 0.08555888528345101,
           "steam": true,
-          "result": null
+          "result": "loss",
+          "final": "18-21"
         }
       ],
-      "odds": "+299"
+      "odds": "+299",
+      "result": "loss",
+      "units": -1.0
     },
     "prop": {
       "legs": [
@@ -238,7 +242,8 @@
           "teamAbbr": "JAX",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432620.png",
           "score": 0.6011678832116788,
-          "result": null
+          "result": "loss",
+          "actual": 40.0
         },
         {
           "ev": {
@@ -297,10 +302,13 @@
           "teamAbbr": "TEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4871023.png",
           "score": 0.43584415584415587,
-          "result": null
+          "result": "loss",
+          "actual": 58.0
         }
       ],
-      "odds": "+596"
+      "odds": "+596",
+      "result": "loss",
+      "units": -1.0
     },
     "locked": true,
     "lockAt": "2026-09-27T13:00:00Z",
@@ -309,15 +317,15 @@
   "totals": {
     "game": {
       "w": 0,
-      "l": 0,
-      "units": 0
+      "l": 1,
+      "units": -1.0
     },
     "prop": {
       "w": 0,
-      "l": 0,
-      "units": 0
+      "l": 1,
+      "units": -1.0
     }
   },
-  "updated": "2026-09-27T18:30:28Z",
+  "updated": "2026-09-27T21:27:09Z",
   "since": "Week 3, 2026"
 }

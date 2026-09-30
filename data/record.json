@@ -384,10 +384,10 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -192,
+          "ml": -185,
           "model": 0.6729999999999999,
-          "market": 0.6309403437815976,
-          "edge": 0.04205965621840235,
+          "market": 0.6224665518611737,
+          "edge": 0.05053344813882621,
           "steam": true
         },
         {
@@ -426,7 +426,7 @@
           "steam": false
         }
       ],
-      "odds": "+268"
+      "odds": "+273"
     },
     "prop": {
       "legs": [
@@ -490,6 +490,68 @@
         },
         {
           "ev": {
+            "id": "401872979",
+            "date": "2026-10-06T00:15Z",
+            "shortName": "ATL @ NO",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "18",
+                      "abbreviation": "NO"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3929645",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 40.5,
+          "open": 37.5,
+          "games": [
+            {
+              "v": 53.0,
+              "opp": "LV"
+            },
+            {
+              "v": 66.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 54.0,
+              "opp": "DET"
+            }
+          ],
+          "avg": 57.666666666666664,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": 3.0,
+          "moveAgrees": 1,
+          "edge": 0.4238683127572016,
+          "name": "Juwan Johnson",
+          "pos": "TE",
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3929645.png",
+          "score": 0.7038683127572015
+        },
+        {
+          "ev": {
             "id": "401872967",
             "date": "2026-10-04T17:00Z",
             "shortName": "DAL @ HOU",
@@ -549,68 +611,6 @@
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5083754.png",
           "score": 0.5928205128205128
-        },
-        {
-          "ev": {
-            "id": "401872971",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "NE @ BUF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4379399",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 88.5,
-          "open": 83.5,
-          "games": [
-            {
-              "v": 154.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 135.0,
-              "opp": "DET"
-            },
-            {
-              "v": 57.0,
-              "opp": "HOU"
-            }
-          ],
-          "avg": 115.33333333333333,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 5.0,
-          "moveAgrees": 1,
-          "edge": 0.30320150659133704,
-          "name": "James Cook III",
-          "pos": "RB",
-          "teamAbbr": "BUF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4379399.png",
-          "score": 0.4498681732580037
         }
       ],
       "odds": "+596"
@@ -630,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-09-30T15:33:42Z",
+  "updated": "2026-09-30T18:32:48Z",
   "since": "Week 3, 2026"
 }

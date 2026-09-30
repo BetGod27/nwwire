@@ -1,19 +1,560 @@
 {
   "history": [
-
+    {
+      "key": "2026-2-3",
+      "season": 2026,
+      "week": 3,
+      "label": "Week 3",
+      "game": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872953",
+              "date": "2026-09-27T17:00Z",
+              "shortName": "LAC @ BUF",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "2",
+                        "abbreviation": "BUF"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "24",
+                        "abbreviation": "LAC"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "home",
+            "teamId": "2",
+            "oppAbbr": "LAC",
+            "ml": -340,
+            "model": 0.7809999999999999,
+            "market": 0.740871613663133,
+            "edge": 0.040128386336866884,
+            "steam": true,
+            "result": "win",
+            "final": "24-16"
+          },
+          {
+            "ev": {
+              "id": "401872962",
+              "date": "2026-09-28T00:20Z",
+              "shortName": "LAR @ DEN",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "7",
+                        "abbreviation": "DEN"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "14",
+                        "abbreviation": "LAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "14",
+            "oppAbbr": "DEN",
+            "ml": -130,
+            "model": 0.642,
+            "market": 0.5427435387673957,
+            "edge": 0.09925646123260434,
+            "steam": false,
+            "result": null
+          },
+          {
+            "ev": {
+              "id": "401872949",
+              "date": "2026-09-27T17:00Z",
+              "shortName": "CAR @ CLE",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "5",
+                        "abbreviation": "CLE"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "29",
+                        "abbreviation": "CAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "29",
+            "oppAbbr": "CLE",
+            "ml": -135,
+            "model": 0.637,
+            "market": 0.551441114716549,
+            "edge": 0.08555888528345101,
+            "steam": true,
+            "result": "loss",
+            "final": "18-21"
+          }
+        ],
+        "odds": "+299",
+        "result": "loss",
+        "units": -1.0
+      },
+      "prop": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872962",
+              "date": "2026-09-28T00:20Z",
+              "shortName": "LAR @ DEN",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "7",
+                        "abbreviation": "DEN"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "14",
+                        "abbreviation": "LAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "3128429",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 35.5,
+            "open": 41.5,
+            "games": [
+              {
+                "v": 25.0,
+                "opp": "JAX"
+              },
+              {
+                "v": 11.0,
+                "opp": "KC"
+              }
+            ],
+            "avg": 18.0,
+            "side": "under",
+            "hits": 2,
+            "hitRate": 1.0,
+            "move": -6.0,
+            "moveAgrees": 1,
+            "edge": 0.49295774647887325,
+            "name": "Courtland Sutton",
+            "pos": "WR",
+            "teamAbbr": "DEN",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
+            "score": 0.7729577464788732,
+            "result": null
+          },
+          {
+            "ev": {
+              "id": "401872957",
+              "date": "2026-09-27T17:00Z",
+              "shortName": "NE @ JAX",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "30",
+                        "abbreviation": "JAX"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "17",
+                        "abbreviation": "NE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4432620",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 68.5,
+            "open": 61.5,
+            "games": [
+              {
+                "v": 98.0,
+                "opp": "DEN"
+              },
+              {
+                "v": 83.0,
+                "opp": "CLE"
+              }
+            ],
+            "avg": 90.5,
+            "side": "over",
+            "hits": 2,
+            "hitRate": 1.0,
+            "move": 7.0,
+            "moveAgrees": 1,
+            "edge": 0.32116788321167883,
+            "name": "Parker Washington",
+            "pos": "WR",
+            "teamAbbr": "JAX",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432620.png",
+            "score": 0.6011678832116788,
+            "result": "loss",
+            "actual": 40.0
+          },
+          {
+            "ev": {
+              "id": "401872956",
+              "date": "2026-09-27T17:00Z",
+              "shortName": "TEN @ NYG",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "19",
+                        "abbreviation": "NYG"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "10",
+                        "abbreviation": "TEN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4871023",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 38.5,
+            "open": 46.5,
+            "games": [
+              {
+                "v": 27.0,
+                "opp": "PHI"
+              },
+              {
+                "v": 38.0,
+                "opp": "NYJ"
+              }
+            ],
+            "avg": 32.5,
+            "side": "under",
+            "hits": 2,
+            "hitRate": 1.0,
+            "move": -8.0,
+            "moveAgrees": 1,
+            "edge": 0.15584415584415584,
+            "name": "Carnell Tate",
+            "pos": "WR",
+            "teamAbbr": "TEN",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4871023.png",
+            "score": 0.43584415584415587,
+            "result": "loss",
+            "actual": 58.0
+          }
+        ],
+        "odds": "+596",
+        "result": "loss",
+        "units": -1.0
+      },
+      "locked": true,
+      "lockAt": "2026-09-27T13:00:00Z",
+      "lockedAt": "2026-09-27T15:27:52Z"
+    }
   ],
   "current": {
-    "key": "2026-2-3",
+    "key": "2026-2-4",
     "season": 2026,
-    "week": 3,
-    "label": "Week 3",
+    "week": 4,
+    "label": "Week 4",
     "game": {
       "legs": [
         {
           "ev": {
-            "id": "401872953",
-            "date": "2026-09-27T17:00Z",
-            "shortName": "LAC @ BUF",
+            "id": "401872975",
+            "date": "2026-10-04T20:25Z",
+            "shortName": "DEN @ SF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "25",
+          "oppAbbr": "DEN",
+          "ml": -148,
+          "model": 0.77,
+          "market": 0.5720596355604638,
+          "edge": 0.19794036443953622,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401872968",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "GB @ TB",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "27",
+                      "abbreviation": "TB"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "9",
+                      "abbreviation": "GB"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "9",
+          "oppAbbr": "TB",
+          "ml": -192,
+          "model": 0.6729999999999999,
+          "market": 0.6309403437815976,
+          "edge": 0.04205965621840235,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401872976",
+            "date": "2026-10-04T20:25Z",
+            "shortName": "KC @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "12",
+          "oppAbbr": "LV",
+          "ml": -225,
+          "model": 0.7,
+          "market": 0.6636481241914618,
+          "edge": 0.03635187580853816,
+          "steam": false
+        }
+      ],
+      "odds": "+268"
+    },
+    "prop": {
+      "legs": [
+        {
+          "ev": {
+            "id": "401872975",
+            "date": "2026-10-04T20:25Z",
+            "shortName": "DEN @ SF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4568490",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 3.5,
+          "open": 2.5,
+          "games": [
+            {
+              "v": 6.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 4.0,
+              "opp": "KC"
+            }
+          ],
+          "avg": 5.0,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.42857142857142855,
+          "name": "RJ Harvey",
+          "pos": "RB",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4568490.png",
+          "score": 0.7085714285714285
+        },
+        {
+          "ev": {
+            "id": "401872967",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "DAL @ HOU",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "6",
+                      "abbreviation": "DAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "5083754",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 32.5,
+          "open": 35.5,
+          "games": [
+            {
+              "v": 22.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 23.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 22.0,
+              "opp": "NYG"
+            }
+          ],
+          "avg": 22.333333333333332,
+          "side": "under",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.3128205128205129,
+          "name": "Ryan Flournoy",
+          "pos": "WR",
+          "teamAbbr": "DAL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5083754.png",
+          "score": 0.5928205128205128
+        },
+        {
+          "ev": {
+            "id": "401872971",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "NE @ BUF",
             "competitions": [
               {
                 "competitors": [
@@ -27,182 +568,6 @@
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "2",
-          "oppAbbr": "LAC",
-          "ml": -340,
-          "model": 0.7809999999999999,
-          "market": 0.740871613663133,
-          "edge": 0.040128386336866884,
-          "steam": true,
-          "result": "win",
-          "final": "24-16"
-        },
-        {
-          "ev": {
-            "id": "401872962",
-            "date": "2026-09-28T00:20Z",
-            "shortName": "LAR @ DEN",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "14",
-          "oppAbbr": "DEN",
-          "ml": -130,
-          "model": 0.642,
-          "market": 0.5427435387673957,
-          "edge": 0.09925646123260434,
-          "steam": false,
-          "result": null
-        },
-        {
-          "ev": {
-            "id": "401872949",
-            "date": "2026-09-27T17:00Z",
-            "shortName": "CAR @ CLE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "29",
-                      "abbreviation": "CAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "29",
-          "oppAbbr": "CLE",
-          "ml": -135,
-          "model": 0.637,
-          "market": 0.551441114716549,
-          "edge": 0.08555888528345101,
-          "steam": true,
-          "result": "loss",
-          "final": "18-21"
-        }
-      ],
-      "odds": "+299",
-      "result": "loss",
-      "units": -1.0
-    },
-    "prop": {
-      "legs": [
-        {
-          "ev": {
-            "id": "401872962",
-            "date": "2026-09-28T00:20Z",
-            "shortName": "LAR @ DEN",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "3128429",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 35.5,
-          "open": 41.5,
-          "games": [
-            {
-              "v": 25.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 11.0,
-              "opp": "KC"
-            }
-          ],
-          "avg": 18.0,
-          "side": "under",
-          "hits": 2,
-          "hitRate": 1.0,
-          "move": -6.0,
-          "moveAgrees": 1,
-          "edge": 0.49295774647887325,
-          "name": "Courtland Sutton",
-          "pos": "WR",
-          "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
-          "score": 0.7729577464788732,
-          "result": null
-        },
-        {
-          "ev": {
-            "id": "401872957",
-            "date": "2026-09-27T17:00Z",
-            "shortName": "NE @ JAX",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
                       "id": "17",
                       "abbreviation": "NE"
                     }
@@ -211,108 +576,47 @@
               }
             ]
           },
-          "ath": "4432620",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4379399",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 68.5,
-          "open": 61.5,
+          "line": 88.5,
+          "open": 83.5,
           "games": [
             {
-              "v": 98.0,
-              "opp": "DEN"
+              "v": 154.0,
+              "opp": "LAC"
             },
             {
-              "v": 83.0,
-              "opp": "CLE"
+              "v": 135.0,
+              "opp": "DET"
+            },
+            {
+              "v": 57.0,
+              "opp": "HOU"
             }
           ],
-          "avg": 90.5,
+          "avg": 115.33333333333333,
           "side": "over",
           "hits": 2,
-          "hitRate": 1.0,
-          "move": 7.0,
+          "hitRate": 0.6666666666666666,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.32116788321167883,
-          "name": "Parker Washington",
-          "pos": "WR",
-          "teamAbbr": "JAX",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432620.png",
-          "score": 0.6011678832116788,
-          "result": "loss",
-          "actual": 40.0
-        },
-        {
-          "ev": {
-            "id": "401872956",
-            "date": "2026-09-27T17:00Z",
-            "shortName": "TEN @ NYG",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "10",
-                      "abbreviation": "TEN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4871023",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 38.5,
-          "open": 46.5,
-          "games": [
-            {
-              "v": 27.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 38.0,
-              "opp": "NYJ"
-            }
-          ],
-          "avg": 32.5,
-          "side": "under",
-          "hits": 2,
-          "hitRate": 1.0,
-          "move": -8.0,
-          "moveAgrees": 1,
-          "edge": 0.15584415584415584,
-          "name": "Carnell Tate",
-          "pos": "WR",
-          "teamAbbr": "TEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4871023.png",
-          "score": 0.43584415584415587,
-          "result": "loss",
-          "actual": 58.0
+          "edge": 0.30320150659133704,
+          "name": "James Cook III",
+          "pos": "RB",
+          "teamAbbr": "BUF",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4379399.png",
+          "score": 0.4498681732580037
         }
       ],
-      "odds": "+596",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+596"
     },
-    "locked": true,
-    "lockAt": "2026-09-27T13:00:00Z",
-    "lockedAt": "2026-09-27T15:27:52Z"
+    "locked": false,
+    "lockAt": "2026-10-04T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -326,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-09-30T03:30:28Z",
+  "updated": "2026-09-30T06:36:17Z",
   "since": "Week 3, 2026"
 }

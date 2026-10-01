@@ -384,10 +384,10 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -180,
+          "ml": -185,
           "model": 0.6729999999999999,
-          "market": 0.6164383561643836,
-          "edge": 0.05656164383561635,
+          "market": 0.6224665518611737,
+          "edge": 0.05053344813882621,
           "steam": true
         },
         {
@@ -426,72 +426,10 @@
           "steam": false
         }
       ],
-      "odds": "+280"
+      "odds": "+277"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401872972",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "NYJ @ CHI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4431299",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 30.5,
-          "open": 27.5,
-          "games": [
-            {
-              "v": 44.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 43.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 52.0,
-              "opp": "CAR"
-            }
-          ],
-          "avg": 46.333333333333336,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.5191256830601094,
-          "name": "Rome Odunze",
-          "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.7991256830601093
-        },
         {
           "ev": {
             "id": "401872975",
@@ -549,6 +487,68 @@
           "teamAbbr": "DEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4568490.png",
           "score": 0.7085714285714285
+        },
+        {
+          "ev": {
+            "id": "401872972",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "NYJ @ CHI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4431299",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 32.5,
+          "open": 27.5,
+          "games": [
+            {
+              "v": 44.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
+            }
+          ],
+          "avg": 46.333333333333336,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": 5.0,
+          "moveAgrees": 1,
+          "edge": 0.42564102564102574,
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.7056410256410257
         },
         {
           "ev": {
@@ -626,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-01T15:32:26Z",
+  "updated": "2026-10-01T18:35:40Z",
   "since": "Week 3, 2026"
 }

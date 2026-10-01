@@ -432,6 +432,68 @@
       "legs": [
         {
           "ev": {
+            "id": "401872972",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "NYJ @ CHI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4431299",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 30.5,
+          "open": 27.5,
+          "games": [
+            {
+              "v": 44.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
+            }
+          ],
+          "avg": 46.333333333333336,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": 3.0,
+          "moveAgrees": 1,
+          "edge": 0.5191256830601094,
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.7991256830601093
+        },
+        {
+          "ev": {
             "id": "401872975",
             "date": "2026-10-04T20:25Z",
             "shortName": "DEN @ SF",
@@ -545,68 +607,6 @@
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
           "score": 0.6176623376623377
-        },
-        {
-          "ev": {
-            "id": "401872967",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "DAL @ HOU",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "6",
-                      "abbreviation": "DAL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "5083754",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 31.5,
-          "open": 35.5,
-          "games": [
-            {
-              "v": 22.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 23.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 22.0,
-              "opp": "NYG"
-            }
-          ],
-          "avg": 22.333333333333332,
-          "side": "under",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": -4.0,
-          "moveAgrees": 1,
-          "edge": 0.29100529100529104,
-          "name": "Ryan Flournoy",
-          "pos": "WR",
-          "teamAbbr": "DAL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5083754.png",
-          "score": 0.5710052910052911
         }
       ],
       "odds": "+596"
@@ -626,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-01T03:31:21Z",
+  "updated": "2026-10-01T06:37:51Z",
   "since": "Week 3, 2026"
 }

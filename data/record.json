@@ -552,65 +552,61 @@
         },
         {
           "ev": {
-            "id": "401872967",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "DAL @ HOU",
+            "id": "401872979",
+            "date": "2026-10-06T00:15Z",
+            "shortName": "ATL @ NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "6",
-                      "abbreviation": "DAL"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "5083754",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "3054850",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 31.5,
-          "open": 35.5,
+          "line": 38.5,
+          "open": 42.5,
           "games": [
             {
-              "v": 22.0,
+              "v": 36.0,
+              "opp": "LV"
+            },
+            {
+              "v": 15.0,
               "opp": "BAL"
-            },
-            {
-              "v": 23.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 22.0,
-              "opp": "NYG"
             }
           ],
-          "avg": 22.333333333333332,
+          "avg": 25.5,
           "side": "under",
-          "hits": 3,
+          "hits": 2,
           "hitRate": 1.0,
           "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.29100529100529104,
-          "name": "Ryan Flournoy",
-          "pos": "WR",
-          "teamAbbr": "DAL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5083754.png",
-          "score": 0.5710052910052911
+          "edge": 0.33766233766233766,
+          "name": "Alvin Kamara",
+          "pos": "RB",
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
+          "score": 0.6176623376623377
         }
       ],
       "odds": "+596"
@@ -630,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-01T09:32:21Z",
+  "updated": "2026-10-01T12:37:47Z",
   "since": "Week 3, 2026"
 }

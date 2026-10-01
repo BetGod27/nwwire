@@ -521,7 +521,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 39.5,
+          "line": 38.5,
           "open": 42.5,
           "games": [
             {
@@ -537,14 +537,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 1.0,
-          "move": -3.0,
+          "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.35443037974683544,
+          "edge": 0.33766233766233766,
           "name": "Alvin Kamara",
           "pos": "RB",
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
-          "score": 0.6344303797468355
+          "score": 0.6176623376623377
         },
         {
           "ev": {
@@ -626,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-01T00:39:48Z",
+  "updated": "2026-10-01T03:31:21Z",
   "since": "Week 3, 2026"
 }

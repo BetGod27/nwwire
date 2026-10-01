@@ -384,10 +384,10 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -185,
+          "ml": -180,
           "model": 0.6729999999999999,
-          "market": 0.6224665518611737,
-          "edge": 0.05053344813882621,
+          "market": 0.6164383561643836,
+          "edge": 0.05656164383561635,
           "steam": true
         },
         {
@@ -419,14 +419,14 @@
           "key": "away",
           "teamId": "12",
           "oppAbbr": "LV",
-          "ml": -225,
+          "ml": -218,
           "model": 0.7,
-          "market": 0.6636481241914618,
-          "edge": 0.03635187580853816,
+          "market": 0.6574752261956054,
+          "edge": 0.04252477380439457,
           "steam": false
         }
       ],
-      "odds": "+273"
+      "odds": "+280"
     },
     "prop": {
       "legs": [
@@ -514,41 +514,37 @@
               }
             ]
           },
-          "ath": "3929645",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "3054850",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 40.5,
-          "open": 37.5,
+          "line": 39.5,
+          "open": 42.5,
           "games": [
             {
-              "v": 53.0,
+              "v": 36.0,
               "opp": "LV"
             },
             {
-              "v": 66.0,
+              "v": 15.0,
               "opp": "BAL"
-            },
-            {
-              "v": 54.0,
-              "opp": "DET"
             }
           ],
-          "avg": 57.666666666666664,
-          "side": "over",
-          "hits": 3,
+          "avg": 25.5,
+          "side": "under",
+          "hits": 2,
           "hitRate": 1.0,
-          "move": 3.0,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.4238683127572016,
-          "name": "Juwan Johnson",
-          "pos": "TE",
+          "edge": 0.35443037974683544,
+          "name": "Alvin Kamara",
+          "pos": "RB",
           "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3929645.png",
-          "score": 0.7038683127572015
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
+          "score": 0.6344303797468355
         },
         {
           "ev": {
@@ -583,7 +579,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 32.5,
+          "line": 31.5,
           "open": 35.5,
           "games": [
             {
@@ -603,14 +599,14 @@
           "side": "under",
           "hits": 3,
           "hitRate": 1.0,
-          "move": -3.0,
+          "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.3128205128205129,
+          "edge": 0.29100529100529104,
           "name": "Ryan Flournoy",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5083754.png",
-          "score": 0.5928205128205128
+          "score": 0.5710052910052911
         }
       ],
       "odds": "+596"
@@ -630,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-09-30T21:30:39Z",
+  "updated": "2026-10-01T00:39:48Z",
   "since": "Week 3, 2026"
 }

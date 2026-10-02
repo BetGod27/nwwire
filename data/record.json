@@ -392,106 +392,44 @@
         },
         {
           "ev": {
-            "id": "401872976",
-            "date": "2026-10-04T20:25Z",
-            "shortName": "KC @ LV",
+            "id": "401872979",
+            "date": "2026-10-06T00:15Z",
+            "shortName": "ATL @ NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   }
                 ]
               }
             ]
           },
-          "key": "away",
-          "teamId": "12",
-          "oppAbbr": "LV",
-          "ml": -218,
-          "model": 0.696,
-          "market": 0.6574752261956054,
-          "edge": 0.03852477380439456,
+          "key": "home",
+          "teamId": "18",
+          "oppAbbr": "ATL",
+          "ml": -135,
+          "model": 0.627,
+          "market": 0.551441114716549,
+          "edge": 0.075558885283451,
           "steam": false
         }
       ],
-      "odds": "+277"
+      "odds": "+349"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401872972",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "NYJ @ CHI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4431299",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 31.5,
-          "open": 27.5,
-          "games": [
-            {
-              "v": 44.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 43.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 52.0,
-              "opp": "CAR"
-            }
-          ],
-          "avg": 46.333333333333336,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.470899470899471,
-          "name": "Rome Odunze",
-          "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.750899470899471
-        },
         {
           "ev": {
             "id": "401872975",
@@ -607,6 +545,68 @@
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
           "score": 0.5813698630136986
+        },
+        {
+          "ev": {
+            "id": "401872967",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "DAL @ HOU",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "6",
+                      "abbreviation": "DAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4035538",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 44.5,
+          "open": 53.5,
+          "games": [
+            {
+              "v": 33.0,
+              "opp": "IND"
+            },
+            {
+              "v": 10.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 60.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 34.333333333333336,
+          "side": "under",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": -9.0,
+          "moveAgrees": 1,
+          "edge": 0.22846441947565538,
+          "name": "David Montgomery",
+          "pos": "RB",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035538.png",
+          "score": 0.37513108614232205
         }
       ],
       "odds": "+596"
@@ -626,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-02T15:33:00Z",
+  "updated": "2026-10-02T18:34:19Z",
   "since": "Week 3, 2026"
 }

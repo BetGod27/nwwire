@@ -384,10 +384,10 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -180,
+          "ml": -185,
           "model": 0.6729999999999999,
-          "market": 0.6164383561643836,
-          "edge": 0.05656164383561635,
+          "market": 0.6224665518611737,
+          "edge": 0.05053344813882621,
           "steam": true
         },
         {
@@ -426,7 +426,7 @@
           "steam": false
         }
       ],
-      "odds": "+280"
+      "odds": "+277"
     },
     "prop": {
       "legs": [
@@ -583,7 +583,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 36.5,
           "open": 42.5,
           "games": [
             {
@@ -599,14 +599,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 1.0,
-          "move": -5.0,
+          "move": -6.0,
           "moveAgrees": 1,
-          "edge": 0.32,
+          "edge": 0.3013698630136986,
           "name": "Alvin Kamara",
           "pos": "RB",
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
-          "score": 0.6
+          "score": 0.5813698630136986
         }
       ],
       "odds": "+596"
@@ -626,6 +626,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-01T21:29:36Z",
+  "updated": "2026-10-02T00:37:42Z",
   "since": "Week 3, 2026"
 }

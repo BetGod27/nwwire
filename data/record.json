@@ -583,7 +583,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 44.5,
+          "line": 45.5,
           "open": 53.5,
           "games": [
             {
@@ -603,14 +603,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 0.6666666666666666,
-          "move": -9.0,
+          "move": -8.0,
           "moveAgrees": 1,
-          "edge": 0.22846441947565538,
+          "edge": 0.24542124542124538,
           "name": "David Montgomery",
           "pos": "RB",
           "teamAbbr": "HOU",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035538.png",
-          "score": 0.37513108614232205
+          "score": 0.39208791208791205
         }
       ],
       "odds": "+596"
@@ -630,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-03T00:36:15Z",
+  "updated": "2026-10-03T03:36:56Z",
   "since": "Week 3, 2026"
 }

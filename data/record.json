@@ -392,24 +392,24 @@
         },
         {
           "ev": {
-            "id": "401872979",
-            "date": "2026-10-06T00:15Z",
-            "shortName": "ATL @ NO",
+            "id": "401872972",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "NYJ @ CHI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   }
                 ]
@@ -417,16 +417,16 @@
             ]
           },
           "key": "home",
-          "teamId": "18",
-          "oppAbbr": "ATL",
-          "ml": -135,
-          "model": 0.627,
-          "market": 0.551441114716549,
-          "edge": 0.075558885283451,
+          "teamId": "3",
+          "oppAbbr": "NYJ",
+          "ml": -185,
+          "model": 0.6779999999999999,
+          "market": 0.6224665518611737,
+          "edge": 0.055533448138826214,
           "steam": false
         }
       ],
-      "odds": "+358"
+      "odds": "+306"
     },
     "prop": {
       "legs": [
@@ -630,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-03T03:36:56Z",
+  "updated": "2026-10-03T06:44:26Z",
   "since": "Week 3, 2026"
 }

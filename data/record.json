@@ -384,10 +384,10 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -180,
+          "ml": -175,
           "model": 0.6779999999999999,
-          "market": 0.6164383561643836,
-          "edge": 0.06156164383561635,
+          "market": 0.6092362344582594,
+          "edge": 0.06876376554174057,
           "steam": true
         },
         {
@@ -426,7 +426,7 @@
           "steam": false
         }
       ],
-      "odds": "+354"
+      "odds": "+358"
     },
     "prop": {
       "legs": [
@@ -490,61 +490,65 @@
         },
         {
           "ev": {
-            "id": "401872979",
-            "date": "2026-10-06T00:15Z",
-            "shortName": "ATL @ NO",
+            "id": "401872972",
+            "date": "2026-10-04T17:00Z",
+            "shortName": "NYJ @ CHI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "3054850",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4431299",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 36.5,
-          "open": 42.5,
+          "line": 32.5,
+          "open": 27.5,
           "games": [
             {
-              "v": 36.0,
-              "opp": "LV"
+              "v": 44.0,
+              "opp": "PHI"
             },
             {
-              "v": 15.0,
-              "opp": "BAL"
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
             }
           ],
-          "avg": 25.5,
-          "side": "under",
-          "hits": 2,
+          "avg": 46.333333333333336,
+          "side": "over",
+          "hits": 3,
           "hitRate": 1.0,
-          "move": -6.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.3013698630136986,
-          "name": "Alvin Kamara",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3054850.png",
-          "score": 0.5813698630136986
+          "edge": 0.42564102564102574,
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.7056410256410257
         },
         {
           "ev": {
@@ -626,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-02T21:29:27Z",
+  "updated": "2026-10-03T00:36:15Z",
   "since": "Week 3, 2026"
 }

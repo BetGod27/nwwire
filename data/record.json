@@ -490,127 +490,127 @@
         },
         {
           "ev": {
-            "id": "401872972",
+            "id": "401872967",
             "date": "2026-10-04T17:00Z",
-            "shortName": "NYJ @ CHI",
+            "shortName": "DAL @ HOU",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
+                      "id": "34",
+                      "abbreviation": "HOU"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "6",
+                      "abbreviation": "DAL"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4431299",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4035538",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 32.5,
-          "open": 27.5,
+          "line": 44.5,
+          "open": 53.5,
           "games": [
             {
-              "v": 44.0,
-              "opp": "PHI"
+              "v": 33.0,
+              "opp": "IND"
             },
             {
-              "v": 43.0,
-              "opp": "MIN"
+              "v": 10.0,
+              "opp": "CIN"
             },
             {
-              "v": 52.0,
-              "opp": "CAR"
+              "v": 60.0,
+              "opp": "BUF"
             }
           ],
-          "avg": 46.333333333333336,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 5.0,
+          "avg": 34.333333333333336,
+          "side": "under",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": -9.0,
           "moveAgrees": 1,
-          "edge": 0.42564102564102574,
-          "name": "Rome Odunze",
-          "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.7056410256410257
+          "edge": 0.22846441947565538,
+          "name": "David Montgomery",
+          "pos": "RB",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035538.png",
+          "score": 0.37513108614232205
         },
         {
           "ev": {
-            "id": "401872974",
-            "date": "2026-10-04T20:05Z",
-            "shortName": "MIA @ MIN",
+            "id": "401872978",
+            "date": "2026-10-05T00:20Z",
+            "shortName": "DET @ CAR",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
+                      "id": "29",
+                      "abbreviation": "CAR"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
+                      "id": "8",
+                      "abbreviation": "DET"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4569603",
+          "ath": "2576925",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 41.5,
-          "open": 35.5,
+          "line": 30.5,
+          "open": 23.5,
           "games": [
             {
-              "v": 56.0,
-              "opp": "KC"
+              "v": 51.0,
+              "opp": "CLE"
             },
             {
-              "v": 43.0,
-              "opp": "SF"
+              "v": 33.0,
+              "opp": "ATL"
             },
             {
-              "v": 53.0,
-              "opp": "LV"
+              "v": 28.0,
+              "opp": "CHI"
             }
           ],
-          "avg": 50.666666666666664,
+          "avg": 37.333333333333336,
           "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 6.0,
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 7.0,
           "moveAgrees": 1,
-          "edge": 0.22088353413654613,
-          "name": "Malik Washington",
-          "pos": "WR",
-          "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
-          "score": 0.5008835341365461
+          "edge": 0.22404371584699462,
+          "name": "Darren Waller",
+          "pos": "TE",
+          "teamAbbr": "CAR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2576925.png",
+          "score": 0.3707103825136613
         }
       ],
       "odds": "+596"
@@ -630,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-03T15:06:39Z",
+  "updated": "2026-10-03T19:42:14Z",
   "since": "Week 3, 2026"
 }

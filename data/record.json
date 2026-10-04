@@ -390,7 +390,8 @@
           "market": 0.6037569709421778,
           "edge": 0.0742430290578221,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "17-14"
         },
         {
           "ev": {
@@ -553,7 +554,8 @@
           "teamAbbr": "CHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
           "score": 0.7056410256410257,
-          "result": null
+          "result": "win",
+          "actual": 94.0
         },
         {
           "ev": {
@@ -616,7 +618,8 @@
           "teamAbbr": "HOU",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4035538.png",
           "score": 0.37513108614232205,
-          "result": null
+          "result": "win",
+          "actual": 24.0
         }
       ],
       "odds": "+596"
@@ -637,6 +640,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-04T13:40:24Z",
+  "updated": "2026-10-04T20:42:56Z",
   "since": "Week 3, 2026"
 }

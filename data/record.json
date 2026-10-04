@@ -384,32 +384,32 @@
           "key": "away",
           "teamId": "9",
           "oppAbbr": "TB",
-          "ml": -170,
+          "ml": -166,
           "model": 0.6779999999999999,
-          "market": 0.6037569709421778,
-          "edge": 0.0742430290578221,
+          "market": 0.5996387718242023,
+          "edge": 0.0783612281757976,
           "steam": true
         },
         {
           "ev": {
-            "id": "401872972",
-            "date": "2026-10-04T17:00Z",
-            "shortName": "NYJ @ CHI",
+            "id": "401872979",
+            "date": "2026-10-06T00:15Z",
+            "shortName": "ATL @ NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   }
                 ]
@@ -417,16 +417,16 @@
             ]
           },
           "key": "home",
-          "teamId": "3",
-          "oppAbbr": "NYJ",
-          "ml": -185,
-          "model": 0.6779999999999999,
-          "market": 0.6224665518611737,
-          "edge": 0.055533448138826214,
+          "teamId": "18",
+          "oppAbbr": "ATL",
+          "ml": -130,
+          "model": 0.627,
+          "market": 0.5427435387673957,
+          "edge": 0.08425646123260433,
           "steam": false
         }
       ],
-      "odds": "+310"
+      "odds": "+375"
     },
     "prop": {
       "legs": [
@@ -630,6 +630,6 @@
       "units": -1.0
     }
   },
-  "updated": "2026-10-03T19:42:14Z",
+  "updated": "2026-10-04T02:48:19Z",
   "since": "Week 3, 2026"
 }

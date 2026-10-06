@@ -428,10 +428,13 @@
           "market": 0.5427435387673957,
           "edge": 0.08425646123260433,
           "steam": false,
-          "result": null
+          "result": "loss",
+          "final": "24-45"
         }
       ],
-      "odds": "+371"
+      "odds": "+371",
+      "result": "loss",
+      "units": -1.0
     },
     "prop": {
       "legs": [
@@ -635,8 +638,8 @@
   "totals": {
     "game": {
       "w": 0,
-      "l": 1,
-      "units": -1.0
+      "l": 2,
+      "units": -2.0
     },
     "prop": {
       "w": 1,
@@ -644,6 +647,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-06T00:41:24Z",
+  "updated": "2026-10-06T03:30:52Z",
   "since": "Week 3, 2026"
 }

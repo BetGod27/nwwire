@@ -671,10 +671,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -355,
+          "ml": -345,
           "model": 0.8029999999999999,
-          "market": 0.7477827050997783,
-          "edge": 0.05521729490022165,
+          "market": 0.7440690150970525,
+          "edge": 0.05893098490294746,
           "steam": true
         },
         {
@@ -706,10 +706,10 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "ARI",
-          "ml": -238,
+          "ml": -258,
           "model": 0.693,
-          "market": 0.6750312469954812,
-          "edge": 0.017968753004518723,
+          "market": 0.690792883054068,
+          "edge": 0.0022071169459318973,
           "steam": false
         },
         {
@@ -748,7 +748,7 @@
           "steam": true
         }
       ],
-      "odds": "+183"
+      "odds": "+178"
     },
     "prop": {
       "legs": [
@@ -820,6 +820,72 @@
         },
         {
           "ev": {
+            "id": "401872990",
+            "date": "2026-10-11T17:00Z",
+            "shortName": "CHI @ GB",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "9",
+                      "abbreviation": "GB"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4431299",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 38.5,
+          "open": 37.5,
+          "games": [
+            {
+              "v": 94.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 44.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
+            }
+          ],
+          "avg": 58.25,
+          "side": "over",
+          "hits": 4,
+          "hitRate": 1.0,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.512987012987013,
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.792987012987013
+        },
+        {
+          "ev": {
             "id": "401872980",
             "date": "2026-10-09T00:15Z",
             "shortName": "TB @ DAL",
@@ -883,72 +949,6 @@
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
           "score": 0.7460377358490565
-        },
-        {
-          "ev": {
-            "id": "401872989",
-            "date": "2026-10-11T20:05Z",
-            "shortName": "DEN @ LAC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4241985",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 49.5,
-          "open": 50.5,
-          "games": [
-            {
-              "v": 40.0,
-              "opp": "SF"
-            },
-            {
-              "v": 49.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 36.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 36.0,
-              "opp": "KC"
-            }
-          ],
-          "avg": 40.25,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 1.0,
-          "move": -1.0,
-          "moveAgrees": 1,
-          "edge": 0.18686868686868688,
-          "name": "J.K. Dobbins",
-          "pos": "RB",
-          "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241985.png",
-          "score": 0.46686868686868693
         }
       ],
       "odds": "+596"
@@ -968,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-07T09:32:45Z",
+  "updated": "2026-10-07T12:39:29Z",
   "since": "Week 3, 2026"
 }

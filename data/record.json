@@ -671,10 +671,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -345,
+          "ml": -340,
           "model": 0.8029999999999999,
-          "market": 0.7440690150970525,
-          "edge": 0.05893098490294746,
+          "market": 0.740871613663133,
+          "edge": 0.0621283863368669,
           "steam": true
         },
         {
@@ -706,10 +706,10 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "ARI",
-          "ml": -258,
+          "ml": -250,
           "model": 0.693,
-          "market": 0.690792883054068,
-          "edge": 0.0022071169459318973,
+          "market": 0.6853932584269663,
+          "edge": 0.0076067415730336485,
           "steam": false
         },
         {
@@ -748,7 +748,7 @@
           "steam": true
         }
       ],
-      "odds": "+178"
+      "odds": "+182"
     },
     "prop": {
       "legs": [
@@ -851,7 +851,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 36.5,
+          "line": 37.5,
           "open": 35.5,
           "games": [
             {
@@ -875,14 +875,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 1.0,
-          "move": 1.0,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.547945205479452,
+          "edge": 0.5066666666666667,
           "name": "Devaughn Vele",
           "pos": "WR",
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569559.png",
-          "score": 0.8279452054794519
+          "score": 0.7866666666666667
         },
         {
           "ev": {
@@ -968,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-07T15:41:39Z",
+  "updated": "2026-10-07T18:36:19Z",
   "since": "Week 3, 2026"
 }

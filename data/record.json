@@ -820,69 +820,69 @@
         },
         {
           "ev": {
-            "id": "401872990",
+            "id": "401872987",
             "date": "2026-10-11T17:00Z",
-            "shortName": "CHI @ GB",
+            "shortName": "MIN @ NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "9",
-                      "abbreviation": "GB"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
+                      "id": "16",
+                      "abbreviation": "MIN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4431299",
+          "ath": "4569559",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
-          "open": 37.5,
+          "line": 36.5,
+          "open": 35.5,
           "games": [
             {
-              "v": 94.0,
-              "opp": "NYJ"
+              "v": 54.0,
+              "opp": "ATL"
             },
             {
-              "v": 44.0,
-              "opp": "PHI"
+              "v": 39.0,
+              "opp": "LV"
             },
             {
-              "v": 43.0,
-              "opp": "MIN"
+              "v": 64.0,
+              "opp": "BAL"
             },
             {
-              "v": 52.0,
-              "opp": "CAR"
+              "v": 69.0,
+              "opp": "DET"
             }
           ],
-          "avg": 58.25,
+          "avg": 56.5,
           "side": "over",
           "hits": 4,
           "hitRate": 1.0,
           "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.512987012987013,
-          "name": "Rome Odunze",
+          "edge": 0.547945205479452,
+          "name": "Devaughn Vele",
           "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.792987012987013
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569559.png",
+          "score": 0.8279452054794519
         },
         {
           "ev": {
@@ -911,44 +911,44 @@
             ]
           },
           "ath": "4241389",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "type": "Total Receptions (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
           },
-          "line": 79.5,
-          "open": 77.5,
+          "line": 6.5,
+          "open": 5.5,
           "games": [
             {
-              "v": 189.0,
+              "v": 17.0,
               "opp": "HOU"
             },
             {
-              "v": 112.0,
+              "v": 7.0,
               "opp": "BAL"
             },
             {
-              "v": 153.0,
+              "v": 8.0,
               "opp": "WSH"
             },
             {
-              "v": 44.0,
+              "v": 5.0,
               "opp": "NYG"
             }
           ],
-          "avg": 124.5,
+          "avg": 9.25,
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 2.0,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.5660377358490566,
+          "edge": 0.4230769230769231,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.7460377358490565
+          "score": 0.6030769230769231
         }
       ],
       "odds": "+596"
@@ -968,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-07T12:39:29Z",
+  "updated": "2026-10-07T15:41:39Z",
   "since": "Week 3, 2026"
 }

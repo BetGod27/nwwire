@@ -741,148 +741,82 @@
           "key": "home",
           "teamId": "28",
           "oppAbbr": "NYG",
-          "ml": -180,
+          "ml": -175,
           "model": 0.629,
-          "market": 0.6164383561643836,
-          "edge": 0.01256164383561642,
+          "market": 0.6092362344582594,
+          "edge": 0.01976376554174064,
           "steam": true
         }
       ],
-      "odds": "+182"
+      "odds": "+185"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401872983",
+            "id": "401872990",
             "date": "2026-10-11T17:00Z",
-            "shortName": "CLE @ NYJ",
+            "shortName": "CHI @ GB",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "9",
+                      "abbreviation": "GB"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4685247",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 69.5,
-          "open": 71.5,
-          "games": [
-            {
-              "v": 59.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 14.0,
-              "opp": "DET"
-            },
-            {
-              "v": 7.0,
-              "opp": "GB"
-            },
-            {
-              "v": 40.0,
-              "opp": "TEN"
-            }
-          ],
-          "avg": 30.0,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 1.0,
-          "move": -2.0,
-          "moveAgrees": 1,
-          "edge": 0.5683453237410072,
-          "name": "Braelon Allen",
-          "pos": "RB",
-          "teamAbbr": "NYJ",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685247.png",
-          "score": 0.8483453237410071
-        },
-        {
-          "ev": {
-            "id": "401872987",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "MIN @ NO",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4569559",
+          "ath": "4431299",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
-          "open": 35.5,
+          "line": 40.5,
+          "open": 37.5,
           "games": [
             {
-              "v": 54.0,
-              "opp": "ATL"
+              "v": 94.0,
+              "opp": "NYJ"
             },
             {
-              "v": 39.0,
-              "opp": "LV"
+              "v": 44.0,
+              "opp": "PHI"
             },
             {
-              "v": 64.0,
-              "opp": "BAL"
+              "v": 43.0,
+              "opp": "MIN"
             },
             {
-              "v": 69.0,
-              "opp": "DET"
+              "v": 52.0,
+              "opp": "CAR"
             }
           ],
-          "avg": 56.5,
+          "avg": 58.25,
           "side": "over",
           "hits": 4,
           "hitRate": 1.0,
-          "move": 2.0,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.5066666666666667,
-          "name": "Devaughn Vele",
+          "edge": 0.4382716049382716,
+          "name": "Rome Odunze",
           "pos": "WR",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569559.png",
-          "score": 0.7866666666666667
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.7182716049382716
         },
         {
           "ev": {
@@ -949,6 +883,68 @@
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
           "score": 0.6030769230769231
+        },
+        {
+          "ev": {
+            "id": "401872992",
+            "date": "2026-10-11T20:25Z",
+            "shortName": "SF @ SEA",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "26",
+                      "abbreviation": "SEA"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3912547",
+          "type": "Total Passing Yards (incl. overtime)",
+          "t": {
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
+          },
+          "line": 220.5,
+          "open": 229.5,
+          "games": [
+            {
+              "v": 168.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 379.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 13.0,
+              "opp": "NE"
+            }
+          ],
+          "avg": 186.66666666666666,
+          "side": "under",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": -9.0,
+          "moveAgrees": 1,
+          "edge": 0.1534391534391535,
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "teamAbbr": "SEA",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3912547.png",
+          "score": 0.30010582010582015
         }
       ],
       "odds": "+596"
@@ -968,6 +964,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-07T18:36:19Z",
+  "updated": "2026-10-07T21:31:27Z",
   "since": "Week 3, 2026"
 }

@@ -754,68 +754,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401872993",
-            "date": "2026-10-12T00:20Z",
-            "shortName": "BAL @ ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4429615",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 69.5,
-          "open": 66.5,
-          "games": [
-            {
-              "v": 118.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 84.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 150.0,
-              "opp": "IND"
-            }
-          ],
-          "avg": 117.33333333333333,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.6882494004796162,
-          "name": "Zay Flowers",
-          "pos": "WR",
-          "teamAbbr": "BAL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429615.png",
-          "score": 0.88
-        },
-        {
-          "ev": {
             "id": "401872990",
             "date": "2026-10-11T17:00Z",
             "shortName": "CHI @ GB",
@@ -913,7 +851,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 81.5,
+          "line": 82.5,
           "open": 77.5,
           "games": [
             {
@@ -937,14 +875,80 @@
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 4.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.5276073619631901,
+          "edge": 0.509090909090909,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.7076073619631901
+          "score": 0.689090909090909
+        },
+        {
+          "ev": {
+            "id": "401872985",
+            "date": "2026-10-11T17:00Z",
+            "shortName": "IND @ PIT",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "23",
+                      "abbreviation": "PIT"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "11",
+                      "abbreviation": "IND"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4431459",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 48.5,
+          "open": 51.5,
+          "games": [
+            {
+              "v": 41.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 55.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 21.0,
+              "opp": "KC"
+            },
+            {
+              "v": 13.0,
+              "opp": "BAL"
+            }
+          ],
+          "avg": 32.5,
+          "side": "under",
+          "hits": 3,
+          "hitRate": 0.75,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.32989690721649484,
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "teamAbbr": "IND",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
+          "score": 0.5098969072164948
         }
       ],
       "odds": "+596"
@@ -964,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-08T00:41:26Z",
+  "updated": "2026-10-08T03:32:18Z",
   "since": "Week 3, 2026"
 }

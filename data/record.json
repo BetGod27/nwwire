@@ -754,64 +754,68 @@
       "legs": [
         {
           "ev": {
-            "id": "401872993",
-            "date": "2026-10-12T00:20Z",
-            "shortName": "BAL @ ATL",
+            "id": "401872981",
+            "date": "2026-10-11T13:30Z",
+            "shortName": "PHI VS JAX",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "30",
+                      "abbreviation": "JAX"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
+                      "id": "21",
+                      "abbreviation": "PHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4429615",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4431545",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 70.5,
-          "open": 66.5,
+          "line": 36.5,
+          "open": 39.5,
           "games": [
             {
-              "v": 118.0,
+              "v": 23.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 0.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 24.0,
               "opp": "TEN"
             },
             {
-              "v": 84.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 150.0,
-              "opp": "IND"
+              "v": 4.0,
+              "opp": "WSH"
             }
           ],
-          "avg": 117.33333333333333,
-          "side": "over",
-          "hits": 3,
+          "avg": 12.75,
+          "side": "under",
+          "hits": 4,
           "hitRate": 1.0,
-          "move": 4.0,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.6643026004728132,
-          "name": "Zay Flowers",
-          "pos": "WR",
-          "teamAbbr": "BAL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429615.png",
+          "edge": 0.6506849315068494,
+          "name": "Will Shipley",
+          "pos": "RB",
+          "teamAbbr": "PHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431545.png",
           "score": 0.88
         },
         {
@@ -907,44 +911,44 @@
             ]
           },
           "ath": "4241389",
-          "type": "Total Receptions (incl. overtime)",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
           },
-          "line": 6.5,
-          "open": 5.5,
+          "line": 82.5,
+          "open": 77.5,
           "games": [
             {
-              "v": 17.0,
+              "v": 189.0,
               "opp": "HOU"
             },
             {
-              "v": 7.0,
+              "v": 112.0,
               "opp": "BAL"
             },
             {
-              "v": 8.0,
+              "v": 153.0,
               "opp": "WSH"
             },
             {
-              "v": 5.0,
+              "v": 44.0,
               "opp": "NYG"
             }
           ],
-          "avg": 9.25,
+          "avg": 124.5,
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 1.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.4230769230769231,
+          "edge": 0.509090909090909,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.6030769230769231
+          "score": 0.689090909090909
         }
       ],
       "odds": "+596"
@@ -964,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-08T12:39:51Z",
+  "updated": "2026-10-08T15:34:43Z",
   "since": "Week 3, 2026"
 }

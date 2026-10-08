@@ -671,10 +671,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -340,
+          "ml": -325,
           "model": 0.8029999999999999,
-          "market": 0.740871613663133,
-          "edge": 0.0621283863368669,
+          "market": 0.7335423197492164,
+          "edge": 0.06945768025078358,
           "steam": true
         },
         {
@@ -748,10 +748,72 @@
           "steam": true
         }
       ],
-      "odds": "+185"
+      "odds": "+188"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401872993",
+            "date": "2026-10-12T00:20Z",
+            "shortName": "BAL @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "33",
+                      "abbreviation": "BAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429615",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 69.5,
+          "open": 66.5,
+          "games": [
+            {
+              "v": 118.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 84.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 150.0,
+              "opp": "IND"
+            }
+          ],
+          "avg": 117.33333333333333,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": 3.0,
+          "moveAgrees": 1,
+          "edge": 0.6882494004796162,
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "teamAbbr": "BAL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429615.png",
+          "score": 0.88
+        },
         {
           "ev": {
             "id": "401872990",
@@ -845,106 +907,44 @@
             ]
           },
           "ath": "4241389",
-          "type": "Total Receptions (incl. overtime)",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
           },
-          "line": 6.5,
-          "open": 5.5,
+          "line": 81.5,
+          "open": 77.5,
           "games": [
             {
-              "v": 17.0,
+              "v": 189.0,
               "opp": "HOU"
             },
             {
-              "v": 7.0,
+              "v": 112.0,
               "opp": "BAL"
             },
             {
-              "v": 8.0,
+              "v": 153.0,
               "opp": "WSH"
             },
             {
-              "v": 5.0,
+              "v": 44.0,
               "opp": "NYG"
             }
           ],
-          "avg": 9.25,
+          "avg": 124.5,
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 1.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.4230769230769231,
+          "edge": 0.5276073619631901,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.6030769230769231
-        },
-        {
-          "ev": {
-            "id": "401872992",
-            "date": "2026-10-11T20:25Z",
-            "shortName": "SF @ SEA",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "26",
-                      "abbreviation": "SEA"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "3912547",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 220.5,
-          "open": 229.5,
-          "games": [
-            {
-              "v": 168.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 379.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 13.0,
-              "opp": "NE"
-            }
-          ],
-          "avg": 186.66666666666666,
-          "side": "under",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": -9.0,
-          "moveAgrees": 1,
-          "edge": 0.1534391534391535,
-          "name": "Sam Darnold",
-          "pos": "QB",
-          "teamAbbr": "SEA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3912547.png",
-          "score": 0.30010582010582015
+          "score": 0.7076073619631901
         }
       ],
       "odds": "+596"
@@ -964,6 +964,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-07T21:31:27Z",
+  "updated": "2026-10-08T00:41:26Z",
   "since": "Week 3, 2026"
 }

@@ -671,10 +671,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -305,
+          "ml": -340,
           "model": 0.8029999999999999,
-          "market": 0.7220792588780237,
-          "edge": 0.08092074112197623,
+          "market": 0.740871613663133,
+          "edge": 0.0621283863368669,
           "steam": true
         },
         {
@@ -706,10 +706,10 @@
           "key": "home",
           "teamId": "28",
           "oppAbbr": "NYG",
-          "ml": -180,
+          "ml": -185,
           "model": 0.718,
-          "market": 0.6164383561643836,
-          "edge": 0.10156164383561639,
+          "market": 0.6224665518611737,
+          "edge": 0.09553344813882625,
           "steam": true
         },
         {
@@ -748,7 +748,7 @@
           "steam": false
         }
       ],
-      "odds": "+187"
+      "odds": "+177"
     },
     "prop": {
       "legs": [
@@ -917,7 +917,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 82.5,
+          "line": 84.5,
           "open": 77.5,
           "games": [
             {
@@ -941,14 +941,14 @@
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 5.0,
+          "move": 7.0,
           "moveAgrees": 1,
-          "edge": 0.509090909090909,
+          "edge": 0.47337278106508873,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.689090909090909
+          "score": 0.6533727810650887
         }
       ],
       "odds": "+596"
@@ -968,6 +968,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-08T15:34:43Z",
+  "updated": "2026-10-08T18:35:59Z",
   "since": "Week 3, 2026"
 }

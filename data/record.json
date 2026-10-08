@@ -671,10 +671,45 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -325,
+          "ml": -310,
           "model": 0.8029999999999999,
-          "market": 0.7335423197492164,
-          "edge": 0.06945768025078358,
+          "market": 0.725752508361204,
+          "edge": 0.07724749163879596,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401872988",
+            "date": "2026-10-11T17:00Z",
+            "shortName": "NYG @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "19",
+                      "abbreviation": "NYG"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "28",
+          "oppAbbr": "NYG",
+          "ml": -180,
+          "model": 0.718,
+          "market": 0.6164383561643836,
+          "edge": 0.10156164383561639,
           "steam": true
         },
         {
@@ -711,47 +746,74 @@
           "market": 0.6853932584269663,
           "edge": 0.0076067415730336485,
           "steam": false
-        },
-        {
-          "ev": {
-            "id": "401872988",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "NYG @ WSH",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "28",
-          "oppAbbr": "NYG",
-          "ml": -175,
-          "model": 0.629,
-          "market": 0.6092362344582594,
-          "edge": 0.01976376554174064,
-          "steam": true
         }
       ],
       "odds": "+188"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401872993",
+            "date": "2026-10-12T00:20Z",
+            "shortName": "BAL @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "33",
+                      "abbreviation": "BAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429615",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 70.5,
+          "open": 66.5,
+          "games": [
+            {
+              "v": 118.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 84.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 150.0,
+              "opp": "IND"
+            }
+          ],
+          "avg": 117.33333333333333,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": 4.0,
+          "moveAgrees": 1,
+          "edge": 0.6643026004728132,
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "teamAbbr": "BAL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429615.png",
+          "score": 0.88
+        },
         {
           "ev": {
             "id": "401872990",
@@ -845,110 +907,44 @@
             ]
           },
           "ath": "4241389",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "type": "Total Receptions (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
           },
-          "line": 82.5,
-          "open": 77.5,
+          "line": 6.5,
+          "open": 5.5,
           "games": [
             {
-              "v": 189.0,
+              "v": 17.0,
               "opp": "HOU"
             },
             {
-              "v": 112.0,
+              "v": 7.0,
               "opp": "BAL"
             },
             {
-              "v": 153.0,
+              "v": 8.0,
               "opp": "WSH"
             },
             {
-              "v": 44.0,
+              "v": 5.0,
               "opp": "NYG"
             }
           ],
-          "avg": 124.5,
+          "avg": 9.25,
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 5.0,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.509090909090909,
+          "edge": 0.4230769230769231,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.689090909090909
-        },
-        {
-          "ev": {
-            "id": "401872985",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "IND @ PIT",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "11",
-                      "abbreviation": "IND"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4431459",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 48.5,
-          "open": 51.5,
-          "games": [
-            {
-              "v": 41.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 55.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 21.0,
-              "opp": "KC"
-            },
-            {
-              "v": 13.0,
-              "opp": "BAL"
-            }
-          ],
-          "avg": 32.5,
-          "side": "under",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": -3.0,
-          "moveAgrees": 1,
-          "edge": 0.32989690721649484,
-          "name": "Tyler Warren",
-          "pos": "TE",
-          "teamAbbr": "IND",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
-          "score": 0.5098969072164948
+          "score": 0.6030769230769231
         }
       ],
       "odds": "+596"
@@ -968,6 +964,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-08T03:32:18Z",
+  "updated": "2026-10-08T06:39:10Z",
   "since": "Week 3, 2026"
 }

@@ -671,11 +671,12 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "MIA",
-          "ml": -340,
+          "ml": -325,
           "model": 0.8029999999999999,
-          "market": 0.740871613663133,
-          "edge": 0.0621283863368669,
-          "steam": true
+          "market": 0.7335423197492164,
+          "edge": 0.06945768025078358,
+          "steam": true,
+          "result": null
         },
         {
           "ev": {
@@ -706,11 +707,12 @@
           "key": "home",
           "teamId": "28",
           "oppAbbr": "NYG",
-          "ml": -185,
+          "ml": -192,
           "model": 0.718,
-          "market": 0.6224665518611737,
-          "edge": 0.09553344813882625,
-          "steam": true
+          "market": 0.6309403437815976,
+          "edge": 0.08705965621840239,
+          "steam": true,
+          "result": null
         },
         {
           "ev": {
@@ -745,10 +747,11 @@
           "model": 0.693,
           "market": 0.690792883054068,
           "edge": 0.0022071169459318973,
-          "steam": false
+          "steam": false,
+          "result": null
         }
       ],
-      "odds": "+177"
+      "odds": "+176"
     },
     "prop": {
       "legs": [
@@ -816,73 +819,8 @@
           "pos": "RB",
           "teamAbbr": "PHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431545.png",
-          "score": 0.88
-        },
-        {
-          "ev": {
-            "id": "401872990",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "CHI @ GB",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "9",
-                      "abbreviation": "GB"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4431299",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 40.5,
-          "open": 37.5,
-          "games": [
-            {
-              "v": 94.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 44.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 43.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 52.0,
-              "opp": "CAR"
-            }
-          ],
-          "avg": 58.25,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 1.0,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.4382716049382716,
-          "name": "Rome Odunze",
-          "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.7182716049382716
+          "score": 0.88,
+          "result": null
         },
         {
           "ev": {
@@ -917,7 +855,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 84.5,
+          "line": 85.5,
           "open": 77.5,
           "games": [
             {
@@ -941,20 +879,89 @@
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 7.0,
+          "move": 8.0,
           "moveAgrees": 1,
-          "edge": 0.47337278106508873,
+          "edge": 0.45614035087719296,
           "name": "CeeDee Lamb",
           "pos": "WR",
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.6533727810650887
+          "score": 0.6361403508771929,
+          "result": null
+        },
+        {
+          "ev": {
+            "id": "401872985",
+            "date": "2026-10-11T17:00Z",
+            "shortName": "IND @ PIT",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "23",
+                      "abbreviation": "PIT"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "11",
+                      "abbreviation": "IND"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4431459",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 47.5,
+          "open": 51.5,
+          "games": [
+            {
+              "v": 41.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 55.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 21.0,
+              "opp": "KC"
+            },
+            {
+              "v": 13.0,
+              "opp": "BAL"
+            }
+          ],
+          "avg": 32.5,
+          "side": "under",
+          "hits": 3,
+          "hitRate": 0.75,
+          "move": -4.0,
+          "moveAgrees": 1,
+          "edge": 0.3157894736842105,
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "teamAbbr": "IND",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
+          "score": 0.4957894736842105,
+          "result": null
         }
       ],
       "odds": "+596"
     },
-    "locked": false,
-    "lockAt": "2026-10-08T20:15:00Z"
+    "locked": true,
+    "lockAt": "2026-10-08T20:15:00Z",
+    "lockedAt": "2026-10-08T21:31:51Z"
   },
   "totals": {
     "game": {
@@ -968,6 +975,6 @@
       "units": 4.96
     }
   },
-  "updated": "2026-10-08T18:35:59Z",
+  "updated": "2026-10-08T21:31:51Z",
   "since": "Week 3, 2026"
 }

@@ -887,7 +887,8 @@
           "teamAbbr": "DAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
           "score": 0.6361403508771929,
-          "result": null
+          "result": "loss",
+          "actual": 9.0
         },
         {
           "ev": {
@@ -957,7 +958,9 @@
           "result": null
         }
       ],
-      "odds": "+596"
+      "odds": "+596",
+      "result": "loss",
+      "units": -1.0
     },
     "locked": true,
     "lockAt": "2026-10-08T20:15:00Z",
@@ -971,10 +974,10 @@
     },
     "prop": {
       "w": 1,
-      "l": 1,
-      "units": 4.96
+      "l": 2,
+      "units": 3.96
     }
   },
-  "updated": "2026-10-09T00:44:18Z",
+  "updated": "2026-10-09T03:32:41Z",
   "since": "Week 3, 2026"
 }

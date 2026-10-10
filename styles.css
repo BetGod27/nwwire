@@ -547,3 +547,4 @@ button, input { font: inherit; color: inherit; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+.rec-cards.two { grid-template-columns: 1fr 1fr; }

@@ -334,30 +334,28 @@ function legResult(l) {
   const txt = { win: "✓ Hit", loss: "✗ Miss", void: "Void" }[l.result];
   return `<span class="res ${l.result}">${txt}${l.actual != null ? ` · ${l.t?.stat === "receptions" ? l.actual : Math.round(l.actual)}` : l.final ? ` · ${esc(l.final)}` : ""}</span>`;
 }
-const unitsTxt = (u) => (u > 0 ? "+" : u < 0 ? "−" : "") + Math.abs(u || 0).toFixed(2) + "u";
 
 function renderRecord() {
   const el = $("#record");
   if (!record?.totals) { el.hidden = true; return; }
   el.hidden = false;
   const t = record.totals, g = t.game, p = t.prop;
-  const net = (g.units || 0) + (p.units || 0);
-  const card = (label, r) => `<div class="rec-card"><span>${label}</span><strong>${r.w}-${r.l}</strong><b class="${r.units > 0 ? "up" : r.units < 0 ? "down" : ""}">${unitsTxt(r.units)}</b></div>`;
+  // Each weekly parlay counts once: a win only if every leg hits.
+  const card = (label, r) => `<div class="rec-card"><span>${label}</span><strong>${r.w}-${r.l}</strong><b>${r.w} of ${r.w + r.l} parlay${r.w + r.l === 1 ? "" : "s"} hit</b></div>`;
   const weeks = [record.current, ...(record.history || [])].filter((w) => w?.locked);
   const cell = (par) => !par?.legs?.length ? "—" : par.result
-    ? `<span class="res ${par.result}">${par.result === "win" ? "W" : par.result === "loss" ? "L" : "Void"}</span> ${par.result === "void" ? "" : unitsTxt(par.units)}`
-    : `<span class="res pending">Pending</span> ${esc(par.odds || "")}`;
+    ? `<span class="res ${par.result}">${par.result === "win" ? "W" : par.result === "loss" ? "L" : "Void"}</span>`
+    : `<span class="res pending">Pending</span>`;
   const rows = weeks.map((w) => `<tr><td>${esc(w.label)}</td><td>${cell(w.game)}</td><td>${cell(w.prop)}</td></tr>`).join("");
   el.innerHTML = `
-    <div class="rec-cards">
+    <div class="rec-cards two">
       ${card("Game parlay", g)}${card("Prop parlay", p)}
-      <div class="rec-card total"><span>Net units</span><strong class="${net > 0 ? "up" : net < 0 ? "down" : ""}">${unitsTxt(net)}</strong><b>1 unit per parlay</b></div>
     </div>
     <details class="rec-history"${weeks.length ? "" : " hidden"}><summary>Week-by-week results</summary>
       <table><thead><tr><th>Week</th><th>Game parlay</th><th>Prop parlay</th></tr></thead><tbody>${rows}</tbody></table>
     </details>
     <p class="muted tiny">${record.since ? `Tracking since ${esc(record.since)}.` : `Tracking starts when this week's picks lock${record.current?.lockAt ? ` (${esc(fmtLock(record.current.lockAt))})` : ""}.`}
-      Picks lock 4 hours before the first leg and are graded from final box scores. Prop legs are graded at -110.</p>`;
+      Each week's parlay counts as one bet and only wins if all 3 legs hit. Picks lock 4 hours before the first leg and are graded from final box scores.</p>`;
 }
 
 // ---------- The NW Parlay (ESPN model vs. DraftKings market) ----------

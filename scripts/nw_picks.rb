@@ -265,11 +265,13 @@ end
 # Grade each leg, then settle the parlay at 1 unit.
 def settle(parlay, kind)
   legs = parlay["legs"] || []
-  return if legs.empty? || parlay["result"]
+  return if legs.empty?
+  # Keep grading every leg, even after the parlay is decided, so each one shows hit or miss.
   legs.each do |leg|
     next if leg["result"]
     leg["result"] = kind == "game" ? grade_game_leg(leg) : grade_prop_leg(leg)
   end
+  return if parlay["result"]
   results = legs.map { |l| l["result"] }
   if results.include?("loss")
     parlay["result"] = "loss"

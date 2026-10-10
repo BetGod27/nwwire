@@ -400,7 +400,8 @@
             "market": 0.5427435387673957,
             "edge": 0.09925646123260434,
             "steam": false,
-            "result": null
+            "result": "loss",
+            "final": "26-30"
           },
           {
             "ev": {
@@ -503,7 +504,8 @@
             "teamAbbr": "DEN",
             "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
             "score": 0.7729577464788732,
-            "result": null
+            "result": "loss",
+            "actual": 46.0
           },
           {
             "ev": {
@@ -978,6 +980,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-10T15:29:11Z",
+  "updated": "2026-10-10T16:34:07Z",
   "since": "Week 3, 2026"
 }

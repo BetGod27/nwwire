@@ -99,9 +99,15 @@ def mini_ev(ev)
   }
 end
 
+# Parlays only use Sunday games (no Thursday, Saturday, or Monday). Kickoffs are checked
+# in US Eastern time (UTC-5 works all season: SNF and London games stay on Sunday).
+def sunday?(ev)
+  (Time.parse(ev["date"]).utc - 5 * 3600).sunday?
+end
+
 # ---------- game parlay: ESPN model vs. DraftKings market ----------
 def game_parlay(events)
-  pre = events.select { |e| e.dig("status", "type", "state") == "pre" && e.dig("competitions", 0, "odds", 0) }
+  pre = events.select { |e| e.dig("status", "type", "state") == "pre" && e.dig("competitions", 0, "odds", 0) && sunday?(e) }
   preds = pmap(pre) do |e|
     p = get("#{ESPN}summary?event=#{e['id']}")&.dig("predictor")
     h = p&.dig("homeTeam", "gameProjection")
@@ -207,7 +213,7 @@ def evaluate_prop(c)
 end
 
 def prop_parlay(events)
-  pre = events.select { |e| e.dig("status", "type", "state") == "pre" }
+  pre = events.select { |e| e.dig("status", "type", "state") == "pre" && sunday?(e) }
   all = pmap(pre, 6) { |ev| fetch_props(ev) }.compact.flatten
   seen = {}
   cands = all.select { |c| k = c["ath"] + c["type"]; seen[k] ? false : (seen[k] = true) }

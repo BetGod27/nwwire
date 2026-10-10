@@ -358,6 +358,10 @@ function renderRecord() {
       Each week's parlay counts as one bet and only wins if all 3 legs hit. Picks lock 4 hours before the first leg and are graded from final box scores.</p>`;
 }
 
+// NFL parlays only use Sunday games (no Thursday, Saturday, or Monday). Checked in US Eastern
+// time; UTC-5 works all season and keeps Sunday night and London games on Sunday.
+const nflSunday = (date) => new Date(new Date(date).getTime() - 5 * 3600e3).getUTCDay() === 0;
+
 // ---------- The NW Parlay (ESPN model vs. DraftKings market) ----------
 const predictions = {}; // eventId -> { home, away, at }
 async function loadPredictions(lg) {
@@ -377,6 +381,7 @@ function buildParlay(lg) {
   for (const ev of boards[lg]?.events || []) {
     const comp = ev.competitions[0], o = comp.odds?.[0], pred = predictions[ev.id];
     if (ev.status.type.state !== "pre" || !o || !pred) continue;
+    if (lg === "nfl" && !nflSunday(ev.date)) continue; // NFL parlays only use Sunday games
     const mlH = o.moneyline?.home?.close?.odds, mlA = o.moneyline?.away?.close?.odds;
     const rawH = americanToProb(mlH), rawA = americanToProb(mlA);
     if (!rawH || !rawA) continue;
@@ -509,7 +514,7 @@ async function loadProp() {
   if (propState.loading || Date.now() - propState.at < 30 * 60e3) return;
   propState.loading = true;
   try {
-    const evs = (boards.nfl?.events || []).filter((e) => e.status.type.state === "pre");
+    const evs = (boards.nfl?.events || []).filter((e) => e.status.type.state === "pre" && nflSunday(e.date));
     const all = (await Promise.allSettled(evs.map(fetchProps))).flatMap((r) => (r.status === "fulfilled" ? r.value : []));
     // One entry per player + prop type; biggest movers first, then the biggest roles.
     const seen = new Set();

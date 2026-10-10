@@ -548,3 +548,119 @@ button, input { font: inherit; color: inherit; }
   .reveal { opacity: 1; transform: none; }
 }
 .rec-cards.two { grid-template-columns: 1fr 1fr; }
+
+/* =====================================================================
+   Tidy-up + motion pass
+   ===================================================================== */
+
+/* Slimmer header and section titles */
+.masthead { padding-bottom: 80px; }
+.masthead-inner { padding-top: 2.4rem; }
+.dateline { font-size: clamp(2.4rem, 6.2vw, 4.6rem); }
+.band { padding-top: 3.4rem; padding-bottom: 3.4rem; }
+.big { font-size: clamp(1.8rem, 3.8vw, 2.7rem); }
+.sec-head { margin-bottom: 1.5rem; }
+.kicker { margin-bottom: 0.7rem; }
+
+/* Compact team cards */
+.team-card-body { gap: 0.8rem; padding: 1rem 1.2rem 1.15rem; }
+.team-card-top { padding: 1rem 1.2rem; }
+.team-card-top img { width: 52px; height: 52px; }
+.team-card-top h3 { font-size: 1.5rem; }
+.ld { padding: 0.6rem 0.4rem 0.55rem; }
+.ld img, .ld-noimg { width: 50px; height: 50px; }
+.ld strong { font-size: 1.4rem; }
+.matchup { padding: 0.8rem 0.9rem; }
+
+/* Aurora: two slow-drifting light fields behind everything */
+body::before, body::after {
+  content: ""; position: fixed; z-index: 0; pointer-events: none; width: 70vmax; height: 70vmax; border-radius: 50%;
+  filter: blur(40px); opacity: 0.5; will-change: transform;
+}
+body::before { top: -30vmax; left: -20vmax; background: radial-gradient(circle, rgba(76, 141, 255, 0.35), transparent 60%); animation: drift-a 38s ease-in-out infinite alternate; }
+body::after { bottom: -35vmax; right: -25vmax; background: radial-gradient(circle, rgba(155, 123, 255, 0.25), rgba(62, 230, 255, 0.08) 40%, transparent 65%); animation: drift-b 46s ease-in-out infinite alternate; }
+@keyframes drift-a { to { transform: translate(18vmax, 12vmax) scale(1.15); } }
+@keyframes drift-b { to { transform: translate(-16vmax, -14vmax) scale(1.1); } }
+.nav, .ticker { position: relative; z-index: 2; }
+.nav { position: sticky; }
+
+/* Breaking ticker */
+.ticker {
+  overflow: hidden; border-bottom: 1px solid var(--edge); background: rgba(5, 7, 15, 0.6);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.ticker-track { display: flex; width: max-content; gap: 2.4rem; padding: 0.55rem 0; animation: ticker var(--dur, 60s) linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+.tk { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.82rem; color: var(--dim); white-space: nowrap; }
+.tk img { width: 20px; height: 20px; object-fit: contain; }
+.tk i { font-style: normal; color: var(--amber); font-size: 0.75rem; }
+.tk b { font-family: var(--mono); font-size: 0.56rem; letter-spacing: 1px; text-transform: uppercase; padding: 0.05rem 0.45rem; border-radius: 999px; border: 1px solid currentColor; }
+.tk.trade b { color: var(--amber); }
+.tk.signing b { color: var(--green); }
+
+/* Wire: trade graphic with both logos, and no re-animating on refresh */
+.wire li.item { grid-template-columns: 82px 1fr auto; animation: none; }
+.wire li.item.new { animation: slide-in 0.6s var(--ease) both; }
+@keyframes slide-in { from { opacity: 0; transform: translateX(-12px); } }
+.wire .solo { justify-self: center; }
+.swap { display: grid; grid-template-columns: 32px auto 32px; align-items: center; gap: 2px; }
+.swap img { width: 32px; height: 32px; object-fit: contain; }
+.swap i { font-style: normal; color: var(--amber); font-size: 0.85rem; text-shadow: 0 0 10px rgba(255, 194, 74, 0.7); animation: swap 2.4s ease-in-out infinite; }
+@keyframes swap { 50% { transform: scale(1.25); } }
+.wire li.item.trade { background: linear-gradient(90deg, rgba(255, 194, 74, 0.05), transparent 60%); border-radius: 10px; }
+.wire li.item.trade .txt { color: var(--text); font-weight: 500; }
+
+/* Light sheen across cards on hover */
+.card-box, .team-card, .mtn, .game, .team-tile { position: relative; overflow: hidden; }
+.card-box::after, .team-card::after, .mtn::after, .game::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(110deg, transparent 35%, rgba(255, 255, 255, 0.07) 50%, transparent 65%);
+  transform: translateX(-120%); transition: transform 0s;
+}
+.card-box:hover::after, .team-card:hover::after, .mtn:hover::after, .game:hover::after { transform: translateX(120%); transition: transform 1.1s var(--ease); }
+.wire.card-box::after, .directory::after { display: none; }
+
+/* Live games breathe */
+.game.live { animation: live-glow 2.2s ease-in-out infinite; }
+@keyframes live-glow { 50% { box-shadow: 0 0 28px rgba(255, 79, 109, 0.4); border-color: rgba(255, 79, 109, 0.9); } }
+
+/* Snowfall bars and win-probability fill rise into place */
+.reveal.in .bar i, .bars .bar i { animation: rise 1s var(--ease) both; animation-delay: calc(var(--i, 0) * 70ms + 0.2s); transform-origin: bottom; }
+@keyframes rise { from { transform: scaleY(0); } }
+.wp-bar i { animation: fill 1.2s var(--ease) both; transform-origin: left; }
+@keyframes fill { from { transform: scaleX(0); } }
+
+/* Section kicker icon pulses gently */
+.kicker i { animation: kick 3s ease-in-out infinite; }
+@keyframes kick { 50% { box-shadow: 0 0 14px var(--acc); } }
+
+/* League: standings + collapsible team directory */
+.directory { margin-top: 1.4rem; padding: 0; }
+.directory summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: 1rem 1.2rem; font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.directory summary::-webkit-details-marker { display: none; }
+.directory summary i { font-style: normal; color: var(--blue); margin-right: 0.4rem; }
+.directory summary::after { content: "▾"; color: var(--dim); transition: transform 0.3s var(--ease); }
+.directory[open] summary::after { transform: rotate(180deg); }
+.directory .muted.tiny { font-family: var(--body); text-transform: none; letter-spacing: 0; font-weight: 400; margin-left: auto; }
+.dir-tools { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 0 1.2rem 1rem; }
+.directory .team-grid { padding: 0 1.2rem 1.2rem; }
+#teamSearch { min-width: 220px; }
+
+@media (max-width: 560px) {
+  .wire li.item { grid-template-columns: 64px 1fr; }
+  .wire li.item time { grid-column: 2; }
+  .swap { grid-template-columns: 26px auto 26px; }
+  .swap img { width: 26px; height: 26px; }
+  .tk { font-size: 0.76rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+  body::before, body::after { animation: none; }
+}
+.wire.card-box { overflow-x: hidden; overflow-y: auto; }

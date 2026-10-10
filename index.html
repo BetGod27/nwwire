@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=22" />
+  <link rel="stylesheet" href="styles.css?v=25" />
 </head>
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
@@ -21,11 +21,12 @@
       <a href="#wire">Wire</a>
       <a href="#betting">Betting</a>
       <a href="#aspen">Aspen</a>
-      <a href="#teams">Teams</a>
-      <a href="#standings">Standings</a>
+      <a href="#league">League</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
   </header>
+
+  <div class="ticker" id="ticker" hidden><div class="ticker-track" id="tickerTrack"></div></div>
 
   <!-- ================= HOME ================= -->
   <main id="home">
@@ -64,7 +65,7 @@
       <div class="sec-head">
         <p class="kicker"><i>◉</i>01 · Breaking</p>
         <h2 class="big">The <span class="acc">Wire</span></h2>
-        <p class="sec-sub">Every NBA &amp; NFL trade, signing, release, and injury update, newest first. Live scores on the right.</p>
+        <p class="sec-sub">Every NBA &amp; NFL trade and signing, newest first, plus live scores.</p>
       </div>
       <div class="wire-grid reveal">
         <div>
@@ -79,8 +80,6 @@
               <button class="chip on" data-v="all">Everything</button>
               <button class="chip" data-v="trade">Trades</button>
               <button class="chip" data-v="signing">Signings</button>
-              <button class="chip" data-v="release">Releases</button>
-              <button class="chip" data-v="injury">Injuries</button>
             </div>
           </div>
           <ul class="wire card-box" id="wireList">
@@ -153,28 +152,12 @@
       <div class="news-list" id="aspenNews"></div>
     </section>
 
-    <!-- 04 ALL TEAMS -->
-    <section class="band band-teams" id="teams">
+    <!-- 04 LEAGUE: standings + team directory -->
+    <section class="band band-standings" id="league">
       <div class="sec-head row">
         <div>
-          <p class="kicker"><i>▦</i>04 · Directory</p>
-          <h2 class="big">All <span class="acc">Teams</span></h2>
-        </div>
-        <input type="search" id="teamSearch" placeholder="Search teams…" aria-label="Search teams" />
-      </div>
-      <div class="chips" id="dirChips">
-        <button class="chip on" data-v="nba">NBA · 30</button>
-        <button class="chip" data-v="nfl">NFL · 32</button>
-      </div>
-      <div class="team-grid reveal" id="teamGrid"></div>
-    </section>
-
-    <!-- 05 STANDINGS -->
-    <section class="band band-standings" id="standings">
-      <div class="sec-head row">
-        <div>
-          <p class="kicker"><i>≡</i>05 · Standings</p>
-          <h2 class="big">League <span class="acc">Standings</span></h2>
+          <p class="kicker"><i>≡</i>04 · League</p>
+          <h2 class="big">Standings <span class="acc">&amp; Teams</span></h2>
         </div>
         <div class="chips" id="standingsChips">
           <button class="chip on" data-v="nfl">NFL</button>
@@ -185,6 +168,18 @@
       <div class="st-grid nfl reveal" id="standingsGrid">
         <div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div><div class="card-box st-card skeleton-card"></div>
       </div>
+
+      <details class="card-box directory" id="teams">
+        <summary><span><i>▦</i> All teams</span><span class="muted tiny">Open any team's page: schedule, leaders, moves</span></summary>
+        <div class="dir-tools">
+          <div class="chips" id="dirChips">
+            <button class="chip on" data-v="nba">NBA · 30</button>
+            <button class="chip" data-v="nfl">NFL · 32</button>
+          </div>
+          <input type="search" id="teamSearch" placeholder="Search teams…" aria-label="Search teams" />
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </details>
     </section>
   </main>
 
@@ -196,8 +191,8 @@
     <span>Data: ESPN · DraftKings · Open-Meteo · Aspen Times · Google News</span>
   </footer>
 
-  <script src="js/teams.js?v=22"></script>
-  <script src="js/app.js?v=22"></script>
-  <script src="js/teamviz.js?v=22"></script>
+  <script src="js/teams.js?v=25"></script>
+  <script src="js/app.js?v=25"></script>
+  <script src="js/teamviz.js?v=25"></script>
 </body>
 </html>

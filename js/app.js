@@ -110,7 +110,7 @@ const NOT_A_MOVE = /\?|buzz|rumou?r|tracker|grades?|odds|rank|best|worst|could|s
 function breakingMove(headline) {
   if (!MOVE_WORDS.test(headline) || NOT_A_MOVE.test(headline)) return null;
   const h = headline.toLowerCase();
-  if (/trad|acquir|deal/.test(h)) return "trade";
+  if (/trad|acquir/.test(h)) return "trade"; // "deal" alone is usually a contract, not a trade
   if (/waive|release/.test(h)) return "release";
   return "signing";
 }
@@ -211,36 +211,29 @@ function restoreBreaking() {
 }
 restoreBreaking();
 
+// The Wire shows trades and signings only. Injury reports are still loaded (every 5 minutes)
+// for the team cards and team pages, but they no longer appear in the Wire.
+const WIRE_KINDS = new Set(["trade", "signing"]);
+
 async function loadWire() {
   const jobs = [];
   for (const lg of ["nba", "nfl"]) {
     jobs.push(espn(lg, "transactions?limit=100").then((d) => {
       txCache[lg] = d.transactions || [];
-      return txCache[lg].map((t) => ({
-        lg, kind: classify(t.description), text: t.description, date: parseDate(t.date), teamId: t.team?.id,
-      }));
+      return txCache[lg].map((t) => {
+        const kind = classify(t.description);
+        // Trades name the other team by city ("from Atlanta"), so both logos can be shown.
+        const teams = kind === "trade" ? [...new Set([t.team?.id, ...teamsIn(lg, t.description)].filter(Boolean))] : null;
+        return { lg, kind, text: t.description, date: parseDate(t.date), teamId: t.team?.id, teams };
+      }).filter((it) => WIRE_KINDS.has(it.kind));
     }));
-    // Injury reports are large and change slowly: re-fetch every 5 minutes, reuse the last copy otherwise.
     const fresh = Date.now() - (injuryAt[lg] || 0) < INJURY_REFRESH * 1000;
-    jobs.push((fresh ? Promise.resolve({ injuries: injuryCache[lg] }) : espn(lg, "injuries").then((d) => { injuryAt[lg] = Date.now(); return d; })).then((d) => {
-      injuryCache[lg] = d.injuries || [];
-      const out = [];
-      const cutoff = Date.now() - 7 * 86400e3;
-      for (const tm of injuryCache[lg]) for (const i of tm.injuries || []) {
-        const when = parseDate(i.date);
-        if (!when || when < cutoff || i.status === "Active") continue; // "Active" = cleared on the weekly report
-        const a = i.athlete || {};
-        const pos = a.position?.abbreviation ? ` (${a.position.abbreviation})` : "";
-        const note = i.shortComment ? ` · ${i.shortComment}` : "";
-        out.push({ lg, kind: "injury", text: `${a.displayName || "Player"}${pos}: ${i.status}${note}`, date: when, teamId: tm.id });
-      }
-      return out;
-    }));
+    if (!fresh) jobs.push(espn(lg, "injuries").then((d) => { injuryAt[lg] = Date.now(); injuryCache[lg] = d.injuries || []; return []; }));
   }
   const results = await Promise.allSettled(jobs);
   // After the official log loads, so breaking items it already covers can be skipped.
   results.push(...(await Promise.allSettled(["nba", "nfl"].map(loadBreaking))));
-  const items = results.flatMap((r) => (r.status === "fulfilled" ? r.value : []));
+  const items = results.flatMap((r) => (r.status === "fulfilled" ? r.value : [])).filter((it) => WIRE_KINDS.has(it.kind));
   if (!items.length) { $("#wireList").innerHTML = `<li>${failMsg("the wire")}</li>`; return; }
 
   items.sort((a, b) => (b.date || 0) - (a.date || 0));
@@ -248,30 +241,68 @@ async function loadWire() {
   for (const it of items) {
     it.key = it.key || [it.lg, it.kind, it.text, it.teamId].join("|"); // breaking items keep their merged key
     if (!wire.seen.has(it.key)) { wire.seen.add(it.key); if (!wire.first) { it.isNew = true; fresh.push(it); } }
+    else it.isNew = wire.items.find((o) => o.key === it.key)?.isNew && Date.now() - (wire.newAt || 0) < 90e3;
   }
+  if (fresh.length) wire.newAt = Date.now();
   wire.items = items;
   wire.first = false;
   renderWire();
+  renderTicker();
   if (alertsOn && fresh.length) notify(fresh);
 }
 
+function wireLogos(it) {
+  const t = it.teamId && team(it.lg, it.teamId);
+  const ids = it.kind === "trade" && it.teams?.length >= 2 ? it.teams.slice(0, 2) : null;
+  if (ids) {
+    const [a, b] = ids.map((id) => team(it.lg, id));
+    return `<span class="swap" title="${esc(a?.name || "")} ⇄ ${esc(b?.name || "")}">
+      <a href="#team-${it.lg}-${a?.id}"><img src="${a?.logo}" alt="${esc(a?.abbr || "")}" loading="lazy"></a>
+      <i>⇄</i>
+      <a href="#team-${it.lg}-${b?.id}"><img src="${b?.logo}" alt="${esc(b?.abbr || "")}" loading="lazy"></a></span>`;
+  }
+  return t ? `<a class="solo" href="#team-${it.lg}-${t.id}" title="${esc(t.name)}"><img src="${t.logo}" alt="${esc(t.abbr)}" loading="lazy"></a>` : `<span></span>`;
+}
+
+let wireHtml = "";
 function renderWire() {
   // Breaking trades from the last 6 hours stay pinned at the top.
   const pinned = (it) => (it.breaking && it.kind === "trade" && Date.now() - it.date < 6 * 3600e3 ? 1 : 0);
   const list = wire.items.filter((it) =>
-    (wire.league === "all" || (wire.league === "mine" ? isMine(it.lg, it.teamId) : it.lg === wire.league)) &&
+    (wire.league === "all" || (wire.league === "mine" ? isMine(it.lg, it.teamId) || it.teams?.some((id) => isMine(it.lg, id)) : it.lg === wire.league)) &&
     (wire.kind === "all" || it.kind === wire.kind)
   ).sort((a, b) => pinned(b) - pinned(a)).slice(0, 150);
-  $("#wireList").innerHTML = list.length ? list.map((it) => {
+  const html = list.length ? list.map((it) => {
     const t = it.teamId && team(it.lg, it.teamId);
-    const logo = t ? `<a href="#team-${it.lg}-${t.id}" title="${esc(t.name)}"><img src="${t.logo}" alt="${esc(t.abbr)}" loading="lazy"></a>` : `<span></span>`;
+    const mine = isMine(it.lg, it.teamId) || it.teams?.some((id) => isMine(it.lg, id));
     const src = it.sources ? `<span class="src">via ${esc(it.sources[0])}${it.sources.length > 1 ? ` +${it.sources.length - 1} more` : ""}</span>` : "";
-    const text = it.link ? `<a class="txt" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.text)}</a>` : `<p class="txt">${esc(it.text)}${src}</p>`;
-    return `<li class="item${it.isNew ? " new" : ""}${isMine(it.lg, it.teamId) ? " mine" : ""}">
-      ${logo}
-      <div><div class="meta-row">${it.breaking ? `<span class="breaking">🚨 Breaking</span>` : ""}<span class="kind ${it.kind}">${it.kind}</span><span class="lg">${it.lg.toUpperCase()}${t ? " · " + esc(t.abbr) : ""}</span></div>${text}</div>
+    return `<li class="item ${it.kind}${it.isNew ? " new" : ""}${mine ? " mine" : ""}">
+      ${wireLogos(it)}
+      <div><div class="meta-row">${it.breaking ? `<span class="breaking">Breaking</span>` : ""}<span class="kind ${it.kind}">${it.kind}</span><span class="lg">${it.lg.toUpperCase()}${t ? " · " + esc(t.abbr) : ""}</span></div><p class="txt">${esc(it.text)}${src}</p></div>
       <time>${esc(ago(it.date))}</time></li>`;
   }).join("") : `<li class="empty">Nothing matches these filters right now.</li>`;
+  if (html !== wireHtml) { wireHtml = html; $("#wireList").innerHTML = html; } // skip identical redraws
+}
+
+// Scrolling strip of the latest moves under the header.
+let tickerHtml = "";
+function renderTicker() {
+  const recent = wire.items.filter((it) => Date.now() - it.date < 3 * 86400e3)
+    .sort((a, b) => (b.kind === "trade") - (a.kind === "trade") || b.date - a.date).slice(0, 14);
+  const el = $("#ticker");
+  if (!recent.length) { el.hidden = true; return; }
+  const chip = (it) => {
+    const ids = it.teams?.length >= 2 ? it.teams.slice(0, 2) : [it.teamId];
+    const logos = ids.map((id) => team(it.lg, id)).filter(Boolean).map((t) => `<img src="${t.logo}" alt="">`).join(ids.length > 1 ? "<i>⇄</i>" : "");
+    return `<span class="tk ${it.kind}">${logos}<b>${it.kind}</b>${esc(it.text.length > 90 ? it.text.slice(0, 88) + "…" : it.text)}</span>`;
+  };
+  const row = recent.map(chip).join("");
+  if (row === tickerHtml) return; // don't restart the animation when nothing changed
+  tickerHtml = row;
+  const track = $("#tickerTrack");
+  track.innerHTML = row + row; // doubled for a seamless loop
+  track.style.setProperty("--dur", `${Math.max(40, recent.length * 7)}s`);
+  el.hidden = false;
 }
 
 function notify(fresh) {
@@ -304,6 +335,21 @@ function renderScores() {
   if (!events.length) { $("#scoreList").innerHTML = `<p class="empty">No ${scoreLeague.toUpperCase()} games on the schedule today.</p>`; return; }
   events.sort((a, b) => (a.status.type.state === "in" ? -1 : 0) - (b.status.type.state === "in" ? -1 : 0) || new Date(a.date) - new Date(b.date));
   $("#scoreList").innerHTML = events.map((ev) => gameCard(ev, scoreLeague)).join("");
+}
+function gameCard(ev, lg) {
+  const comp = ev.competitions[0];
+  const st = comp.status?.type || ev.status.type;
+  const cs = [...comp.competitors].sort((a) => (a.homeAway === "away" ? -1 : 1));
+  const mine = cs.some((c) => isMine(lg, c.team.id));
+  const started = st.state !== "pre";
+  const rows = cs.map((c) => {
+    const t = team(lg, c.team.id);
+    return `<a class="row${c.winner ? " win" : ""}" href="#team-${lg}-${c.team.id}">
+      <img src="${esc(t?.logo || c.team.logo)}" alt="" loading="lazy"><span>${esc(t?.short || c.team.shortDisplayName)}</span>
+      <span class="sc">${started ? esc(scoreVal(c.score) ?? "") : ""}</span></a>`;
+  }).join("");
+  const label = st.state === "pre" ? fmtGameTime(ev.date) : st.shortDetail;
+  return `<div class="game${st.state === "in" ? " live" : ""}${mine ? " mine" : ""}">${rows}<p class="st">${st.state === "in" ? "● " : ""}${esc(label)}${comp.broadcasts?.[0]?.names?.[0] ? " · " + esc(comp.broadcasts[0].names[0]) : ""}</p></div>`;
 }
 
 // ---------- Betting ----------
@@ -634,7 +680,8 @@ async function loadMyTeams() {
       </div>
     </article>`;
   }));
-  $("#myTeams").innerHTML = cards.join("");
+  const html = cards.join("");
+  if (html !== $("#myTeams").dataset.html) { $("#myTeams").dataset.html = html; $("#myTeams").innerHTML = html; } // skip identical redraws
 }
 
 // ---------- RSS sections ----------
@@ -670,7 +717,7 @@ async function loadAspen() {
       const max = Math.max(1, ...fut);
       const bars = fut.map((v, i) => {
         const day = new Date(dl.time[i + 1] + "T12:00").toLocaleDateString(undefined, { weekday: "narrow" });
-        return `<div class="bar" title="${dl.time[i + 1]}: ${v.toFixed(1)}&quot;"><em>${v >= 0.5 ? Math.round(v) + '"' : ""}</em><i style="height:${(v / max) * 100}%"></i><small>${day}</small></div>`;
+        return `<div class="bar" title="${dl.time[i + 1]}: ${v.toFixed(1)}&quot;"><em>${v >= 0.5 ? Math.round(v) + '"' : ""}</em><i style="height:${(v / max) * 100}%;--i:${i}"></i><small>${day}</small></div>`;
       }).join("");
       return `<div class="mtn">
         <div><h3>${m.name}</h3><p class="elev">SUMMIT ~${Math.round(m.elev * 3.281).toLocaleString()} FT</p></div>
@@ -841,7 +888,9 @@ function initSnow() {
       s: Math.random() * 0.6 + 0.25, d: Math.random() * Math.PI * 2, o: Math.random() * 0.5 + 0.35,
     }));
   };
-  const tick = () => {
+  // An occasional shooting star across the upper sky.
+  let star = null, nextStar = performance.now() + 4000;
+  const tick = (now = performance.now()) => {
     if (!running) return;
     ctx.clearRect(0, 0, w, h);
     for (const f of flakes) {
@@ -849,6 +898,17 @@ function initSnow() {
       if (f.y > h + 4) { f.y = -4; f.x = Math.random() * w; }
       ctx.beginPath(); ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(255,255,255,${f.o})`; ctx.fill();
+    }
+    if (!star && now > nextStar) star = { x: Math.random() * w * 0.6 + w * 0.2, y: Math.random() * h * 0.25, t: 0 };
+    if (star) {
+      star.t += 1;
+      const life = 55, p = star.t / life, len = 120;
+      const x = star.x + star.t * 9, y = star.y + star.t * 3.2;
+      const g = ctx.createLinearGradient(x, y, x - len, y - len * 0.36);
+      g.addColorStop(0, `rgba(170,240,255,${0.9 * (1 - p)})`); g.addColorStop(1, "rgba(170,240,255,0)");
+      ctx.strokeStyle = g; ctx.lineWidth = 1.6;
+      ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - len, y - len * 0.36); ctx.stroke();
+      if (star.t >= life) { star = null; nextStar = now + 6000 + Math.random() * 9000; }
     }
     requestAnimationFrame(tick);
   };
@@ -873,6 +933,33 @@ function initEffects() {
   links.forEach((a) => { const s = document.querySelector(a.getAttribute("href")); if (s) spy.observe(s); });
 
   addEventListener("scroll", () => $("#nav").classList.toggle("scrolled", scrollY > 10), { passive: true });
+  initCountUp();
+}
+
+// Big numbers count up the first time each value appears on screen (not on every refresh).
+const COUNT_TARGETS = ".ld strong, .mtn .now strong, .countdown-box strong, .parlay-head .odds strong, .prop-head .odds strong, .mtn .facts b";
+function initCountUp() {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const shown = new Set();
+  const animate = (el) => {
+    const text = el.textContent, m = text.match(/-?\d+(\.\d+)?/);
+    if (!m || shown.has(text)) return;
+    shown.add(text);
+    const end = parseFloat(m[0]), dec = (m[1] || "").length - (m[1] ? 1 : 0), start = performance.now(), dur = 900;
+    const step = (now) => {
+      const p = Math.min(1, (now - start) / dur), v = end * (1 - Math.pow(1 - p, 3));
+      el.textContent = text.replace(m[0], v.toFixed(dec));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+    if (e.isIntersecting) { io.unobserve(e.target); animate(e.target); }
+  }), { threshold: 0.4 });
+  const scan = (root) => root.querySelectorAll?.(COUNT_TARGETS).forEach((el) => { if (!el.dataset.cu) { el.dataset.cu = 1; io.observe(el); } });
+  new MutationObserver((muts) => muts.forEach((m) => m.addedNodes.forEach((n) => n.nodeType === 1 && scan(n.parentNode || n))))
+    .observe(document.body, { childList: true, subtree: true });
+  scan(document);
 }
 
 // ---------- Init ----------

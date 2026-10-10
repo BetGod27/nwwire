@@ -5,7 +5,6 @@ const MY_TEAMS = [
   { lg: "nba", id: "7" }, // Denver Nuggets
   { lg: "nfl", id: "7" }, // Denver Broncos
 ];
-const SLEEPER = "https://api.sleeper.app/v1/";
 const SPORTS_REFRESH = 60;        // seconds: wire, scores, my teams
 const SLOW_REFRESH = 10 * 60;     // seconds: weather, RSS feeds
 const INJURY_REFRESH = 5 * 60;    // seconds: full NBA/NFL injury reports (the biggest download)
@@ -13,11 +12,7 @@ const ESPN = "https://site.api.espn.com/apis/site/v2/sports/";
 const PATH = { nba: "basketball/nba", nfl: "football/nfl" };
 const RSS = "https://api.rss2json.com/v1/api.json?rss_url=";
 const FEEDS = {
-  world: "https://feeds.bbci.co.uk/news/world/rss.xml",
-  markets: "https://www.cnbc.com/id/10000664/device/rss/rss.html",
-  mrvl: "https://news.google.com/rss/search?q=Marvell+Technology+MRVL+stock&hl=en-US&gl=US&ceid=US:en",
   aspenTimes: "https://www.aspentimes.com/feed/",
-  fantasy: "https://news.google.com/rss/search?q=fantasy+football+week&hl=en-US&gl=US&ceid=US:en",
   aspenSki: "https://news.google.com/rss/search?q=Aspen+Snowmass+ski&hl=en-US&gl=US&ceid=US:en",
 };
 const MOUNTAINS = [
@@ -29,12 +24,9 @@ const MOUNTAINS = [
 // Aspen Mountain & Snowmass typically open Thanksgiving week.
 const OPENING_DAY = new Date("2026-11-26T09:00:00-07:00");
 
-const TV_SYMBOLS = [
-  ["S&P 500", "FOREXCOM:SPXUSD"], ["Nasdaq 100", "FOREXCOM:NSXUSD"], ["Dow 30", "FOREXCOM:DJI"],
-  ["Apple", "NASDAQ:AAPL"], ["Microsoft", "NASDAQ:MSFT"], ["Nvidia", "NASDAQ:NVDA"],
-  ["Amazon", "NASDAQ:AMZN"], ["Alphabet", "NASDAQ:GOOGL"], ["Meta", "NASDAQ:META"],
-  ["Tesla", "NASDAQ:TSLA"], ["Marvell", "NASDAQ:MRVL"],
-];
+
+// The site is dark, so use ESPN's dark-background team logos.
+for (const lg of ["nba", "nfl"]) for (const t of TEAMS[lg]) t.logo = t.logo.replace("/500/", "/500-dark/");
 
 // ---------- Helpers ----------
 const $ = (s) => document.querySelector(s);
@@ -318,62 +310,6 @@ function renderScores() {
 const americanToProb = (o) => { o = Number(o); if (!o) return null; return o < 0 ? -o / (-o + 100) : 100 / (o + 100); };
 const americanToDecimal = (o) => { o = Number(o); return o < 0 ? 1 + 100 / -o : 1 + o / 100; };
 const lineNum = (s) => parseFloat(String(s ?? "").replace(/^[ou]/, ""));
-
-function moveArrow(open, close, flip = false) {
-  const a = lineNum(open), b = lineNum(close);
-  if (isNaN(a) || isNaN(b) || a === b) return "";
-  const up = flip ? b < a : b > a;
-  return `<span class="move ${up ? "up" : "down"}" title="Opened ${esc(open)}">${up ? "▲" : "▼"}</span>`;
-}
-
-function lineCard(ev, lg) {
-  const comp = ev.competitions[0];
-  const o = comp.odds?.[0];
-  if (!o) return "";
-  const st = comp.status.type;
-  const home = comp.competitors.find((c) => c.homeAway === "home");
-  const away = comp.competitors.find((c) => c.homeAway === "away");
-  const mine = [home, away].some((c) => isMine(lg, c.team.id));
-  const side = (c, key) => {
-    const t = team(lg, c.team.id);
-    const ps = o.pointSpread?.[key], ml = o.moneyline?.[key];
-    const tot = o.total?.[key === "away" ? "over" : "under"];
-    const fav = o[key + "TeamOdds"]?.favorite;
-    const prob = americanToProb(ml?.close?.odds);
-    return `
-      <a class="tm" href="#team-${lg}-${c.team.id}"><img src="${esc(t?.logo || c.team.logo)}" alt="">${esc(t?.short || c.team.shortDisplayName)}${fav ? ` <span class="fav">FAV</span>` : ""}</a>
-      <div class="cell"><b>${esc(ps?.close?.line ?? "—")}${moveArrow(ps?.open?.line, ps?.close?.line)}</b><small>${esc(ps?.close?.odds ?? "")}</small></div>
-      <div class="cell"><b>${esc(tot?.close?.line ?? (key === "away" ? "o" : "u") + (o.overUnder ?? "—"))}${moveArrow(tot?.open?.line, tot?.close?.line)}</b><small>${esc(tot?.close?.odds ?? "")}</small></div>
-      <div class="cell"><b>${esc(ml?.close?.odds ?? "—")}</b><small>${prob ? Math.round(prob * 100) + "%" : ""}</small></div>`;
-  };
-  const when = st.state === "in" ? `<span class="live-tag">● LIVE · ${esc(st.shortDetail)}</span>` : esc(fmtGameTime(ev.date));
-  return `<article class="line-card${mine ? " mine" : ""}${st.state === "in" ? " live" : ""}">
-    <div class="line-head"><span>${when}</span><span>${esc(comp.broadcasts?.[0]?.names?.[0] || "")}</span></div>
-    <div class="odds-grid">
-      <span></span><span class="hdr">Spread</span><span class="hdr">Total</span><span class="hdr">Money</span>
-      ${side(away, "away")}${side(home, "home")}
-    </div>
-    <div class="line-foot"><span>${esc(o.details || "")}${o.overUnder ? " · O/U " + o.overUnder : ""}</span><span>${esc(o.provider?.displayName || o.provider?.name || "")}</span></div>
-  </article>`;
-}
-
-function renderLines() {
-  const d = boards[betLeague];
-  if (!d) { $("#lines").innerHTML = failMsg("betting lines"); return; }
-  const evs = (d.events || [])
-    .filter((e) => e.status.type.state !== "post" && e.competitions[0].odds?.length)
-    .sort((a, b) => {
-      const m = (e) => e.competitions[0].competitors.some((c) => isMine(betLeague, c.team.id)) ? -1 : 0;
-      return m(a) - m(b) || new Date(a.date) - new Date(b.date);
-    });
-  const shown = betExpanded ? evs : evs.slice(0, 6);
-  const more = evs.length > 6
-    ? `<button class="btn btn-small show-more" id="betMore" type="button">${betExpanded ? "Show fewer" : `Show all ${evs.length} games`}</button>` : "";
-  $("#lines").innerHTML = (shown.map((e) => lineCard(e, betLeague)).join("") ||
-    `<p class="empty">No open ${betLeague.toUpperCase()} lines right now. They post as the next games get closer.</p>`) + more;
-  $("#betMore")?.addEventListener("click", () => { betExpanded = !betExpanded; renderLines(); });
-}
-let betExpanded = false;
 
 // ---------- Saved picks & record (written by scripts/nw_picks.rb) ----------
 let record = null;
@@ -666,117 +602,6 @@ function loadExperts() {
   loadRss([`https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`], "#expertNews", { limit: 6, images: false });
 }
 
-function renderCalc() {
-  const stake = parseFloat($("#calcStake").value) || 0;
-  const odds = [...document.querySelectorAll("#calcLegs .leg")].map((i) => parseFloat(i.value)).filter((v) => v && Math.abs(v) >= 100);
-  if (!odds.length) { $("#calcOut").innerHTML = `<p class="muted tiny" style="grid-column:1/-1">Enter odds like -110 or +150.</p>`; return; }
-  const dec = odds.reduce((a, o) => a * americanToDecimal(o), 1);
-  const payout = stake * dec;
-  const prob = odds.reduce((a, o) => a * americanToProb(o), 1);
-  const american = dec >= 2 ? "+" + Math.round((dec - 1) * 100) : Math.round(-100 / (dec - 1));
-  const $$ = (n) => "$" + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  $("#calcOut").innerHTML = `
-    <div><span>To win</span><strong>${$$(payout - stake)}</strong></div>
-    <div><span>Total payout</span><strong>${$$(payout)}</strong></div>
-    <div><span>${odds.length > 1 ? odds.length + "-leg odds" : "Odds"}</span><strong>${american}</strong></div>
-    <div><span>Implied chance</span><strong>${(prob * 100).toFixed(1)}%</strong></div>`;
-}
-
-// ---------- Fantasy ----------
-let ffPos = "all";
-const player = (id) => { const p = FF_PLAYERS[id]; return p ? { name: p[0], pos: p[1], tm: p[2] } : null; };
-const nflTeamByAbbr = (abbr) => TEAMS.nfl.find((t) => t.abbr === abbr || (abbr === "WAS" && t.abbr === "WSH"));
-
-const trending = { adds: null, drops: null };
-async function loadTrending() {
-  const [adds, drops] = await Promise.allSettled([
-    getJSON(SLEEPER + "players/nfl/trending/add?lookback_hours=24&limit=15"),
-    getJSON(SLEEPER + "players/nfl/trending/drop?lookback_hours=24&limit=15"),
-  ]);
-  trending.adds = adds.status === "fulfilled" ? adds.value : null;
-  trending.drops = drops.status === "fulfilled" ? drops.value : null;
-  renderTrending();
-}
-function renderTrending() {
-  const row = (x) => {
-    const p = player(x.player_id);
-    if (!p) return "";
-    return `<li><span class="pl"><span class="pos ${p.pos}">${p.pos}</span><span>${esc(p.name)}</span><span class="tm-abbr">${esc(p.tm)}</span></span><span class="ct">${x.count.toLocaleString()}</span></li>`;
-  };
-  $("#ffAdds").innerHTML = trending.adds ? trending.adds.map(row).join("") : `<li>${failMsg("trending adds")}</li>`;
-  $("#ffDrops").innerHTML = trending.drops ? trending.drops.map(row).join("") : `<li>${failMsg("trending drops")}</li>`;
-}
-
-
-function renderImplied() {
-  const d = boards.nfl;
-  const rows = [];
-  for (const ev of d?.events || []) {
-    const comp = ev.competitions[0], o = comp.odds?.[0];
-    if (!o || !o.overUnder || o.spread == null || ev.status.type.state === "post") continue;
-    const home = comp.competitors.find((c) => c.homeAway === "home");
-    const away = comp.competitors.find((c) => c.homeAway === "away");
-    const homePts = (o.overUnder - o.spread) / 2; // spread is from the home side (negative = home favored)
-    rows.push({ id: home.team.id, pts: homePts, opp: away.team.abbreviation, at: "vs" });
-    rows.push({ id: away.team.id, pts: o.overUnder - homePts, opp: home.team.abbreviation, at: "@" });
-  }
-  rows.sort((a, b) => b.pts - a.pts);
-  const max = rows[0]?.pts || 1;
-  $("#ffImplied").innerHTML = rows.slice(0, 12).map((r) => {
-    const t = team("nfl", r.id);
-    return `<li${isMine("nfl", r.id) ? ' style="font-weight:700"' : ""}><span class="pl"><img src="${t.logo}" alt=""><span>${esc(t.short)}</span><span class="tm-abbr">${r.at} ${esc(r.opp)}</span></span>
-      <span class="barwrap"><i style="width:${Math.round((r.pts / max) * 70)}px"></i><b>${r.pts.toFixed(1)}</b></span></li>`;
-  }).join("") || `<li class="empty">Lines for the next slate aren't posted yet.</li>`;
-}
-
-function renderFfInjuries() {
-  const statusKey = (s) => (/reserve/i.test(s) ? "IR" : s.split(" ")[0]);
-  const rows = [];
-  for (const tm of injuryCache.nfl) for (const i of tm.injuries || []) {
-    const pos = i.athlete?.position?.abbreviation;
-    if (!["QB", "RB", "WR", "TE"].includes(pos) || i.status === "Active") continue;
-    if (ffPos !== "all" && pos !== ffPos) continue;
-    rows.push({ i, pos, tmId: tm.id, date: parseDate(i.date) });
-  }
-  const order = { Out: 0, Doubtful: 1, Questionable: 2, IR: 3 };
-  rows.sort((a, b) => (order[statusKey(a.i.status)] ?? 4) - (order[statusKey(b.i.status)] ?? 4) || b.date - a.date);
-  $("#ffInjuries").innerHTML = rows.slice(0, 60).map(({ i, pos, tmId }) => {
-    const t = team("nfl", tmId);
-    return `<div class="inj-row">
-      <span class="who"><span class="pos ${pos}">${pos}</span>${t ? `<img src="${t.logo}" alt="">` : ""}${esc(i.athlete?.displayName)}</span>
-      <span class="status-pill ${statusKey(i.status)}">${esc(i.status)}</span>
-      ${i.shortComment ? `<p>${esc(i.shortComment)}</p>` : ""}</div>`;
-  }).join("") || `<p class="empty">No fantasy-relevant injuries reported.</p>`;
-}
-
-function renderKickoff() {
-  const d = boards.nfl;
-  const week = d?.week?.number;
-  if (week) $("#ffWeek").textContent = `03 · Fantasy · Week ${week}`;
-  const live = (d?.events || []).filter((e) => e.status.type.state === "in").length;
-  const next = (d?.events || []).filter((e) => e.status.type.state === "pre").sort((a, b) => new Date(a.date) - new Date(b.date))[0];
-  if (live) { $("#kickoff").innerHTML = `<strong>${live} live</strong><span>games in progress · set your lineup</span>`; return; }
-  if (!next) { $("#kickoff").innerHTML = `<strong>Week ${week || ""} done</strong><span>Waivers run midweek</span>`; return; }
-  const ms = new Date(next.date) - Date.now();
-  const h = Math.floor(ms / 3600e3), m = Math.floor((ms % 3600e3) / 60e3);
-  $("#kickoff").innerHTML = `<strong>${h >= 48 ? Math.floor(h / 24) + "d " + (h % 24) + "h" : h + "h " + m + "m"}</strong><span>to next kickoff · ${esc(next.shortName)}</span>`;
-}
-function gameCard(ev, lg) {
-  const comp = ev.competitions[0];
-  const st = comp.status?.type || ev.status.type;
-  const cs = [...comp.competitors].sort((a) => (a.homeAway === "away" ? -1 : 1));
-  const mine = cs.some((c) => isMine(lg, c.team.id));
-  const started = st.state !== "pre";
-  const rows = cs.map((c) => {
-    const t = team(lg, c.team.id);
-    return `<a class="row${c.winner ? " win" : ""}" href="#team-${lg}-${c.team.id}">
-      <img src="${esc(t?.logo || c.team.logo)}" alt="" loading="lazy"><span>${esc(t?.short || c.team.shortDisplayName)}</span>
-      <span class="sc">${started ? esc(scoreVal(c.score) ?? "") : ""}</span></a>`;
-  }).join("");
-  const label = st.state === "pre" ? fmtGameTime(ev.date) : st.shortDetail;
-  return `<div class="game${st.state === "in" ? " live" : ""}${mine ? " mine" : ""}">${rows}<p class="st">${st.state === "in" ? "● " : ""}${esc(label)}${comp.broadcasts?.[0]?.names?.[0] ? " · " + esc(comp.broadcasts[0].names[0]) : ""}</p></div>`;
-}
-
 // ---------- My teams ----------
 async function loadMyTeams() {
   const cards = await Promise.all(MY_TEAMS.map(async ({ lg, id }) => {
@@ -820,15 +645,6 @@ async function loadRss(feeds, el, { limit = 8, images = true, dedupe = false } =
   $(el).innerHTML = items.map((i) => newsItem(i.title, i.link, i.pubDate, "", images ? i.thumbnail || i.enclosure?.link : "")).join("");
   return items;
 }
-async function loadWorld() {
-  try {
-    const items = (await rss(FEEDS.world)).slice(0, 9);
-    $("#worldNews").innerHTML = items.map((i) => `<a class="world-card" href="${esc(i.link)}" target="_blank" rel="noopener">
-      ${i.thumbnail ? `<img src="${esc(i.thumbnail.replace("/240/", "/480/"))}" alt="" loading="lazy">` : ""}
-      <time>${esc(ago(i.pubDate))}</time><h4>${esc(i.title)}</h4><p>${esc(stripHtml(i.description))}</p></a>`).join("");
-  } catch { $("#worldNews").innerHTML = failMsg("world news"); }
-}
-
 // ---------- Aspen ----------
 const WX = { 0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast", 45: "Fog", 48: "Fog", 51: "Drizzle", 53: "Drizzle", 55: "Drizzle",
   61: "Rain", 63: "Rain", 65: "Heavy rain", 66: "Freezing rain", 67: "Freezing rain", 71: "Light snow", 73: "Snow", 75: "Heavy snow", 77: "Snow grains",
@@ -872,38 +688,6 @@ function renderOpening() {
   $("#openingBox").innerHTML = days > 0
     ? `<strong>${days} days</strong><span>until Thanksgiving, when the season typically opens</span>`
     : `<strong>Season's on</strong><span>Check aspensnowmass.com for lift status</span>`;
-}
-
-// ---------- TradingView widgets ----------
-function tvWidget(el, name, config) {
-  const box = typeof el === "string" ? $(el) : el;
-  box.innerHTML = `<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
-  const s = document.createElement("script");
-  s.src = `https://s3.tradingview.com/external-embedding/embed-widget-${name}.js`;
-  s.async = true;
-  s.textContent = JSON.stringify(config);
-  box.firstChild.appendChild(s);
-}
-function loadMarkets() {
-  tvWidget("#tickerTape", "ticker-tape", {
-    symbols: TV_SYMBOLS.map(([title, proName]) => ({ proName, title })),
-    showSymbolLogo: true, isTransparent: true, displayMode: "adaptive", colorTheme: "light", locale: "en",
-  });
-  const sym = (arr) => arr.map(([displayName, name]) => ({ name, displayName }));
-  tvWidget("#tvQuotes", "market-quotes", {
-    width: "100%", height: "100%", colorTheme: "light", isTransparent: true, showSymbolLogo: true, locale: "en",
-    symbolsGroups: [
-      { name: "Indices", symbols: sym(TV_SYMBOLS.slice(0, 3)) },
-      { name: "Big Tech", symbols: sym(TV_SYMBOLS.slice(3, 10)) },
-      { name: "Chips", symbols: sym([["Marvell", "NASDAQ:MRVL"], ["Nvidia", "NASDAQ:NVDA"], ["Broadcom", "NASDAQ:AVGO"], ["AMD", "NASDAQ:AMD"]]) },
-    ],
-  });
-  tvWidget("#tvChart", "symbol-overview", {
-    symbols: [["S&P 500", "FOREXCOM:SPXUSD|1D"], ["Marvell", "NASDAQ:MRVL|1D"], ["Nasdaq 100", "FOREXCOM:NSXUSD|1D"], ["Nvidia", "NASDAQ:NVDA|1D"]],
-    chartOnly: false, width: "100%", height: "100%", locale: "en", colorTheme: "light", isTransparent: true, autosize: true,
-    showVolume: false, hideDateRanges: false, scalePosition: "right", scaleMode: "Normal", chartType: "area",
-    lineColor: "#1f6fb8", topColor: "rgba(111,177,232,0.4)", bottomColor: "rgba(111,177,232,0)", fontFamily: "DM Sans, sans-serif",
-  });
 }
 
 // ---------- Team directory ----------
@@ -1004,16 +788,9 @@ async function showTeam(lg, id) {
 // ---------- Router ----------
 function route() {
   const m = location.hash.match(/^#team-(nba|nfl)-(\d+)$/);
-  if (m) { $("#tradePage").hidden = true; return showTeam(m[1], m[2]); }
-  const t = location.hash.match(/^#trade(?:-(\d+)-(\d+))?$/);
-  if (t) {
-    $("#home").hidden = true; $("#teamPage").hidden = true; $("#tradePage").hidden = false;
-    document.title = "NBA Trade Lab · The NW Wire";
-    return showTrade(t[1], t[2]);
-  }
-  if (!$("#teamPage").hidden || !$("#tradePage").hidden) {
+  if (m) return showTeam(m[1], m[2]);
+  if (!$("#teamPage").hidden) {
     $("#teamPage").hidden = true;
-    $("#tradePage").hidden = true;
     $("#home").hidden = false;
     document.title = "The NW Wire";
     const target = location.hash && document.querySelector(location.hash);
@@ -1026,11 +803,9 @@ let countdown = SPORTS_REFRESH;
 let lastSports = 0, lastSlow = 0;
 async function refreshSports() {
   lastSports = Date.now();
-  // Wire fills the injury cache; boards feed scores, lines, and fantasy.
+  // Wire fills the injury cache; boards feed scores and the parlays.
   await Promise.allSettled([loadWire(), loadBoards()]);
-  for (const fn of [renderScores, renderLines, renderImplied, renderFfInjuries, renderKickoff]) {
-    try { fn(); } catch (e) { console.error(e); }
-  }
+  try { renderScores(); } catch (e) { console.error(e); }
   refreshParlay();
   if (!expertsLoaded) { expertsLoaded = true; loadExperts(); }
   await loadMyTeams().catch(console.error);
@@ -1042,14 +817,9 @@ function refreshSlow() {
   lastSlow = Date.now();
   if (expertsLoaded) loadExperts();
   loadRecord();
-  loadTrending();
-  loadRss([FEEDS.fantasy], "#ffNews", { limit: 6, images: false });
   renderStandings();
   loadAspen();
   loadRss([FEEDS.aspenSki, FEEDS.aspenTimes], "#aspenNews", { limit: 8, images: false, dedupe: true });
-  loadRss([FEEDS.markets], "#marketNews", { limit: 6, images: false });
-  loadRss([FEEDS.mrvl], "#mrvlNews", { limit: 6, images: false });
-  loadWorld();
   renderOpening();
 }
 
@@ -1125,24 +895,10 @@ function init() {
   initChips("#leagueChips", (v) => { wire.league = v; renderWire(); });
   initChips("#kindChips", (v) => { wire.kind = v; renderWire(); });
   initChips("#scoreChips", (v) => { scoreLeague = v; renderScores(); });
-  initChips("#betChips", (v) => { betLeague = v; betExpanded = false; renderLines(); refreshParlay(); loadExperts(); });
-  $("#teaserLogos").innerHTML = TEAMS.nba.slice().sort(() => Math.random() - 0.5).slice(0, 18)
-    .map((t) => `<a href="#trade" title="${esc(t.name)}"><img src="${t.logo}" alt="" loading="lazy"></a>`).join("");
-  initChips("#ffPosChips", (v) => { ffPos = v; renderFfInjuries(); });
+  initChips("#betChips", (v) => { betLeague = v; refreshParlay(); loadExperts(); });
   initChips("#dirChips", (v) => { dirLeague = v; renderDirectory(); });
   initChips("#standingsChips", (v) => { standingsLeague = v; renderStandings(); });
   $("#teamSearch").addEventListener("input", renderDirectory);
-
-  // Bet calculator
-  $("#calcStake").addEventListener("input", renderCalc);
-  $("#calcLegs").addEventListener("input", renderCalc);
-  $("#addLeg").addEventListener("click", () => {
-    if (document.querySelectorAll("#calcLegs .leg").length >= 8) return;
-    const i = document.createElement("input");
-    i.type = "text"; i.className = "leg"; i.placeholder = "+150";
-    $("#calcLegs").appendChild(i); i.focus(); renderCalc();
-  });
-  renderCalc();
 
   initEffects();
 
@@ -1162,7 +918,6 @@ function init() {
   });
 
   renderDirectory();
-  loadMarkets();
   refreshSports();
   refreshSlow();
   // Pause refreshing while the tab is hidden (phone locked, other tab) to save data and battery.

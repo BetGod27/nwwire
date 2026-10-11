@@ -678,7 +678,8 @@
           "market": 0.7335423197492164,
           "edge": 0.06945768025078358,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "31-24"
         },
         {
           "ev": {
@@ -714,7 +715,7 @@
           "market": 0.6309403437815976,
           "edge": 0.08705965621840239,
           "steam": true,
-          "result": null
+          "result": "void"
         },
         {
           "ev": {
@@ -958,7 +959,8 @@
           "teamAbbr": "IND",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
           "score": 0.4957894736842105,
-          "result": null
+          "result": "loss",
+          "actual": 83.0
         }
       ],
       "odds": "+596",
@@ -981,6 +983,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-11T18:33:52Z",
+  "updated": "2026-10-11T21:30:21Z",
   "since": "Week 3, 2026"
 }

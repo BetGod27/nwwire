@@ -822,7 +822,8 @@
           "teamAbbr": "PHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431545.png",
           "score": 0.88,
-          "result": null
+          "result": "win",
+          "actual": 6.0
         },
         {
           "ev": {
@@ -980,6 +981,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-11T15:30:11Z",
+  "updated": "2026-10-11T18:33:52Z",
   "since": "Week 3, 2026"
 }

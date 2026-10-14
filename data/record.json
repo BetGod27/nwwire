@@ -1080,14 +1080,14 @@
           "key": "away",
           "teamId": "3",
           "oppAbbr": "ATL",
-          "ml": -148,
+          "ml": -122,
           "model": 0.602,
-          "market": 0.5720596355604638,
-          "edge": 0.029940364439536182,
+          "market": 0.5260865852617197,
+          "edge": 0.07591341473828028,
           "steam": false
         }
       ],
-      "odds": "+204"
+      "odds": "+230"
     },
     "prop": {
       "legs": [
@@ -1124,7 +1124,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 38.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,14 +1152,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 3.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.46133333333333326,
+          "edge": 0.4233766233766233,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6613333333333332
+          "score": 0.6233766233766233
         },
         {
           "ev": {
@@ -1187,117 +1187,117 @@
               }
             ]
           },
-          "ath": "4431299",
+          "ath": "4723086",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 42.5,
-          "open": 40.5,
+          "line": 34.5,
+          "open": 36.5,
           "games": [
             {
-              "v": 40.0,
+              "v": 19.0,
               "opp": "GB"
             },
             {
-              "v": 94.0,
+              "v": 57.0,
               "opp": "NYJ"
             },
             {
-              "v": 44.0,
+              "v": 31.0,
               "opp": "PHI"
             },
             {
-              "v": 43.0,
+              "v": 3.0,
               "opp": "MIN"
             },
             {
-              "v": 52.0,
+              "v": 0.0,
               "opp": "CAR"
             }
           ],
-          "avg": 54.6,
-          "side": "over",
+          "avg": 22.0,
+          "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 2.0,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.2847058823529412,
-          "name": "Rome Odunze",
-          "pos": "WR",
+          "edge": 0.36231884057971014,
+          "name": "Colston Loveland",
+          "pos": "TE",
           "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.48470588235294126
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4723086.png",
+          "score": 0.5623188405797102
         },
         {
           "ev": {
-            "id": "401872996",
-            "date": "2026-10-18T13:30Z",
-            "shortName": "HOU VS JAX",
+            "id": "401873005",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "BUF @ LV",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4258173",
+          "ath": "4432665",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 74.5,
-          "open": 71.5,
+          "line": 79.5,
+          "open": 76.5,
           "games": [
             {
-              "v": 56.0,
-              "opp": "TEN"
+              "v": 110.0,
+              "opp": "NE"
             },
             {
-              "v": 118.0,
-              "opp": "DAL"
+              "v": 86.0,
+              "opp": "KC"
             },
             {
-              "v": 75.0,
-              "opp": "BUF"
+              "v": 116.0,
+              "opp": "NO"
             }
           ],
-          "avg": 83.0,
+          "avg": 104.0,
           "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
+          "hits": 3,
+          "hitRate": 1.0,
           "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.11409395973154363,
-          "name": "Nico Collins",
-          "pos": "WR",
-          "teamAbbr": "HOU",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4258173.png",
-          "score": 0.2607606263982103
+          "edge": 0.3081761006289308,
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
+          "score": 0.5881761006289308
         }
       ],
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-18T09:30:00Z"
+    "lockAt": "2026-10-18T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -1311,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-14T18:54:01Z",
+  "updated": "2026-10-14T21:44:04Z",
   "since": "Week 3, 2026"
 }

@@ -1080,14 +1080,14 @@
           "key": "away",
           "teamId": "3",
           "oppAbbr": "ATL",
-          "ml": -162,
+          "ml": -155,
           "model": 0.602,
-          "market": 0.593369754159424,
-          "edge": 0.008630245840576034,
+          "market": 0.5829926410466066,
+          "edge": 0.01900735895339334,
           "steam": false
         }
       ],
-      "odds": "+190"
+      "odds": "+195"
     },
     "prop": {
       "legs": [
@@ -1163,6 +1163,68 @@
         },
         {
           "ev": {
+            "id": "401872996",
+            "date": "2026-10-18T13:30Z",
+            "shortName": "HOU VS JAX",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "30",
+                      "abbreviation": "JAX"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4258173",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 73.5,
+          "open": 71.5,
+          "games": [
+            {
+              "v": 56.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 118.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 75.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 83.0,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 2.0,
+          "moveAgrees": 1,
+          "edge": 0.1292517006802721,
+          "name": "Nico Collins",
+          "pos": "WR",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4258173.png",
+          "score": 0.27591836734693875
+        },
+        {
+          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1230,74 +1292,12 @@
           "teamAbbr": "CHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
           "score": 0.5156626506024097
-        },
-        {
-          "ev": {
-            "id": "401872999",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "CHI @ ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4360423",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 239.5,
-          "open": 216.5,
-          "games": [
-            {
-              "v": 240.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 223.0,
-              "opp": "NO"
-            },
-            {
-              "v": 256.0,
-              "opp": "GB"
-            }
-          ],
-          "avg": 239.66666666666666,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 23.0,
-          "moveAgrees": 1,
-          "edge": 0.0006958942240779006,
-          "name": "Michael Penix Jr.",
-          "pos": "QB",
-          "teamAbbr": "ATL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
-          "score": 0.14736256089074456
         }
       ],
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-18T13:00:00Z"
+    "lockAt": "2026-10-18T09:30:00Z"
   },
   "totals": {
     "game": {
@@ -1311,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-14T12:54:42Z",
+  "updated": "2026-10-14T15:50:48Z",
   "since": "Week 3, 2026"
 }

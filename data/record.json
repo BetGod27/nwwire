@@ -1,6 +1,343 @@
 {
   "history": [
     {
+      "key": "2026-2-5",
+      "season": 2026,
+      "week": 5,
+      "label": "Week 5",
+      "game": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872982",
+              "date": "2026-10-11T17:00Z",
+              "shortName": "CIN @ MIA",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "15",
+                        "abbreviation": "MIA"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "4",
+                        "abbreviation": "CIN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "4",
+            "oppAbbr": "MIA",
+            "ml": -325,
+            "model": 0.8029999999999999,
+            "market": 0.7335423197492164,
+            "edge": 0.06945768025078358,
+            "steam": true,
+            "result": "win",
+            "final": "31-24"
+          },
+          {
+            "ev": {
+              "id": "401872988",
+              "date": "2026-10-11T17:00Z",
+              "shortName": "NYG @ WSH",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "28",
+                        "abbreviation": "WSH"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "19",
+                        "abbreviation": "NYG"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "home",
+            "teamId": "28",
+            "oppAbbr": "NYG",
+            "ml": -192,
+            "model": 0.718,
+            "market": 0.6309403437815976,
+            "edge": 0.08705965621840239,
+            "steam": true,
+            "result": "void"
+          },
+          {
+            "ev": {
+              "id": "401872991",
+              "date": "2026-10-11T20:25Z",
+              "shortName": "DET @ ARI",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "22",
+                        "abbreviation": "ARI"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "8",
+                        "abbreviation": "DET"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "8",
+            "oppAbbr": "ARI",
+            "ml": -258,
+            "model": 0.693,
+            "market": 0.690792883054068,
+            "edge": 0.0022071169459318973,
+            "steam": false,
+            "result": "win",
+            "final": "45-21"
+          }
+        ],
+        "odds": "+176",
+        "result": "win",
+        "units": 0.81
+      },
+      "prop": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872981",
+              "date": "2026-10-11T13:30Z",
+              "shortName": "PHI VS JAX",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "30",
+                        "abbreviation": "JAX"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "21",
+                        "abbreviation": "PHI"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4431545",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 36.5,
+            "open": 39.5,
+            "games": [
+              {
+                "v": 23.0,
+                "opp": "LAR"
+              },
+              {
+                "v": 0.0,
+                "opp": "CHI"
+              },
+              {
+                "v": 24.0,
+                "opp": "TEN"
+              },
+              {
+                "v": 4.0,
+                "opp": "WSH"
+              }
+            ],
+            "avg": 12.75,
+            "side": "under",
+            "hits": 4,
+            "hitRate": 1.0,
+            "move": -3.0,
+            "moveAgrees": 1,
+            "edge": 0.6506849315068494,
+            "name": "Will Shipley",
+            "pos": "RB",
+            "teamAbbr": "PHI",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431545.png",
+            "score": 0.88,
+            "result": "win",
+            "actual": 6.0
+          },
+          {
+            "ev": {
+              "id": "401872980",
+              "date": "2026-10-09T00:15Z",
+              "shortName": "TB @ DAL",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "6",
+                        "abbreviation": "DAL"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "27",
+                        "abbreviation": "TB"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4241389",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 85.5,
+            "open": 77.5,
+            "games": [
+              {
+                "v": 189.0,
+                "opp": "HOU"
+              },
+              {
+                "v": 112.0,
+                "opp": "BAL"
+              },
+              {
+                "v": 153.0,
+                "opp": "WSH"
+              },
+              {
+                "v": 44.0,
+                "opp": "NYG"
+              }
+            ],
+            "avg": 124.5,
+            "side": "over",
+            "hits": 3,
+            "hitRate": 0.75,
+            "move": 8.0,
+            "moveAgrees": 1,
+            "edge": 0.45614035087719296,
+            "name": "CeeDee Lamb",
+            "pos": "WR",
+            "teamAbbr": "DAL",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
+            "score": 0.6361403508771929,
+            "result": "loss",
+            "actual": 9.0
+          },
+          {
+            "ev": {
+              "id": "401872985",
+              "date": "2026-10-11T17:00Z",
+              "shortName": "IND @ PIT",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "23",
+                        "abbreviation": "PIT"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "11",
+                        "abbreviation": "IND"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4431459",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 47.5,
+            "open": 51.5,
+            "games": [
+              {
+                "v": 41.0,
+                "opp": "WSH"
+              },
+              {
+                "v": 55.0,
+                "opp": "HOU"
+              },
+              {
+                "v": 21.0,
+                "opp": "KC"
+              },
+              {
+                "v": 13.0,
+                "opp": "BAL"
+              }
+            ],
+            "avg": 32.5,
+            "side": "under",
+            "hits": 3,
+            "hitRate": 0.75,
+            "move": -4.0,
+            "moveAgrees": 1,
+            "edge": 0.3157894736842105,
+            "name": "Tyler Warren",
+            "pos": "TE",
+            "teamAbbr": "IND",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
+            "score": 0.4957894736842105,
+            "result": "loss",
+            "actual": 83.0
+          }
+        ],
+        "odds": "+596",
+        "result": "loss",
+        "units": -1.0
+      },
+      "locked": true,
+      "lockAt": "2026-10-08T20:15:00Z",
+      "lockedAt": "2026-10-08T21:31:51Z"
+    },
+    {
       "key": "2026-2-4",
       "season": 2026,
       "week": 4,
@@ -638,69 +975,32 @@
     }
   ],
   "current": {
-    "key": "2026-2-5",
+    "key": "2026-2-6",
     "season": 2026,
-    "week": 5,
-    "label": "Week 5",
+    "week": 6,
+    "label": "Week 6",
     "game": {
       "legs": [
         {
           "ev": {
-            "id": "401872982",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "CIN @ MIA",
+            "id": "401873001",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "NYJ @ NE",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
+                      "id": "17",
+                      "abbreviation": "NE"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "4",
-          "oppAbbr": "MIA",
-          "ml": -325,
-          "model": 0.8029999999999999,
-          "market": 0.7335423197492164,
-          "edge": 0.06945768025078358,
-          "steam": true,
-          "result": "win",
-          "final": "31-24"
-        },
-        {
-          "ev": {
-            "id": "401872988",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "NYG @ WSH",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   }
                 ]
@@ -708,35 +1008,34 @@
             ]
           },
           "key": "home",
-          "teamId": "28",
-          "oppAbbr": "NYG",
-          "ml": -192,
-          "model": 0.718,
-          "market": 0.6309403437815976,
-          "edge": 0.08705965621840239,
-          "steam": true,
-          "result": "void"
+          "teamId": "17",
+          "oppAbbr": "NYJ",
+          "ml": -340,
+          "model": 0.795,
+          "market": 0.740871613663133,
+          "edge": 0.05412838633686701,
+          "steam": false
         },
         {
           "ev": {
-            "id": "401872991",
-            "date": "2026-10-11T20:25Z",
-            "shortName": "DET @ ARI",
+            "id": "401873005",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "BUF @ LV",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   }
                 ]
@@ -744,235 +1043,261 @@
             ]
           },
           "key": "away",
-          "teamId": "8",
-          "oppAbbr": "ARI",
+          "teamId": "2",
+          "oppAbbr": "LV",
           "ml": -258,
-          "model": 0.693,
+          "model": 0.72,
           "market": 0.690792883054068,
-          "edge": 0.0022071169459318973,
-          "steam": false,
-          "result": "win",
-          "final": "45-21"
+          "edge": 0.02920711694593192,
+          "steam": false
+        },
+        {
+          "ev": {
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "3",
+          "oppAbbr": "ATL",
+          "ml": -162,
+          "model": 0.602,
+          "market": 0.593369754159424,
+          "edge": 0.008630245840576034,
+          "steam": false
         }
       ],
-      "odds": "+176",
-      "result": "win",
-      "units": 0.81
+      "odds": "+190"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401872981",
-            "date": "2026-10-11T13:30Z",
-            "shortName": "PHI VS JAX",
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "21",
-                      "abbreviation": "PHI"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4431545",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4723086",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 36.5,
-          "open": 39.5,
+          "line": 34.5,
+          "open": 36.5,
           "games": [
             {
-              "v": 23.0,
-              "opp": "LAR"
+              "v": 19.0,
+              "opp": "GB"
+            },
+            {
+              "v": 57.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 31.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 3.0,
+              "opp": "MIN"
             },
             {
               "v": 0.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 24.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 4.0,
-              "opp": "WSH"
+              "opp": "CAR"
             }
           ],
-          "avg": 12.75,
+          "avg": 22.0,
           "side": "under",
           "hits": 4,
-          "hitRate": 1.0,
-          "move": -3.0,
+          "hitRate": 0.8,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.6506849315068494,
-          "name": "Will Shipley",
-          "pos": "RB",
-          "teamAbbr": "PHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431545.png",
-          "score": 0.88,
-          "result": "win",
-          "actual": 6.0
+          "edge": 0.36231884057971014,
+          "name": "Colston Loveland",
+          "pos": "TE",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4723086.png",
+          "score": 0.5623188405797102
         },
         {
           "ev": {
-            "id": "401872980",
-            "date": "2026-10-09T00:15Z",
-            "shortName": "TB @ DAL",
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "6",
-                      "abbreviation": "DAL"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "27",
-                      "abbreviation": "TB"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4241389",
+          "ath": "4431299",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 85.5,
-          "open": 77.5,
+          "line": 41.5,
+          "open": 40.5,
           "games": [
             {
-              "v": 189.0,
-              "opp": "HOU"
+              "v": 40.0,
+              "opp": "GB"
             },
             {
-              "v": 112.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 153.0,
-              "opp": "WSH"
+              "v": 94.0,
+              "opp": "NYJ"
             },
             {
               "v": 44.0,
-              "opp": "NYG"
+              "opp": "PHI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
             }
           ],
-          "avg": 124.5,
+          "avg": 54.6,
           "side": "over",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": 8.0,
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.45614035087719296,
-          "name": "CeeDee Lamb",
+          "edge": 0.31566265060240967,
+          "name": "Rome Odunze",
           "pos": "WR",
-          "teamAbbr": "DAL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241389.png",
-          "score": 0.6361403508771929,
-          "result": "loss",
-          "actual": 9.0
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.5156626506024097
         },
         {
           "ev": {
-            "id": "401872985",
-            "date": "2026-10-11T17:00Z",
-            "shortName": "IND @ PIT",
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "11",
-                      "abbreviation": "IND"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4431459",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4360423",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 47.5,
-          "open": 51.5,
+          "line": 239.5,
+          "open": 216.5,
           "games": [
             {
-              "v": 41.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 55.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 21.0,
-              "opp": "KC"
-            },
-            {
-              "v": 13.0,
+              "v": 240.0,
               "opp": "BAL"
+            },
+            {
+              "v": 223.0,
+              "opp": "NO"
+            },
+            {
+              "v": 256.0,
+              "opp": "GB"
             }
           ],
-          "avg": 32.5,
-          "side": "under",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": -4.0,
+          "avg": 239.66666666666666,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 23.0,
           "moveAgrees": 1,
-          "edge": 0.3157894736842105,
-          "name": "Tyler Warren",
-          "pos": "TE",
-          "teamAbbr": "IND",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431459.png",
-          "score": 0.4957894736842105,
-          "result": "loss",
-          "actual": 83.0
+          "edge": 0.0006958942240779006,
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "teamAbbr": "ATL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
+          "score": 0.14736256089074456
         }
       ],
-      "odds": "+596",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+596"
     },
-    "locked": true,
-    "lockAt": "2026-10-08T20:15:00Z",
-    "lockedAt": "2026-10-08T21:31:51Z"
+    "locked": false,
+    "lockAt": "2026-10-18T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -986,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-14T03:45:31Z",
+  "updated": "2026-10-14T06:57:02Z",
   "since": "Week 3, 2026"
 }

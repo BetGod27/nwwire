@@ -1018,6 +1018,41 @@
         },
         {
           "ev": {
+            "id": "401873005",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "BUF @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "2",
+          "oppAbbr": "LV",
+          "ml": -250,
+          "model": 0.72,
+          "market": 0.6853932584269663,
+          "edge": 0.03460674157303367,
+          "steam": false
+        },
+        {
+          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1050,44 +1085,9 @@
           "market": 0.5108342361863488,
           "edge": 0.09116576381365116,
           "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "2",
-          "oppAbbr": "LV",
-          "ml": -258,
-          "model": 0.72,
-          "market": 0.690792883054068,
-          "edge": 0.02920711694593192,
-          "steam": false
         }
       ],
-      "odds": "+236"
+      "odds": "+239"
     },
     "prop": {
       "legs": [
@@ -1264,7 +1264,7 @@
             "label": "passing yards",
             "min": 150
           },
-          "line": 236.5,
+          "line": 235.5,
           "open": 216.5,
           "games": [
             {
@@ -1284,14 +1284,14 @@
           "side": "over",
           "hits": 2,
           "hitRate": 0.6666666666666666,
-          "move": 20.0,
+          "move": 19.0,
           "moveAgrees": 1,
-          "edge": 0.013389711064129629,
+          "edge": 0.017692852087756505,
           "name": "Michael Penix Jr.",
           "pos": "QB",
           "teamAbbr": "ATL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
-          "score": 0.16005637773079628
+          "score": 0.16435951875442317
         }
       ],
       "odds": "+596"
@@ -1311,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-15T12:57:22Z",
+  "updated": "2026-10-15T15:48:02Z",
   "since": "Week 3, 2026"
 }

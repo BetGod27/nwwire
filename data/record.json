@@ -1163,6 +1163,76 @@
         },
         {
           "ev": {
+            "id": "401872996",
+            "date": "2026-10-18T13:30Z",
+            "shortName": "HOU VS JAX",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "30",
+                      "abbreviation": "JAX"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429059",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 46.5,
+          "open": 48.5,
+          "games": [
+            {
+              "v": 62.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 22.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 15.0,
+              "opp": "IND"
+            },
+            {
+              "v": 8.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 42.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 29.8,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -2.0,
+          "moveAgrees": 1,
+          "edge": 0.35913978494623655,
+          "name": "Woody Marks",
+          "pos": "RB",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
+          "score": 0.5591397849462365
+        },
+        {
+          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1224,10 +1294,10 @@
           "score": 0.16005637773079628
         }
       ],
-      "odds": "+264"
+      "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-18T13:00:00Z"
+    "lockAt": "2026-10-18T09:30:00Z"
   },
   "totals": {
     "game": {
@@ -1241,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-15T09:45:58Z",
+  "updated": "2026-10-15T12:57:22Z",
   "since": "Week 3, 2026"
 }

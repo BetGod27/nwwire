@@ -1011,9 +1011,9 @@
           "teamId": "17",
           "oppAbbr": "NYJ",
           "ml": -325,
-          "model": 0.795,
+          "model": 0.792,
           "market": 0.7335423197492164,
-          "edge": 0.061457680250783686,
+          "edge": 0.05845768025078368,
           "steam": false
         },
         {
@@ -1045,10 +1045,10 @@
           "key": "away",
           "teamId": "2",
           "oppAbbr": "LV",
-          "ml": -250,
-          "model": 0.72,
-          "market": 0.6853932584269663,
-          "edge": 0.03460674157303367,
+          "ml": -218,
+          "model": 0.722,
+          "market": 0.6574752261956054,
+          "edge": 0.06452477380439459,
           "steam": false
         },
         {
@@ -1081,13 +1081,13 @@
           "teamId": "3",
           "oppAbbr": "ATL",
           "ml": -115,
-          "model": 0.602,
+          "model": 0.611,
           "market": 0.5108342361863488,
-          "edge": 0.09116576381365116,
+          "edge": 0.10016576381365117,
           "steam": false
         }
       ],
-      "odds": "+242"
+      "odds": "+257"
     },
     "prop": {
       "legs": [
@@ -1163,145 +1163,133 @@
         },
         {
           "ev": {
-            "id": "401872996",
-            "date": "2026-10-18T13:30Z",
-            "shortName": "HOU VS JAX",
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "3",
+                      "abbreviation": "CHI"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4429059",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4360423",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 46.5,
-          "open": 48.5,
+          "line": 237.5,
+          "open": 216.5,
           "games": [
             {
-              "v": 62.0,
-              "opp": "TEN"
+              "v": 240.0,
+              "opp": "BAL"
             },
             {
-              "v": 22.0,
-              "opp": "DAL"
+              "v": 223.0,
+              "opp": "NO"
             },
             {
-              "v": 15.0,
-              "opp": "IND"
-            },
-            {
-              "v": 8.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 42.0,
-              "opp": "BUF"
+              "v": 256.0,
+              "opp": "GB"
             }
           ],
-          "avg": 29.8,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -2.0,
+          "avg": 239.66666666666666,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 21.0,
           "moveAgrees": 1,
-          "edge": 0.35913978494623655,
-          "name": "Woody Marks",
-          "pos": "RB",
-          "teamAbbr": "HOU",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
-          "score": 0.5591397849462365
+          "edge": 0.009122807017543819,
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "teamAbbr": "ATL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
+          "score": 0.15578947368421048
         },
         {
           "ev": {
-            "id": "401873006",
+            "id": "401873005",
             "date": "2026-10-18T20:25Z",
-            "shortName": "LAC @ KC",
+            "shortName": "BUF @ LV",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "15847",
+          "ath": "4432665",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 57.5,
-          "open": 54.5,
+          "line": 80.5,
+          "open": 76.5,
           "games": [
             {
-              "v": 15.0,
-              "opp": "LV"
+              "v": 110.0,
+              "opp": "NE"
             },
             {
-              "v": 59.0,
-              "opp": "MIA"
+              "v": 86.0,
+              "opp": "KC"
             },
             {
-              "v": 101.0,
-              "opp": "IND"
-            },
-            {
-              "v": 71.0,
-              "opp": "DEN"
+              "v": 116.0,
+              "opp": "NO"
             }
           ],
-          "avg": 61.5,
+          "avg": 104.0,
           "side": "over",
           "hits": 3,
-          "hitRate": 0.75,
-          "move": 3.0,
+          "hitRate": 1.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.06956521739130435,
-          "name": "Travis Kelce",
+          "edge": 0.2919254658385093,
+          "name": "Brock Bowers",
           "pos": "TE",
-          "teamAbbr": "KC",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/15847.png",
-          "score": 0.24956521739130438
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
+          "score": 0.5719254658385093
         }
       ],
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-18T09:30:00Z"
+    "lockAt": "2026-10-18T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -1315,6 +1303,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-15T18:53:08Z",
+  "updated": "2026-10-15T21:44:37Z",
   "since": "Week 3, 2026"
 }

@@ -1018,41 +1018,6 @@
         },
         {
           "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "2",
-          "oppAbbr": "LV",
-          "ml": -250,
-          "model": 0.72,
-          "market": 0.6853932584269663,
-          "edge": 0.03460674157303367,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1080,14 +1045,49 @@
           "key": "away",
           "teamId": "3",
           "oppAbbr": "ATL",
-          "ml": -122,
+          "ml": -115,
           "model": 0.602,
-          "market": 0.5260865852617197,
-          "edge": 0.07591341473828028,
+          "market": 0.5108342361863488,
+          "edge": 0.09116576381365116,
+          "steam": false
+        },
+        {
+          "ev": {
+            "id": "401873005",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "BUF @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "2",
+          "oppAbbr": "LV",
+          "ml": -258,
+          "model": 0.72,
+          "market": 0.690792883054068,
+          "edge": 0.02920711694593192,
           "steam": false
         }
       ],
-      "odds": "+230"
+      "odds": "+236"
     },
     "prop": {
       "legs": [
@@ -1187,114 +1187,44 @@
               }
             ]
           },
-          "ath": "4723086",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4360423",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 34.5,
-          "open": 36.5,
+          "line": 236.5,
+          "open": 216.5,
           "games": [
             {
-              "v": 19.0,
-              "opp": "GB"
+              "v": 240.0,
+              "opp": "BAL"
             },
             {
-              "v": 57.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 31.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 3.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 0.0,
-              "opp": "CAR"
-            }
-          ],
-          "avg": 22.0,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -2.0,
-          "moveAgrees": 1,
-          "edge": 0.36231884057971014,
-          "name": "Colston Loveland",
-          "pos": "TE",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4723086.png",
-          "score": 0.5623188405797102
-        },
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4432665",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 79.5,
-          "open": 76.5,
-          "games": [
-            {
-              "v": 110.0,
-              "opp": "NE"
-            },
-            {
-              "v": 86.0,
-              "opp": "KC"
-            },
-            {
-              "v": 116.0,
+              "v": 223.0,
               "opp": "NO"
+            },
+            {
+              "v": 256.0,
+              "opp": "GB"
             }
           ],
-          "avg": 104.0,
+          "avg": 239.66666666666666,
           "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 3.0,
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 20.0,
           "moveAgrees": 1,
-          "edge": 0.3081761006289308,
-          "name": "Brock Bowers",
-          "pos": "TE",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-          "score": 0.5881761006289308
+          "edge": 0.013389711064129629,
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "teamAbbr": "ATL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
+          "score": 0.16005637773079628
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-10-18T13:00:00Z"
@@ -1311,6 +1241,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-14T21:44:04Z",
+  "updated": "2026-10-15T00:53:57Z",
   "since": "Week 3, 2026"
 }

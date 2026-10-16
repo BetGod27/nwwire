@@ -1124,7 +1124,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 38.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,14 +1152,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 3.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.46133333333333326,
+          "edge": 0.4233766233766233,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6613333333333332
+          "score": 0.6233766233766233
         },
         {
           "ev": {
@@ -1311,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-16T06:57:01Z",
+  "updated": "2026-10-16T09:44:55Z",
   "since": "Week 3, 2026"
 }

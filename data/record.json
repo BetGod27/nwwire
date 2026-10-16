@@ -1011,9 +1011,9 @@
           "teamId": "17",
           "oppAbbr": "NYJ",
           "ml": -345,
-          "model": 0.792,
+          "model": 0.794,
           "market": 0.7440690150970525,
-          "edge": 0.04793098490294756,
+          "edge": 0.04993098490294756,
           "steam": false
         },
         {
@@ -1045,10 +1045,10 @@
           "key": "away",
           "teamId": "2",
           "oppAbbr": "LV",
-          "ml": -218,
-          "model": 0.722,
-          "market": 0.6574752261956054,
-          "edge": 0.06452477380439459,
+          "ml": -205,
+          "model": 0.72,
+          "market": 0.644729178800233,
+          "edge": 0.07527082119976702,
           "steam": false
         },
         {
@@ -1080,14 +1080,14 @@
           "key": "away",
           "teamId": "3",
           "oppAbbr": "ATL",
-          "ml": -115,
-          "model": 0.611,
-          "market": 0.5108342361863488,
-          "edge": 0.10016576381365117,
+          "ml": -118,
+          "model": 0.61,
+          "market": 0.5173641257162701,
+          "edge": 0.09263587428372988,
           "steam": false
         }
       ],
-      "odds": "+252"
+      "odds": "+255"
     },
     "prop": {
       "legs": [
@@ -1124,7 +1124,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
+          "line": 39.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,14 +1152,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 4.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.4233766233766233,
+          "edge": 0.3873417721518987,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6233766233766233
+          "score": 0.5873417721518986
         },
         {
           "ev": {
@@ -1311,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-16T09:44:55Z",
+  "updated": "2026-10-16T12:56:32Z",
   "since": "Week 3, 2026"
 }

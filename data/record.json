@@ -1124,7 +1124,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
+          "line": 37.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,14 +1152,84 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 4.0,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.4233766233766233,
+          "edge": 0.46133333333333326,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6233766233766233
+          "score": 0.6613333333333332
+        },
+        {
+          "ev": {
+            "id": "401872996",
+            "date": "2026-10-18T13:30Z",
+            "shortName": "HOU VS JAX",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "30",
+                      "abbreviation": "JAX"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429059",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 46.5,
+          "open": 48.5,
+          "games": [
+            {
+              "v": 62.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 22.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 15.0,
+              "opp": "IND"
+            },
+            {
+              "v": 8.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 42.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 29.8,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -2.0,
+          "moveAgrees": 1,
+          "edge": 0.35913978494623655,
+          "name": "Woody Marks",
+          "pos": "RB",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
+          "score": 0.5591397849462365
         },
         {
           "ev": {
@@ -1187,109 +1257,55 @@
               }
             ]
           },
-          "ath": "4360423",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 237.5,
-          "open": 216.5,
-          "games": [
-            {
-              "v": 240.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 223.0,
-              "opp": "NO"
-            },
-            {
-              "v": 256.0,
-              "opp": "GB"
-            }
-          ],
-          "avg": 239.66666666666666,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 21.0,
-          "moveAgrees": 1,
-          "edge": 0.009122807017543819,
-          "name": "Michael Penix Jr.",
-          "pos": "QB",
-          "teamAbbr": "ATL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
-          "score": 0.15578947368421048
-        },
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4432665",
+          "ath": "4431299",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 80.5,
-          "open": 76.5,
+          "line": 42.5,
+          "open": 40.5,
           "games": [
             {
-              "v": 110.0,
-              "opp": "NE"
+              "v": 40.0,
+              "opp": "GB"
             },
             {
-              "v": 86.0,
-              "opp": "KC"
+              "v": 94.0,
+              "opp": "NYJ"
             },
             {
-              "v": 116.0,
-              "opp": "NO"
+              "v": 44.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 52.0,
+              "opp": "CAR"
             }
           ],
-          "avg": 104.0,
+          "avg": 54.6,
           "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 4.0,
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.2919254658385093,
-          "name": "Brock Bowers",
-          "pos": "TE",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-          "score": 0.5719254658385093
+          "edge": 0.2847058823529412,
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "teamAbbr": "CHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
+          "score": 0.48470588235294126
         }
       ],
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-18T13:00:00Z"
+    "lockAt": "2026-10-18T09:30:00Z"
   },
   "totals": {
     "game": {
@@ -1303,6 +1319,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-15T21:44:37Z",
+  "updated": "2026-10-16T00:53:32Z",
   "since": "Week 3, 2026"
 }

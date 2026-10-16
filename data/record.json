@@ -1093,72 +1093,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873006",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "LAC @ KC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4567048",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 92.5,
-          "open": 87.5,
-          "games": [
-            {
-              "v": 177.0,
-              "opp": "LV"
-            },
-            {
-              "v": 70.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 117.0,
-              "opp": "IND"
-            },
-            {
-              "v": 173.0,
-              "opp": "DEN"
-            }
-          ],
-          "avg": 134.25,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": 5.0,
-          "moveAgrees": 1,
-          "edge": 0.45135135135135135,
-          "name": "Kenneth Walker III",
-          "pos": "RB",
-          "teamAbbr": "KC",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4567048.png",
-          "score": 0.6313513513513513
-        },
-        {
-          "ev": {
             "id": "401873005",
             "date": "2026-10-18T20:25Z",
             "shortName": "BUF @ LV",
@@ -1229,6 +1163,72 @@
         },
         {
           "ev": {
+            "id": "401873006",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "LAC @ KC",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4567048",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 93.5,
+          "open": 87.5,
+          "games": [
+            {
+              "v": 177.0,
+              "opp": "LV"
+            },
+            {
+              "v": 70.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 117.0,
+              "opp": "IND"
+            },
+            {
+              "v": 173.0,
+              "opp": "DEN"
+            }
+          ],
+          "avg": 134.25,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 0.75,
+          "move": 6.0,
+          "moveAgrees": 1,
+          "edge": 0.4358288770053476,
+          "name": "Kenneth Walker III",
+          "pos": "RB",
+          "teamAbbr": "KC",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4567048.png",
+          "score": 0.6158288770053476
+        },
+        {
+          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1253,49 +1253,41 @@
               }
             ]
           },
-          "ath": "4431299",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4360423",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 42.5,
-          "open": 40.5,
+          "line": 237.5,
+          "open": 216.5,
           "games": [
             {
-              "v": 40.0,
+              "v": 240.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 223.0,
+              "opp": "NO"
+            },
+            {
+              "v": 256.0,
               "opp": "GB"
-            },
-            {
-              "v": 94.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 44.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 43.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 52.0,
-              "opp": "CAR"
             }
           ],
-          "avg": 54.6,
+          "avg": 239.66666666666666,
           "side": "over",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": 2.0,
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 21.0,
           "moveAgrees": 1,
-          "edge": 0.2847058823529412,
-          "name": "Rome Odunze",
-          "pos": "WR",
-          "teamAbbr": "CHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
-          "score": 0.48470588235294126
+          "edge": 0.009122807017543819,
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "teamAbbr": "ATL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
+          "score": 0.15578947368421048
         }
       ],
       "odds": "+596"
@@ -1315,6 +1307,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-16T15:44:23Z",
+  "updated": "2026-10-16T18:50:19Z",
   "since": "Week 3, 2026"
 }

@@ -1045,10 +1045,10 @@
           "key": "away",
           "teamId": "2",
           "oppAbbr": "LV",
-          "ml": -205,
+          "ml": -230,
           "model": 0.72,
-          "market": 0.644729178800233,
-          "edge": 0.07527082119976702,
+          "market": 0.6690070210631895,
+          "edge": 0.05099297893681043,
           "steam": false
         },
         {
@@ -1087,10 +1087,76 @@
           "steam": false
         }
       ],
-      "odds": "+255"
+      "odds": "+242"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873006",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "LAC @ KC",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4567048",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 92.5,
+          "open": 87.5,
+          "games": [
+            {
+              "v": 177.0,
+              "opp": "LV"
+            },
+            {
+              "v": 70.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 117.0,
+              "opp": "IND"
+            },
+            {
+              "v": 173.0,
+              "opp": "DEN"
+            }
+          ],
+          "avg": 134.25,
+          "side": "over",
+          "hits": 3,
+          "hitRate": 0.75,
+          "move": 5.0,
+          "moveAgrees": 1,
+          "edge": 0.45135135135135135,
+          "name": "Kenneth Walker III",
+          "pos": "RB",
+          "teamAbbr": "KC",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4567048.png",
+          "score": 0.6313513513513513
+        },
         {
           "ev": {
             "id": "401873005",
@@ -1124,7 +1190,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 39.5,
+          "line": 38.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,14 +1218,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 5.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.3873417721518987,
+          "edge": 0.4233766233766233,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.5873417721518986
+          "score": 0.6233766233766233
         },
         {
           "ev": {
@@ -1230,68 +1296,6 @@
           "teamAbbr": "CHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431299.png",
           "score": 0.48470588235294126
-        },
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4432665",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 80.5,
-          "open": 76.5,
-          "games": [
-            {
-              "v": 110.0,
-              "opp": "NE"
-            },
-            {
-              "v": 86.0,
-              "opp": "KC"
-            },
-            {
-              "v": 116.0,
-              "opp": "NO"
-            }
-          ],
-          "avg": 104.0,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.2919254658385093,
-          "name": "Brock Bowers",
-          "pos": "TE",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-          "score": 0.5719254658385093
         }
       ],
       "odds": "+596"
@@ -1311,6 +1315,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-16T12:56:32Z",
+  "updated": "2026-10-16T15:44:23Z",
   "since": "Week 3, 2026"
 }

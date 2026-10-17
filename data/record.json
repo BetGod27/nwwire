@@ -1163,72 +1163,6 @@
         },
         {
           "ev": {
-            "id": "401873006",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "LAC @ KC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4567048",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 93.5,
-          "open": 87.5,
-          "games": [
-            {
-              "v": 177.0,
-              "opp": "LV"
-            },
-            {
-              "v": 70.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 117.0,
-              "opp": "IND"
-            },
-            {
-              "v": 173.0,
-              "opp": "DEN"
-            }
-          ],
-          "avg": 134.25,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": 6.0,
-          "moveAgrees": 1,
-          "edge": 0.4358288770053476,
-          "name": "Kenneth Walker III",
-          "pos": "RB",
-          "teamAbbr": "KC",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4567048.png",
-          "score": 0.6158288770053476
-        },
-        {
-          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1290,7 +1224,7 @@
           "score": 0.15578947368421048
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-10-18T13:00:00Z"
@@ -1307,6 +1241,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-16T21:42:53Z",
+  "updated": "2026-10-17T00:55:17Z",
   "since": "Week 3, 2026"
 }

@@ -1010,10 +1010,10 @@
           "key": "home",
           "teamId": "17",
           "oppAbbr": "NYJ",
-          "ml": -340,
+          "ml": -345,
           "model": 0.794,
-          "market": 0.740871613663133,
-          "edge": 0.053128386336867006,
+          "market": 0.7440690150970525,
+          "edge": 0.04993098490294756,
           "steam": false
         },
         {
@@ -1087,7 +1087,7 @@
           "steam": false
         }
       ],
-      "odds": "+243"
+      "odds": "+242"
     },
     "prop": {
       "legs": [
@@ -1160,9 +1160,141 @@
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
           "score": 0.6233766233766233
+        },
+        {
+          "ev": {
+            "id": "401873001",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "NYJ @ NE",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "17",
+                      "abbreviation": "NE"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4569173",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 62.5,
+          "open": 70.5,
+          "games": [
+            {
+              "v": 64.0,
+              "opp": "LV"
+            },
+            {
+              "v": 47.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 22.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 43.0,
+              "opp": "PIT"
+            },
+            {
+              "v": 51.0,
+              "opp": "SEA"
+            }
+          ],
+          "avg": 45.4,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -8.0,
+          "moveAgrees": 1,
+          "edge": 0.2736,
+          "name": "Rhamondre Stevenson",
+          "pos": "RB",
+          "teamAbbr": "NE",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
+          "score": 0.4736000000000001
+        },
+        {
+          "ev": {
+            "id": "401872999",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CHI @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "3",
+                      "abbreviation": "CHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4360423",
+          "type": "Total Passing Yards (incl. overtime)",
+          "t": {
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
+          },
+          "line": 239.5,
+          "open": 216.5,
+          "games": [
+            {
+              "v": 240.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 223.0,
+              "opp": "NO"
+            },
+            {
+              "v": 256.0,
+              "opp": "GB"
+            }
+          ],
+          "avg": 239.66666666666666,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 23.0,
+          "moveAgrees": 1,
+          "edge": 0.0006958942240779006,
+          "name": "Michael Penix Jr.",
+          "pos": "QB",
+          "teamAbbr": "ATL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
+          "score": 0.14736256089074456
         }
       ],
-      "odds": "-110"
+      "odds": "+596"
     },
     "locked": false,
     "lockAt": "2026-10-18T13:00:00Z"
@@ -1179,6 +1311,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-17T15:40:14Z",
+  "updated": "2026-10-17T18:42:10Z",
   "since": "Week 3, 2026"
 }

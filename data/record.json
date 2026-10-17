@@ -1080,14 +1080,14 @@
           "key": "away",
           "teamId": "3",
           "oppAbbr": "ATL",
-          "ml": -118,
+          "ml": -120,
           "model": 0.61,
-          "market": 0.5173641257162701,
-          "edge": 0.09263587428372988,
+          "market": 0.5217391304347826,
+          "edge": 0.08826086956521739,
           "steam": false
         }
       ],
-      "odds": "+245"
+      "odds": "+243"
     },
     "prop": {
       "legs": [
@@ -1160,71 +1160,9 @@
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
           "score": 0.6233766233766233
-        },
-        {
-          "ev": {
-            "id": "401872999",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "CHI @ ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4360423",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 237.5,
-          "open": 216.5,
-          "games": [
-            {
-              "v": 240.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 223.0,
-              "opp": "NO"
-            },
-            {
-              "v": 256.0,
-              "opp": "GB"
-            }
-          ],
-          "avg": 239.66666666666666,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 21.0,
-          "moveAgrees": 1,
-          "edge": 0.009122807017543819,
-          "name": "Michael Penix Jr.",
-          "pos": "QB",
-          "teamAbbr": "ATL",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4360423.png",
-          "score": 0.15578947368421048
         }
       ],
-      "odds": "+264"
+      "odds": "-110"
     },
     "locked": false,
     "lockAt": "2026-10-18T13:00:00Z"
@@ -1241,6 +1179,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-17T12:48:19Z",
+  "updated": "2026-10-17T15:40:14Z",
   "since": "Week 3, 2026"
 }

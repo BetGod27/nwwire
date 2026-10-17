@@ -1010,45 +1010,10 @@
           "key": "home",
           "teamId": "17",
           "oppAbbr": "NYJ",
-          "ml": -345,
+          "ml": -355,
           "model": 0.794,
-          "market": 0.7440690150970525,
-          "edge": 0.04993098490294756,
-          "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "2",
-          "oppAbbr": "LV",
-          "ml": -225,
-          "model": 0.72,
-          "market": 0.6636481241914618,
-          "edge": 0.05635187580853818,
+          "market": 0.7477827050997783,
+          "edge": 0.04621729490022175,
           "steam": false
         },
         {
@@ -1085,9 +1050,44 @@
           "market": 0.5217391304347826,
           "edge": 0.08826086956521739,
           "steam": false
+        },
+        {
+          "ev": {
+            "id": "401873005",
+            "date": "2026-10-18T20:25Z",
+            "shortName": "BUF @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "2",
+          "oppAbbr": "LV",
+          "ml": -258,
+          "model": 0.72,
+          "market": 0.690792883054068,
+          "edge": 0.02920711694593192,
+          "steam": false
         }
       ],
-      "odds": "+242"
+      "odds": "+226"
     },
     "prop": {
       "legs": [
@@ -1124,7 +1124,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
+          "line": 39.5,
           "open": 34.5,
           "games": [
             {
@@ -1152,84 +1152,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.8,
-          "move": 4.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.4233766233766233,
+          "edge": 0.3873417721518987,
           "name": "Tre Tucker",
           "pos": "WR",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6233766233766233
-        },
-        {
-          "ev": {
-            "id": "401873001",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "NYJ @ NE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4569173",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 62.5,
-          "open": 70.5,
-          "games": [
-            {
-              "v": 64.0,
-              "opp": "LV"
-            },
-            {
-              "v": 47.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 22.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 43.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 51.0,
-              "opp": "SEA"
-            }
-          ],
-          "avg": 45.4,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -8.0,
-          "moveAgrees": 1,
-          "edge": 0.2736,
-          "name": "Rhamondre Stevenson",
-          "pos": "RB",
-          "teamAbbr": "NE",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
-          "score": 0.4736000000000001
+          "score": 0.5873417721518986
         },
         {
           "ev": {
@@ -1294,7 +1224,7 @@
           "score": 0.14736256089074456
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-10-18T13:00:00Z"
@@ -1311,6 +1241,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-17T18:42:10Z",
+  "updated": "2026-10-17T21:40:13Z",
   "since": "Week 3, 2026"
 }

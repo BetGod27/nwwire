@@ -983,41 +983,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873001",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "NYJ @ NE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "17",
-          "oppAbbr": "NYJ",
-          "ml": -355,
-          "model": 0.794,
-          "market": 0.7477827050997783,
-          "edge": 0.04621729490022175,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401872999",
             "date": "2026-10-18T17:00Z",
             "shortName": "CHI @ ATL",
@@ -1046,9 +1011,44 @@
           "teamId": "3",
           "oppAbbr": "ATL",
           "ml": -120,
-          "model": 0.61,
+          "model": 0.6609999999999999,
           "market": 0.5217391304347826,
-          "edge": 0.08826086956521739,
+          "edge": 0.13926086956521733,
+          "steam": false
+        },
+        {
+          "ev": {
+            "id": "401873001",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "NYJ @ NE",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "17",
+                      "abbreviation": "NE"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "17",
+          "oppAbbr": "NYJ",
+          "ml": -360,
+          "model": 0.794,
+          "market": 0.7508125677139762,
+          "edge": 0.04318743228602384,
           "steam": false
         },
         {
@@ -1087,7 +1087,7 @@
           "steam": false
         }
       ],
-      "odds": "+226"
+      "odds": "+225"
     },
     "prop": {
       "legs": [
@@ -1319,6 +1319,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-18T03:43:30Z",
+  "updated": "2026-10-18T06:51:46Z",
   "since": "Week 3, 2026"
 }

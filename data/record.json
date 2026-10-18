@@ -1015,7 +1015,8 @@
           "market": 0.5217391304347826,
           "edge": 0.13926086956521733,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "31-23"
         },
         {
           "ev": {
@@ -1051,7 +1052,8 @@
           "market": 0.7440690150970525,
           "edge": 0.04993098490294756,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "26-19"
         },
         {
           "ev": {
@@ -1163,7 +1165,8 @@
           "teamAbbr": "PHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870795.png",
           "score": 0.4000000000000001,
-          "result": null
+          "result": "win",
+          "actual": 3.0
         },
         {
           "ev": {
@@ -1234,7 +1237,8 @@
           "teamAbbr": "NE",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
           "score": 0.36697247706422026,
-          "result": null
+          "result": "win",
+          "actual": 36.0
         },
         {
           "ev": {
@@ -1297,10 +1301,13 @@
           "teamAbbr": "PHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3121023.png",
           "score": 0.26403755868544593,
-          "result": null
+          "result": "win",
+          "actual": 61.0
         }
       ],
-      "odds": "+596"
+      "odds": "+596",
+      "result": "win",
+      "units": 5.96
     },
     "locked": true,
     "lockAt": "2026-10-18T13:00:00Z",
@@ -1313,11 +1320,11 @@
       "units": -1.19
     },
     "prop": {
-      "w": 1,
+      "w": 2,
       "l": 2,
-      "units": 3.96
+      "units": 9.92
     }
   },
-  "updated": "2026-10-18T18:43:37Z",
+  "updated": "2026-10-18T21:41:02Z",
   "since": "Week 3, 2026"
 }

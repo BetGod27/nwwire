@@ -1264,7 +1264,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 54.5,
+          "line": 53.5,
           "open": 70.5,
           "games": [
             {
@@ -1292,14 +1292,14 @@
           "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": -16.0,
+          "move": -17.0,
           "moveAgrees": 1,
-          "edge": 0.16697247706422022,
+          "edge": 0.15140186915887854,
           "name": "Rhamondre Stevenson",
           "pos": "RB",
           "teamAbbr": "NE",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
-          "score": 0.36697247706422026
+          "score": 0.35140186915887855
         }
       ],
       "odds": "+596"
@@ -1319,6 +1319,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-18T00:55:30Z",
+  "updated": "2026-10-18T03:43:30Z",
   "since": "Week 3, 2026"
 }

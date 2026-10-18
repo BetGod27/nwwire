@@ -1014,7 +1014,8 @@
           "model": 0.6609999999999999,
           "market": 0.5217391304347826,
           "edge": 0.13926086956521733,
-          "steam": false
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
@@ -1045,11 +1046,12 @@
           "key": "home",
           "teamId": "17",
           "oppAbbr": "NYJ",
-          "ml": -360,
+          "ml": -345,
           "model": 0.794,
-          "market": 0.7508125677139762,
-          "edge": 0.04318743228602384,
-          "steam": false
+          "market": 0.7440690150970525,
+          "edge": 0.04993098490294756,
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
@@ -1080,87 +1082,18 @@
           "key": "away",
           "teamId": "2",
           "oppAbbr": "LV",
-          "ml": -258,
+          "ml": -245,
           "model": 0.72,
-          "market": 0.690792883054068,
-          "edge": 0.02920711694593192,
-          "steam": false
+          "market": 0.6805555555555556,
+          "edge": 0.03944444444444439,
+          "steam": false,
+          "result": null
         }
       ],
-      "odds": "+225"
+      "odds": "+233"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4428718",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 39.5,
-          "open": 34.5,
-          "games": [
-            {
-              "v": 41.0,
-              "opp": "NE"
-            },
-            {
-              "v": 44.0,
-              "opp": "KC"
-            },
-            {
-              "v": 43.0,
-              "opp": "NO"
-            },
-            {
-              "v": 119.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 27.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 54.8,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": 5.0,
-          "moveAgrees": 1,
-          "edge": 0.3873417721518987,
-          "name": "Tre Tucker",
-          "pos": "WR",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.5873417721518986
-        },
         {
           "ev": {
             "id": "401872998",
@@ -1229,7 +1162,8 @@
           "pos": "WR",
           "teamAbbr": "PHI",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870795.png",
-          "score": 0.4000000000000001
+          "score": 0.4000000000000001,
+          "result": null
         },
         {
           "ev": {
@@ -1264,7 +1198,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 53.5,
+          "line": 54.5,
           "open": 70.5,
           "games": [
             {
@@ -1292,20 +1226,85 @@
           "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": -17.0,
+          "move": -16.0,
           "moveAgrees": 1,
-          "edge": 0.15140186915887854,
+          "edge": 0.16697247706422022,
           "name": "Rhamondre Stevenson",
           "pos": "RB",
           "teamAbbr": "NE",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
-          "score": 0.35140186915887855
+          "score": 0.36697247706422026,
+          "result": null
+        },
+        {
+          "ev": {
+            "id": "401872998",
+            "date": "2026-10-18T17:00Z",
+            "shortName": "CAR @ PHI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "21",
+                      "abbreviation": "PHI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "29",
+                      "abbreviation": "CAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3121023",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 35.5,
+          "open": 32.5,
+          "games": [
+            {
+              "v": 38.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 4.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 77.0,
+              "opp": "WSH"
+            }
+          ],
+          "avg": 39.666666666666664,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 3.0,
+          "moveAgrees": 1,
+          "edge": 0.11737089201877927,
+          "name": "Dallas Goedert",
+          "pos": "TE",
+          "teamAbbr": "PHI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3121023.png",
+          "score": 0.26403755868544593,
+          "result": null
         }
       ],
       "odds": "+596"
     },
-    "locked": false,
-    "lockAt": "2026-10-18T13:00:00Z"
+    "locked": true,
+    "lockAt": "2026-10-18T13:00:00Z",
+    "lockedAt": "2026-10-18T15:40:26Z"
   },
   "totals": {
     "game": {
@@ -1319,6 +1318,6 @@
       "units": 3.96
     }
   },
-  "updated": "2026-10-18T12:48:14Z",
+  "updated": "2026-10-18T15:40:26Z",
   "since": "Week 3, 2026"
 }

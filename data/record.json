@@ -1352,10 +1352,10 @@
           "key": "away",
           "teamId": "25",
           "oppAbbr": "ATL",
-          "ml": -175,
+          "ml": -155,
           "model": 0.787,
-          "market": 0.6092362344582594,
-          "edge": 0.17776376554174067,
+          "market": 0.5829926410466066,
+          "edge": 0.2040073589533934,
           "steam": false
         },
         {
@@ -1387,10 +1387,10 @@
           "key": "home",
           "teamId": "29",
           "oppAbbr": "TB",
-          "ml": -175,
+          "ml": -166,
           "model": 0.685,
-          "market": 0.6092362344582594,
-          "edge": 0.07576376554174069,
+          "market": 0.5996387718242023,
+          "edge": 0.08536122817579772,
           "steam": true
         },
         {
@@ -1422,17 +1422,91 @@
           "key": "away",
           "teamId": "7",
           "oppAbbr": "ARI",
-          "ml": -238,
+          "ml": -230,
           "model": 0.688,
-          "market": 0.6750312469954812,
-          "edge": 0.012968753004518718,
+          "market": 0.6690070210631895,
+          "edge": 0.0189929789368104,
           "steam": false
         }
       ],
-      "odds": "+251"
+      "odds": "+278"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873016",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "NYG @ HOU",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "19",
+                      "abbreviation": "NYG"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4586312",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 30.5,
+          "open": 23.5,
+          "games": [
+            {
+              "v": 107.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 41.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 85.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 17.0,
+              "opp": "IND"
+            },
+            {
+              "v": 31.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 53.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 55.666666666666664,
+          "side": "over",
+          "hits": 5,
+          "hitRate": 0.8333333333333334,
+          "move": 7.0,
+          "moveAgrees": 1,
+          "edge": 0.8251366120218578,
+          "name": "Jaylin Noel",
+          "pos": "WR",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4586312.png",
+          "score": 0.8133333333333334
+        },
         {
           "ev": {
             "id": "401873021",
@@ -1509,153 +1583,119 @@
         },
         {
           "ev": {
-            "id": "401873011",
-            "date": "2026-10-25T13:30Z",
-            "shortName": "PIT VS NO",
+            "id": "401873020",
+            "date": "2026-10-25T20:25Z",
+            "shortName": "GB @ DET",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
+                      "id": "8",
+                      "abbreviation": "DET"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
+                      "id": "9",
+                      "abbreviation": "GB"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4599739",
+          "ath": "4047365",
           "type": "Total Rushing Yards (incl. overtime)",
           "t": {
             "stat": "rushingYards",
             "label": "rushing yards",
             "min": 30
           },
-          "line": 40.5,
-          "open": 44.5,
+          "line": 46.5,
+          "open": 41.5,
           "games": [
             {
-              "v": 70.0,
-              "opp": "NYG"
+              "v": 3.0,
+              "opp": "BAL"
             },
             {
-              "v": 30.0,
-              "opp": "MIN"
+              "v": 36.0,
+              "opp": "CHI"
             },
             {
-              "v": 9.0,
-              "opp": "ATL"
-            },
-            {
-              "v": 14.0,
-              "opp": "LV"
-            },
-            {
-              "v": 30.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 30.6,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -4.0,
-          "moveAgrees": 1,
-          "edge": 0.2444444444444444,
-          "name": "Kendre Miller",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.4444444444444445
-        },
-        {
-          "ev": {
-            "id": "401873017",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "SF @ ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "3117251",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 42.5,
-          "open": 45.5,
-          "games": [
-            {
-              "v": 53.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 15.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 18.0,
+              "v": 73.0,
               "opp": "DEN"
             },
             {
-              "v": 41.0,
+              "v": 86.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 83.0,
+              "opp": "DET"
+            },
+            {
+              "v": 40.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 74.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 87.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 33.0,
+              "opp": "PIT"
+            },
+            {
+              "v": 55.0,
               "opp": "ARI"
             },
             {
-              "v": 43.0,
-              "opp": "MIA"
+              "v": 93.0,
+              "opp": "CIN"
             },
             {
-              "v": 20.0,
-              "opp": "LAR"
+              "v": 86.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 30.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 84.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 66.0,
+              "opp": "DET"
             }
           ],
-          "avg": 31.666666666666668,
-          "side": "under",
-          "hits": 4,
+          "avg": 61.93333333333333,
+          "side": "over",
+          "hits": 10,
           "hitRate": 0.6666666666666666,
-          "move": -3.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.2549019607843137,
-          "name": "Christian McCaffrey",
+          "edge": 0.33189964157706087,
+          "name": "Josh Jacobs",
           "pos": "RB",
-          "teamAbbr": "SF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3117251.png",
-          "score": 0.4015686274509804
+          "teamAbbr": "GB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
+          "score": 0.47856630824372753
         }
       ],
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-25T09:30:00Z"
+    "lockAt": "2026-10-25T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -1669,6 +1709,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-21T18:53:04Z",
+  "updated": "2026-10-21T21:46:38Z",
   "since": "Week 3, 2026"
 }

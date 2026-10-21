@@ -1505,73 +1505,77 @@
         },
         {
           "ev": {
-            "id": "401873012",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "CIN @ BAL",
+            "id": "401873019",
+            "date": "2026-10-25T20:05Z",
+            "shortName": "DEN @ ARI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
+                      "id": "22",
+                      "abbreviation": "ARI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
+                      "id": "7",
+                      "abbreviation": "DEN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4362628",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4426338",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 77.5,
-          "open": 79.5,
+          "line": 216.5,
+          "open": 221.5,
           "games": [
             {
-              "v": 77.0,
-              "opp": "MIA"
+              "v": 107.0,
+              "opp": "SEA"
             },
             {
-              "v": 27.0,
+              "v": 123.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 214.0,
+              "opp": "SF"
+            },
+            {
+              "v": 186.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 288.0,
               "opp": "JAX"
             },
             {
-              "v": 98.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 75.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 12.0,
-              "opp": "TB"
+              "v": 131.0,
+              "opp": "KC"
             }
           ],
-          "avg": 57.8,
+          "avg": 174.83333333333334,
           "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -2.0,
+          "hits": 5,
+          "hitRate": 0.8333333333333334,
+          "move": -5.0,
           "moveAgrees": 1,
-          "edge": 0.2541935483870968,
-          "name": "Ja'Marr Chase",
-          "pos": "WR",
-          "teamAbbr": "CIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4362628.png",
-          "score": 0.45419354838709686
+          "edge": 0.19245573518090836,
+          "name": "Bo Nix",
+          "pos": "QB",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4426338.png",
+          "score": 0.40578906851424174
         },
         {
           "ev": {
@@ -1665,6 +1669,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-21T06:57:34Z",
+  "updated": "2026-10-21T09:46:46Z",
   "since": "Week 3, 2026"
 }

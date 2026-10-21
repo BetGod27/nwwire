@@ -1,6 +1,348 @@
 {
   "history": [
     {
+      "key": "2026-2-6",
+      "season": 2026,
+      "week": 6,
+      "label": "Week 6",
+      "game": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872999",
+              "date": "2026-10-18T17:00Z",
+              "shortName": "CHI @ ATL",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "1",
+                        "abbreviation": "ATL"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "3",
+                        "abbreviation": "CHI"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "3",
+            "oppAbbr": "ATL",
+            "ml": -120,
+            "model": 0.6609999999999999,
+            "market": 0.5217391304347826,
+            "edge": 0.13926086956521733,
+            "steam": false,
+            "result": "win",
+            "final": "31-23"
+          },
+          {
+            "ev": {
+              "id": "401873001",
+              "date": "2026-10-18T17:00Z",
+              "shortName": "NYJ @ NE",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "17",
+                        "abbreviation": "NE"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "20",
+                        "abbreviation": "NYJ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "home",
+            "teamId": "17",
+            "oppAbbr": "NYJ",
+            "ml": -345,
+            "model": 0.794,
+            "market": 0.7440690150970525,
+            "edge": 0.04993098490294756,
+            "steam": false,
+            "result": "win",
+            "final": "26-19"
+          },
+          {
+            "ev": {
+              "id": "401873005",
+              "date": "2026-10-18T20:25Z",
+              "shortName": "BUF @ LV",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "13",
+                        "abbreviation": "LV"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "2",
+                        "abbreviation": "BUF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "2",
+            "oppAbbr": "LV",
+            "ml": -245,
+            "model": 0.72,
+            "market": 0.6805555555555556,
+            "edge": 0.03944444444444439,
+            "steam": false,
+            "result": "win",
+            "final": "33-30"
+          }
+        ],
+        "odds": "+233",
+        "result": "win",
+        "units": 2.33
+      },
+      "prop": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401872998",
+              "date": "2026-10-18T17:00Z",
+              "shortName": "CAR @ PHI",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "21",
+                        "abbreviation": "PHI"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "29",
+                        "abbreviation": "CAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4870795",
+            "type": "Total Receptions (incl. overtime)",
+            "t": {
+              "stat": "receptions",
+              "label": "receptions",
+              "min": 2.5
+            },
+            "line": 2.5,
+            "open": 1.5,
+            "games": [
+              {
+                "v": 5.0,
+                "opp": "JAX"
+              },
+              {
+                "v": 3.0,
+                "opp": "LAR"
+              },
+              {
+                "v": 3.0,
+                "opp": "CHI"
+              },
+              {
+                "v": 1.0,
+                "opp": "TEN"
+              },
+              {
+                "v": 3.0,
+                "opp": "WSH"
+              }
+            ],
+            "avg": 3.0,
+            "side": "over",
+            "hits": 4,
+            "hitRate": 0.8,
+            "move": 1.0,
+            "moveAgrees": 1,
+            "edge": 0.2,
+            "name": "Makai Lemon",
+            "pos": "WR",
+            "teamAbbr": "PHI",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870795.png",
+            "score": 0.4000000000000001,
+            "result": "win",
+            "actual": 3.0
+          },
+          {
+            "ev": {
+              "id": "401873001",
+              "date": "2026-10-18T17:00Z",
+              "shortName": "NYJ @ NE",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "17",
+                        "abbreviation": "NE"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "20",
+                        "abbreviation": "NYJ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4569173",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 54.5,
+            "open": 70.5,
+            "games": [
+              {
+                "v": 64.0,
+                "opp": "LV"
+              },
+              {
+                "v": 47.0,
+                "opp": "BUF"
+              },
+              {
+                "v": 22.0,
+                "opp": "JAX"
+              },
+              {
+                "v": 43.0,
+                "opp": "PIT"
+              },
+              {
+                "v": 51.0,
+                "opp": "SEA"
+              }
+            ],
+            "avg": 45.4,
+            "side": "under",
+            "hits": 4,
+            "hitRate": 0.8,
+            "move": -16.0,
+            "moveAgrees": 1,
+            "edge": 0.16697247706422022,
+            "name": "Rhamondre Stevenson",
+            "pos": "RB",
+            "teamAbbr": "NE",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
+            "score": 0.36697247706422026,
+            "result": "win",
+            "actual": 36.0
+          },
+          {
+            "ev": {
+              "id": "401872998",
+              "date": "2026-10-18T17:00Z",
+              "shortName": "CAR @ PHI",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "21",
+                        "abbreviation": "PHI"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "29",
+                        "abbreviation": "CAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "3121023",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 35.5,
+            "open": 32.5,
+            "games": [
+              {
+                "v": 38.0,
+                "opp": "JAX"
+              },
+              {
+                "v": 4.0,
+                "opp": "TEN"
+              },
+              {
+                "v": 77.0,
+                "opp": "WSH"
+              }
+            ],
+            "avg": 39.666666666666664,
+            "side": "over",
+            "hits": 2,
+            "hitRate": 0.6666666666666666,
+            "move": 3.0,
+            "moveAgrees": 1,
+            "edge": 0.11737089201877927,
+            "name": "Dallas Goedert",
+            "pos": "TE",
+            "teamAbbr": "PHI",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3121023.png",
+            "score": 0.26403755868544593,
+            "result": "win",
+            "actual": 61.0
+          }
+        ],
+        "odds": "+596",
+        "result": "win",
+        "units": 5.96
+      },
+      "locked": true,
+      "lockAt": "2026-10-18T13:00:00Z",
+      "lockedAt": "2026-10-18T15:40:26Z"
+    },
+    {
       "key": "2026-2-5",
       "season": 2026,
       "week": 5,
@@ -975,17 +1317,17 @@
     }
   ],
   "current": {
-    "key": "2026-2-6",
+    "key": "2026-2-7",
     "season": 2026,
-    "week": 6,
-    "label": "Week 6",
+    "week": 7,
+    "label": "Week 7",
     "game": {
       "legs": [
         {
           "ev": {
-            "id": "401872999",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "CHI @ ATL",
+            "id": "401873017",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "SF @ ATL",
             "competitions": [
               {
                 "competitors": [
@@ -999,8 +1341,8 @@
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "3",
-                      "abbreviation": "CHI"
+                      "id": "25",
+                      "abbreviation": "SF"
                     }
                   }
                 ]
@@ -1008,36 +1350,34 @@
             ]
           },
           "key": "away",
-          "teamId": "3",
+          "teamId": "25",
           "oppAbbr": "ATL",
-          "ml": -120,
-          "model": 0.6609999999999999,
-          "market": 0.5217391304347826,
-          "edge": 0.13926086956521733,
-          "steam": false,
-          "result": "win",
-          "final": "31-23"
+          "ml": -175,
+          "model": 0.787,
+          "market": 0.6092362344582594,
+          "edge": 0.17776376554174067,
+          "steam": false
         },
         {
           "ev": {
-            "id": "401873001",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "NYJ @ NE",
+            "id": "401873018",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "TB @ CAR",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
+                      "id": "29",
+                      "abbreviation": "CAR"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "27",
+                      "abbreviation": "TB"
                     }
                   }
                 ]
@@ -1045,36 +1385,34 @@
             ]
           },
           "key": "home",
-          "teamId": "17",
-          "oppAbbr": "NYJ",
-          "ml": -345,
-          "model": 0.794,
-          "market": 0.7440690150970525,
-          "edge": 0.04993098490294756,
-          "steam": false,
-          "result": "win",
-          "final": "26-19"
+          "teamId": "29",
+          "oppAbbr": "TB",
+          "ml": -185,
+          "model": 0.685,
+          "market": 0.6224665518611737,
+          "edge": 0.06253344813882633,
+          "steam": true
         },
         {
           "ev": {
-            "id": "401873005",
-            "date": "2026-10-18T20:25Z",
-            "shortName": "BUF @ LV",
+            "id": "401873019",
+            "date": "2026-10-25T20:05Z",
+            "shortName": "DEN @ ARI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "22",
+                      "abbreviation": "ARI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
+                      "id": "7",
+                      "abbreviation": "DEN"
                     }
                   }
                 ]
@@ -1082,239 +1420,238 @@
             ]
           },
           "key": "away",
-          "teamId": "2",
-          "oppAbbr": "LV",
-          "ml": -245,
-          "model": 0.72,
-          "market": 0.6805555555555556,
-          "edge": 0.03944444444444439,
-          "steam": false,
-          "result": "win",
-          "final": "33-30"
+          "teamId": "7",
+          "oppAbbr": "ARI",
+          "ml": -230,
+          "model": 0.688,
+          "market": 0.6690070210631895,
+          "edge": 0.0189929789368104,
+          "steam": false
         }
       ],
-      "odds": "+233",
-      "result": "win",
-      "units": 2.33
+      "odds": "+247"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401872998",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "CAR @ PHI",
+            "id": "401873011",
+            "date": "2026-10-25T13:30Z",
+            "shortName": "PIT VS NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "21",
-                      "abbreviation": "PHI"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "29",
-                      "abbreviation": "CAR"
+                      "id": "23",
+                      "abbreviation": "PIT"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4870795",
-          "type": "Total Receptions (incl. overtime)",
-          "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
-          },
-          "line": 2.5,
-          "open": 1.5,
-          "games": [
-            {
-              "v": 5.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 3.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 3.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 1.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 3.0,
-              "opp": "WSH"
-            }
-          ],
-          "avg": 3.0,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.2,
-          "name": "Makai Lemon",
-          "pos": "WR",
-          "teamAbbr": "PHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870795.png",
-          "score": 0.4000000000000001,
-          "result": "win",
-          "actual": 3.0
-        },
-        {
-          "ev": {
-            "id": "401873001",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "NYJ @ NE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4569173",
+          "ath": "4599739",
           "type": "Total Rushing Yards (incl. overtime)",
           "t": {
             "stat": "rushingYards",
             "label": "rushing yards",
             "min": 30
           },
-          "line": 54.5,
-          "open": 70.5,
+          "line": 41.5,
+          "open": 44.5,
           "games": [
             {
-              "v": 64.0,
+              "v": 70.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 30.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 9.0,
+              "opp": "ATL"
+            },
+            {
+              "v": 14.0,
               "opp": "LV"
             },
             {
-              "v": 47.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 22.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 43.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 51.0,
-              "opp": "SEA"
+              "v": 30.0,
+              "opp": "DET"
             }
           ],
-          "avg": 45.4,
+          "avg": 30.6,
           "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": -16.0,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.16697247706422022,
-          "name": "Rhamondre Stevenson",
+          "edge": 0.2626506024096385,
+          "name": "Kendre Miller",
           "pos": "RB",
-          "teamAbbr": "NE",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
-          "score": 0.36697247706422026,
-          "result": "win",
-          "actual": 36.0
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
+          "score": 0.46265060240963857
         },
         {
           "ev": {
-            "id": "401872998",
-            "date": "2026-10-18T17:00Z",
-            "shortName": "CAR @ PHI",
+            "id": "401873012",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "CIN @ BAL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "21",
-                      "abbreviation": "PHI"
+                      "id": "33",
+                      "abbreviation": "BAL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "29",
-                      "abbreviation": "CAR"
+                      "id": "4",
+                      "abbreviation": "CIN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "3121023",
+          "ath": "4362628",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 35.5,
-          "open": 32.5,
+          "line": 77.5,
+          "open": 79.5,
           "games": [
             {
-              "v": 38.0,
+              "v": 77.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 27.0,
               "opp": "JAX"
             },
             {
-              "v": 4.0,
-              "opp": "TEN"
+              "v": 98.0,
+              "opp": "PIT"
             },
             {
-              "v": 77.0,
-              "opp": "WSH"
+              "v": 75.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 12.0,
+              "opp": "TB"
             }
           ],
-          "avg": 39.666666666666664,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 3.0,
+          "avg": 57.8,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.11737089201877927,
-          "name": "Dallas Goedert",
-          "pos": "TE",
-          "teamAbbr": "PHI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3121023.png",
-          "score": 0.26403755868544593,
-          "result": "win",
-          "actual": 61.0
+          "edge": 0.2541935483870968,
+          "name": "Ja'Marr Chase",
+          "pos": "WR",
+          "teamAbbr": "CIN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4362628.png",
+          "score": 0.45419354838709686
+        },
+        {
+          "ev": {
+            "id": "401873013",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "CLE @ TEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "10",
+                      "abbreviation": "TEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "5",
+                      "abbreviation": "CLE"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4870653",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 38.5,
+          "open": 39.5,
+          "games": [
+            {
+              "v": 37.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 5.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 64.0,
+              "opp": "PIT"
+            },
+            {
+              "v": 9.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 28.0,
+              "opp": "TB"
+            },
+            {
+              "v": 43.0,
+              "opp": "JAX"
+            }
+          ],
+          "avg": 31.0,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.19480519480519481,
+          "name": "KC Concepcion",
+          "pos": "WR",
+          "teamAbbr": "CLE",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870653.png",
+          "score": 0.3414718614718615
         }
       ],
-      "odds": "+596",
-      "result": "win",
-      "units": 5.96
+      "odds": "+596"
     },
-    "locked": true,
-    "lockAt": "2026-10-18T13:00:00Z",
-    "lockedAt": "2026-10-18T15:40:26Z"
+    "locked": false,
+    "lockAt": "2026-10-25T09:30:00Z"
   },
   "totals": {
     "game": {
@@ -1328,6 +1665,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-21T03:46:31Z",
+  "updated": "2026-10-21T06:57:34Z",
   "since": "Week 3, 2026"
 }

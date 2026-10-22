@@ -1387,10 +1387,10 @@
           "key": "away",
           "teamId": "7",
           "oppAbbr": "ARI",
-          "ml": -230,
+          "ml": -238,
           "model": 0.688,
-          "market": 0.6690070210631895,
-          "edge": 0.0189929789368104,
+          "market": 0.6750312469954812,
+          "edge": 0.012968753004518718,
           "steam": false
         },
         {
@@ -1429,83 +1429,83 @@
           "steam": false
         }
       ],
-      "odds": "+244"
+      "odds": "+241"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873021",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "LAR @ LV",
+            "id": "401873019",
+            "date": "2026-10-25T20:05Z",
+            "shortName": "DEN @ ARI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "22",
+                      "abbreviation": "ARI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
+                      "id": "7",
+                      "abbreviation": "DEN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4428718",
+          "ath": "4372016",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 40.5,
-          "open": 38.5,
+          "line": 51.5,
+          "open": 54.5,
           "games": [
             {
-              "v": 97.0,
-              "opp": "BUF"
+              "v": 24.0,
+              "opp": "SEA"
             },
             {
-              "v": 41.0,
-              "opp": "NE"
-            },
-            {
-              "v": 44.0,
-              "opp": "KC"
-            },
-            {
-              "v": 43.0,
-              "opp": "NO"
-            },
-            {
-              "v": 119.0,
+              "v": 19.0,
               "opp": "LAC"
             },
             {
-              "v": 27.0,
-              "opp": "MIA"
+              "v": 35.0,
+              "opp": "SF"
+            },
+            {
+              "v": 10.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 138.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 2.0,
+              "opp": "KC"
             }
           ],
-          "avg": 61.833333333333336,
-          "side": "over",
+          "avg": 38.0,
+          "side": "under",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": 2.0,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.5267489711934157,
-          "name": "Tre Tucker",
+          "edge": 0.2621359223300971,
+          "name": "Jaylen Waddle",
           "pos": "WR",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.740082304526749
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
+          "score": 0.47546925566343046
         },
         {
           "ev": {
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-22T12:56:09Z",
+  "updated": "2026-10-22T15:46:55Z",
   "since": "Week 3, 2026"
 }

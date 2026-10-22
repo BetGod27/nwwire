@@ -1352,10 +1352,10 @@
           "key": "away",
           "teamId": "25",
           "oppAbbr": "ATL",
-          "ml": -162,
+          "ml": -155,
           "model": 0.787,
-          "market": 0.593369754159424,
-          "edge": 0.1936302458405761,
+          "market": 0.5829926410466066,
+          "edge": 0.2040073589533934,
           "steam": false
         },
         {
@@ -1429,83 +1429,83 @@
           "steam": false
         }
       ],
-      "odds": "+272"
+      "odds": "+278"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873016",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "NYG @ HOU",
+            "id": "401873021",
+            "date": "2026-10-25T20:25Z",
+            "shortName": "LAR @ LV",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
+                      "id": "14",
+                      "abbreviation": "LAR"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4586312",
+          "ath": "4428718",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 30.5,
-          "open": 23.5,
+          "line": 40.5,
+          "open": 38.5,
           "games": [
             {
-              "v": 107.0,
-              "opp": "JAX"
+              "v": 97.0,
+              "opp": "BUF"
             },
             {
               "v": 41.0,
-              "opp": "TEN"
+              "opp": "NE"
             },
             {
-              "v": 85.0,
-              "opp": "DAL"
+              "v": 44.0,
+              "opp": "KC"
             },
             {
-              "v": 17.0,
-              "opp": "IND"
+              "v": 43.0,
+              "opp": "NO"
             },
             {
-              "v": 31.0,
-              "opp": "CIN"
+              "v": 119.0,
+              "opp": "LAC"
             },
             {
-              "v": 53.0,
-              "opp": "BUF"
+              "v": 27.0,
+              "opp": "MIA"
             }
           ],
-          "avg": 55.666666666666664,
+          "avg": 61.833333333333336,
           "side": "over",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": 7.0,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.8251366120218578,
-          "name": "Jaylin Noel",
+          "edge": 0.5267489711934157,
+          "name": "Tre Tucker",
           "pos": "WR",
-          "teamAbbr": "HOU",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4586312.png",
-          "score": 0.8133333333333334
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
+          "score": 0.740082304526749
         },
         {
           "ev": {
@@ -1540,7 +1540,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 45.5,
+          "line": 47.5,
           "open": 41.5,
           "games": [
             {
@@ -1608,14 +1608,14 @@
           "side": "over",
           "hits": 10,
           "hitRate": 0.6666666666666666,
-          "move": 4.0,
+          "move": 6.0,
           "moveAgrees": 1,
-          "edge": 0.3611721611721611,
+          "edge": 0.30385964912280694,
           "name": "Josh Jacobs",
           "pos": "RB",
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.5078388278388277
+          "score": 0.4505263157894736
         },
         {
           "ev": {
@@ -1650,7 +1650,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 40.5,
+          "line": 38.5,
           "open": 44.5,
           "games": [
             {
@@ -1678,14 +1678,14 @@
           "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": -4.0,
+          "move": -6.0,
           "moveAgrees": 1,
-          "edge": 0.2444444444444444,
+          "edge": 0.20519480519480515,
           "name": "Kendre Miller",
           "pos": "RB",
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.4444444444444445
+          "score": 0.40519480519480516
         }
       ],
       "odds": "+596"
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-22T00:56:34Z",
+  "updated": "2026-10-22T03:46:46Z",
   "since": "Week 3, 2026"
 }

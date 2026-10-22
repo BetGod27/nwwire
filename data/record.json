@@ -1352,10 +1352,10 @@
           "key": "away",
           "teamId": "25",
           "oppAbbr": "ATL",
-          "ml": -155,
+          "ml": -148,
           "model": 0.787,
-          "market": 0.5829926410466066,
-          "edge": 0.2040073589533934,
+          "market": 0.5720596355604638,
+          "edge": 0.21494036443953624,
           "steam": false
         },
         {
@@ -1429,7 +1429,7 @@
           "steam": false
         }
       ],
-      "odds": "+241"
+      "odds": "+247"
     },
     "prop": {
       "legs": [
@@ -1509,116 +1509,6 @@
         },
         {
           "ev": {
-            "id": "401873020",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "GB @ DET",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "9",
-                      "abbreviation": "GB"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4047365",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 47.5,
-          "open": 41.5,
-          "games": [
-            {
-              "v": 3.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 36.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 73.0,
-              "opp": "DEN"
-            },
-            {
-              "v": 86.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 83.0,
-              "opp": "DET"
-            },
-            {
-              "v": 40.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 74.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 87.0,
-              "opp": "CAR"
-            },
-            {
-              "v": 33.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 55.0,
-              "opp": "ARI"
-            },
-            {
-              "v": 93.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 86.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 30.0,
-              "opp": "CLE"
-            },
-            {
-              "v": 84.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 66.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 61.93333333333333,
-          "side": "over",
-          "hits": 10,
-          "hitRate": 0.6666666666666666,
-          "move": 6.0,
-          "moveAgrees": 1,
-          "edge": 0.30385964912280694,
-          "name": "Josh Jacobs",
-          "pos": "RB",
-          "teamAbbr": "GB",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.4505263157894736
-        },
-        {
-          "ev": {
             "id": "401873011",
             "date": "2026-10-25T13:30Z",
             "shortName": "PIT VS NO",
@@ -1686,6 +1576,80 @@
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
           "score": 0.40519480519480516
+        },
+        {
+          "ev": {
+            "id": "401873017",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "SF @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3117251",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 42.5,
+          "open": 45.5,
+          "games": [
+            {
+              "v": 53.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 15.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 18.0,
+              "opp": "DEN"
+            },
+            {
+              "v": 41.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 43.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 20.0,
+              "opp": "LAR"
+            }
+          ],
+          "avg": 31.666666666666668,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.2549019607843137,
+          "name": "Christian McCaffrey",
+          "pos": "RB",
+          "teamAbbr": "SF",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3117251.png",
+          "score": 0.4015686274509804
         }
       ],
       "odds": "+596"
@@ -1705,6 +1669,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-22T15:46:55Z",
+  "updated": "2026-10-22T18:52:52Z",
   "since": "Week 3, 2026"
 }

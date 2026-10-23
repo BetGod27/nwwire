@@ -1459,53 +1459,53 @@
               }
             ]
           },
-          "ath": "4372016",
+          "ath": "3128429",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 51.5,
-          "open": 54.5,
+          "line": 33.5,
+          "open": 35.5,
           "games": [
             {
-              "v": 24.0,
+              "v": 19.0,
               "opp": "SEA"
             },
             {
-              "v": 19.0,
+              "v": 18.0,
               "opp": "LAC"
             },
             {
-              "v": 35.0,
+              "v": 4.0,
               "opp": "SF"
             },
             {
-              "v": 10.0,
+              "v": 46.0,
               "opp": "LAR"
             },
             {
-              "v": 138.0,
+              "v": 25.0,
               "opp": "JAX"
             },
             {
-              "v": 2.0,
+              "v": 11.0,
               "opp": "KC"
             }
           ],
-          "avg": 38.0,
+          "avg": 20.5,
           "side": "under",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": -3.0,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.2621359223300971,
-          "name": "Jaylen Waddle",
+          "edge": 0.3880597014925373,
+          "name": "Courtland Sutton",
           "pos": "WR",
           "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
-          "score": 0.47546925566343046
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
+          "score": 0.6013930348258706
         },
         {
           "ev": {
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-23T09:46:15Z",
+  "updated": "2026-10-23T12:54:58Z",
   "since": "Week 3, 2026"
 }

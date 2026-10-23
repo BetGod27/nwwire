@@ -1360,6 +1360,41 @@
         },
         {
           "ev": {
+            "id": "401873021",
+            "date": "2026-10-25T20:25Z",
+            "shortName": "LAR @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "14",
+          "oppAbbr": "LV",
+          "ml": -192,
+          "model": 0.667,
+          "market": 0.6309403437815976,
+          "edge": 0.03605965621840246,
+          "steam": false
+        },
+        {
+          "ev": {
             "id": "401873019",
             "date": "2026-10-25T20:05Z",
             "shortName": "DEN @ ARI",
@@ -1392,44 +1427,9 @@
           "market": 0.6750312469954812,
           "edge": 0.012968753004518718,
           "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873021",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "LAR @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "14",
-          "oppAbbr": "LV",
-          "ml": -205,
-          "model": 0.667,
-          "market": 0.644729178800233,
-          "edge": 0.022270821199767088,
-          "steam": false
         }
       ],
-      "odds": "+254"
+      "odds": "+262"
     },
     "prop": {
       "legs": [
@@ -1459,53 +1459,53 @@
               }
             ]
           },
-          "ath": "4372016",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4373626",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 51.5,
-          "open": 54.5,
+          "line": 42.5,
+          "open": 46.5,
           "games": [
             {
-              "v": 24.0,
-              "opp": "SEA"
+              "v": 38.0,
+              "opp": "LAR"
             },
             {
-              "v": 19.0,
-              "opp": "LAC"
+              "v": 7.0,
+              "opp": "DET"
             },
             {
-              "v": 35.0,
+              "v": 42.0,
+              "opp": "NYG"
+            },
+            {
+              "v": -1.0,
               "opp": "SF"
             },
             {
               "v": 10.0,
-              "opp": "LAR"
+              "opp": "SEA"
             },
             {
-              "v": 138.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 2.0,
-              "opp": "KC"
+              "v": 61.0,
+              "opp": "LAC"
             }
           ],
-          "avg": 38.0,
+          "avg": 26.166666666666668,
           "side": "under",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": -3.0,
+          "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.2621359223300971,
-          "name": "Jaylen Waddle",
-          "pos": "WR",
-          "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
-          "score": 0.47546925566343046
+          "edge": 0.38431372549019605,
+          "name": "Tyler Allgeier",
+          "pos": "RB",
+          "teamAbbr": "ARI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373626.png",
+          "score": 0.5976470588235293
         },
         {
           "ev": {
@@ -1579,77 +1579,113 @@
         },
         {
           "ev": {
-            "id": "401873017",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "SF @ ATL",
+            "id": "401873020",
+            "date": "2026-10-25T20:25Z",
+            "shortName": "GB @ DET",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "8",
+                      "abbreviation": "DET"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
+                      "id": "9",
+                      "abbreviation": "GB"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "3117251",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4047365",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 42.5,
-          "open": 45.5,
+          "line": 49.5,
+          "open": 41.5,
           "games": [
             {
-              "v": 53.0,
-              "opp": "WSH"
+              "v": 3.0,
+              "opp": "BAL"
             },
             {
-              "v": 15.0,
-              "opp": "SEA"
+              "v": 36.0,
+              "opp": "CHI"
             },
             {
-              "v": 18.0,
+              "v": 73.0,
               "opp": "DEN"
             },
             {
-              "v": 41.0,
+              "v": 86.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 83.0,
+              "opp": "DET"
+            },
+            {
+              "v": 40.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 74.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 87.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 33.0,
+              "opp": "PIT"
+            },
+            {
+              "v": 55.0,
               "opp": "ARI"
             },
             {
-              "v": 43.0,
-              "opp": "MIA"
+              "v": 93.0,
+              "opp": "CIN"
             },
             {
-              "v": 20.0,
-              "opp": "LAR"
+              "v": 86.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 30.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 84.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 66.0,
+              "opp": "DET"
             }
           ],
-          "avg": 31.666666666666668,
-          "side": "under",
-          "hits": 4,
+          "avg": 61.93333333333333,
+          "side": "over",
+          "hits": 10,
           "hitRate": 0.6666666666666666,
-          "move": -3.0,
+          "move": 8.0,
           "moveAgrees": 1,
-          "edge": 0.2549019607843137,
-          "name": "Christian McCaffrey",
+          "edge": 0.2511784511784511,
+          "name": "Josh Jacobs",
           "pos": "RB",
-          "teamAbbr": "SF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3117251.png",
-          "score": 0.4015686274509804
+          "teamAbbr": "GB",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
+          "score": 0.3978451178451178
         }
       ],
       "odds": "+596"
@@ -1669,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-22T21:43:24Z",
+  "updated": "2026-10-23T01:00:10Z",
   "since": "Week 3, 2026"
 }

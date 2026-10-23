@@ -1387,10 +1387,10 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "LV",
-          "ml": -192,
+          "ml": -185,
           "model": 0.662,
-          "market": 0.6309403437815976,
-          "edge": 0.031059656218402454,
+          "market": 0.6224665518611737,
+          "edge": 0.03953344813882631,
           "steam": false
         },
         {
@@ -1422,91 +1422,17 @@
           "key": "away",
           "teamId": "7",
           "oppAbbr": "ARI",
-          "ml": -230,
+          "ml": -238,
           "model": 0.6859999999999999,
-          "market": 0.6690070210631895,
-          "edge": 0.0169929789368104,
+          "market": 0.6750312469954812,
+          "edge": 0.010968753004518716,
           "steam": false
         }
       ],
-      "odds": "+266"
+      "odds": "+267"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873019",
-            "date": "2026-10-25T20:05Z",
-            "shortName": "DEN @ ARI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "3128429",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 33.5,
-          "open": 35.5,
-          "games": [
-            {
-              "v": 19.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 18.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 4.0,
-              "opp": "SF"
-            },
-            {
-              "v": 46.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 25.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 11.0,
-              "opp": "KC"
-            }
-          ],
-          "avg": 20.5,
-          "side": "under",
-          "hits": 5,
-          "hitRate": 0.8333333333333334,
-          "move": -2.0,
-          "moveAgrees": 1,
-          "edge": 0.3880597014925373,
-          "name": "Courtland Sutton",
-          "pos": "WR",
-          "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3128429.png",
-          "score": 0.6013930348258706
-        },
         {
           "ev": {
             "id": "401873011",
@@ -1686,6 +1612,80 @@
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
           "score": 0.3978451178451178
+        },
+        {
+          "ev": {
+            "id": "401873019",
+            "date": "2026-10-25T20:05Z",
+            "shortName": "DEN @ ARI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "22",
+                      "abbreviation": "ARI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4372016",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 4.5,
+          "open": 5.5,
+          "games": [
+            {
+              "v": 4.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 2.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 5.0,
+              "opp": "SF"
+            },
+            {
+              "v": 2.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 8.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 1.0,
+              "opp": "KC"
+            }
+          ],
+          "avg": 3.6666666666666665,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.18518518518518523,
+          "name": "Jaylen Waddle",
+          "pos": "WR",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
+          "score": 0.3318518518518519
         }
       ],
       "odds": "+596"
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-23T15:49:29Z",
+  "updated": "2026-10-23T18:52:58Z",
   "since": "Week 3, 2026"
 }

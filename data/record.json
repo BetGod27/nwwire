@@ -1422,14 +1422,14 @@
           "key": "away",
           "teamId": "7",
           "oppAbbr": "ARI",
-          "ml": -238,
+          "ml": -230,
           "model": 0.688,
-          "market": 0.6750312469954812,
-          "edge": 0.012968753004518718,
+          "market": 0.6690070210631895,
+          "edge": 0.0189929789368104,
           "steam": false
         }
       ],
-      "odds": "+262"
+      "odds": "+266"
     },
     "prop": {
       "legs": [
@@ -1459,53 +1459,53 @@
               }
             ]
           },
-          "ath": "4373626",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4372016",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 42.5,
-          "open": 46.5,
+          "line": 51.5,
+          "open": 54.5,
           "games": [
             {
-              "v": 38.0,
-              "opp": "LAR"
+              "v": 24.0,
+              "opp": "SEA"
             },
             {
-              "v": 7.0,
-              "opp": "DET"
+              "v": 19.0,
+              "opp": "LAC"
             },
             {
-              "v": 42.0,
-              "opp": "NYG"
-            },
-            {
-              "v": -1.0,
+              "v": 35.0,
               "opp": "SF"
             },
             {
               "v": 10.0,
-              "opp": "SEA"
+              "opp": "LAR"
             },
             {
-              "v": 61.0,
-              "opp": "LAC"
+              "v": 138.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 2.0,
+              "opp": "KC"
             }
           ],
-          "avg": 26.166666666666668,
+          "avg": 38.0,
           "side": "under",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": -4.0,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.38431372549019605,
-          "name": "Tyler Allgeier",
-          "pos": "RB",
-          "teamAbbr": "ARI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373626.png",
-          "score": 0.5976470588235293
+          "edge": 0.2621359223300971,
+          "name": "Jaylen Waddle",
+          "pos": "WR",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
+          "score": 0.47546925566343046
         },
         {
           "ev": {
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-23T01:00:10Z",
+  "updated": "2026-10-23T03:46:20Z",
   "since": "Week 3, 2026"
 }

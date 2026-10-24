@@ -1387,10 +1387,10 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "LV",
-          "ml": -180,
+          "ml": -175,
           "model": 0.662,
-          "market": 0.6164383561643836,
-          "edge": 0.04556164383561645,
+          "market": 0.6092362344582594,
+          "edge": 0.05276376554174067,
           "steam": false
         },
         {
@@ -1429,10 +1429,84 @@
           "steam": false
         }
       ],
-      "odds": "+270"
+      "odds": "+274"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873021",
+            "date": "2026-10-25T20:25Z",
+            "shortName": "LAR @ LV",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4428718",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 41.5,
+          "open": 38.5,
+          "games": [
+            {
+              "v": 97.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 41.0,
+              "opp": "NE"
+            },
+            {
+              "v": 44.0,
+              "opp": "KC"
+            },
+            {
+              "v": 43.0,
+              "opp": "NO"
+            },
+            {
+              "v": 119.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 27.0,
+              "opp": "MIA"
+            }
+          ],
+          "avg": 61.833333333333336,
+          "side": "over",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 3.0,
+          "moveAgrees": 1,
+          "edge": 0.48995983935742976,
+          "name": "Tre Tucker",
+          "pos": "WR",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
+          "score": 0.6366265060240964
+        },
         {
           "ev": {
             "id": "401873020",
@@ -1545,76 +1619,6 @@
         },
         {
           "ev": {
-            "id": "401873011",
-            "date": "2026-10-25T13:30Z",
-            "shortName": "PIT VS NO",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4599739",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 36.5,
-          "open": 44.5,
-          "games": [
-            {
-              "v": 70.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 30.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 9.0,
-              "opp": "ATL"
-            },
-            {
-              "v": 14.0,
-              "opp": "LV"
-            },
-            {
-              "v": 30.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 30.6,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -8.0,
-          "moveAgrees": 1,
-          "edge": 0.16164383561643833,
-          "name": "Kendre Miller",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.36164383561643837
-        },
-        {
-          "ev": {
             "id": "401873019",
             "date": "2026-10-25T20:05Z",
             "shortName": "DEN @ ARI",
@@ -1691,7 +1695,7 @@
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-25T09:30:00Z"
+    "lockAt": "2026-10-25T13:00:00Z"
   },
   "totals": {
     "game": {
@@ -1705,6 +1709,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-24T01:02:04Z",
+  "updated": "2026-10-24T03:45:12Z",
   "since": "Week 3, 2026"
 }

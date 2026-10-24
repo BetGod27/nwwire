@@ -1422,91 +1422,17 @@
           "key": "away",
           "teamId": "7",
           "oppAbbr": "ARI",
-          "ml": -238,
+          "ml": -230,
           "model": 0.6859999999999999,
-          "market": 0.6750312469954812,
-          "edge": 0.010968753004518716,
+          "market": 0.6690070210631895,
+          "edge": 0.0169929789368104,
           "steam": false
         }
       ],
-      "odds": "+274"
+      "odds": "+278"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873021",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "LAR @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4428718",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 41.5,
-          "open": 38.5,
-          "games": [
-            {
-              "v": 97.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 41.0,
-              "opp": "NE"
-            },
-            {
-              "v": 44.0,
-              "opp": "KC"
-            },
-            {
-              "v": 43.0,
-              "opp": "NO"
-            },
-            {
-              "v": 119.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 27.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 61.833333333333336,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.48995983935742976,
-          "name": "Tre Tucker",
-          "pos": "WR",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.6366265060240964
-        },
         {
           "ev": {
             "id": "401873020",
@@ -1540,7 +1466,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 50.5,
+          "line": 49.5,
           "open": 41.5,
           "games": [
             {
@@ -1608,14 +1534,88 @@
           "side": "over",
           "hits": 10,
           "hitRate": 0.6666666666666666,
-          "move": 9.0,
+          "move": 8.0,
           "moveAgrees": 1,
-          "edge": 0.22640264026402634,
+          "edge": 0.2511784511784511,
           "name": "Josh Jacobs",
           "pos": "RB",
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.373069306930693
+          "score": 0.3978451178451178
+        },
+        {
+          "ev": {
+            "id": "401873016",
+            "date": "2026-10-25T17:00Z",
+            "shortName": "NYG @ HOU",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "19",
+                      "abbreviation": "NYG"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4361050",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 52.5,
+          "open": 48.5,
+          "games": [
+            {
+              "v": 99.0,
+              "opp": "NO"
+            },
+            {
+              "v": 94.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 66.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 13.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 33.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 78.0,
+              "opp": "DAL"
+            }
+          ],
+          "avg": 63.833333333333336,
+          "side": "over",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 4.0,
+          "moveAgrees": 1,
+          "edge": 0.2158730158730159,
+          "name": "Isaiah Likely",
+          "pos": "TE",
+          "teamAbbr": "NYG",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4361050.png",
+          "score": 0.36253968253968255
         },
         {
           "ev": {
@@ -1709,6 +1709,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-24T03:45:12Z",
+  "updated": "2026-10-24T06:53:44Z",
   "since": "Week 3, 2026"
 }

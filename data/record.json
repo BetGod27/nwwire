@@ -1545,77 +1545,73 @@
         },
         {
           "ev": {
-            "id": "401873016",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "NYG @ HOU",
+            "id": "401873011",
+            "date": "2026-10-25T13:30Z",
+            "shortName": "PIT VS NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
+                      "id": "23",
+                      "abbreviation": "PIT"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4361050",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4599739",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 52.5,
-          "open": 48.5,
+          "line": 36.5,
+          "open": 44.5,
           "games": [
             {
-              "v": 99.0,
-              "opp": "NO"
+              "v": 70.0,
+              "opp": "NYG"
             },
             {
-              "v": 94.0,
-              "opp": "WSH"
+              "v": 30.0,
+              "opp": "MIN"
             },
             {
-              "v": 66.0,
-              "opp": "ARI"
+              "v": 9.0,
+              "opp": "ATL"
             },
             {
-              "v": 13.0,
-              "opp": "TEN"
+              "v": 14.0,
+              "opp": "LV"
             },
             {
-              "v": 33.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 78.0,
-              "opp": "DAL"
+              "v": 30.0,
+              "opp": "DET"
             }
           ],
-          "avg": 63.833333333333336,
-          "side": "over",
+          "avg": 30.6,
+          "side": "under",
           "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 4.0,
+          "hitRate": 0.8,
+          "move": -8.0,
           "moveAgrees": 1,
-          "edge": 0.2158730158730159,
-          "name": "Isaiah Likely",
-          "pos": "TE",
-          "teamAbbr": "NYG",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4361050.png",
-          "score": 0.36253968253968255
+          "edge": 0.16164383561643833,
+          "name": "Kendre Miller",
+          "pos": "RB",
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
+          "score": 0.36164383561643837
         },
         {
           "ev": {
@@ -1695,7 +1691,7 @@
       "odds": "+596"
     },
     "locked": false,
-    "lockAt": "2026-10-25T13:00:00Z"
+    "lockAt": "2026-10-25T09:30:00Z"
   },
   "totals": {
     "game": {
@@ -1709,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-24T15:43:03Z",
+  "updated": "2026-10-24T18:45:21Z",
   "since": "Week 3, 2026"
 }

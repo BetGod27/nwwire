@@ -1466,7 +1466,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 49.5,
+          "line": 50.5,
           "open": 41.5,
           "games": [
             {
@@ -1534,14 +1534,14 @@
           "side": "over",
           "hits": 10,
           "hitRate": 0.6666666666666666,
-          "move": 8.0,
+          "move": 9.0,
           "moveAgrees": 1,
-          "edge": 0.2511784511784511,
+          "edge": 0.22640264026402634,
           "name": "Josh Jacobs",
           "pos": "RB",
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.3978451178451178
+          "score": 0.373069306930693
         },
         {
           "ev": {
@@ -1709,6 +1709,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-24T12:52:06Z",
+  "updated": "2026-10-24T15:43:03Z",
   "since": "Week 3, 2026"
 }

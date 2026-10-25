@@ -1616,7 +1616,8 @@
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
           "score": 0.36164383561643837,
-          "result": null
+          "result": "win",
+          "actual": 6.0
         },
         {
           "ev": {
@@ -1712,6 +1713,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-25T15:43:28Z",
+  "updated": "2026-10-25T18:46:33Z",
   "since": "Week 3, 2026"
 }

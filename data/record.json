@@ -1352,10 +1352,10 @@
           "key": "away",
           "teamId": "25",
           "oppAbbr": "ATL",
-          "ml": -148,
+          "ml": -142,
           "model": 0.7909999999999999,
-          "market": 0.5720596355604638,
-          "edge": 0.21894036443953613,
+          "market": 0.5634920634920635,
+          "edge": 0.22750793650793644,
           "steam": false
         },
         {
@@ -1429,10 +1429,80 @@
           "steam": false
         }
       ],
-      "odds": "+341"
+      "odds": "+349"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873011",
+            "date": "2026-10-25T13:30Z",
+            "shortName": "PIT VS NO",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "18",
+                      "abbreviation": "NO"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "23",
+                      "abbreviation": "PIT"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4599739",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 37.5,
+          "open": 44.5,
+          "games": [
+            {
+              "v": 70.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 30.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 9.0,
+              "opp": "ATL"
+            },
+            {
+              "v": 14.0,
+              "opp": "LV"
+            },
+            {
+              "v": 30.0,
+              "opp": "DET"
+            }
+          ],
+          "avg": 30.6,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -7.0,
+          "moveAgrees": 1,
+          "edge": 0.18399999999999997,
+          "name": "Kendre Miller",
+          "pos": "RB",
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
+          "score": 0.384
+        },
         {
           "ev": {
             "id": "401873020",
@@ -1545,76 +1615,6 @@
         },
         {
           "ev": {
-            "id": "401873011",
-            "date": "2026-10-25T13:30Z",
-            "shortName": "PIT VS NO",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4599739",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 36.5,
-          "open": 44.5,
-          "games": [
-            {
-              "v": 70.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 30.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 9.0,
-              "opp": "ATL"
-            },
-            {
-              "v": 14.0,
-              "opp": "LV"
-            },
-            {
-              "v": 30.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 30.6,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -8.0,
-          "moveAgrees": 1,
-          "edge": 0.16164383561643833,
-          "name": "Kendre Miller",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.36164383561643837
-        },
-        {
-          "ev": {
             "id": "401873019",
             "date": "2026-10-25T20:05Z",
             "shortName": "DEN @ ARI",
@@ -1705,6 +1705,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-25T03:46:08Z",
+  "updated": "2026-10-25T06:54:47Z",
   "since": "Week 3, 2026"
 }

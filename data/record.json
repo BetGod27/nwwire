@@ -1356,7 +1356,8 @@
           "model": 0.7909999999999999,
           "market": 0.5634920634920635,
           "edge": 0.22750793650793644,
-          "steam": false
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
@@ -1391,7 +1392,8 @@
           "model": 0.652,
           "market": 0.5720596355604638,
           "edge": 0.07994036443953623,
-          "steam": true
+          "steam": true,
+          "result": null
         },
         {
           "ev": {
@@ -1426,83 +1428,14 @@
           "model": 0.662,
           "market": 0.6092362344582594,
           "edge": 0.05276376554174067,
-          "steam": false
+          "steam": false,
+          "result": null
         }
       ],
       "odds": "+349"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873011",
-            "date": "2026-10-25T13:30Z",
-            "shortName": "PIT VS NO",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4599739",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 37.5,
-          "open": 44.5,
-          "games": [
-            {
-              "v": 70.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 30.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 9.0,
-              "opp": "ATL"
-            },
-            {
-              "v": 14.0,
-              "opp": "LV"
-            },
-            {
-              "v": 30.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 30.6,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -7.0,
-          "moveAgrees": 1,
-          "edge": 0.18399999999999997,
-          "name": "Kendre Miller",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.384
-        },
         {
           "ev": {
             "id": "401873020",
@@ -1611,7 +1544,79 @@
           "pos": "RB",
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.373069306930693
+          "score": 0.373069306930693,
+          "result": null
+        },
+        {
+          "ev": {
+            "id": "401873011",
+            "date": "2026-10-25T13:30Z",
+            "shortName": "PIT VS NO",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "18",
+                      "abbreviation": "NO"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "23",
+                      "abbreviation": "PIT"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4599739",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 36.5,
+          "open": 44.5,
+          "games": [
+            {
+              "v": 70.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 30.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 9.0,
+              "opp": "ATL"
+            },
+            {
+              "v": 14.0,
+              "opp": "LV"
+            },
+            {
+              "v": 30.0,
+              "opp": "DET"
+            }
+          ],
+          "avg": 30.6,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -8.0,
+          "moveAgrees": 1,
+          "edge": 0.16164383561643833,
+          "name": "Kendre Miller",
+          "pos": "RB",
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
+          "score": 0.36164383561643837,
+          "result": null
         },
         {
           "ev": {
@@ -1685,13 +1690,15 @@
           "pos": "WR",
           "teamAbbr": "DEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
-          "score": 0.3318518518518519
+          "score": 0.3318518518518519,
+          "result": null
         }
       ],
       "odds": "+596"
     },
-    "locked": false,
-    "lockAt": "2026-10-25T09:30:00Z"
+    "locked": true,
+    "lockAt": "2026-10-25T09:30:00Z",
+    "lockedAt": "2026-10-25T09:43:30Z"
   },
   "totals": {
     "game": {
@@ -1705,6 +1712,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-25T06:54:47Z",
+  "updated": "2026-10-25T09:43:30Z",
   "since": "Week 3, 2026"
 }

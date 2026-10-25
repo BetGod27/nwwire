@@ -1357,7 +1357,8 @@
           "market": 0.5634920634920635,
           "edge": 0.22750793650793644,
           "steam": false,
-          "result": null
+          "result": "loss",
+          "final": "20-29"
         },
         {
           "ev": {
@@ -1393,7 +1394,8 @@
           "market": 0.5720596355604638,
           "edge": 0.07994036443953623,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "35-13"
         },
         {
           "ev": {
@@ -1432,7 +1434,9 @@
           "result": null
         }
       ],
-      "odds": "+349"
+      "odds": "+349",
+      "result": "loss",
+      "units": -1.0
     },
     "prop": {
       "legs": [
@@ -1704,8 +1708,8 @@
   "totals": {
     "game": {
       "w": 2,
-      "l": 2,
-      "units": 1.14
+      "l": 3,
+      "units": 0.14
     },
     "prop": {
       "w": 2,
@@ -1713,6 +1717,6 @@
       "units": 9.92
     }
   },
-  "updated": "2026-10-25T18:46:33Z",
+  "updated": "2026-10-25T21:42:04Z",
   "since": "Week 3, 2026"
 }

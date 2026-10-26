@@ -1431,7 +1431,8 @@
           "market": 0.6092362344582594,
           "edge": 0.05276376554174067,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "35-21"
         }
       ],
       "odds": "+349",
@@ -1549,7 +1550,8 @@
           "teamAbbr": "GB",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
           "score": 0.373069306930693,
-          "result": null
+          "result": "loss",
+          "actual": 36.0
         },
         {
           "ev": {
@@ -1696,10 +1698,13 @@
           "teamAbbr": "DEN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
           "score": 0.3318518518518519,
-          "result": null
+          "result": "win",
+          "actual": 4.0
         }
       ],
-      "odds": "+596"
+      "odds": "+596",
+      "result": "loss",
+      "units": -1.0
     },
     "locked": true,
     "lockAt": "2026-10-25T09:30:00Z",
@@ -1713,10 +1718,10 @@
     },
     "prop": {
       "w": 2,
-      "l": 2,
-      "units": 9.92
+      "l": 3,
+      "units": 8.92
     }
   },
-  "updated": "2026-10-25T21:42:04Z",
+  "updated": "2026-10-26T01:07:57Z",
   "since": "Week 3, 2026"
 }

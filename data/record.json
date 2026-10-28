@@ -1,6 +1,400 @@
 {
   "history": [
     {
+      "key": "2026-2-7",
+      "season": 2026,
+      "week": 7,
+      "label": "Week 7",
+      "game": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401873017",
+              "date": "2026-10-25T17:00Z",
+              "shortName": "SF @ ATL",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "1",
+                        "abbreviation": "ATL"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "25",
+                        "abbreviation": "SF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "25",
+            "oppAbbr": "ATL",
+            "ml": -142,
+            "model": 0.7909999999999999,
+            "market": 0.5634920634920635,
+            "edge": 0.22750793650793644,
+            "steam": false,
+            "result": "loss",
+            "final": "20-29"
+          },
+          {
+            "ev": {
+              "id": "401873012",
+              "date": "2026-10-25T17:00Z",
+              "shortName": "CIN @ BAL",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "33",
+                        "abbreviation": "BAL"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "4",
+                        "abbreviation": "CIN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "4",
+            "oppAbbr": "BAL",
+            "ml": -148,
+            "model": 0.652,
+            "market": 0.5720596355604638,
+            "edge": 0.07994036443953623,
+            "steam": true,
+            "result": "win",
+            "final": "35-13"
+          },
+          {
+            "ev": {
+              "id": "401873021",
+              "date": "2026-10-25T20:25Z",
+              "shortName": "LAR @ LV",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "13",
+                        "abbreviation": "LV"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "14",
+                        "abbreviation": "LAR"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "14",
+            "oppAbbr": "LV",
+            "ml": -175,
+            "model": 0.662,
+            "market": 0.6092362344582594,
+            "edge": 0.05276376554174067,
+            "steam": false,
+            "result": "win",
+            "final": "35-21"
+          }
+        ],
+        "odds": "+349",
+        "result": "loss",
+        "units": -1.0
+      },
+      "prop": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401873020",
+              "date": "2026-10-25T20:25Z",
+              "shortName": "GB @ DET",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "8",
+                        "abbreviation": "DET"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "9",
+                        "abbreviation": "GB"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4047365",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 50.5,
+            "open": 41.5,
+            "games": [
+              {
+                "v": 3.0,
+                "opp": "BAL"
+              },
+              {
+                "v": 36.0,
+                "opp": "CHI"
+              },
+              {
+                "v": 73.0,
+                "opp": "DEN"
+              },
+              {
+                "v": 86.0,
+                "opp": "CHI"
+              },
+              {
+                "v": 83.0,
+                "opp": "DET"
+              },
+              {
+                "v": 40.0,
+                "opp": "NYG"
+              },
+              {
+                "v": 74.0,
+                "opp": "PHI"
+              },
+              {
+                "v": 87.0,
+                "opp": "CAR"
+              },
+              {
+                "v": 33.0,
+                "opp": "PIT"
+              },
+              {
+                "v": 55.0,
+                "opp": "ARI"
+              },
+              {
+                "v": 93.0,
+                "opp": "CIN"
+              },
+              {
+                "v": 86.0,
+                "opp": "DAL"
+              },
+              {
+                "v": 30.0,
+                "opp": "CLE"
+              },
+              {
+                "v": 84.0,
+                "opp": "WSH"
+              },
+              {
+                "v": 66.0,
+                "opp": "DET"
+              }
+            ],
+            "avg": 61.93333333333333,
+            "side": "over",
+            "hits": 10,
+            "hitRate": 0.6666666666666666,
+            "move": 9.0,
+            "moveAgrees": 1,
+            "edge": 0.22640264026402634,
+            "name": "Josh Jacobs",
+            "pos": "RB",
+            "teamAbbr": "GB",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
+            "score": 0.373069306930693,
+            "result": "loss",
+            "actual": 36.0
+          },
+          {
+            "ev": {
+              "id": "401873011",
+              "date": "2026-10-25T13:30Z",
+              "shortName": "PIT VS NO",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "18",
+                        "abbreviation": "NO"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "23",
+                        "abbreviation": "PIT"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4599739",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 36.5,
+            "open": 44.5,
+            "games": [
+              {
+                "v": 70.0,
+                "opp": "NYG"
+              },
+              {
+                "v": 30.0,
+                "opp": "MIN"
+              },
+              {
+                "v": 9.0,
+                "opp": "ATL"
+              },
+              {
+                "v": 14.0,
+                "opp": "LV"
+              },
+              {
+                "v": 30.0,
+                "opp": "DET"
+              }
+            ],
+            "avg": 30.6,
+            "side": "under",
+            "hits": 4,
+            "hitRate": 0.8,
+            "move": -8.0,
+            "moveAgrees": 1,
+            "edge": 0.16164383561643833,
+            "name": "Kendre Miller",
+            "pos": "RB",
+            "teamAbbr": "NO",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
+            "score": 0.36164383561643837,
+            "result": "win",
+            "actual": 6.0
+          },
+          {
+            "ev": {
+              "id": "401873019",
+              "date": "2026-10-25T20:05Z",
+              "shortName": "DEN @ ARI",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "22",
+                        "abbreviation": "ARI"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "7",
+                        "abbreviation": "DEN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4372016",
+            "type": "Total Receptions (incl. overtime)",
+            "t": {
+              "stat": "receptions",
+              "label": "receptions",
+              "min": 2.5
+            },
+            "line": 4.5,
+            "open": 5.5,
+            "games": [
+              {
+                "v": 4.0,
+                "opp": "SEA"
+              },
+              {
+                "v": 2.0,
+                "opp": "LAC"
+              },
+              {
+                "v": 5.0,
+                "opp": "SF"
+              },
+              {
+                "v": 2.0,
+                "opp": "LAR"
+              },
+              {
+                "v": 8.0,
+                "opp": "JAX"
+              },
+              {
+                "v": 1.0,
+                "opp": "KC"
+              }
+            ],
+            "avg": 3.6666666666666665,
+            "side": "under",
+            "hits": 4,
+            "hitRate": 0.6666666666666666,
+            "move": -1.0,
+            "moveAgrees": 1,
+            "edge": 0.18518518518518523,
+            "name": "Jaylen Waddle",
+            "pos": "WR",
+            "teamAbbr": "DEN",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
+            "score": 0.3318518518518519,
+            "result": "win",
+            "actual": 4.0
+          }
+        ],
+        "odds": "+596",
+        "result": "loss",
+        "units": -1.0
+      },
+      "locked": true,
+      "lockAt": "2026-10-25T09:30:00Z",
+      "lockedAt": "2026-10-25T09:43:30Z"
+    },
+    {
       "key": "2026-2-6",
       "season": 2026,
       "week": 6,
@@ -1317,69 +1711,67 @@
     }
   ],
   "current": {
-    "key": "2026-2-7",
+    "key": "2026-2-8",
     "season": 2026,
-    "week": 7,
-    "label": "Week 7",
+    "week": 8,
+    "label": "Week 8",
     "game": {
       "legs": [
         {
           "ev": {
-            "id": "401873017",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "SF @ ATL",
+            "id": "401873025",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "ATL @ TB",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
+                    "team": {
+                      "id": "27",
+                      "abbreviation": "TB"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
                     "team": {
                       "id": "1",
                       "abbreviation": "ATL"
                     }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
                   }
                 ]
               }
             ]
           },
-          "key": "away",
-          "teamId": "25",
+          "key": "home",
+          "teamId": "27",
           "oppAbbr": "ATL",
-          "ml": -142,
-          "model": 0.7909999999999999,
-          "market": 0.5634920634920635,
-          "edge": 0.22750793650793644,
-          "steam": false,
-          "result": "loss",
-          "final": "20-29"
+          "ml": -135,
+          "model": 0.691,
+          "market": 0.551441114716549,
+          "edge": 0.13955888528345095,
+          "steam": false
         },
         {
           "ev": {
-            "id": "401873012",
-            "date": "2026-10-25T17:00Z",
-            "shortName": "CIN @ BAL",
+            "id": "401873034",
+            "date": "2026-11-01T21:25Z",
+            "shortName": "NE @ MIA",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
+                      "id": "15",
+                      "abbreviation": "MIA"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
+                      "id": "17",
+                      "abbreviation": "NE"
                     }
                   }
                 ]
@@ -1387,328 +1779,265 @@
             ]
           },
           "key": "away",
-          "teamId": "4",
-          "oppAbbr": "BAL",
-          "ml": -148,
-          "model": 0.652,
-          "market": 0.5720596355604638,
-          "edge": 0.07994036443953623,
-          "steam": true,
-          "result": "win",
-          "final": "35-13"
+          "teamId": "17",
+          "oppAbbr": "MIA",
+          "ml": -340,
+          "model": 0.797,
+          "market": 0.740871613663133,
+          "edge": 0.05612838633686701,
+          "steam": false
         },
         {
           "ev": {
-            "id": "401873021",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "LAR @ LV",
+            "id": "401873024",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "ARI @ DAL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "6",
+                      "abbreviation": "DAL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
+                      "id": "22",
+                      "abbreviation": "ARI"
                     }
                   }
                 ]
               }
             ]
           },
-          "key": "away",
-          "teamId": "14",
-          "oppAbbr": "LV",
-          "ml": -175,
-          "model": 0.662,
-          "market": 0.6092362344582594,
-          "edge": 0.05276376554174067,
-          "steam": false,
-          "result": "win",
-          "final": "35-21"
+          "key": "home",
+          "teamId": "6",
+          "oppAbbr": "ARI",
+          "ml": -310,
+          "model": 0.78,
+          "market": 0.725752508361204,
+          "edge": 0.05424749163879605,
+          "steam": false
         }
       ],
-      "odds": "+349",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+198"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873020",
-            "date": "2026-10-25T20:25Z",
-            "shortName": "GB @ DET",
+            "id": "401873026",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "BAL @ BUF",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "9",
-                      "abbreviation": "GB"
+                      "id": "33",
+                      "abbreviation": "BAL"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4047365",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4635008",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 50.5,
-          "open": 41.5,
+          "line": 31.5,
+          "open": 30.5,
           "games": [
             {
-              "v": 3.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 36.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 73.0,
-              "opp": "DEN"
-            },
-            {
-              "v": 86.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 83.0,
-              "opp": "DET"
-            },
-            {
-              "v": 40.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 74.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 87.0,
-              "opp": "CAR"
-            },
-            {
-              "v": 33.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 55.0,
-              "opp": "ARI"
-            },
-            {
-              "v": 93.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 86.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 30.0,
-              "opp": "CLE"
-            },
-            {
-              "v": 84.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 66.0,
-              "opp": "DET"
-            }
-          ],
-          "avg": 61.93333333333333,
-          "side": "over",
-          "hits": 10,
-          "hitRate": 0.6666666666666666,
-          "move": 9.0,
-          "moveAgrees": 1,
-          "edge": 0.22640264026402634,
-          "name": "Josh Jacobs",
-          "pos": "RB",
-          "teamAbbr": "GB",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047365.png",
-          "score": 0.373069306930693,
-          "result": "loss",
-          "actual": 36.0
-        },
-        {
-          "ev": {
-            "id": "401873011",
-            "date": "2026-10-25T13:30Z",
-            "shortName": "PIT VS NO",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4599739",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 36.5,
-          "open": 44.5,
-          "games": [
-            {
-              "v": 70.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 30.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 9.0,
-              "opp": "ATL"
-            },
-            {
-              "v": 14.0,
+              "v": 59.0,
               "opp": "LV"
             },
             {
-              "v": 30.0,
+              "v": 7.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 116.0,
+              "opp": "NE"
+            },
+            {
+              "v": 37.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 63.0,
               "opp": "DET"
+            },
+            {
+              "v": 1.0,
+              "opp": "HOU"
             }
           ],
-          "avg": 30.6,
-          "side": "under",
+          "avg": 47.166666666666664,
+          "side": "over",
           "hits": 4,
-          "hitRate": 0.8,
-          "move": -8.0,
+          "hitRate": 0.6666666666666666,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.16164383561643833,
-          "name": "Kendre Miller",
-          "pos": "RB",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4599739.png",
-          "score": 0.36164383561643837,
-          "result": "win",
-          "actual": 6.0
+          "edge": 0.49735449735449727,
+          "name": "Keon Coleman",
+          "pos": "WR",
+          "teamAbbr": "BUF",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4635008.png",
+          "score": 0.6440211640211638
         },
         {
           "ev": {
-            "id": "401873019",
-            "date": "2026-10-25T20:05Z",
-            "shortName": "DEN @ ARI",
+            "id": "401873031",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "TEN @ CIN",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
+                      "id": "4",
+                      "abbreviation": "CIN"
                     }
                   },
                   {
                     "homeAway": "away",
+                    "team": {
+                      "id": "10",
+                      "abbreviation": "TEN"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4239993",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 65.5,
+          "open": 64.5,
+          "games": [
+            {
+              "v": 148.0,
+              "opp": "BAL"
+            },
+            {
+              "v": 22.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 157.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 90.0,
+              "opp": "PIT"
+            },
+            {
+              "v": 95.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 59.0,
+              "opp": "TB"
+            }
+          ],
+          "avg": 95.16666666666667,
+          "side": "over",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.45292620865139954,
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "teamAbbr": "CIN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
+          "score": 0.5995928753180662
+        },
+        {
+          "ev": {
+            "id": "401873033",
+            "date": "2026-11-01T21:25Z",
+            "shortName": "KC @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
                     "team": {
                       "id": "7",
                       "abbreviation": "DEN"
                     }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
                   }
                 ]
               }
             ]
           },
-          "ath": "4372016",
-          "type": "Total Receptions (incl. overtime)",
+          "ath": "4702555",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
           },
-          "line": 4.5,
-          "open": 5.5,
+          "line": 38.5,
+          "open": 37.5,
           "games": [
             {
-              "v": 4.0,
-              "opp": "SEA"
+              "v": 54.0,
+              "opp": "ARI"
             },
             {
-              "v": 2.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 5.0,
-              "opp": "SF"
-            },
-            {
-              "v": 2.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 8.0,
+              "v": 39.0,
               "opp": "JAX"
-            },
-            {
-              "v": 1.0,
-              "opp": "KC"
             }
           ],
-          "avg": 3.6666666666666665,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": -1.0,
+          "avg": 46.5,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.18518518518518523,
-          "name": "Jaylen Waddle",
-          "pos": "WR",
+          "edge": 0.2077922077922078,
+          "name": "Jonah Coleman",
+          "pos": "RB",
           "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4372016.png",
-          "score": 0.3318518518518519,
-          "result": "win",
-          "actual": 4.0
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4702555.png",
+          "score": 0.48779220779220783
         }
       ],
-      "odds": "+596",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+596"
     },
-    "locked": true,
-    "lockAt": "2026-10-25T09:30:00Z",
-    "lockedAt": "2026-10-25T09:43:30Z"
+    "locked": false,
+    "lockAt": "2026-11-01T14:00:00Z"
   },
   "totals": {
     "game": {
@@ -1722,6 +2051,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-27T22:15:10Z",
+  "updated": "2026-10-28T05:44:08Z",
   "since": "Week 3, 2026"
 }

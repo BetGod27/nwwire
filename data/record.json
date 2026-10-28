@@ -1781,10 +1781,10 @@
           "key": "away",
           "teamId": "17",
           "oppAbbr": "MIA",
-          "ml": -340,
+          "ml": -310,
           "model": 0.797,
-          "market": 0.740871613663133,
-          "edge": 0.05612838633686701,
+          "market": 0.725752508361204,
+          "edge": 0.07124749163879607,
           "steam": false
         },
         {
@@ -1816,14 +1816,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "ARI",
-          "ml": -310,
+          "ml": -355,
           "model": 0.78,
-          "market": 0.725752508361204,
-          "edge": 0.05424749163879605,
+          "market": 0.7477827050997783,
+          "edge": 0.03221729490022174,
           "steam": false
         }
       ],
-      "odds": "+198"
+      "odds": "+195"
     },
     "prop": {
       "legs": [
@@ -1934,7 +1934,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 65.5,
+          "line": 67.5,
           "open": 64.5,
           "games": [
             {
@@ -1966,72 +1966,88 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.6666666666666666,
-          "move": 1.0,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.45292620865139954,
+          "edge": 0.4098765432098766,
           "name": "Tee Higgins",
           "pos": "WR",
           "teamAbbr": "CIN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.5995928753180662
+          "score": 0.5565432098765433
         },
         {
           "ev": {
-            "id": "401873033",
+            "id": "401873034",
             "date": "2026-11-01T21:25Z",
-            "shortName": "KC @ DEN",
+            "shortName": "NE @ MIA",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
+                      "id": "15",
+                      "abbreviation": "MIA"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
+                      "id": "17",
+                      "abbreviation": "NE"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4702555",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4569603",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
+          "line": 40.5,
           "open": 37.5,
           "games": [
             {
-              "v": 54.0,
-              "opp": "ARI"
+              "v": 27.0,
+              "opp": "NYJ"
             },
             {
-              "v": 39.0,
-              "opp": "JAX"
+              "v": 43.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 67.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 56.0,
+              "opp": "KC"
+            },
+            {
+              "v": 43.0,
+              "opp": "SF"
+            },
+            {
+              "v": 53.0,
+              "opp": "LV"
             }
           ],
-          "avg": 46.5,
+          "avg": 48.166666666666664,
           "side": "over",
-          "hits": 2,
-          "hitRate": 1.0,
-          "move": 1.0,
+          "hits": 5,
+          "hitRate": 0.8333333333333334,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.2077922077922078,
-          "name": "Jonah Coleman",
-          "pos": "RB",
-          "teamAbbr": "DEN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4702555.png",
-          "score": 0.48779220779220783
+          "edge": 0.1893004115226337,
+          "name": "Malik Washington",
+          "pos": "WR",
+          "teamAbbr": "MIA",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
+          "score": 0.4026337448559671
         }
       ],
       "odds": "+596"
@@ -2051,6 +2067,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-28T05:44:08Z",
+  "updated": "2026-10-28T12:57:34Z",
   "since": "Week 3, 2026"
 }

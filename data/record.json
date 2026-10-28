@@ -1934,7 +1934,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 67.5,
+          "line": 68.5,
           "open": 64.5,
           "games": [
             {
@@ -1966,14 +1966,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.6666666666666666,
-          "move": 3.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.4098765432098766,
+          "edge": 0.3892944038929441,
           "name": "Tee Higgins",
           "pos": "WR",
           "teamAbbr": "CIN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.5565432098765433
+          "score": 0.5359610705596107
         },
         {
           "ev": {
@@ -2008,7 +2008,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 40.5,
+          "line": 41.5,
           "open": 37.5,
           "games": [
             {
@@ -2040,14 +2040,14 @@
           "side": "over",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": 3.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.1893004115226337,
+          "edge": 0.16064257028112444,
           "name": "Malik Washington",
           "pos": "WR",
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
-          "score": 0.4026337448559671
+          "score": 0.3739759036144578
         }
       ],
       "odds": "+596"
@@ -2067,6 +2067,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-28T12:57:34Z",
+  "updated": "2026-10-28T20:16:27Z",
   "since": "Week 3, 2026"
 }

@@ -1719,41 +1719,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873025",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "ATL @ TB",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "27",
-                      "abbreviation": "TB"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "27",
-          "oppAbbr": "ATL",
-          "ml": -142,
-          "model": 0.691,
-          "market": 0.5634920634920635,
-          "edge": 0.12750793650793646,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401873034",
             "date": "2026-11-01T21:25Z",
             "shortName": "NE @ MIA",
@@ -1781,10 +1746,10 @@
           "key": "away",
           "teamId": "17",
           "oppAbbr": "MIA",
-          "ml": -310,
+          "ml": -325,
           "model": 0.797,
-          "market": 0.725752508361204,
-          "edge": 0.07124749163879607,
+          "market": 0.7335423197492164,
+          "edge": 0.06345768025078369,
           "steam": false
         },
         {
@@ -1821,12 +1786,121 @@
           "market": 0.7335423197492164,
           "edge": 0.04645768025078367,
           "steam": false
+        },
+        {
+          "ev": {
+            "id": "401873032",
+            "date": "2026-11-01T21:05Z",
+            "shortName": "LAC @ LAR",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "14",
+          "oppAbbr": "LAC",
+          "ml": -270,
+          "model": 0.7390000000000001,
+          "market": 0.7001620745542949,
+          "edge": 0.03883792544570519,
+          "steam": true
         }
       ],
-      "odds": "+195"
+      "odds": "+134"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873032",
+            "date": "2026-11-01T21:05Z",
+            "shortName": "LAC @ LAR",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4685382",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 32.5,
+          "open": 23.5,
+          "games": [
+            {
+              "v": 18.0,
+              "opp": "KC"
+            },
+            {
+              "v": 33.0,
+              "opp": "DEN"
+            },
+            {
+              "v": 45.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 56.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 94.0,
+              "opp": "LV"
+            },
+            {
+              "v": 43.0,
+              "opp": "ARI"
+            }
+          ],
+          "avg": 48.166666666666664,
+          "side": "over",
+          "hits": 5,
+          "hitRate": 0.8333333333333334,
+          "move": 9.0,
+          "moveAgrees": 1,
+          "edge": 0.482051282051282,
+          "name": "Omarion Hampton",
+          "pos": "RB",
+          "teamAbbr": "LAC",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
+          "score": 0.6953846153846154
+        },
         {
           "ev": {
             "id": "401873026",
@@ -1900,80 +1974,6 @@
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4635008.png",
           "score": 0.5979487179487178
-        },
-        {
-          "ev": {
-            "id": "401873031",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "TEN @ CIN",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "10",
-                      "abbreviation": "TEN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4239993",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 68.5,
-          "open": 64.5,
-          "games": [
-            {
-              "v": 148.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 22.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 157.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 90.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 95.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 59.0,
-              "opp": "TB"
-            }
-          ],
-          "avg": 95.16666666666667,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.3892944038929441,
-          "name": "Tee Higgins",
-          "pos": "WR",
-          "teamAbbr": "CIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.5359610705596107
         },
         {
           "ev": {
@@ -2067,6 +2067,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-29T09:59:39Z",
+  "updated": "2026-10-29T18:29:09Z",
   "since": "Week 3, 2026"
 }

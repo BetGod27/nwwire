@@ -1816,14 +1816,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "ARI",
-          "ml": -355,
+          "ml": -325,
           "model": 0.78,
-          "market": 0.7477827050997783,
-          "edge": 0.03221729490022174,
+          "market": 0.7335423197492164,
+          "edge": 0.04645768025078367,
           "steam": false
         }
       ],
-      "odds": "+195"
+      "odds": "+201"
     },
     "prop": {
       "legs": [
@@ -1860,7 +1860,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 31.5,
+          "line": 32.5,
           "open": 30.5,
           "games": [
             {
@@ -1892,14 +1892,14 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.6666666666666666,
-          "move": 1.0,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.49735449735449727,
+          "edge": 0.45128205128205123,
           "name": "Keon Coleman",
           "pos": "WR",
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4635008.png",
-          "score": 0.6440211640211638
+          "score": 0.5979487179487178
         },
         {
           "ev": {
@@ -2008,7 +2008,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 41.5,
+          "line": 40.5,
           "open": 37.5,
           "games": [
             {
@@ -2040,14 +2040,14 @@
           "side": "over",
           "hits": 5,
           "hitRate": 0.8333333333333334,
-          "move": 4.0,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.16064257028112444,
+          "edge": 0.1893004115226337,
           "name": "Malik Washington",
           "pos": "WR",
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
-          "score": 0.3739759036144578
+          "score": 0.4026337448559671
         }
       ],
       "odds": "+596"
@@ -2067,6 +2067,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-28T20:16:27Z",
+  "updated": "2026-10-29T00:58:38Z",
   "since": "Week 3, 2026"
 }

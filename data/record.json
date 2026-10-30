@@ -1781,10 +1781,10 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "ARI",
-          "ml": -325,
+          "ml": -310,
           "model": 0.78,
-          "market": 0.7335423197492164,
-          "edge": 0.04645768025078367,
+          "market": 0.725752508361204,
+          "edge": 0.05424749163879605,
           "steam": false
         },
         {
@@ -1823,7 +1823,7 @@
           "steam": true
         }
       ],
-      "odds": "+134"
+      "odds": "+137"
     },
     "prop": {
       "legs": [
@@ -1903,80 +1903,6 @@
         },
         {
           "ev": {
-            "id": "401873026",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "BAL @ BUF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4635008",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 32.5,
-          "open": 30.5,
-          "games": [
-            {
-              "v": 59.0,
-              "opp": "LV"
-            },
-            {
-              "v": 7.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 116.0,
-              "opp": "NE"
-            },
-            {
-              "v": 37.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 63.0,
-              "opp": "DET"
-            },
-            {
-              "v": 1.0,
-              "opp": "HOU"
-            }
-          ],
-          "avg": 47.166666666666664,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 2.0,
-          "moveAgrees": 1,
-          "edge": 0.45128205128205123,
-          "name": "Keon Coleman",
-          "pos": "WR",
-          "teamAbbr": "BUF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4635008.png",
-          "score": 0.5979487179487178
-        },
-        {
-          "ev": {
             "id": "401873034",
             "date": "2026-11-01T21:25Z",
             "shortName": "NE @ MIA",
@@ -2048,6 +1974,84 @@
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
           "score": 0.4026337448559671
+        },
+        {
+          "ev": {
+            "id": "401873027",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "CLE @ PIT",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "23",
+                      "abbreviation": "PIT"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "5",
+                      "abbreviation": "CLE"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4685261",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 43.5,
+          "open": 46.5,
+          "games": [
+            {
+              "v": 27.0,
+              "opp": "NO"
+            },
+            {
+              "v": 87.0,
+              "opp": "TB"
+            },
+            {
+              "v": 80.0,
+              "opp": "IND"
+            },
+            {
+              "v": 11.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 14.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 35.0,
+              "opp": "NE"
+            },
+            {
+              "v": 0.0,
+              "opp": "ATL"
+            }
+          ],
+          "avg": 36.285714285714285,
+          "side": "under",
+          "hits": 5,
+          "hitRate": 0.7142857142857143,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.1658456486042693,
+          "name": "Germie Bernard",
+          "pos": "WR",
+          "teamAbbr": "PIT",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685261.png",
+          "score": 0.33155993431855507
         }
       ],
       "odds": "+596"
@@ -2067,6 +2071,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-29T18:29:09Z",
+  "updated": "2026-10-30T01:01:08Z",
   "since": "Week 3, 2026"
 }

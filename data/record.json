@@ -1747,9 +1747,9 @@
           "teamId": "17",
           "oppAbbr": "MIA",
           "ml": -325,
-          "model": 0.797,
+          "model": 0.7959999999999999,
           "market": 0.7335423197492164,
-          "edge": 0.06345768025078369,
+          "edge": 0.062457680250783576,
           "steam": false
         },
         {
@@ -1782,9 +1782,9 @@
           "teamId": "6",
           "oppAbbr": "ARI",
           "ml": -310,
-          "model": 0.78,
+          "model": 0.784,
           "market": 0.725752508361204,
-          "edge": 0.05424749163879605,
+          "edge": 0.058247491638796056,
           "steam": false
         },
         {
@@ -1817,9 +1817,9 @@
           "teamId": "14",
           "oppAbbr": "LAC",
           "ml": -270,
-          "model": 0.7390000000000001,
+          "model": 0.7440000000000001,
           "market": 0.7001620745542949,
-          "edge": 0.03883792544570519,
+          "edge": 0.043837925445705195,
           "steam": true
         }
       ],
@@ -1827,6 +1827,68 @@
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873034",
+            "date": "2026-11-01T21:25Z",
+            "shortName": "NE @ MIA",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "15",
+                      "abbreviation": "MIA"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "17",
+                      "abbreviation": "NE"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4047646",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 49.5,
+          "open": 53.5,
+          "games": [
+            {
+              "v": 48.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 27.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 26.0,
+              "opp": "SEA"
+            }
+          ],
+          "avg": 33.666666666666664,
+          "side": "under",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": -4.0,
+          "moveAgrees": 1,
+          "edge": 0.3198653198653199,
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "teamAbbr": "NE",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
+          "score": 0.5998653198653199
+        },
         {
           "ev": {
             "id": "401873032",
@@ -1860,7 +1922,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 32.5,
+          "line": 33.5,
           "open": 23.5,
           "games": [
             {
@@ -1890,16 +1952,16 @@
           ],
           "avg": 48.166666666666664,
           "side": "over",
-          "hits": 5,
-          "hitRate": 0.8333333333333334,
-          "move": 9.0,
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 10.0,
           "moveAgrees": 1,
-          "edge": 0.482051282051282,
+          "edge": 0.4378109452736318,
           "name": "Omarion Hampton",
           "pos": "RB",
           "teamAbbr": "LAC",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
-          "score": 0.6953846153846154
+          "score": 0.5844776119402985
         },
         {
           "ev": {
@@ -1927,26 +1989,26 @@
               }
             ]
           },
-          "ath": "4569603",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4242512",
+          "type": "Total Rushing Yards (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
+            "stat": "rushingYards",
+            "label": "rushing yards",
             "min": 30
           },
-          "line": 40.5,
-          "open": 37.5,
+          "line": 34.5,
+          "open": 30.5,
           "games": [
             {
-              "v": 27.0,
+              "v": 37.0,
               "opp": "NYJ"
             },
             {
-              "v": 43.0,
+              "v": 74.0,
               "opp": "CIN"
             },
             {
-              "v": 67.0,
+              "v": 11.0,
               "opp": "MIN"
             },
             {
@@ -1954,104 +2016,26 @@
               "opp": "KC"
             },
             {
-              "v": 43.0,
+              "v": 6.0,
               "opp": "SF"
             },
             {
-              "v": 53.0,
+              "v": 39.0,
               "opp": "LV"
             }
           ],
-          "avg": 48.166666666666664,
+          "avg": 37.166666666666664,
           "side": "over",
-          "hits": 5,
-          "hitRate": 0.8333333333333334,
-          "move": 3.0,
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.1893004115226337,
-          "name": "Malik Washington",
-          "pos": "WR",
+          "edge": 0.07729468599033809,
+          "name": "Malik Willis",
+          "pos": "QB",
           "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
-          "score": 0.4026337448559671
-        },
-        {
-          "ev": {
-            "id": "401873027",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "CLE @ PIT",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4685261",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 43.5,
-          "open": 46.5,
-          "games": [
-            {
-              "v": 27.0,
-              "opp": "NO"
-            },
-            {
-              "v": 87.0,
-              "opp": "TB"
-            },
-            {
-              "v": 80.0,
-              "opp": "IND"
-            },
-            {
-              "v": 11.0,
-              "opp": "CLE"
-            },
-            {
-              "v": 14.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 35.0,
-              "opp": "NE"
-            },
-            {
-              "v": 0.0,
-              "opp": "ATL"
-            }
-          ],
-          "avg": 36.285714285714285,
-          "side": "under",
-          "hits": 5,
-          "hitRate": 0.7142857142857143,
-          "move": -3.0,
-          "moveAgrees": 1,
-          "edge": 0.1658456486042693,
-          "name": "Germie Bernard",
-          "pos": "WR",
-          "teamAbbr": "PIT",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685261.png",
-          "score": 0.33155993431855507
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242512.png",
+          "score": 0.22396135265700473
         }
       ],
       "odds": "+596"
@@ -2071,6 +2055,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-30T01:01:08Z",
+  "updated": "2026-10-30T10:02:55Z",
   "since": "Week 3, 2026"
 }

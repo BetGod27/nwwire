@@ -1719,6 +1719,41 @@
       "legs": [
         {
           "ev": {
+            "id": "401873025",
+            "date": "2026-11-01T18:00Z",
+            "shortName": "ATL @ TB",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "27",
+                      "abbreviation": "TB"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "27",
+          "oppAbbr": "ATL",
+          "ml": -142,
+          "model": 0.691,
+          "market": 0.5634920634920635,
+          "edge": 0.12750793650793646,
+          "steam": false
+        },
+        {
+          "ev": {
             "id": "401873034",
             "date": "2026-11-01T21:25Z",
             "shortName": "NE @ MIA",
@@ -1786,109 +1821,12 @@
           "market": 0.725752508361204,
           "edge": 0.058247491638796056,
           "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873032",
-            "date": "2026-11-01T21:05Z",
-            "shortName": "LAC @ LAR",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "14",
-          "oppAbbr": "LAC",
-          "ml": -270,
-          "model": 0.7440000000000001,
-          "market": 0.7001620745542949,
-          "edge": 0.043837925445705195,
-          "steam": true
         }
       ],
-      "odds": "+137"
+      "odds": "+195"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873034",
-            "date": "2026-11-01T21:25Z",
-            "shortName": "NE @ MIA",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4047646",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 49.5,
-          "open": 53.5,
-          "games": [
-            {
-              "v": 48.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 27.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 26.0,
-              "opp": "SEA"
-            }
-          ],
-          "avg": 33.666666666666664,
-          "side": "under",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": -4.0,
-          "moveAgrees": 1,
-          "edge": 0.3198653198653199,
-          "name": "A.J. Brown",
-          "pos": "WR",
-          "teamAbbr": "NE",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
-          "score": 0.5998653198653199
-        },
         {
           "ev": {
             "id": "401873032",
@@ -1962,83 +1900,9 @@
           "teamAbbr": "LAC",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
           "score": 0.5844776119402985
-        },
-        {
-          "ev": {
-            "id": "401873034",
-            "date": "2026-11-01T21:25Z",
-            "shortName": "NE @ MIA",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4242512",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 34.5,
-          "open": 30.5,
-          "games": [
-            {
-              "v": 37.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 74.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 11.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 56.0,
-              "opp": "KC"
-            },
-            {
-              "v": 6.0,
-              "opp": "SF"
-            },
-            {
-              "v": 39.0,
-              "opp": "LV"
-            }
-          ],
-          "avg": 37.166666666666664,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.07729468599033809,
-          "name": "Malik Willis",
-          "pos": "QB",
-          "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242512.png",
-          "score": 0.22396135265700473
         }
       ],
-      "odds": "+596"
+      "odds": "-110"
     },
     "locked": false,
     "lockAt": "2026-11-01T14:00:00Z"
@@ -2055,6 +1919,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-30T10:02:55Z",
+  "updated": "2026-10-30T18:01:38Z",
   "since": "Week 3, 2026"
 }

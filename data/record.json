@@ -1860,7 +1860,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 33.5,
+          "line": 32.5,
           "open": 23.5,
           "games": [
             {
@@ -1890,16 +1890,16 @@
           ],
           "avg": 48.166666666666664,
           "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 10.0,
+          "hits": 5,
+          "hitRate": 0.8333333333333334,
+          "move": 9.0,
           "moveAgrees": 1,
-          "edge": 0.4378109452736318,
+          "edge": 0.482051282051282,
           "name": "Omarion Hampton",
           "pos": "RB",
           "teamAbbr": "LAC",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
-          "score": 0.5844776119402985
+          "score": 0.6953846153846154
         }
       ],
       "odds": "-110"
@@ -1919,6 +1919,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-30T22:22:07Z",
+  "updated": "2026-10-31T05:43:49Z",
   "since": "Week 3, 2026"
 }

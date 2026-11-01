@@ -1781,10 +1781,10 @@
           "key": "away",
           "teamId": "17",
           "oppAbbr": "MIA",
-          "ml": -325,
+          "ml": -310,
           "model": 0.7959999999999999,
-          "market": 0.7335423197492164,
-          "edge": 0.062457680250783576,
+          "market": 0.725752508361204,
+          "edge": 0.07024749163879596,
           "steam": false
         },
         {
@@ -1823,10 +1823,88 @@
           "steam": false
         }
       ],
-      "odds": "+201"
+      "odds": "+204"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873033",
+            "date": "2026-11-01T21:25Z",
+            "shortName": "KC @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4241985",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 30.5,
+          "open": 25.5,
+          "games": [
+            {
+              "v": 23.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 41.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 68.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 40.0,
+              "opp": "SF"
+            },
+            {
+              "v": 49.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 36.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 36.0,
+              "opp": "KC"
+            }
+          ],
+          "avg": 41.857142857142854,
+          "side": "over",
+          "hits": 6,
+          "hitRate": 0.8571428571428571,
+          "move": 5.0,
+          "moveAgrees": 1,
+          "edge": 0.37236533957845425,
+          "name": "J.K. Dobbins",
+          "pos": "RB",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241985.png",
+          "score": 0.5952224824355971
+        },
         {
           "ev": {
             "id": "401873032",
@@ -1860,7 +1938,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 32.5,
+          "line": 33.5,
           "open": 23.5,
           "games": [
             {
@@ -1890,19 +1968,19 @@
           ],
           "avg": 48.166666666666664,
           "side": "over",
-          "hits": 5,
-          "hitRate": 0.8333333333333334,
-          "move": 9.0,
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 10.0,
           "moveAgrees": 1,
-          "edge": 0.482051282051282,
+          "edge": 0.4378109452736318,
           "name": "Omarion Hampton",
           "pos": "RB",
           "teamAbbr": "LAC",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
-          "score": 0.6953846153846154
+          "score": 0.5844776119402985
         }
       ],
-      "odds": "-110"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-01T14:00:00Z"
@@ -1919,6 +1997,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-10-31T19:18:47Z",
+  "updated": "2026-11-01T00:08:50Z",
   "since": "Week 3, 2026"
 }

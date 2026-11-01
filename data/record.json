@@ -1719,41 +1719,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873025",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "ATL @ TB",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "27",
-                      "abbreviation": "TB"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "27",
-          "oppAbbr": "ATL",
-          "ml": -130,
-          "model": 0.691,
-          "market": 0.5427435387673957,
-          "edge": 0.14825646123260428,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401873034",
             "date": "2026-11-01T21:25Z",
             "shortName": "NE @ MIA",
@@ -1781,32 +1746,33 @@
           "key": "away",
           "teamId": "17",
           "oppAbbr": "MIA",
-          "ml": -340,
+          "ml": -345,
           "model": 0.7959999999999999,
-          "market": 0.740871613663133,
-          "edge": 0.0551283863368669,
-          "steam": false
+          "market": 0.7440690150970525,
+          "edge": 0.05193098490294745,
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
-            "id": "401873024",
-            "date": "2026-11-01T18:00Z",
-            "shortName": "ARI @ DAL",
+            "id": "401873032",
+            "date": "2026-11-01T21:05Z",
+            "shortName": "LAC @ LAR",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "6",
-                      "abbreviation": "DAL"
+                      "id": "14",
+                      "abbreviation": "LAR"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
+                      "id": "24",
+                      "abbreviation": "LAC"
                     }
                   }
                 ]
@@ -1814,19 +1780,135 @@
             ]
           },
           "key": "home",
-          "teamId": "6",
-          "oppAbbr": "ARI",
-          "ml": -325,
-          "model": 0.784,
-          "market": 0.7335423197492164,
-          "edge": 0.050457680250783676,
-          "steam": false
+          "teamId": "14",
+          "oppAbbr": "LAC",
+          "ml": -285,
+          "model": 0.7440000000000001,
+          "market": 0.7095435684647302,
+          "edge": 0.034456431535269894,
+          "steam": true,
+          "result": null
+        },
+        {
+          "ev": {
+            "id": "401873035",
+            "date": "2026-11-02T01:20Z",
+            "shortName": "PHI @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "21",
+                      "abbreviation": "PHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "28",
+          "oppAbbr": "PHI",
+          "ml": -270,
+          "model": 0.652,
+          "market": 0.7001620745542949,
+          "edge": -0.04816207455429489,
+          "steam": true,
+          "result": null
         }
       ],
-      "odds": "+199"
+      "odds": "+139"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873033",
+            "date": "2026-11-01T21:25Z",
+            "shortName": "KC @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4241985",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 30.5,
+          "open": 25.5,
+          "games": [
+            {
+              "v": 23.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 41.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 68.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 40.0,
+              "opp": "SF"
+            },
+            {
+              "v": 49.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 36.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 36.0,
+              "opp": "KC"
+            }
+          ],
+          "avg": 41.857142857142854,
+          "side": "over",
+          "hits": 6,
+          "hitRate": 0.8571428571428571,
+          "move": 5.0,
+          "moveAgrees": 1,
+          "edge": 0.37236533957845425,
+          "name": "J.K. Dobbins",
+          "pos": "RB",
+          "teamAbbr": "DEN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4241985.png",
+          "score": 0.5952224824355971,
+          "result": null
+        },
         {
           "ev": {
             "id": "401873032",
@@ -1860,7 +1942,7 @@
             "label": "rushing yards",
             "min": 30
           },
-          "line": 33.5,
+          "line": 34.5,
           "open": 23.5,
           "games": [
             {
@@ -1892,20 +1974,93 @@
           "side": "over",
           "hits": 4,
           "hitRate": 0.6666666666666666,
-          "move": 10.0,
+          "move": 11.0,
           "moveAgrees": 1,
-          "edge": 0.4378109452736318,
+          "edge": 0.396135265700483,
           "name": "Omarion Hampton",
           "pos": "RB",
           "teamAbbr": "LAC",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4685382.png",
-          "score": 0.5844776119402985
+          "score": 0.5428019323671497,
+          "result": null
+        },
+        {
+          "ev": {
+            "id": "401873035",
+            "date": "2026-11-02T01:20Z",
+            "shortName": "PHI @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "21",
+                      "abbreviation": "PHI"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4697815",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 40.5,
+          "open": 44.5,
+          "games": [
+            {
+              "v": 27.0,
+              "opp": "SF"
+            },
+            {
+              "v": 18.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 35.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 43.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 22.0,
+              "opp": "PHI"
+            }
+          ],
+          "avg": 29.0,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -4.0,
+          "moveAgrees": 1,
+          "edge": 0.2839506172839506,
+          "name": "Rachaad White",
+          "pos": "RB",
+          "teamAbbr": "WSH",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
+          "score": 0.48395061728395067,
+          "result": null
         }
       ],
-      "odds": "-110"
+      "odds": "+596"
     },
-    "locked": false,
-    "lockAt": "2026-11-01T14:00:00Z"
+    "locked": true,
+    "lockAt": "2026-11-01T17:05:00Z",
+    "lockedAt": "2026-11-01T19:41:53Z"
   },
   "totals": {
     "game": {
@@ -1919,6 +2074,6 @@
       "units": 8.92
     }
   },
-  "updated": "2026-11-01T13:26:35Z",
+  "updated": "2026-11-01T19:41:53Z",
   "since": "Week 3, 2026"
 }

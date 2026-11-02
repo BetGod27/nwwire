@@ -1825,10 +1825,13 @@
           "market": 0.7001620745542949,
           "edge": -0.04816207455429489,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "27-10"
         }
       ],
-      "odds": "+139"
+      "odds": "+139",
+      "result": "win",
+      "units": 1.39
     },
     "prop": {
       "legs": [
@@ -2057,7 +2060,8 @@
           "teamAbbr": "WSH",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
           "score": 0.48395061728395067,
-          "result": null
+          "result": "loss",
+          "actual": 55.0
         }
       ],
       "odds": "+596",
@@ -2070,9 +2074,9 @@
   },
   "totals": {
     "game": {
-      "w": 2,
+      "w": 3,
       "l": 3,
-      "units": 0.14
+      "units": 1.53
     },
     "prop": {
       "w": 2,
@@ -2080,6 +2084,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-02T00:45:54Z",
+  "updated": "2026-11-02T11:10:52Z",
   "since": "Week 3, 2026"
 }

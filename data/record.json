@@ -2178,14 +2178,14 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "WSH",
-          "ml": -230,
+          "ml": -238,
           "model": 0.722,
-          "market": 0.6690070210631895,
-          "edge": 0.05299297893681043,
+          "market": 0.6750312469954812,
+          "edge": 0.04696875300451875,
           "steam": true
         }
       ],
-      "odds": "+203"
+      "odds": "+199"
     },
     "prop": {
       "legs": [
@@ -2257,155 +2257,163 @@
         },
         {
           "ev": {
-            "id": "401873038",
-            "date": "2026-11-08T14:30Z",
-            "shortName": "CIN VS ATL",
+            "id": "401873047",
+            "date": "2026-11-08T21:25Z",
+            "shortName": "LV @ SF",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "25",
+                      "abbreviation": "SF"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4239993",
+          "ath": "4890973",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 78.5,
-          "open": 72.5,
+          "line": 35.5,
+          "open": 33.5,
           "games": [
             {
-              "v": 155.0,
-              "opp": "TEN"
+              "v": 64.0,
+              "opp": "NYJ"
             },
             {
-              "v": 148.0,
-              "opp": "BAL"
+              "v": 61.0,
+              "opp": "LAR"
             },
             {
-              "v": 22.0,
+              "v": 36.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 50.0,
+              "opp": "NE"
+            },
+            {
+              "v": 68.0,
+              "opp": "KC"
+            },
+            {
+              "v": 37.0,
+              "opp": "NO"
+            },
+            {
+              "v": 15.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 45.0,
               "opp": "MIA"
-            },
-            {
-              "v": 157.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 90.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 95.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 59.0,
-              "opp": "TB"
             }
           ],
-          "avg": 103.71428571428571,
+          "avg": 47.0,
           "side": "over",
-          "hits": 5,
-          "hitRate": 0.7142857142857143,
-          "move": 6.0,
+          "hits": 7,
+          "hitRate": 0.875,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.32120109190172874,
-          "name": "Tee Higgins",
-          "pos": "WR",
-          "teamAbbr": "CIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.4869153776160145
+          "edge": 0.323943661971831,
+          "name": "Ashton Jeanty",
+          "pos": "RB",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
+          "score": 0.553943661971831
         },
         {
           "ev": {
-            "id": "401873043",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "LAR @ WSH",
+            "id": "401873046",
+            "date": "2026-11-08T21:05Z",
+            "shortName": "HOU @ LAC",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
+                      "id": "24",
+                      "abbreviation": "LAC"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
+                      "id": "34",
+                      "abbreviation": "HOU"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4697815",
+          "ath": "4429059",
           "type": "Total Rushing Yards (incl. overtime)",
           "t": {
             "stat": "rushingYards",
             "label": "rushing yards",
             "min": 30
           },
-          "line": 40.5,
-          "open": 41.5,
+          "line": 60.5,
+          "open": 62.5,
           "games": [
             {
-              "v": 55.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 27.0,
-              "opp": "SF"
-            },
-            {
-              "v": 18.0,
+              "v": 66.0,
               "opp": "NYG"
             },
             {
-              "v": 35.0,
-              "opp": "SEA"
+              "v": 56.0,
+              "opp": "JAX"
             },
             {
-              "v": 43.0,
-              "opp": "DAL"
+              "v": 62.0,
+              "opp": "TEN"
             },
             {
               "v": 22.0,
-              "opp": "PHI"
+              "opp": "DAL"
+            },
+            {
+              "v": 15.0,
+              "opp": "IND"
+            },
+            {
+              "v": 8.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 42.0,
+              "opp": "BUF"
             }
           ],
-          "avg": 33.333333333333336,
+          "avg": 38.714285714285715,
           "side": "under",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": -1.0,
+          "hits": 5,
+          "hitRate": 0.7142857142857143,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.176954732510288,
-          "name": "Rachaad White",
+          "edge": 0.36009445100354187,
+          "name": "Woody Marks",
           "pos": "RB",
-          "teamAbbr": "WSH",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
-          "score": 0.32362139917695465
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
+          "score": 0.5258087367178276
         }
       ],
       "odds": "+596"
@@ -2425,6 +2433,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-04T17:16:27Z",
+  "updated": "2026-11-04T23:40:36Z",
   "since": "Week 3, 2026"
 }

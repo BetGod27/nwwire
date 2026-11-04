@@ -2108,10 +2108,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "ATL",
-          "ml": -162,
+          "ml": -155,
           "model": 0.773,
-          "market": 0.593369754159424,
-          "edge": 0.17963024584057607,
+          "market": 0.5829926410466066,
+          "edge": 0.19000735895339338,
           "steam": false
         },
         {
@@ -2178,14 +2178,14 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "WSH",
-          "ml": -238,
+          "ml": -230,
           "model": 0.722,
-          "market": 0.6750312469954812,
-          "edge": 0.04696875300451875,
+          "market": 0.6690070210631895,
+          "edge": 0.05299297893681043,
           "steam": true
         }
       ],
-      "odds": "+194"
+      "odds": "+203"
     },
     "prop": {
       "legs": [
@@ -2222,7 +2222,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 38.5,
           "open": 36.5,
           "games": [
             {
@@ -2246,14 +2246,14 @@
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 1.0,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.5066666666666667,
+          "edge": 0.4675324675324675,
           "name": "Caleb Douglas",
           "pos": "WR",
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
-          "score": 0.6866666666666666
+          "score": 0.6475324675324675
         },
         {
           "ev": {
@@ -2288,7 +2288,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 77.5,
+          "line": 78.5,
           "open": 72.5,
           "games": [
             {
@@ -2324,17 +2324,91 @@
           "side": "over",
           "hits": 5,
           "hitRate": 0.7142857142857143,
-          "move": 5.0,
+          "move": 6.0,
           "moveAgrees": 1,
-          "edge": 0.3382488479262672,
+          "edge": 0.32120109190172874,
           "name": "Tee Higgins",
           "pos": "WR",
           "teamAbbr": "CIN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.5039631336405529
+          "score": 0.4869153776160145
+        },
+        {
+          "ev": {
+            "id": "401873043",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "LAR @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4697815",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 40.5,
+          "open": 41.5,
+          "games": [
+            {
+              "v": 55.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 27.0,
+              "opp": "SF"
+            },
+            {
+              "v": 18.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 35.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 43.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 22.0,
+              "opp": "PHI"
+            }
+          ],
+          "avg": 33.333333333333336,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.176954732510288,
+          "name": "Rachaad White",
+          "pos": "RB",
+          "teamAbbr": "WSH",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
+          "score": 0.32362139917695465
         }
       ],
-      "odds": "+264"
+      "odds": "+596"
     },
     "locked": false,
     "lockAt": "2026-11-08T10:30:00Z"
@@ -2351,6 +2425,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-04T06:24:54Z",
+  "updated": "2026-11-04T17:16:27Z",
   "since": "Week 3, 2026"
 }

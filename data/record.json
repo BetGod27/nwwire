@@ -2108,10 +2108,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "ATL",
-          "ml": -166,
+          "ml": -170,
           "model": 0.773,
-          "market": 0.5996387718242023,
-          "edge": 0.1733612281757977,
+          "market": 0.6037569709421778,
+          "edge": 0.16924302905782218,
           "steam": false
         },
         {
@@ -2185,7 +2185,7 @@
           "steam": false
         }
       ],
-      "odds": "+197"
+      "odds": "+194"
     },
     "prop": {
       "legs": [
@@ -2222,7 +2222,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 38.5,
+          "line": 40.5,
           "open": 36.5,
           "games": [
             {
@@ -2246,95 +2246,157 @@
           "side": "over",
           "hits": 3,
           "hitRate": 0.75,
-          "move": 2.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.4675324675324675,
+          "edge": 0.3950617283950617,
           "name": "Caleb Douglas",
           "pos": "WR",
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
-          "score": 0.6475324675324675
+          "score": 0.5750617283950616
         },
         {
           "ev": {
-            "id": "401873038",
-            "date": "2026-11-08T14:30Z",
-            "shortName": "CIN VS ATL",
+            "id": "401873045",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "NYJ @ KC",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "12",
+                      "abbreviation": "KC"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4239993",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4427366",
+          "type": "Total Receptions (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
           },
-          "line": 77.5,
-          "open": 72.5,
+          "line": 2.5,
+          "open": 1.5,
           "games": [
             {
-              "v": 155.0,
+              "v": 3.0,
+              "opp": "DET"
+            },
+            {
+              "v": 5.0,
+              "opp": "GB"
+            },
+            {
+              "v": 2.0,
               "opp": "TEN"
-            },
-            {
-              "v": 148.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 22.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 157.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 90.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 95.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 59.0,
-              "opp": "TB"
             }
           ],
-          "avg": 103.71428571428571,
+          "avg": 3.3333333333333335,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.33333333333333337,
+          "name": "Breece Hall",
+          "pos": "RB",
+          "teamAbbr": "NYJ",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4427366.png",
+          "score": 0.48000000000000004
+        },
+        {
+          "ev": {
+            "id": "401873042",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "DET @ MIA",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "15",
+                      "abbreviation": "MIA"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "8",
+                      "abbreviation": "DET"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429795",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 4.5,
+          "open": 3.5,
+          "games": [
+            {
+              "v": 2.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 5.0,
+              "opp": "GB"
+            },
+            {
+              "v": 5.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 4.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 7.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 6.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 5.0,
+              "opp": "NO"
+            }
+          ],
+          "avg": 4.857142857142857,
           "side": "over",
           "hits": 5,
           "hitRate": 0.7142857142857143,
-          "move": 5.0,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.3382488479262672,
-          "name": "Tee Higgins",
-          "pos": "WR",
-          "teamAbbr": "CIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
-          "score": 0.5039631336405529
+          "edge": 0.07936507936507928,
+          "name": "Jahmyr Gibbs",
+          "pos": "RB",
+          "teamAbbr": "DET",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
+          "score": 0.245079365079365
         }
       ],
-      "odds": "+264"
+      "odds": "+596"
     },
     "locked": false,
     "lockAt": "2026-11-08T10:30:00Z"
@@ -2351,6 +2413,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-05T17:25:13Z",
+  "updated": "2026-11-05T23:38:51Z",
   "since": "Week 3, 2026"
 }

@@ -2116,6 +2116,41 @@
         },
         {
           "ev": {
+            "id": "401873043",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "LAR @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "14",
+          "oppAbbr": "WSH",
+          "ml": -225,
+          "model": 0.722,
+          "market": 0.6636481241914618,
+          "edge": 0.05835187580853818,
+          "steam": true
+        },
+        {
+          "ev": {
             "id": "401873042",
             "date": "2026-11-08T18:00Z",
             "shortName": "DET @ MIA",
@@ -2148,44 +2183,9 @@
           "market": 0.7477827050997783,
           "edge": 0.029217294900221735,
           "steam": true
-        },
-        {
-          "ev": {
-            "id": "401873043",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "LAR @ WSH",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "14",
-          "oppAbbr": "WSH",
-          "ml": -238,
-          "model": 0.722,
-          "market": 0.6750312469954812,
-          "edge": 0.04696875300451875,
-          "steam": true
         }
       ],
-      "odds": "+199"
+      "odds": "+205"
     },
     "prop": {
       "legs": [
@@ -2339,81 +2339,81 @@
         },
         {
           "ev": {
-            "id": "401873046",
-            "date": "2026-11-08T21:05Z",
-            "shortName": "HOU @ LAC",
+            "id": "401873038",
+            "date": "2026-11-08T14:30Z",
+            "shortName": "CIN VS ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "4",
+                      "abbreviation": "CIN"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4429059",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4239993",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
+            "stat": "receivingYards",
+            "label": "receiving yards",
             "min": 30
           },
-          "line": 60.5,
-          "open": 62.5,
+          "line": 77.5,
+          "open": 72.5,
           "games": [
             {
-              "v": 66.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 56.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 62.0,
+              "v": 155.0,
               "opp": "TEN"
             },
             {
+              "v": 148.0,
+              "opp": "BAL"
+            },
+            {
               "v": 22.0,
-              "opp": "DAL"
+              "opp": "MIA"
             },
             {
-              "v": 15.0,
-              "opp": "IND"
+              "v": 157.0,
+              "opp": "JAX"
             },
             {
-              "v": 8.0,
-              "opp": "CIN"
+              "v": 90.0,
+              "opp": "PIT"
             },
             {
-              "v": 42.0,
-              "opp": "BUF"
+              "v": 95.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 59.0,
+              "opp": "TB"
             }
           ],
-          "avg": 38.714285714285715,
-          "side": "under",
+          "avg": 103.71428571428571,
+          "side": "over",
           "hits": 5,
           "hitRate": 0.7142857142857143,
-          "move": -2.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.36009445100354187,
-          "name": "Woody Marks",
-          "pos": "RB",
-          "teamAbbr": "HOU",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429059.png",
-          "score": 0.5258087367178276
+          "edge": 0.3382488479262672,
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "teamAbbr": "CIN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4239993.png",
+          "score": 0.5039631336405529
         }
       ],
       "odds": "+596"
@@ -2433,6 +2433,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-04T23:40:36Z",
+  "updated": "2026-11-05T06:48:32Z",
   "since": "Week 3, 2026"
 }

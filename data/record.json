@@ -2108,46 +2108,11 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "ATL",
-          "ml": -155,
+          "ml": -166,
           "model": 0.773,
-          "market": 0.5829926410466066,
-          "edge": 0.19000735895339338,
+          "market": 0.5996387718242023,
+          "edge": 0.1733612281757977,
           "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873043",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "LAR @ WSH",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "14",
-          "oppAbbr": "WSH",
-          "ml": -225,
-          "model": 0.722,
-          "market": 0.6636481241914618,
-          "edge": 0.05835187580853818,
-          "steam": true
         },
         {
           "ev": {
@@ -2183,9 +2148,44 @@
           "market": 0.7477827050997783,
           "edge": 0.029217294900221735,
           "steam": true
+        },
+        {
+          "ev": {
+            "id": "401873043",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "LAR @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "14",
+          "oppAbbr": "WSH",
+          "ml": -225,
+          "model": 0.722,
+          "market": 0.6636481241914618,
+          "edge": 0.05835187580853818,
+          "steam": false
         }
       ],
-      "odds": "+205"
+      "odds": "+197"
     },
     "prop": {
       "legs": [
@@ -2254,88 +2254,6 @@
           "teamAbbr": "MIA",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
           "score": 0.6475324675324675
-        },
-        {
-          "ev": {
-            "id": "401873047",
-            "date": "2026-11-08T21:25Z",
-            "shortName": "LV @ SF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4890973",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 35.5,
-          "open": 33.5,
-          "games": [
-            {
-              "v": 64.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 61.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 36.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 50.0,
-              "opp": "NE"
-            },
-            {
-              "v": 68.0,
-              "opp": "KC"
-            },
-            {
-              "v": 37.0,
-              "opp": "NO"
-            },
-            {
-              "v": 15.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 45.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 47.0,
-          "side": "over",
-          "hits": 7,
-          "hitRate": 0.875,
-          "move": 2.0,
-          "moveAgrees": 1,
-          "edge": 0.323943661971831,
-          "name": "Ashton Jeanty",
-          "pos": "RB",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
-          "score": 0.553943661971831
         },
         {
           "ev": {
@@ -2416,7 +2334,7 @@
           "score": 0.5039631336405529
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-08T10:30:00Z"
@@ -2433,6 +2351,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-05T06:48:32Z",
+  "updated": "2026-11-05T17:25:13Z",
   "since": "Week 3, 2026"
 }

@@ -2108,10 +2108,10 @@
           "key": "away",
           "teamId": "4",
           "oppAbbr": "ATL",
-          "ml": -170,
+          "ml": -175,
           "model": 0.777,
-          "market": 0.6037569709421778,
-          "edge": 0.17324302905782218,
+          "market": 0.6092362344582594,
+          "edge": 0.16776376554174066,
           "steam": false
         },
         {
@@ -2143,11 +2143,11 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -325,
+          "ml": -290,
           "model": 0.7759999999999999,
-          "market": 0.7335423197492164,
-          "edge": 0.04245768025078356,
-          "steam": true
+          "market": 0.7135512302607419,
+          "edge": 0.06244876973925806,
+          "steam": false
         },
         {
           "ev": {
@@ -2178,83 +2178,17 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "WSH",
-          "ml": -218,
+          "ml": -225,
           "model": 0.7290000000000001,
-          "market": 0.6574752261956054,
-          "edge": 0.0715247738043947,
+          "market": 0.6636481241914618,
+          "edge": 0.0653518758085383,
           "steam": false
         }
       ],
-      "odds": "+203"
+      "odds": "+205"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873042",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "DET @ MIA",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4869645",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 40.5,
-          "open": 36.5,
-          "games": [
-            {
-              "v": 43.0,
-              "opp": "NE"
-            },
-            {
-              "v": 70.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 19.0,
-              "opp": "SF"
-            },
-            {
-              "v": 94.0,
-              "opp": "LV"
-            }
-          ],
-          "avg": 56.5,
-          "side": "over",
-          "hits": 3,
-          "hitRate": 0.75,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.3950617283950617,
-          "name": "Caleb Douglas",
-          "pos": "WR",
-          "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
-          "score": 0.5750617283950616
-        },
         {
           "ev": {
             "id": "401873045",
@@ -2316,6 +2250,84 @@
           "teamAbbr": "NYJ",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4427366.png",
           "score": 0.48000000000000004
+        },
+        {
+          "ev": {
+            "id": "401873046",
+            "date": "2026-11-08T21:05Z",
+            "shortName": "HOU @ LAC",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "34",
+                      "abbreviation": "HOU"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4686422",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 2.5,
+          "open": 1.5,
+          "games": [
+            {
+              "v": 3.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 2.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 4.0,
+              "opp": "TEN"
+            },
+            {
+              "v": 3.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 3.0,
+              "opp": "IND"
+            },
+            {
+              "v": 3.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 3.0,
+              "opp": "BUF"
+            }
+          ],
+          "avg": 3.0,
+          "side": "over",
+          "hits": 6,
+          "hitRate": 0.8571428571428571,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.2,
+          "name": "Xavier Hutchinson",
+          "pos": "WR",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4686422.png",
+          "score": 0.4228571428571429
         },
         {
           "ev": {
@@ -2413,6 +2425,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-06T16:46:45Z",
+  "updated": "2026-11-06T23:10:02Z",
   "since": "Week 3, 2026"
 }

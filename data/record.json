@@ -2143,10 +2143,10 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -355,
+          "ml": -340,
           "model": 0.777,
-          "market": 0.7477827050997783,
-          "edge": 0.029217294900221735,
+          "market": 0.740871613663133,
+          "edge": 0.03612838633686699,
           "steam": true
         },
         {
@@ -2185,7 +2185,7 @@
           "steam": false
         }
       ],
-      "odds": "+194"
+      "odds": "+197"
     },
     "prop": {
       "legs": [
@@ -2319,81 +2319,85 @@
         },
         {
           "ev": {
-            "id": "401873042",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "DET @ MIA",
+            "id": "401873047",
+            "date": "2026-11-08T21:25Z",
+            "shortName": "LV @ SF",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
+                      "id": "25",
+                      "abbreviation": "SF"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4429795",
-          "type": "Total Receptions (incl. overtime)",
+          "ath": "4890973",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
           },
-          "line": 4.5,
-          "open": 3.5,
+          "line": 36.5,
+          "open": 33.5,
           "games": [
             {
-              "v": 2.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 5.0,
-              "opp": "GB"
-            },
-            {
-              "v": 5.0,
-              "opp": "ARI"
-            },
-            {
-              "v": 4.0,
-              "opp": "CAR"
-            },
-            {
-              "v": 7.0,
+              "v": 64.0,
               "opp": "NYJ"
             },
             {
-              "v": 6.0,
+              "v": 61.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 36.0,
               "opp": "BUF"
             },
             {
-              "v": 5.0,
+              "v": 50.0,
+              "opp": "NE"
+            },
+            {
+              "v": 68.0,
+              "opp": "KC"
+            },
+            {
+              "v": 37.0,
               "opp": "NO"
+            },
+            {
+              "v": 15.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 45.0,
+              "opp": "MIA"
             }
           ],
-          "avg": 4.857142857142857,
+          "avg": 47.0,
           "side": "over",
-          "hits": 5,
-          "hitRate": 0.7142857142857143,
-          "move": 1.0,
+          "hits": 6,
+          "hitRate": 0.75,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.07936507936507928,
-          "name": "Jahmyr Gibbs",
+          "edge": 0.2876712328767123,
+          "name": "Ashton Jeanty",
           "pos": "RB",
-          "teamAbbr": "DET",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
-          "score": 0.245079365079365
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
+          "score": 0.46767123287671236
         }
       ],
       "odds": "+596"
@@ -2413,6 +2417,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-05T23:38:51Z",
+  "updated": "2026-11-06T06:49:36Z",
   "since": "Week 3, 2026"
 }

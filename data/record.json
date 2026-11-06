@@ -2109,9 +2109,9 @@
           "teamId": "4",
           "oppAbbr": "ATL",
           "ml": -170,
-          "model": 0.773,
+          "model": 0.777,
           "market": 0.6037569709421778,
-          "edge": 0.16924302905782218,
+          "edge": 0.17324302905782218,
           "steam": false
         },
         {
@@ -2143,10 +2143,10 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -340,
-          "model": 0.777,
-          "market": 0.740871613663133,
-          "edge": 0.03612838633686699,
+          "ml": -325,
+          "model": 0.7759999999999999,
+          "market": 0.7335423197492164,
+          "edge": 0.04245768025078356,
           "steam": true
         },
         {
@@ -2178,14 +2178,14 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "WSH",
-          "ml": -225,
-          "model": 0.722,
-          "market": 0.6636481241914618,
-          "edge": 0.05835187580853818,
+          "ml": -218,
+          "model": 0.7290000000000001,
+          "market": 0.6574752261956054,
+          "edge": 0.0715247738043947,
           "steam": false
         }
       ],
-      "odds": "+197"
+      "odds": "+203"
     },
     "prop": {
       "legs": [
@@ -2319,85 +2319,81 @@
         },
         {
           "ev": {
-            "id": "401873047",
-            "date": "2026-11-08T21:25Z",
-            "shortName": "LV @ SF",
+            "id": "401873042",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "DET @ MIA",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
+                      "id": "15",
+                      "abbreviation": "MIA"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "8",
+                      "abbreviation": "DET"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4890973",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4429795",
+          "type": "Total Receptions (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
           },
-          "line": 36.5,
-          "open": 33.5,
+          "line": 4.5,
+          "open": 3.5,
           "games": [
             {
-              "v": 64.0,
+              "v": 2.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 5.0,
+              "opp": "GB"
+            },
+            {
+              "v": 5.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 4.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 7.0,
               "opp": "NYJ"
             },
             {
-              "v": 61.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 36.0,
+              "v": 6.0,
               "opp": "BUF"
             },
             {
-              "v": 50.0,
-              "opp": "NE"
-            },
-            {
-              "v": 68.0,
-              "opp": "KC"
-            },
-            {
-              "v": 37.0,
+              "v": 5.0,
               "opp": "NO"
-            },
-            {
-              "v": 15.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 45.0,
-              "opp": "MIA"
             }
           ],
-          "avg": 47.0,
+          "avg": 4.857142857142857,
           "side": "over",
-          "hits": 6,
-          "hitRate": 0.75,
-          "move": 3.0,
+          "hits": 5,
+          "hitRate": 0.7142857142857143,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.2876712328767123,
-          "name": "Ashton Jeanty",
+          "edge": 0.07936507936507928,
+          "name": "Jahmyr Gibbs",
           "pos": "RB",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
-          "score": 0.46767123287671236
+          "teamAbbr": "DET",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
+          "score": 0.245079365079365
         }
       ],
       "odds": "+596"
@@ -2417,6 +2413,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-06T06:49:36Z",
+  "updated": "2026-11-06T16:46:45Z",
   "since": "Week 3, 2026"
 }

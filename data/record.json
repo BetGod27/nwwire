@@ -2143,10 +2143,10 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -290,
+          "ml": -305,
           "model": 0.7759999999999999,
-          "market": 0.7135512302607419,
-          "edge": 0.06244876973925806,
+          "market": 0.7220792588780237,
+          "edge": 0.0539207411219762,
           "steam": false
         },
         {
@@ -2185,72 +2185,10 @@
           "steam": false
         }
       ],
-      "odds": "+200"
+      "odds": "+196"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873045",
-            "date": "2026-11-08T18:00Z",
-            "shortName": "NYJ @ KC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4427366",
-          "type": "Total Receptions (incl. overtime)",
-          "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
-          },
-          "line": 2.5,
-          "open": 1.5,
-          "games": [
-            {
-              "v": 3.0,
-              "opp": "DET"
-            },
-            {
-              "v": 5.0,
-              "opp": "GB"
-            },
-            {
-              "v": 2.0,
-              "opp": "TEN"
-            }
-          ],
-          "avg": 3.3333333333333335,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.33333333333333337,
-          "name": "Breece Hall",
-          "pos": "RB",
-          "teamAbbr": "NYJ",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4427366.png",
-          "score": 0.48000000000000004
-        },
         {
           "ev": {
             "id": "401873046",
@@ -2406,6 +2344,80 @@
           "teamAbbr": "DET",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
           "score": 0.245079365079365
+        },
+        {
+          "ev": {
+            "id": "401873043",
+            "date": "2026-11-08T18:00Z",
+            "shortName": "LAR @ WSH",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4697815",
+          "type": "Total Rushing Yards (incl. overtime)",
+          "t": {
+            "stat": "rushingYards",
+            "label": "rushing yards",
+            "min": 30
+          },
+          "line": 35.5,
+          "open": 41.5,
+          "games": [
+            {
+              "v": 55.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 27.0,
+              "opp": "SF"
+            },
+            {
+              "v": 18.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 35.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 43.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 22.0,
+              "opp": "PHI"
+            }
+          ],
+          "avg": 33.333333333333336,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -6.0,
+          "moveAgrees": 1,
+          "edge": 0.06103286384976519,
+          "name": "Rachaad White",
+          "pos": "RB",
+          "teamAbbr": "WSH",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4697815.png",
+          "score": 0.20769953051643186
         }
       ],
       "odds": "+596"
@@ -2425,6 +2437,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-07T13:03:39Z",
+  "updated": "2026-11-07T19:26:17Z",
   "since": "Week 3, 2026"
 }

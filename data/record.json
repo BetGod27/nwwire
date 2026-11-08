@@ -2143,49 +2143,49 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -290,
+          "ml": -298,
           "model": 0.7759999999999999,
-          "market": 0.7135512302607419,
-          "edge": 0.06244876973925806,
+          "market": 0.7179705215419501,
+          "edge": 0.058029478458049844,
           "steam": false
         },
         {
           "ev": {
-            "id": "401873039",
+            "id": "401873043",
             "date": "2026-11-08T18:00Z",
-            "shortName": "CLE @ NO",
+            "shortName": "LAR @ WSH",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
+                      "id": "28",
+                      "abbreviation": "WSH"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
+                      "id": "14",
+                      "abbreviation": "LAR"
                     }
                   }
                 ]
               }
             ]
           },
-          "key": "home",
-          "teamId": "18",
-          "oppAbbr": "CLE",
-          "ml": -166,
-          "model": 0.68,
-          "market": 0.5996387718242023,
-          "edge": 0.08036122817579772,
+          "key": "away",
+          "teamId": "14",
+          "oppAbbr": "WSH",
+          "ml": -238,
+          "model": 0.7290000000000001,
+          "market": 0.6750312469954812,
+          "edge": 0.053968753004518866,
           "steam": false
         }
       ],
-      "odds": "+239"
+      "odds": "+198"
     },
     "prop": {
       "legs": [
@@ -2425,6 +2425,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-08T00:37:35Z",
+  "updated": "2026-11-08T10:25:16Z",
   "since": "Week 3, 2026"
 }

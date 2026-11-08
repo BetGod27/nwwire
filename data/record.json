@@ -2113,7 +2113,8 @@
           "market": 0.7220792588780237,
           "edge": 0.0539207411219762,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "19-9"
         },
         {
           "ev": {
@@ -2149,7 +2150,8 @@
           "market": 0.6636481241914618,
           "edge": 0.0653518758085383,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "20-13"
         },
         {
           "ev": {
@@ -2185,10 +2187,13 @@
           "market": 0.6636481241914618,
           "edge": 0.016351875808538252,
           "steam": true,
-          "result": null
+          "result": "win",
+          "final": "23-22"
         }
       ],
-      "odds": "+177"
+      "odds": "+177",
+      "result": "win",
+      "units": 1.77
     },
     "prop": {
       "legs": [
@@ -2348,10 +2353,13 @@
           "teamAbbr": "DET",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
           "score": 0.245079365079365,
-          "result": null
+          "result": "loss",
+          "actual": 0.0
         }
       ],
-      "odds": "+264"
+      "odds": "+264",
+      "result": "loss",
+      "units": -1.0
     },
     "locked": true,
     "lockAt": "2026-11-08T14:00:00Z",
@@ -2359,16 +2367,16 @@
   },
   "totals": {
     "game": {
-      "w": 3,
+      "w": 4,
       "l": 3,
-      "units": 1.53
+      "units": 3.3
     },
     "prop": {
       "w": 2,
-      "l": 4,
-      "units": 7.92
+      "l": 5,
+      "units": 6.92
     }
   },
-  "updated": "2026-11-08T17:56:04Z",
+  "updated": "2026-11-08T22:07:19Z",
   "since": "Week 3, 2026"
 }

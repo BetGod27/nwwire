@@ -2081,41 +2081,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873038",
-            "date": "2026-11-08T14:30Z",
-            "shortName": "CIN VS ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "4",
-          "oppAbbr": "ATL",
-          "ml": -175,
-          "model": 0.777,
-          "market": 0.6092362344582594,
-          "edge": 0.16776376554174066,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401873042",
             "date": "2026-11-08T18:00Z",
             "shortName": "DET @ MIA",
@@ -2143,11 +2108,12 @@
           "key": "away",
           "teamId": "8",
           "oppAbbr": "MIA",
-          "ml": -298,
+          "ml": -305,
           "model": 0.7759999999999999,
-          "market": 0.7179705215419501,
-          "edge": 0.058029478458049844,
-          "steam": false
+          "market": 0.7220792588780237,
+          "edge": 0.0539207411219762,
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
@@ -2178,79 +2144,54 @@
           "key": "away",
           "teamId": "14",
           "oppAbbr": "WSH",
-          "ml": -238,
+          "ml": -225,
           "model": 0.7290000000000001,
-          "market": 0.6750312469954812,
-          "edge": 0.053968753004518866,
-          "steam": false
-        }
-      ],
-      "odds": "+198"
-    },
-    "prop": {
-      "legs": [
+          "market": 0.6636481241914618,
+          "edge": 0.0653518758085383,
+          "steam": false,
+          "result": null
+        },
         {
           "ev": {
-            "id": "401873045",
+            "id": "401873039",
             "date": "2026-11-08T18:00Z",
-            "shortName": "NYJ @ KC",
+            "shortName": "CLE @ NO",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "5",
+                      "abbreviation": "CLE"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4427366",
-          "type": "Total Receptions (incl. overtime)",
-          "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
-          },
-          "line": 2.5,
-          "open": 1.5,
-          "games": [
-            {
-              "v": 3.0,
-              "opp": "DET"
-            },
-            {
-              "v": 5.0,
-              "opp": "GB"
-            },
-            {
-              "v": 2.0,
-              "opp": "TEN"
-            }
-          ],
-          "avg": 3.3333333333333335,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 0.6666666666666666,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.33333333333333337,
-          "name": "Breece Hall",
-          "pos": "RB",
-          "teamAbbr": "NYJ",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4427366.png",
-          "score": 0.48000000000000004
-        },
+          "key": "home",
+          "teamId": "18",
+          "oppAbbr": "CLE",
+          "ml": -225,
+          "model": 0.68,
+          "market": 0.6636481241914618,
+          "edge": 0.016351875808538252,
+          "steam": true,
+          "result": null
+        }
+      ],
+      "odds": "+177"
+    },
+    "prop": {
+      "legs": [
         {
           "ev": {
             "id": "401873046",
@@ -2327,7 +2268,8 @@
           "pos": "WR",
           "teamAbbr": "HOU",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4686422.png",
-          "score": 0.4228571428571429
+          "score": 0.4228571428571429,
+          "result": null
         },
         {
           "ev": {
@@ -2405,13 +2347,15 @@
           "pos": "RB",
           "teamAbbr": "DET",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429795.png",
-          "score": 0.245079365079365
+          "score": 0.245079365079365,
+          "result": null
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
-    "locked": false,
-    "lockAt": "2026-11-08T10:30:00Z"
+    "locked": true,
+    "lockAt": "2026-11-08T14:00:00Z",
+    "lockedAt": "2026-11-08T17:56:04Z"
   },
   "totals": {
     "game": {
@@ -2425,6 +2369,6 @@
       "units": 7.92
     }
   },
-  "updated": "2026-11-08T10:25:16Z",
+  "updated": "2026-11-08T17:56:04Z",
   "since": "Week 3, 2026"
 }

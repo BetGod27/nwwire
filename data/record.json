@@ -2274,7 +2274,8 @@
           "teamAbbr": "HOU",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4686422.png",
           "score": 0.4228571428571429,
-          "result": null
+          "result": "win",
+          "actual": 3.0
         },
         {
           "ev": {
@@ -2377,6 +2378,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-08T22:07:19Z",
+  "updated": "2026-11-09T06:33:19Z",
   "since": "Week 3, 2026"
 }

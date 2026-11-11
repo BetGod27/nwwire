@@ -2445,24 +2445,24 @@
         },
         {
           "ev": {
-            "id": "401873056",
+            "id": "401873054",
             "date": "2026-11-15T18:00Z",
-            "shortName": "HOU @ CLE",
+            "shortName": "BUF @ NYJ",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   }
                 ]
@@ -2470,97 +2470,19 @@
             ]
           },
           "key": "away",
-          "teamId": "34",
-          "oppAbbr": "CLE",
-          "ml": -230,
-          "model": 0.7609999999999999,
-          "market": 0.6690070210631895,
-          "edge": 0.09199297893681035,
-          "steam": false
+          "teamId": "2",
+          "oppAbbr": "NYJ",
+          "ml": -395,
+          "model": 0.828,
+          "market": 0.7659021045164341,
+          "edge": 0.06209789548356581,
+          "steam": true
         }
       ],
-      "odds": "+236"
+      "odds": "+194"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873062",
-            "date": "2026-11-15T21:05Z",
-            "shortName": "SEA @ LV",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "26",
-                      "abbreviation": "SEA"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4432665",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 59.5,
-          "open": 56.5,
-          "games": [
-            {
-              "v": 111.0,
-              "opp": "SF"
-            },
-            {
-              "v": 92.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 73.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 70.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 110.0,
-              "opp": "NE"
-            },
-            {
-              "v": 86.0,
-              "opp": "KC"
-            },
-            {
-              "v": 116.0,
-              "opp": "NO"
-            }
-          ],
-          "avg": 94.0,
-          "side": "over",
-          "hits": 7,
-          "hitRate": 1.0,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.5798319327731093,
-          "name": "Brock Bowers",
-          "pos": "TE",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-          "score": 0.8598319327731093
-        },
         {
           "ev": {
             "id": "401873053",
@@ -2680,7 +2602,7 @@
             "label": "passing yards",
             "min": 150
           },
-          "line": 228.5,
+          "line": 231.5,
           "open": 220.5,
           "games": [
             {
@@ -2724,17 +2646,17 @@
           "side": "over",
           "hits": 7,
           "hitRate": 0.7777777777777778,
-          "move": 8.0,
+          "move": 11.0,
           "moveAgrees": 1,
-          "edge": 0.13785557986870897,
+          "edge": 0.12311015118790497,
           "name": "Kirk Cousins",
           "pos": "QB",
           "teamAbbr": "MIN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/14880.png",
-          "score": 0.3289666909798201
+          "score": 0.3142212622990161
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-15T10:30:00Z"
@@ -2751,6 +2673,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-11T06:24:38Z",
+  "updated": "2026-11-11T17:09:10Z",
   "since": "Week 3, 2026"
 }

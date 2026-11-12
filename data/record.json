@@ -2402,10 +2402,10 @@
           "key": "home",
           "teamId": "11",
           "oppAbbr": "MIA",
-          "ml": -218,
+          "ml": -205,
           "model": 0.8190000000000001,
-          "market": 0.6574752261956054,
-          "edge": 0.16152477380439467,
+          "market": 0.644729178800233,
+          "edge": 0.1742708211997671,
           "steam": false
         },
         {
@@ -2472,108 +2472,108 @@
           "key": "away",
           "teamId": "34",
           "oppAbbr": "CLE",
-          "ml": -225,
+          "ml": -230,
           "model": 0.7609999999999999,
-          "market": 0.6636481241914618,
-          "edge": 0.0973518758085381,
+          "market": 0.6690070210631895,
+          "edge": 0.09199297893681035,
           "steam": false
         }
       ],
-      "odds": "+225"
+      "odds": "+229"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873053",
-            "date": "2026-11-15T14:30Z",
-            "shortName": "NE VS DET",
+            "id": "401873061",
+            "date": "2026-11-15T21:05Z",
+            "shortName": "LAR @ ARI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "8",
-                      "abbreviation": "DET"
+                      "id": "22",
+                      "abbreviation": "ARI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
+                      "id": "14",
+                      "abbreviation": "LAR"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4431431",
+          "ath": "4373626",
           "type": "Total Rushing Yards (incl. overtime)",
           "t": {
             "stat": "rushingYards",
             "label": "rushing yards",
             "min": 30
           },
-          "line": 51.5,
-          "open": 54.5,
+          "line": 42.5,
+          "open": 47.5,
           "games": [
             {
-              "v": 55.0,
-              "opp": "GB"
+              "v": 46.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 147.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 19.0,
+              "opp": "DEN"
             },
             {
               "v": 38.0,
-              "opp": "MIA"
+              "opp": "LAR"
             },
             {
-              "v": 13.0,
-              "opp": "CHI"
+              "v": 7.0,
+              "opp": "DET"
             },
             {
-              "v": 57.0,
-              "opp": "NYJ"
+              "v": 42.0,
+              "opp": "NYG"
             },
             {
-              "v": 52.0,
-              "opp": "LV"
+              "v": -1.0,
+              "opp": "SF"
             },
             {
-              "v": 0.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 18.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 0.0,
-              "opp": "PIT"
-            },
-            {
-              "v": 11.0,
+              "v": 10.0,
               "opp": "SEA"
+            },
+            {
+              "v": 61.0,
+              "opp": "LAC"
             }
           ],
-          "avg": 27.11111111111111,
+          "avg": 41.0,
           "side": "under",
           "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": -3.0,
+          "move": -5.0,
           "moveAgrees": 1,
-          "edge": 0.47357065803667747,
-          "name": "Corey Kiner",
+          "edge": 0.03529411764705882,
+          "name": "Tyler Allgeier",
           "pos": "RB",
-          "teamAbbr": "NE",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431431.png",
-          "score": 0.620237324703344
+          "teamAbbr": "ARI",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373626.png",
+          "score": 0.18196078431372548
         }
       ],
       "odds": "-110"
     },
     "locked": false,
-    "lockAt": "2026-11-15T10:30:00Z"
+    "lockAt": "2026-11-15T14:00:00Z"
   },
   "totals": {
     "game": {
@@ -2587,6 +2587,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-12T00:45:15Z",
+  "updated": "2026-11-12T11:14:23Z",
   "since": "Week 3, 2026"
 }

@@ -2402,10 +2402,10 @@
           "key": "home",
           "teamId": "11",
           "oppAbbr": "MIA",
-          "ml": -192,
+          "ml": -218,
           "model": 0.8190000000000001,
-          "market": 0.6309403437815976,
-          "edge": 0.18805965621840248,
+          "market": 0.6574752261956054,
+          "edge": 0.16152477380439467,
           "steam": false
         },
         {
@@ -2445,24 +2445,24 @@
         },
         {
           "ev": {
-            "id": "401873054",
+            "id": "401873056",
             "date": "2026-11-15T18:00Z",
-            "shortName": "BUF @ NYJ",
+            "shortName": "HOU @ CLE",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "5",
+                      "abbreviation": "CLE"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
+                      "id": "34",
+                      "abbreviation": "HOU"
                     }
                   }
                 ]
@@ -2470,16 +2470,16 @@
             ]
           },
           "key": "away",
-          "teamId": "2",
-          "oppAbbr": "NYJ",
-          "ml": -395,
-          "model": 0.828,
-          "market": 0.7659021045164341,
-          "edge": 0.06209789548356581,
-          "steam": true
+          "teamId": "34",
+          "oppAbbr": "CLE",
+          "ml": -225,
+          "model": 0.7609999999999999,
+          "market": 0.6636481241914618,
+          "edge": 0.0973518758085381,
+          "steam": false
         }
       ],
-      "odds": "+194"
+      "odds": "+225"
     },
     "prop": {
       "legs": [
@@ -2568,95 +2568,9 @@
           "teamAbbr": "NE",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4431431.png",
           "score": 0.620237324703344
-        },
-        {
-          "ev": {
-            "id": "401873060",
-            "date": "2026-11-15T18:00Z",
-            "shortName": "MIN @ GB",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "9",
-                      "abbreviation": "GB"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "14880",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 231.5,
-          "open": 220.5,
-          "games": [
-            {
-              "v": 216.0,
-              "opp": "SF"
-            },
-            {
-              "v": 247.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 295.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 313.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 243.0,
-              "opp": "NE"
-            },
-            {
-              "v": 365.0,
-              "opp": "KC"
-            },
-            {
-              "v": 248.0,
-              "opp": "NO"
-            },
-            {
-              "v": 253.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 160.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 260.0,
-          "side": "over",
-          "hits": 7,
-          "hitRate": 0.7777777777777778,
-          "move": 11.0,
-          "moveAgrees": 1,
-          "edge": 0.12311015118790497,
-          "name": "Kirk Cousins",
-          "pos": "QB",
-          "teamAbbr": "MIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/14880.png",
-          "score": 0.3142212622990161
         }
       ],
-      "odds": "+264"
+      "odds": "-110"
     },
     "locked": false,
     "lockAt": "2026-11-15T10:30:00Z"
@@ -2673,6 +2587,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-11T17:09:10Z",
+  "updated": "2026-11-12T00:45:15Z",
   "since": "Week 3, 2026"
 }

@@ -2402,10 +2402,10 @@
           "key": "home",
           "teamId": "11",
           "oppAbbr": "MIA",
-          "ml": -205,
+          "ml": -198,
           "model": 0.8190000000000001,
-          "market": 0.644729178800233,
-          "edge": 0.1742708211997671,
+          "market": 0.6369041816941223,
+          "edge": 0.18209581830587773,
           "steam": false
         },
         {
@@ -2479,98 +2479,13 @@
           "steam": false
         }
       ],
-      "odds": "+234"
+      "odds": "+238"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873061",
-            "date": "2026-11-15T21:05Z",
-            "shortName": "LAR @ ARI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4373626",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 42.5,
-          "open": 47.5,
-          "games": [
-            {
-              "v": 46.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 147.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 19.0,
-              "opp": "DEN"
-            },
-            {
-              "v": 38.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 7.0,
-              "opp": "DET"
-            },
-            {
-              "v": 42.0,
-              "opp": "NYG"
-            },
-            {
-              "v": -1.0,
-              "opp": "SF"
-            },
-            {
-              "v": 10.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 61.0,
-              "opp": "LAC"
-            }
-          ],
-          "avg": 41.0,
-          "side": "under",
-          "hits": 6,
-          "hitRate": 0.6666666666666666,
-          "move": -5.0,
-          "moveAgrees": 1,
-          "edge": 0.03529411764705882,
-          "name": "Tyler Allgeier",
-          "pos": "RB",
-          "teamAbbr": "ARI",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373626.png",
-          "score": 0.18196078431372548
-        }
+
       ],
-      "odds": "-110"
+      "odds": null
     },
     "locked": false,
     "lockAt": "2026-11-15T14:00:00Z"
@@ -2587,6 +2502,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-12T19:55:32Z",
+  "updated": "2026-11-13T01:50:09Z",
   "since": "Week 3, 2026"
 }

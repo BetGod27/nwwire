@@ -2437,10 +2437,10 @@
           "key": "away",
           "teamId": "12",
           "oppAbbr": "ATL",
-          "ml": -185,
+          "ml": -175,
           "model": 0.7829999999999999,
-          "market": 0.6224665518611737,
-          "edge": 0.1605334481388262,
+          "market": 0.6092362344582594,
+          "edge": 0.17376376554174056,
           "steam": false
         },
         {
@@ -2472,20 +2472,97 @@
           "key": "away",
           "teamId": "34",
           "oppAbbr": "CLE",
-          "ml": -225,
+          "ml": -238,
           "model": 0.7659999999999999,
-          "market": 0.6636481241914618,
-          "edge": 0.1023518758085381,
+          "market": 0.6750312469954812,
+          "edge": 0.09096875300451868,
           "steam": false
         }
       ],
-      "odds": "+231"
+      "odds": "+232"
     },
     "prop": {
       "legs": [
-
+        {
+          "ev": {
+            "id": "401873061",
+            "date": "2026-11-15T21:05Z",
+            "shortName": "LAR @ ARI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "22",
+                      "abbreviation": "ARI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "14",
+                      "abbreviation": "LAR"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4242557",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 30.5,
+          "open": 33.5,
+          "games": [
+            {
+              "v": 13.0,
+              "opp": "WSH"
+            },
+            {
+              "v": 48.0,
+              "opp": "LV"
+            },
+            {
+              "v": 31.0,
+              "opp": "ARI"
+            },
+            {
+              "v": 3.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 0.0,
+              "opp": "DEN"
+            },
+            {
+              "v": 15.0,
+              "opp": "NYG"
+            },
+            {
+              "v": 6.0,
+              "opp": "SF"
+            }
+          ],
+          "avg": 16.571428571428573,
+          "side": "under",
+          "hits": 5,
+          "hitRate": 0.7142857142857143,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.45667447306791564,
+          "name": "Colby Parkinson",
+          "pos": "TE",
+          "teamAbbr": "LAR",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242557.png",
+          "score": 0.6223887587822013
+        }
       ],
-      "odds": null
+      "odds": "-110"
     },
     "locked": false,
     "lockAt": "2026-11-15T14:00:00Z"
@@ -2502,6 +2579,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-13T11:00:18Z",
+  "updated": "2026-11-13T19:43:25Z",
   "since": "Week 3, 2026"
 }

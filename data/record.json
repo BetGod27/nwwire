@@ -2437,10 +2437,10 @@
           "key": "away",
           "teamId": "12",
           "oppAbbr": "ATL",
-          "ml": -175,
+          "ml": -170,
           "model": 0.7829999999999999,
-          "market": 0.6092362344582594,
-          "edge": 0.17376376554174056,
+          "market": 0.6037569709421778,
+          "edge": 0.17924302905782208,
           "steam": false
         },
         {
@@ -2479,7 +2479,7 @@
           "steam": false
         }
       ],
-      "odds": "+226"
+      "odds": "+229"
     },
     "prop": {
       "legs": [
@@ -2516,7 +2516,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 41.5,
+          "line": 40.5,
           "open": 35.5,
           "games": [
             {
@@ -2532,9 +2532,9 @@
           "side": "over",
           "hits": 2,
           "hitRate": 1.0,
-          "move": 6.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.7831325301204819,
+          "edge": 0.8271604938271605,
           "name": "Tank Dell",
           "pos": "WR",
           "teamAbbr": "HOU",
@@ -2559,6 +2559,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-14T10:28:06Z",
+  "updated": "2026-11-14T18:03:46Z",
   "since": "Week 3, 2026"
 }

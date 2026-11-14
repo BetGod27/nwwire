@@ -2375,6 +2375,41 @@
       "legs": [
         {
           "ev": {
+            "id": "401873058",
+            "date": "2026-11-15T18:00Z",
+            "shortName": "KC @ ATL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "12",
+                      "abbreviation": "KC"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "12",
+          "oppAbbr": "ATL",
+          "ml": -166,
+          "model": 0.7829999999999999,
+          "market": 0.5996387718242023,
+          "edge": 0.18336122817579759,
+          "steam": false
+        },
+        {
+          "ev": {
             "id": "401873059",
             "date": "2026-11-15T18:00Z",
             "shortName": "MIA @ IND",
@@ -2410,24 +2445,24 @@
         },
         {
           "ev": {
-            "id": "401873058",
+            "id": "401873054",
             "date": "2026-11-15T18:00Z",
-            "shortName": "KC @ ATL",
+            "shortName": "BUF @ NYJ",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "20",
+                      "abbreviation": "NYJ"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
+                      "id": "2",
+                      "abbreviation": "BUF"
                     }
                   }
                 ]
@@ -2435,51 +2470,16 @@
             ]
           },
           "key": "away",
-          "teamId": "12",
-          "oppAbbr": "ATL",
-          "ml": -170,
-          "model": 0.7829999999999999,
-          "market": 0.6037569709421778,
-          "edge": 0.17924302905782208,
-          "steam": false
-        },
-        {
-          "ev": {
-            "id": "401873056",
-            "date": "2026-11-15T18:00Z",
-            "shortName": "HOU @ CLE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "34",
-                      "abbreviation": "HOU"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "34",
-          "oppAbbr": "CLE",
-          "ml": -238,
-          "model": 0.7659999999999999,
-          "market": 0.6750312469954812,
-          "edge": 0.09096875300451868,
-          "steam": false
+          "teamId": "2",
+          "oppAbbr": "NYJ",
+          "ml": -395,
+          "model": 0.826,
+          "market": 0.7659021045164341,
+          "edge": 0.06009789548356581,
+          "steam": true
         }
       ],
-      "odds": "+229"
+      "odds": "+193"
     },
     "prop": {
       "legs": [
@@ -2559,6 +2559,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-14T18:03:46Z",
+  "updated": "2026-11-14T22:26:02Z",
   "since": "Week 3, 2026"
 }

@@ -2402,10 +2402,10 @@
           "key": "home",
           "teamId": "11",
           "oppAbbr": "MIA",
-          "ml": -205,
+          "ml": -218,
           "model": 0.82,
-          "market": 0.644729178800233,
-          "edge": 0.175270821199767,
+          "market": 0.6574752261956054,
+          "edge": 0.16252477380439456,
           "steam": false
         },
         {
@@ -2479,87 +2479,67 @@
           "steam": false
         }
       ],
-      "odds": "+232"
+      "odds": "+226"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873061",
-            "date": "2026-11-15T21:05Z",
-            "shortName": "LAR @ ARI",
+            "id": "401873056",
+            "date": "2026-11-15T18:00Z",
+            "shortName": "HOU @ CLE",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
+                      "id": "5",
+                      "abbreviation": "CLE"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "14",
-                      "abbreviation": "LAR"
+                      "id": "34",
+                      "abbreviation": "HOU"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4242557",
+          "ath": "4366031",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 30.5,
-          "open": 33.5,
+          "line": 41.5,
+          "open": 35.5,
           "games": [
             {
-              "v": 13.0,
-              "opp": "WSH"
+              "v": 105.0,
+              "opp": "LAC"
             },
             {
-              "v": 48.0,
-              "opp": "LV"
-            },
-            {
-              "v": 31.0,
-              "opp": "ARI"
-            },
-            {
-              "v": 3.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 0.0,
-              "opp": "DEN"
-            },
-            {
-              "v": 15.0,
+              "v": 43.0,
               "opp": "NYG"
-            },
-            {
-              "v": 6.0,
-              "opp": "SF"
             }
           ],
-          "avg": 16.571428571428573,
-          "side": "under",
-          "hits": 5,
-          "hitRate": 0.7142857142857143,
-          "move": -3.0,
+          "avg": 74.0,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 1.0,
+          "move": 6.0,
           "moveAgrees": 1,
-          "edge": 0.45667447306791564,
-          "name": "Colby Parkinson",
-          "pos": "TE",
-          "teamAbbr": "LAR",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4242557.png",
-          "score": 0.6223887587822013
+          "edge": 0.7831325301204819,
+          "name": "Tank Dell",
+          "pos": "WR",
+          "teamAbbr": "HOU",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4366031.png",
+          "score": 0.88
         }
       ],
       "odds": "-110"
@@ -2579,6 +2559,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-13T19:43:25Z",
+  "updated": "2026-11-14T01:27:06Z",
   "since": "Week 3, 2026"
 }

@@ -2472,14 +2472,14 @@
           "key": "away",
           "teamId": "2",
           "oppAbbr": "NYJ",
-          "ml": -395,
+          "ml": -380,
           "model": 0.826,
-          "market": 0.7659021045164341,
-          "edge": 0.06009789548356581,
+          "market": 0.7600000000000001,
+          "edge": 0.06599999999999984,
           "steam": true
         }
       ],
-      "odds": "+193"
+      "odds": "+195"
     },
     "prop": {
       "legs": [
@@ -2516,7 +2516,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 40.5,
+          "line": 41.5,
           "open": 35.5,
           "games": [
             {
@@ -2532,17 +2532,79 @@
           "side": "over",
           "hits": 2,
           "hitRate": 1.0,
-          "move": 5.0,
+          "move": 6.0,
           "moveAgrees": 1,
-          "edge": 0.8271604938271605,
+          "edge": 0.7831325301204819,
           "name": "Tank Dell",
           "pos": "WR",
           "teamAbbr": "HOU",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4366031.png",
           "score": 0.88
+        },
+        {
+          "ev": {
+            "id": "401873063",
+            "date": "2026-11-15T21:25Z",
+            "shortName": "SF @ DAL",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "6",
+                      "abbreviation": "DAL"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "3043116",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 32.5,
+          "open": 25.5,
+          "games": [
+            {
+              "v": 22.0,
+              "opp": "LV"
+            },
+            {
+              "v": 34.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 50.0,
+              "opp": "LAR"
+            }
+          ],
+          "avg": 35.333333333333336,
+          "side": "over",
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": 7.0,
+          "moveAgrees": 1,
+          "edge": 0.08717948717948726,
+          "name": "Demarcus Robinson",
+          "pos": "WR",
+          "teamAbbr": "SF",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3043116.png",
+          "score": 0.23384615384615393
         }
       ],
-      "odds": "-110"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-15T14:00:00Z"
@@ -2559,6 +2621,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-14T22:26:02Z",
+  "updated": "2026-11-15T06:35:08Z",
   "since": "Week 3, 2026"
 }

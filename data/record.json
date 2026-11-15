@@ -2375,41 +2375,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873058",
-            "date": "2026-11-15T18:00Z",
-            "shortName": "KC @ ATL",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "12",
-                      "abbreviation": "KC"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "12",
-          "oppAbbr": "ATL",
-          "ml": -166,
-          "model": 0.7829999999999999,
-          "market": 0.5996387718242023,
-          "edge": 0.18336122817579759,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401873059",
             "date": "2026-11-15T18:00Z",
             "shortName": "MIA @ IND",
@@ -2437,32 +2402,33 @@
           "key": "home",
           "teamId": "11",
           "oppAbbr": "MIA",
-          "ml": -218,
+          "ml": -225,
           "model": 0.82,
-          "market": 0.6574752261956054,
-          "edge": 0.16252477380439456,
-          "steam": false
+          "market": 0.6636481241914618,
+          "edge": 0.15635187580853815,
+          "steam": false,
+          "result": null
         },
         {
           "ev": {
-            "id": "401873054",
+            "id": "401873058",
             "date": "2026-11-15T18:00Z",
-            "shortName": "BUF @ NYJ",
+            "shortName": "KC @ ATL",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "1",
+                      "abbreviation": "ATL"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
+                      "id": "12",
+                      "abbreviation": "KC"
                     }
                   }
                 ]
@@ -2470,19 +2436,15 @@
             ]
           },
           "key": "away",
-          "teamId": "2",
-          "oppAbbr": "NYJ",
-          "ml": -380,
-          "model": 0.826,
-          "market": 0.7600000000000001,
-          "edge": 0.06599999999999984,
-          "steam": true
-        }
-      ],
-      "odds": "+195"
-    },
-    "prop": {
-      "legs": [
+          "teamId": "12",
+          "oppAbbr": "ATL",
+          "ml": -175,
+          "model": 0.7829999999999999,
+          "market": 0.6092362344582594,
+          "edge": 0.17376376554174056,
+          "steam": false,
+          "result": null
+        },
         {
           "ev": {
             "id": "401873056",
@@ -2509,38 +2471,21 @@
               }
             ]
           },
-          "ath": "4366031",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 41.5,
-          "open": 35.5,
-          "games": [
-            {
-              "v": 105.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 43.0,
-              "opp": "NYG"
-            }
-          ],
-          "avg": 74.0,
-          "side": "over",
-          "hits": 2,
-          "hitRate": 1.0,
-          "move": 6.0,
-          "moveAgrees": 1,
-          "edge": 0.7831325301204819,
-          "name": "Tank Dell",
-          "pos": "WR",
-          "teamAbbr": "HOU",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4366031.png",
-          "score": 0.88
-        },
+          "key": "away",
+          "teamId": "34",
+          "oppAbbr": "CLE",
+          "ml": -198,
+          "model": 0.7659999999999999,
+          "market": 0.6369041816941223,
+          "edge": 0.12909581830587757,
+          "steam": false,
+          "result": null
+        }
+      ],
+      "odds": "+242"
+    },
+    "prop": {
+      "legs": [
         {
           "ev": {
             "id": "401873063",
@@ -2574,7 +2519,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 32.5,
+          "line": 31.5,
           "open": 25.5,
           "games": [
             {
@@ -2594,20 +2539,22 @@
           "side": "over",
           "hits": 2,
           "hitRate": 0.6666666666666666,
-          "move": 7.0,
+          "move": 6.0,
           "moveAgrees": 1,
-          "edge": 0.08717948717948726,
+          "edge": 0.12169312169312177,
           "name": "Demarcus Robinson",
           "pos": "WR",
           "teamAbbr": "SF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3043116.png",
-          "score": 0.23384615384615393
+          "score": 0.2683597883597884,
+          "result": null
         }
       ],
-      "odds": "+264"
+      "odds": "-110"
     },
-    "locked": false,
-    "lockAt": "2026-11-15T14:00:00Z"
+    "locked": true,
+    "lockAt": "2026-11-15T14:00:00Z",
+    "lockedAt": "2026-11-15T16:22:27Z"
   },
   "totals": {
     "game": {
@@ -2621,6 +2568,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-15T06:35:08Z",
+  "updated": "2026-11-15T16:22:27Z",
   "since": "Week 3, 2026"
 }

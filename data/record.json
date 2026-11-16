@@ -2552,10 +2552,12 @@
           "teamAbbr": "SF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3043116.png",
           "score": 0.2683597883597884,
-          "result": null
+          "result": "void"
         }
       ],
-      "odds": "-110"
+      "odds": "-110",
+      "result": "void",
+      "units": 0.0
     },
     "locked": true,
     "lockAt": "2026-11-15T14:00:00Z",
@@ -2573,6 +2575,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-15T22:49:31Z",
+  "updated": "2026-11-16T06:31:51Z",
   "since": "Week 3, 2026"
 }

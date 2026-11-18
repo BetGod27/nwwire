@@ -2634,10 +2634,10 @@
           "key": "home",
           "teamId": "29",
           "oppAbbr": "BAL",
-          "ml": -142,
+          "ml": -135,
           "model": 0.687,
-          "market": 0.5634920634920635,
-          "edge": 0.12350793650793657,
+          "market": 0.551441114716549,
+          "edge": 0.13555888528345106,
           "steam": true
         },
         {
@@ -2669,14 +2669,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -380,
+          "ml": -375,
           "model": 0.805,
-          "market": 0.7600000000000001,
-          "edge": 0.04499999999999993,
+          "market": 0.7571884984025559,
+          "edge": 0.047811501597444184,
           "steam": true
         }
       ],
-      "odds": "+197"
+      "odds": "+204"
     },
     "prop": {
       "legs": [
@@ -2706,7 +2706,7 @@
               }
             ]
           },
-          "ath": "4385690",
+          "ath": "4373678",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
@@ -2714,233 +2714,229 @@
             "min": 30
           },
           "line": 31.5,
-          "open": 27.5,
+          "open": 29.5,
           "games": [
             {
-              "v": 58.0,
+              "v": 26.0,
               "opp": "NYJ"
             },
             {
-              "v": 28.0,
+              "v": 58.0,
               "opp": "MIN"
             },
             {
-              "v": 86.0,
+              "v": 64.0,
               "opp": "BAL"
             },
             {
-              "v": 38.0,
+              "v": 34.0,
               "opp": "LV"
             },
             {
-              "v": 7.0,
+              "v": 80.0,
               "opp": "LAR"
             },
             {
-              "v": 7.0,
+              "v": 82.0,
               "opp": "NE"
             },
             {
-              "v": 38.0,
+              "v": 6.0,
               "opp": "LAC"
             },
             {
-              "v": 95.0,
+              "v": 38.0,
               "opp": "DET"
             },
             {
-              "v": 130.0,
+              "v": 50.0,
               "opp": "HOU"
             }
           ],
-          "avg": 54.111111111111114,
+          "avg": 48.666666666666664,
           "side": "over",
-          "hits": 6,
-          "hitRate": 0.6666666666666666,
-          "move": 4.0,
+          "hits": 7,
+          "hitRate": 0.7777777777777778,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.7178130511463846,
-          "name": "Dalton Kincaid",
-          "pos": "TE",
+          "edge": 0.5449735449735449,
+          "name": "Khalil Shakir",
+          "pos": "WR",
           "teamAbbr": "BUF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4385690.png",
-          "score": 0.7466666666666666
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
+          "score": 0.736084656084656
         },
         {
           "ev": {
-            "id": "401873075",
-            "date": "2026-11-22T21:25Z",
-            "shortName": "LV @ DEN",
+            "id": "401873076",
+            "date": "2026-11-22T18:00Z",
+            "shortName": "PIT @ PHI",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
+                      "id": "21",
+                      "abbreviation": "PHI"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
+                      "id": "23",
+                      "abbreviation": "PIT"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4890973",
+          "ath": "8439",
+          "type": "Total Passing Yards (incl. overtime)",
+          "t": {
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
+          },
+          "line": 209.5,
+          "open": 201.5,
+          "games": [
+            {
+              "v": 143.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 172.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 212.0,
+              "opp": "NO"
+            },
+            {
+              "v": 253.0,
+              "opp": "TB"
+            },
+            {
+              "v": 235.0,
+              "opp": "IND"
+            },
+            {
+              "v": 299.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 292.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 187.0,
+              "opp": "NE"
+            },
+            {
+              "v": 221.0,
+              "opp": "ATL"
+            }
+          ],
+          "avg": 223.77777777777777,
+          "side": "over",
+          "hits": 6,
+          "hitRate": 0.6666666666666666,
+          "move": 8.0,
+          "moveAgrees": 1,
+          "edge": 0.06815168390347386,
+          "name": "Aaron Rodgers",
+          "pos": "QB",
+          "teamAbbr": "PIT",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png",
+          "score": 0.21481835057014054
+        },
+        {
+          "ev": {
+            "id": "401873070",
+            "date": "2026-11-22T18:00Z",
+            "shortName": "MIA @ BUF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "2",
+                      "abbreviation": "BUF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "15",
+                      "abbreviation": "MIA"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4569603",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 30.5,
-          "open": 29.5,
+          "line": 35.5,
+          "open": 32.5,
           "games": [
-            {
-              "v": 46.0,
-              "opp": "SEA"
-            },
-            {
-              "v": -5.0,
-              "opp": "SF"
-            },
-            {
-              "v": 64.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 61.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 36.0,
-              "opp": "BUF"
-            },
             {
               "v": 50.0,
-              "opp": "NE"
-            },
-            {
-              "v": 68.0,
-              "opp": "KC"
-            },
-            {
-              "v": 37.0,
-              "opp": "NO"
-            },
-            {
-              "v": 15.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 45.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 41.7,
-          "side": "over",
-          "hits": 8,
-          "hitRate": 0.8,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.36721311475409846,
-          "name": "Ashton Jeanty",
-          "pos": "RB",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
-          "score": 0.5672131147540984
-        },
-        {
-          "ev": {
-            "id": "401873069",
-            "date": "2026-11-22T21:25Z",
-            "shortName": "JAX @ NYG",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4882093",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 73.5,
-          "open": 75.5,
-          "games": [
-            {
-              "v": 88.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 29.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 104.0,
               "opp": "IND"
             },
             {
-              "v": 39.0,
-              "opp": "HOU"
+              "v": 21.0,
+              "opp": "DET"
             },
             {
-              "v": 72.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 73.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 73.0,
+              "v": 40.0,
               "opp": "NE"
             },
             {
-              "v": 65.0,
-              "opp": "DEN"
+              "v": 27.0,
+              "opp": "NYJ"
             },
             {
-              "v": 66.0,
-              "opp": "CLE"
+              "v": 43.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 67.0,
+              "opp": "MIN"
+            },
+            {
+              "v": 56.0,
+              "opp": "KC"
+            },
+            {
+              "v": 43.0,
+              "opp": "SF"
+            },
+            {
+              "v": 53.0,
+              "opp": "LV"
             }
           ],
-          "avg": 67.66666666666667,
-          "side": "under",
+          "avg": 44.44444444444444,
+          "side": "over",
           "hits": 7,
           "hitRate": 0.7777777777777778,
-          "move": -2.0,
+          "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.0793650793650793,
-          "name": "Bhayshul Tuten",
-          "pos": "RB",
-          "teamAbbr": "JAX",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4882093.png",
-          "score": 0.2704761904761904
+          "edge": 0.2519561815336463,
+          "name": "Malik Washington",
+          "pos": "WR",
+          "teamAbbr": "MIA",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
+          "score": 0.4430672926447574
         }
       ],
       "odds": "+596"
@@ -2960,6 +2956,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-18T11:44:02Z",
+  "updated": "2026-11-18T20:33:08Z",
   "since": "Week 3, 2026"
 }

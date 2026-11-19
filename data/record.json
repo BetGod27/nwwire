@@ -2669,14 +2669,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -395,
+          "ml": -380,
           "model": 0.805,
-          "market": 0.7659021045164341,
-          "edge": 0.0390978954835659,
+          "market": 0.7600000000000001,
+          "edge": 0.04499999999999993,
           "steam": true
         }
       ],
-      "odds": "+200"
+      "odds": "+203"
     },
     "prop": {
       "legs": [
@@ -2713,7 +2713,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 31.5,
+          "line": 32.5,
           "open": 27.5,
           "games": [
             {
@@ -2757,14 +2757,88 @@
           "side": "over",
           "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": 4.0,
+          "move": 5.0,
           "moveAgrees": 1,
-          "edge": 0.7178130511463846,
+          "edge": 0.664957264957265,
           "name": "Dalton Kincaid",
           "pos": "TE",
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4385690.png",
           "score": 0.7466666666666666
+        },
+        {
+          "ev": {
+            "id": "401873068",
+            "date": "2026-11-22T18:00Z",
+            "shortName": "BAL @ CAR",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "29",
+                      "abbreviation": "CAR"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "33",
+                      "abbreviation": "BAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4870847",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 34.5,
+          "open": 37.5,
+          "games": [
+            {
+              "v": 61.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 0.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 13.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 25.0,
+              "opp": "CIN"
+            },
+            {
+              "v": 40.0,
+              "opp": "CLE"
+            },
+            {
+              "v": 11.0,
+              "opp": "IND"
+            }
+          ],
+          "avg": 25.0,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": -3.0,
+          "moveAgrees": 1,
+          "edge": 0.2753623188405797,
+          "name": "Ja'Kobi Lane",
+          "pos": "WR",
+          "teamAbbr": "BAL",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870847.png",
+          "score": 0.4220289855072464
         },
         {
           "ev": {
@@ -2851,92 +2925,6 @@
           "teamAbbr": "PIT",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png",
           "score": 0.21481835057014054
-        },
-        {
-          "ev": {
-            "id": "401873070",
-            "date": "2026-11-22T18:00Z",
-            "shortName": "MIA @ BUF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "2",
-                      "abbreviation": "BUF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4373678",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 32.5,
-          "open": 29.5,
-          "games": [
-            {
-              "v": 26.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 58.0,
-              "opp": "MIN"
-            },
-            {
-              "v": 64.0,
-              "opp": "BAL"
-            },
-            {
-              "v": 34.0,
-              "opp": "LV"
-            },
-            {
-              "v": 80.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 82.0,
-              "opp": "NE"
-            },
-            {
-              "v": 6.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 38.0,
-              "opp": "DET"
-            },
-            {
-              "v": 50.0,
-              "opp": "HOU"
-            }
-          ],
-          "avg": 48.666666666666664,
-          "side": "over",
-          "hits": 7,
-          "hitRate": 0.7777777777777778,
-          "move": 3.0,
-          "moveAgrees": 1,
-          "edge": 0.4974358974358974,
-          "name": "Khalil Shakir",
-          "pos": "WR",
-          "teamAbbr": "BUF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
-          "score": 0.6885470085470085
         }
       ],
       "odds": "+596"
@@ -2956,6 +2944,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-19T02:34:43Z",
+  "updated": "2026-11-19T11:42:23Z",
   "since": "Week 3, 2026"
 }

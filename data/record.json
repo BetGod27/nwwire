@@ -2599,10 +2599,10 @@
           "key": "away",
           "teamId": "30",
           "oppAbbr": "NYG",
-          "ml": -265,
+          "ml": -266,
           "model": 0.8079999999999999,
-          "market": 0.6957699520733487,
-          "edge": 0.11223004792665126,
+          "market": 0.697989899990098,
+          "edge": 0.11001010000990197,
           "steam": true
         },
         {
@@ -2634,10 +2634,10 @@
           "key": "home",
           "teamId": "29",
           "oppAbbr": "BAL",
-          "ml": -135,
+          "ml": -147,
           "model": 0.687,
-          "market": 0.551441114716549,
-          "edge": 0.13555888528345106,
+          "market": 0.5713889081696397,
+          "edge": 0.11561109183036034,
           "steam": true
         },
         {
@@ -2669,14 +2669,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -380,
+          "ml": -387,
           "model": 0.805,
-          "market": 0.7600000000000001,
-          "edge": 0.04499999999999993,
+          "market": 0.7638318405113259,
+          "edge": 0.04116815948867414,
           "steam": true
         }
       ],
-      "odds": "+203"
+      "odds": "+191"
     },
     "prop": {
       "legs": [
@@ -2713,7 +2713,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 32.5,
+          "line": 31.5,
           "open": 27.5,
           "games": [
             {
@@ -2757,14 +2757,104 @@
           "side": "over",
           "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": 5.0,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.664957264957265,
+          "edge": 0.7178130511463846,
           "name": "Dalton Kincaid",
           "pos": "TE",
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4385690.png",
           "score": 0.7466666666666666
+        },
+        {
+          "ev": {
+            "id": "401873075",
+            "date": "2026-11-22T21:25Z",
+            "shortName": "LV @ DEN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "7",
+                      "abbreviation": "DEN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "13",
+                      "abbreviation": "LV"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4890973",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 31.5,
+          "open": 29.5,
+          "games": [
+            {
+              "v": 46.0,
+              "opp": "SEA"
+            },
+            {
+              "v": -5.0,
+              "opp": "SF"
+            },
+            {
+              "v": 64.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 61.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 36.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 50.0,
+              "opp": "NE"
+            },
+            {
+              "v": 68.0,
+              "opp": "KC"
+            },
+            {
+              "v": 37.0,
+              "opp": "NO"
+            },
+            {
+              "v": 15.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 45.0,
+              "opp": "MIA"
+            }
+          ],
+          "avg": 41.7,
+          "side": "over",
+          "hits": 8,
+          "hitRate": 0.8,
+          "move": 2.0,
+          "moveAgrees": 1,
+          "edge": 0.3238095238095239,
+          "name": "Ashton Jeanty",
+          "pos": "RB",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
+          "score": 0.5238095238095238
         },
         {
           "ev": {
@@ -2839,92 +2929,6 @@
           "teamAbbr": "BAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870847.png",
           "score": 0.4220289855072464
-        },
-        {
-          "ev": {
-            "id": "401873076",
-            "date": "2026-11-22T18:00Z",
-            "shortName": "PIT @ PHI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "21",
-                      "abbreviation": "PHI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "23",
-                      "abbreviation": "PIT"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "8439",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 209.5,
-          "open": 201.5,
-          "games": [
-            {
-              "v": 143.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 172.0,
-              "opp": "CLE"
-            },
-            {
-              "v": 212.0,
-              "opp": "NO"
-            },
-            {
-              "v": 253.0,
-              "opp": "TB"
-            },
-            {
-              "v": 235.0,
-              "opp": "IND"
-            },
-            {
-              "v": 299.0,
-              "opp": "CLE"
-            },
-            {
-              "v": 292.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 187.0,
-              "opp": "NE"
-            },
-            {
-              "v": 221.0,
-              "opp": "ATL"
-            }
-          ],
-          "avg": 223.77777777777777,
-          "side": "over",
-          "hits": 6,
-          "hitRate": 0.6666666666666666,
-          "move": 8.0,
-          "moveAgrees": 1,
-          "edge": 0.06815168390347386,
-          "name": "Aaron Rodgers",
-          "pos": "QB",
-          "teamAbbr": "PIT",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png",
-          "score": 0.21481835057014054
         }
       ],
       "odds": "+596"
@@ -2944,6 +2948,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-19T11:42:23Z",
+  "updated": "2026-11-19T20:38:55Z",
   "since": "Week 3, 2026"
 }

@@ -2669,14 +2669,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -375,
+          "ml": -395,
           "model": 0.805,
-          "market": 0.7571884984025559,
-          "edge": 0.047811501597444184,
+          "market": 0.7659021045164341,
+          "edge": 0.0390978954835659,
           "steam": true
         }
       ],
-      "odds": "+204"
+      "odds": "+200"
     },
     "prop": {
       "legs": [
@@ -2706,7 +2706,7 @@
               }
             ]
           },
-          "ath": "4373678",
+          "ath": "4385690",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
@@ -2714,57 +2714,57 @@
             "min": 30
           },
           "line": 31.5,
-          "open": 29.5,
+          "open": 27.5,
           "games": [
             {
-              "v": 26.0,
+              "v": 58.0,
               "opp": "NYJ"
             },
             {
-              "v": 58.0,
+              "v": 28.0,
               "opp": "MIN"
             },
             {
-              "v": 64.0,
+              "v": 86.0,
               "opp": "BAL"
             },
             {
-              "v": 34.0,
+              "v": 38.0,
               "opp": "LV"
             },
             {
-              "v": 80.0,
+              "v": 7.0,
               "opp": "LAR"
             },
             {
-              "v": 82.0,
+              "v": 7.0,
               "opp": "NE"
             },
             {
-              "v": 6.0,
+              "v": 38.0,
               "opp": "LAC"
             },
             {
-              "v": 38.0,
+              "v": 95.0,
               "opp": "DET"
             },
             {
-              "v": 50.0,
+              "v": 130.0,
               "opp": "HOU"
             }
           ],
-          "avg": 48.666666666666664,
+          "avg": 54.111111111111114,
           "side": "over",
-          "hits": 7,
-          "hitRate": 0.7777777777777778,
-          "move": 2.0,
+          "hits": 6,
+          "hitRate": 0.6666666666666666,
+          "move": 4.0,
           "moveAgrees": 1,
-          "edge": 0.5449735449735449,
-          "name": "Khalil Shakir",
-          "pos": "WR",
+          "edge": 0.7178130511463846,
+          "name": "Dalton Kincaid",
+          "pos": "TE",
           "teamAbbr": "BUF",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
-          "score": 0.736084656084656
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4385690.png",
+          "score": 0.7466666666666666
         },
         {
           "ev": {
@@ -2878,65 +2878,65 @@
               }
             ]
           },
-          "ath": "4569603",
+          "ath": "4373678",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 35.5,
-          "open": 32.5,
+          "line": 32.5,
+          "open": 29.5,
           "games": [
             {
-              "v": 50.0,
-              "opp": "IND"
-            },
-            {
-              "v": 21.0,
-              "opp": "DET"
-            },
-            {
-              "v": 40.0,
-              "opp": "NE"
-            },
-            {
-              "v": 27.0,
+              "v": 26.0,
               "opp": "NYJ"
             },
             {
-              "v": 43.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 67.0,
+              "v": 58.0,
               "opp": "MIN"
             },
             {
-              "v": 56.0,
-              "opp": "KC"
+              "v": 64.0,
+              "opp": "BAL"
             },
             {
-              "v": 43.0,
-              "opp": "SF"
-            },
-            {
-              "v": 53.0,
+              "v": 34.0,
               "opp": "LV"
+            },
+            {
+              "v": 80.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 82.0,
+              "opp": "NE"
+            },
+            {
+              "v": 6.0,
+              "opp": "LAC"
+            },
+            {
+              "v": 38.0,
+              "opp": "DET"
+            },
+            {
+              "v": 50.0,
+              "opp": "HOU"
             }
           ],
-          "avg": 44.44444444444444,
+          "avg": 48.666666666666664,
           "side": "over",
           "hits": 7,
           "hitRate": 0.7777777777777778,
           "move": 3.0,
           "moveAgrees": 1,
-          "edge": 0.2519561815336463,
-          "name": "Malik Washington",
+          "edge": 0.4974358974358974,
+          "name": "Khalil Shakir",
           "pos": "WR",
-          "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4569603.png",
-          "score": 0.4430672926447574
+          "teamAbbr": "BUF",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
+          "score": 0.6885470085470085
         }
       ],
       "odds": "+596"
@@ -2956,6 +2956,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-18T20:33:08Z",
+  "updated": "2026-11-19T02:34:43Z",
   "since": "Week 3, 2026"
 }

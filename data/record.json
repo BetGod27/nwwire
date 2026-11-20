@@ -2599,10 +2599,10 @@
           "key": "away",
           "teamId": "30",
           "oppAbbr": "NYG",
-          "ml": -266,
+          "ml": -258,
           "model": 0.8079999999999999,
-          "market": 0.697989899990098,
-          "edge": 0.11001010000990197,
+          "market": 0.692846234363471,
+          "edge": 0.1151537656365289,
           "steam": true
         },
         {
@@ -2634,10 +2634,10 @@
           "key": "home",
           "teamId": "29",
           "oppAbbr": "BAL",
-          "ml": -147,
+          "ml": -146,
           "model": 0.687,
-          "market": 0.5713889081696397,
-          "edge": 0.11561109183036034,
+          "market": 0.5696140522761468,
+          "edge": 0.11738594772385325,
           "steam": true
         },
         {
@@ -2676,7 +2676,7 @@
           "steam": true
         }
       ],
-      "odds": "+191"
+      "odds": "+194"
     },
     "prop": {
       "legs": [
@@ -2768,96 +2768,6 @@
         },
         {
           "ev": {
-            "id": "401873075",
-            "date": "2026-11-22T21:25Z",
-            "shortName": "LV @ DEN",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "7",
-                      "abbreviation": "DEN"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4890973",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 31.5,
-          "open": 29.5,
-          "games": [
-            {
-              "v": 46.0,
-              "opp": "SEA"
-            },
-            {
-              "v": -5.0,
-              "opp": "SF"
-            },
-            {
-              "v": 64.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 61.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 36.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 50.0,
-              "opp": "NE"
-            },
-            {
-              "v": 68.0,
-              "opp": "KC"
-            },
-            {
-              "v": 37.0,
-              "opp": "NO"
-            },
-            {
-              "v": 15.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 45.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 41.7,
-          "side": "over",
-          "hits": 8,
-          "hitRate": 0.8,
-          "move": 2.0,
-          "moveAgrees": 1,
-          "edge": 0.3238095238095239,
-          "name": "Ashton Jeanty",
-          "pos": "RB",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4890973.png",
-          "score": 0.5238095238095238
-        },
-        {
-          "ev": {
             "id": "401873068",
             "date": "2026-11-22T18:00Z",
             "shortName": "BAL @ CAR",
@@ -2929,6 +2839,88 @@
           "teamAbbr": "BAL",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4870847.png",
           "score": 0.4220289855072464
+        },
+        {
+          "ev": {
+            "id": "401873077",
+            "date": "2026-11-23T01:20Z",
+            "shortName": "MIN VS SF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "16",
+                      "abbreviation": "MIN"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4262921",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 6.5,
+          "open": 7.5,
+          "games": [
+            {
+              "v": 9.0,
+              "opp": "GB"
+            },
+            {
+              "v": 3.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 5.0,
+              "opp": "DET"
+            },
+            {
+              "v": 4.0,
+              "opp": "IND"
+            },
+            {
+              "v": 6.0,
+              "opp": "NO"
+            },
+            {
+              "v": 2.0,
+              "opp": "TB"
+            },
+            {
+              "v": 3.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 8.0,
+              "opp": "GB"
+            }
+          ],
+          "avg": 5.0,
+          "side": "under",
+          "hits": 6,
+          "hitRate": 0.75,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.23076923076923078,
+          "name": "Justin Jefferson",
+          "pos": "WR",
+          "teamAbbr": "MIN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4262921.png",
+          "score": 0.41076923076923083
         }
       ],
       "odds": "+596"
@@ -2948,6 +2940,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-19T20:38:55Z",
+  "updated": "2026-11-20T02:19:47Z",
   "since": "Week 3, 2026"
 }

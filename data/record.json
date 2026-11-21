@@ -2599,10 +2599,10 @@
           "key": "away",
           "teamId": "30",
           "oppAbbr": "NYG",
-          "ml": -253,
+          "ml": -256,
           "model": 0.8140000000000001,
-          "market": 0.6889237466623193,
-          "edge": 0.1250762533376808,
+          "market": 0.6910151367865575,
+          "edge": 0.1229848632134426,
           "steam": true
         },
         {
@@ -2634,10 +2634,10 @@
           "key": "home",
           "teamId": "29",
           "oppAbbr": "BAL",
-          "ml": -150,
+          "ml": -148,
           "model": 0.69,
-          "market": 0.5766299745977985,
-          "edge": 0.11337002540220142,
+          "market": 0.5731497418244406,
+          "edge": 0.11685025817555938,
           "steam": true
         },
         {
@@ -2669,14 +2669,14 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -383,
+          "ml": -354,
           "model": 0.805,
-          "market": 0.7621064659758067,
-          "edge": 0.04289353402419338,
+          "market": 0.7491463239438175,
+          "edge": 0.05585367605618252,
           "steam": true
         }
       ],
-      "odds": "+193"
+      "odds": "+199"
     },
     "prop": {
       "legs": [
@@ -2765,83 +2765,9 @@
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
           "score": 0.4799999999999999
-        },
-        {
-          "ev": {
-            "id": "401873074",
-            "date": "2026-11-22T21:05Z",
-            "shortName": "NYJ @ LAC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4597500",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 46.5,
-          "open": 42.5,
-          "games": [
-            {
-              "v": 59.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 0.0,
-              "opp": "KC"
-            },
-            {
-              "v": 142.0,
-              "opp": "LV"
-            },
-            {
-              "v": 0.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 63.0,
-              "opp": "GB"
-            },
-            {
-              "v": 60.0,
-              "opp": "TEN"
-            }
-          ],
-          "avg": 54.0,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 4.0,
-          "moveAgrees": 1,
-          "edge": 0.16129032258064516,
-          "name": "Adonai Mitchell",
-          "pos": "WR",
-          "teamAbbr": "NYJ",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4597500.png",
-          "score": 0.3079569892473118
         }
       ],
-      "odds": "+264"
+      "odds": "-110"
     },
     "locked": false,
     "lockAt": "2026-11-22T14:00:00Z"
@@ -2858,6 +2784,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-21T11:03:52Z",
+  "updated": "2026-11-21T19:17:32Z",
   "since": "Week 3, 2026"
 }

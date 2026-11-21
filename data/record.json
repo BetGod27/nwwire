@@ -2713,7 +2713,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 37.5,
+          "line": 36.5,
           "open": 29.5,
           "games": [
             {
@@ -2757,17 +2757,91 @@
           "side": "over",
           "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": 8.0,
+          "move": 7.0,
           "moveAgrees": 1,
-          "edge": 0.2977777777777777,
+          "edge": 0.33333333333333326,
           "name": "Khalil Shakir",
           "pos": "WR",
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
-          "score": 0.44444444444444436
+          "score": 0.4799999999999999
+        },
+        {
+          "ev": {
+            "id": "401873074",
+            "date": "2026-11-22T21:05Z",
+            "shortName": "NYJ @ LAC",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "24",
+                      "abbreviation": "LAC"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4597500",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 46.5,
+          "open": 42.5,
+          "games": [
+            {
+              "v": 59.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 0.0,
+              "opp": "KC"
+            },
+            {
+              "v": 142.0,
+              "opp": "LV"
+            },
+            {
+              "v": 0.0,
+              "opp": "MIA"
+            },
+            {
+              "v": 63.0,
+              "opp": "GB"
+            },
+            {
+              "v": 60.0,
+              "opp": "TEN"
+            }
+          ],
+          "avg": 54.0,
+          "side": "over",
+          "hits": 4,
+          "hitRate": 0.6666666666666666,
+          "move": 4.0,
+          "moveAgrees": 1,
+          "edge": 0.16129032258064516,
+          "name": "Adonai Mitchell",
+          "pos": "WR",
+          "teamAbbr": "NYJ",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4597500.png",
+          "score": 0.3079569892473118
         }
       ],
-      "odds": "-110"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-22T14:00:00Z"
@@ -2784,6 +2858,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-21T02:17:03Z",
+  "updated": "2026-11-21T11:03:52Z",
   "since": "Week 3, 2026"
 }

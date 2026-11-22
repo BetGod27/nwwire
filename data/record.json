@@ -2599,45 +2599,10 @@
           "key": "away",
           "teamId": "30",
           "oppAbbr": "NYG",
-          "ml": -256,
+          "ml": -255,
           "model": 0.8140000000000001,
-          "market": 0.6910151367865575,
-          "edge": 0.1229848632134426,
-          "steam": true
-        },
-        {
-          "ev": {
-            "id": "401873068",
-            "date": "2026-11-22T18:00Z",
-            "shortName": "BAL @ CAR",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "29",
-                      "abbreviation": "CAR"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "33",
-                      "abbreviation": "BAL"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "29",
-          "oppAbbr": "BAL",
-          "ml": -148,
-          "model": 0.69,
-          "market": 0.5731497418244406,
-          "edge": 0.11685025817555938,
+          "market": 0.6907800182918863,
+          "edge": 0.12321998170811377,
           "steam": true
         },
         {
@@ -2669,14 +2634,49 @@
           "key": "home",
           "teamId": "6",
           "oppAbbr": "TEN",
-          "ml": -354,
+          "ml": -335,
           "model": 0.805,
-          "market": 0.7491463239438175,
-          "edge": 0.05585367605618252,
+          "market": 0.7402209614810391,
+          "edge": 0.06477903851896094,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401873068",
+            "date": "2026-11-22T18:00Z",
+            "shortName": "BAL @ CAR",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "29",
+                      "abbreviation": "CAR"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "33",
+                      "abbreviation": "BAL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "29",
+          "oppAbbr": "BAL",
+          "ml": -151,
+          "model": 0.69,
+          "market": 0.5772773969718915,
+          "edge": 0.11272260302810844,
           "steam": true
         }
       ],
-      "odds": "+199"
+      "odds": "+200"
     },
     "prop": {
       "legs": [
@@ -2713,7 +2713,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 36.5,
+          "line": 37.5,
           "open": 29.5,
           "games": [
             {
@@ -2757,14 +2757,14 @@
           "side": "over",
           "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": 7.0,
+          "move": 8.0,
           "moveAgrees": 1,
-          "edge": 0.33333333333333326,
+          "edge": 0.2977777777777777,
           "name": "Khalil Shakir",
           "pos": "WR",
           "teamAbbr": "BUF",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4373678.png",
-          "score": 0.4799999999999999
+          "score": 0.44444444444444436
         }
       ],
       "odds": "-110"
@@ -2784,6 +2784,6 @@
       "units": 6.92
     }
   },
-  "updated": "2026-11-21T19:17:32Z",
+  "updated": "2026-11-22T01:20:35Z",
   "since": "Week 3, 2026"
 }

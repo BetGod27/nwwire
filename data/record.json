@@ -2678,7 +2678,8 @@
           "market": 0.6111700247437257,
           "edge": 0.01882997525627428,
           "steam": false,
-          "result": null
+          "result": "win",
+          "final": "35-10"
         }
       ],
       "odds": "+238",
@@ -2772,7 +2773,8 @@
           "teamAbbr": "MIN",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042519.png",
           "score": 0.7466666666666666,
-          "result": null
+          "result": "loss",
+          "actual": 30.0
         },
         {
           "ev": {
@@ -2955,6 +2957,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-23T01:44:48Z",
+  "updated": "2026-11-23T12:45:40Z",
   "since": "Week 3, 2026"
 }

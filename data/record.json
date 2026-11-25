@@ -1,6 +1,388 @@
 {
   "history": [
     {
+      "key": "2026-2-11",
+      "season": 2026,
+      "week": 11,
+      "label": "Week 11",
+      "game": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401873069",
+              "date": "2026-11-22T21:25Z",
+              "shortName": "JAX @ NYG",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "19",
+                        "abbreviation": "NYG"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "30",
+                        "abbreviation": "JAX"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "away",
+            "teamId": "30",
+            "oppAbbr": "NYG",
+            "ml": -265,
+            "model": 0.8140000000000001,
+            "market": 0.697772625652066,
+            "edge": 0.11622737434793406,
+            "steam": true,
+            "result": "loss",
+            "final": "18-23"
+          },
+          {
+            "ev": {
+              "id": "401873074",
+              "date": "2026-11-22T21:05Z",
+              "shortName": "NYJ @ LAC",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "24",
+                        "abbreviation": "LAC"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "20",
+                        "abbreviation": "NYJ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "home",
+            "teamId": "24",
+            "oppAbbr": "NYJ",
+            "ml": -178,
+            "model": 0.634,
+            "market": 0.6154910096818811,
+            "edge": 0.018508990318118923,
+            "steam": false,
+            "result": "loss",
+            "final": "24-27"
+          },
+          {
+            "ev": {
+              "id": "401873077",
+              "date": "2026-11-23T01:20Z",
+              "shortName": "MIN VS SF",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "25",
+                        "abbreviation": "SF"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "16",
+                        "abbreviation": "MIN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "key": "home",
+            "teamId": "25",
+            "oppAbbr": "MIN",
+            "ml": -175,
+            "model": 0.63,
+            "market": 0.6111700247437257,
+            "edge": 0.01882997525627428,
+            "steam": false,
+            "result": "win",
+            "final": "35-10"
+          }
+        ],
+        "odds": "+238",
+        "result": "loss",
+        "units": -1.0
+      },
+      "prop": {
+        "legs": [
+          {
+            "ev": {
+              "id": "401873077",
+              "date": "2026-11-23T01:20Z",
+              "shortName": "MIN VS SF",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "25",
+                        "abbreviation": "SF"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "16",
+                        "abbreviation": "MIN"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "3042519",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 32.5,
+            "open": 31.5,
+            "games": [
+              {
+                "v": 47.0,
+                "opp": "GB"
+              },
+              {
+                "v": 16.0,
+                "opp": "BUF"
+              },
+              {
+                "v": 22.0,
+                "opp": "DET"
+              },
+              {
+                "v": 26.0,
+                "opp": "IND"
+              },
+              {
+                "v": 113.0,
+                "opp": "NO"
+              },
+              {
+                "v": 94.0,
+                "opp": "MIA"
+              },
+              {
+                "v": 58.0,
+                "opp": "TB"
+              },
+              {
+                "v": 105.0,
+                "opp": "CHI"
+              },
+              {
+                "v": 40.0,
+                "opp": "GB"
+              }
+            ],
+            "avg": 57.888888888888886,
+            "side": "over",
+            "hits": 6,
+            "hitRate": 0.6666666666666666,
+            "move": 1.0,
+            "moveAgrees": 1,
+            "edge": 0.7811965811965811,
+            "name": "Aaron Jones Sr.",
+            "pos": "RB",
+            "teamAbbr": "MIN",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042519.png",
+            "score": 0.7466666666666666,
+            "result": "loss",
+            "actual": 30.0
+          },
+          {
+            "ev": {
+              "id": "401873074",
+              "date": "2026-11-22T21:05Z",
+              "shortName": "NYJ @ LAC",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "24",
+                        "abbreviation": "LAC"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "20",
+                        "abbreviation": "NYJ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4597500",
+            "type": "Total Receiving Yards (incl. overtime)",
+            "t": {
+              "stat": "receivingYards",
+              "label": "receiving yards",
+              "min": 30
+            },
+            "line": 47.5,
+            "open": 42.5,
+            "games": [
+              {
+                "v": 59.0,
+                "opp": "BUF"
+              },
+              {
+                "v": 0.0,
+                "opp": "KC"
+              },
+              {
+                "v": 142.0,
+                "opp": "LV"
+              },
+              {
+                "v": 0.0,
+                "opp": "MIA"
+              },
+              {
+                "v": 63.0,
+                "opp": "GB"
+              },
+              {
+                "v": 60.0,
+                "opp": "TEN"
+              }
+            ],
+            "avg": 54.0,
+            "side": "over",
+            "hits": 4,
+            "hitRate": 0.6666666666666666,
+            "move": 5.0,
+            "moveAgrees": 1,
+            "edge": 0.1368421052631579,
+            "name": "Adonai Mitchell",
+            "pos": "WR",
+            "teamAbbr": "NYJ",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4597500.png",
+            "score": 0.28350877192982454,
+            "result": "loss",
+            "actual": 30.0
+          },
+          {
+            "ev": {
+              "id": "401873069",
+              "date": "2026-11-22T21:25Z",
+              "shortName": "JAX @ NYG",
+              "competitions": [
+                {
+                  "competitors": [
+                    {
+                      "homeAway": "home",
+                      "team": {
+                        "id": "19",
+                        "abbreviation": "NYG"
+                      }
+                    },
+                    {
+                      "homeAway": "away",
+                      "team": {
+                        "id": "30",
+                        "abbreviation": "JAX"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "ath": "4696981",
+            "type": "Total Rushing Yards (incl. overtime)",
+            "t": {
+              "stat": "rushingYards",
+              "label": "rushing yards",
+              "min": 30
+            },
+            "line": 56.5,
+            "open": 55.5,
+            "games": [
+              {
+                "v": 78.0,
+                "opp": "WSH"
+              },
+              {
+                "v": 124.0,
+                "opp": "HOU"
+              },
+              {
+                "v": 0.0,
+                "opp": "NO"
+              },
+              {
+                "v": 59.0,
+                "opp": "WSH"
+              },
+              {
+                "v": 58.0,
+                "opp": "ARI"
+              },
+              {
+                "v": 60.0,
+                "opp": "TEN"
+              },
+              {
+                "v": 36.0,
+                "opp": "LAR"
+              },
+              {
+                "v": 81.0,
+                "opp": "DAL"
+              }
+            ],
+            "avg": 62.0,
+            "side": "over",
+            "hits": 6,
+            "hitRate": 0.75,
+            "move": 1.0,
+            "moveAgrees": 1,
+            "edge": 0.09734513274336283,
+            "name": "Cam Skattebo",
+            "pos": "RB",
+            "teamAbbr": "NYG",
+            "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4696981.png",
+            "score": 0.27734513274336287,
+            "result": "loss",
+            "actual": 34.0
+          }
+        ],
+        "odds": "+596",
+        "result": "loss",
+        "units": -1.0
+      },
+      "locked": true,
+      "lockAt": "2026-11-22T17:05:00Z",
+      "lockedAt": "2026-11-22T19:42:25Z"
+    },
+    {
       "key": "2026-2-10",
       "season": 2026,
       "week": 10,
@@ -2564,69 +2946,32 @@
     }
   ],
   "current": {
-    "key": "2026-2-11",
+    "key": "2026-2-12",
     "season": 2026,
-    "week": 11,
-    "label": "Week 11",
+    "week": 12,
+    "label": "Week 12",
     "game": {
       "legs": [
         {
           "ev": {
-            "id": "401873069",
-            "date": "2026-11-22T21:25Z",
-            "shortName": "JAX @ NYG",
+            "id": "401873085",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "BAL @ HOU",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
+                      "id": "34",
+                      "abbreviation": "HOU"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "away",
-          "teamId": "30",
-          "oppAbbr": "NYG",
-          "ml": -265,
-          "model": 0.8140000000000001,
-          "market": 0.697772625652066,
-          "edge": 0.11622737434793406,
-          "steam": true,
-          "result": "loss",
-          "final": "18-23"
-        },
-        {
-          "ev": {
-            "id": "401873074",
-            "date": "2026-11-22T21:05Z",
-            "shortName": "NYJ @ LAC",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
+                      "id": "33",
+                      "abbreviation": "BAL"
                     }
                   }
                 ]
@@ -2634,21 +2979,54 @@
             ]
           },
           "key": "home",
-          "teamId": "24",
-          "oppAbbr": "NYJ",
-          "ml": -178,
-          "model": 0.634,
-          "market": 0.6154910096818811,
-          "edge": 0.018508990318118923,
-          "steam": false,
-          "result": "loss",
-          "final": "24-27"
+          "teamId": "34",
+          "oppAbbr": "BAL",
+          "ml": -307,
+          "model": 0.8340000000000001,
+          "market": 0.7247079672355135,
+          "edge": 0.10929203276448662,
+          "steam": true
         },
         {
           "ev": {
-            "id": "401873077",
-            "date": "2026-11-23T01:20Z",
-            "shortName": "MIN VS SF",
+            "id": "401873084",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "ATL @ MIN",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "16",
+                      "abbreviation": "MIN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "16",
+          "oppAbbr": "ATL",
+          "ml": -324,
+          "model": 0.802,
+          "market": 0.734482240368719,
+          "edge": 0.06751775963128104,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401873091",
+            "date": "2026-11-29T21:25Z",
+            "shortName": "SEA @ SF",
             "competitions": [
               {
                 "competitors": [
@@ -2662,8 +3040,8 @@
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
+                      "id": "26",
+                      "abbreviation": "SEA"
                     }
                   }
                 ]
@@ -2672,123 +3050,187 @@
           },
           "key": "home",
           "teamId": "25",
-          "oppAbbr": "MIN",
-          "ml": -175,
-          "model": 0.63,
-          "market": 0.6111700247437257,
-          "edge": 0.01882997525627428,
-          "steam": false,
-          "result": "win",
-          "final": "35-10"
+          "oppAbbr": "SEA",
+          "ml": -177,
+          "model": 0.6829999999999999,
+          "market": 0.6140609978682792,
+          "edge": 0.06893900213172077,
+          "steam": true
         }
       ],
-      "odds": "+238",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+172"
     },
     "prop": {
       "legs": [
         {
           "ev": {
-            "id": "401873077",
-            "date": "2026-11-23T01:20Z",
-            "shortName": "MIN VS SF",
+            "id": "401873086",
+            "date": "2026-11-30T01:20Z",
+            "shortName": "LV @ CLE",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
+                      "id": "5",
+                      "abbreviation": "CLE"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "3042519",
-          "type": "Total Rushing Yards (incl. overtime)",
+          "ath": "4837248",
+          "type": "Total Passing Yards (incl. overtime)",
           "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
           },
-          "line": 32.5,
-          "open": 31.5,
+          "line": 191.5,
+          "open": 194.5,
           "games": [
             {
-              "v": 47.0,
-              "opp": "GB"
+              "v": 267.0,
+              "opp": "DEN"
             },
             {
-              "v": 16.0,
-              "opp": "BUF"
+              "v": 143.0,
+              "opp": "SEA"
             },
             {
-              "v": 22.0,
-              "opp": "DET"
+              "v": 48.0,
+              "opp": "NE"
             },
             {
-              "v": 26.0,
-              "opp": "IND"
+              "v": 0.0,
+              "opp": "LAC"
             },
             {
-              "v": 113.0,
-              "opp": "NO"
-            },
-            {
-              "v": 94.0,
+              "v": 0.0,
               "opp": "MIA"
-            },
-            {
-              "v": 58.0,
-              "opp": "TB"
-            },
-            {
-              "v": 105.0,
-              "opp": "CHI"
-            },
-            {
-              "v": 40.0,
-              "opp": "GB"
             }
           ],
-          "avg": 57.888888888888886,
-          "side": "over",
-          "hits": 6,
-          "hitRate": 0.6666666666666666,
-          "move": 1.0,
+          "avg": 91.6,
+          "side": "under",
+          "hits": 4,
+          "hitRate": 0.8,
+          "move": -3.0,
           "moveAgrees": 1,
-          "edge": 0.7811965811965811,
-          "name": "Aaron Jones Sr.",
-          "pos": "RB",
-          "teamAbbr": "MIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/3042519.png",
-          "score": 0.7466666666666666,
-          "result": "loss",
-          "actual": 30.0
+          "edge": 0.5216710182767624,
+          "name": "Fernando Mendoza",
+          "pos": "QB",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4837248.png",
+          "score": 0.7216710182767624
         },
         {
           "ev": {
-            "id": "401873074",
-            "date": "2026-11-22T21:05Z",
-            "shortName": "NYJ @ LAC",
+            "id": "401873084",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "ATL @ MIN",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
+                      "id": "16",
+                      "abbreviation": "MIN"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "1",
+                      "abbreviation": "ATL"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4262921",
+          "type": "Total Receiving Yards (incl. overtime)",
+          "t": {
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
+          },
+          "line": 84.5,
+          "open": 85.5,
+          "games": [
+            {
+              "v": 86.0,
+              "opp": "SF"
+            },
+            {
+              "v": 74.0,
+              "opp": "GB"
+            },
+            {
+              "v": 58.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 33.0,
+              "opp": "DET"
+            },
+            {
+              "v": 44.0,
+              "opp": "IND"
+            },
+            {
+              "v": 79.0,
+              "opp": "NO"
+            },
+            {
+              "v": 32.0,
+              "opp": "TB"
+            },
+            {
+              "v": 55.0,
+              "opp": "CHI"
+            },
+            {
+              "v": 92.0,
+              "opp": "GB"
+            }
+          ],
+          "avg": 61.44444444444444,
+          "side": "under",
+          "hits": 7,
+          "hitRate": 0.7777777777777778,
+          "move": -1.0,
+          "moveAgrees": 1,
+          "edge": 0.2728468113083498,
+          "name": "Justin Jefferson",
+          "pos": "WR",
+          "teamAbbr": "MIN",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4262921.png",
+          "score": 0.46395792241946093
+        },
+        {
+          "ev": {
+            "id": "401873089",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "NYJ @ MIA",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "15",
+                      "abbreviation": "MIA"
                     }
                   },
                   {
@@ -2802,148 +3244,63 @@
               }
             ]
           },
-          "ath": "4597500",
-          "type": "Total Receiving Yards (incl. overtime)",
+          "ath": "4869645",
+          "type": "Total Receptions (incl. overtime)",
           "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
           },
-          "line": 47.5,
-          "open": 42.5,
+          "line": 4.5,
+          "open": 4.5,
           "games": [
             {
-              "v": 59.0,
+              "v": 2.0,
               "opp": "BUF"
             },
             {
-              "v": 0.0,
-              "opp": "KC"
+              "v": 3.0,
+              "opp": "IND"
             },
             {
-              "v": 142.0,
+              "v": 6.0,
+              "opp": "DET"
+            },
+            {
+              "v": 4.0,
+              "opp": "NE"
+            },
+            {
+              "v": 2.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 2.0,
+              "opp": "SF"
+            },
+            {
+              "v": 5.0,
               "opp": "LV"
-            },
-            {
-              "v": 0.0,
-              "opp": "MIA"
-            },
-            {
-              "v": 63.0,
-              "opp": "GB"
-            },
-            {
-              "v": 60.0,
-              "opp": "TEN"
             }
           ],
-          "avg": 54.0,
-          "side": "over",
-          "hits": 4,
-          "hitRate": 0.6666666666666666,
-          "move": 5.0,
-          "moveAgrees": 1,
-          "edge": 0.1368421052631579,
-          "name": "Adonai Mitchell",
+          "avg": 3.4285714285714284,
+          "side": "under",
+          "hits": 5,
+          "hitRate": 0.7142857142857143,
+          "move": 0.0,
+          "moveAgrees": 0,
+          "edge": 0.23809523809523814,
+          "name": "Caleb Douglas",
           "pos": "WR",
-          "teamAbbr": "NYJ",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4597500.png",
-          "score": 0.28350877192982454,
-          "result": "loss",
-          "actual": 30.0
-        },
-        {
-          "ev": {
-            "id": "401873069",
-            "date": "2026-11-22T21:25Z",
-            "shortName": "JAX @ NYG",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "30",
-                      "abbreviation": "JAX"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4696981",
-          "type": "Total Rushing Yards (incl. overtime)",
-          "t": {
-            "stat": "rushingYards",
-            "label": "rushing yards",
-            "min": 30
-          },
-          "line": 56.5,
-          "open": 55.5,
-          "games": [
-            {
-              "v": 78.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 124.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 0.0,
-              "opp": "NO"
-            },
-            {
-              "v": 59.0,
-              "opp": "WSH"
-            },
-            {
-              "v": 58.0,
-              "opp": "ARI"
-            },
-            {
-              "v": 60.0,
-              "opp": "TEN"
-            },
-            {
-              "v": 36.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 81.0,
-              "opp": "DAL"
-            }
-          ],
-          "avg": 62.0,
-          "side": "over",
-          "hits": 6,
-          "hitRate": 0.75,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.09734513274336283,
-          "name": "Cam Skattebo",
-          "pos": "RB",
-          "teamAbbr": "NYG",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4696981.png",
-          "score": 0.27734513274336287,
-          "result": "loss",
-          "actual": 34.0
+          "teamAbbr": "MIA",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
+          "score": 0.3238095238095239
         }
       ],
-      "odds": "+596",
-      "result": "loss",
-      "units": -1.0
+      "odds": "+596"
     },
-    "locked": true,
-    "lockAt": "2026-11-22T17:05:00Z",
-    "lockedAt": "2026-11-22T19:42:25Z"
+    "locked": false,
+    "lockAt": "2026-11-29T14:00:00Z"
   },
   "totals": {
     "game": {
@@ -2957,6 +3314,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-24T23:53:58Z",
+  "updated": "2026-11-25T08:36:43Z",
   "since": "Week 3, 2026"
 }

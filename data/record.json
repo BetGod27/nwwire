@@ -2981,10 +2981,10 @@
           "key": "home",
           "teamId": "34",
           "oppAbbr": "BAL",
-          "ml": -307,
+          "ml": -322,
           "model": 0.8340000000000001,
-          "market": 0.7247079672355135,
-          "edge": 0.10929203276448662,
+          "market": 0.7331140905641286,
+          "edge": 0.1008859094358715,
           "steam": true
         },
         {
@@ -3016,10 +3016,10 @@
           "key": "home",
           "teamId": "16",
           "oppAbbr": "ATL",
-          "ml": -324,
+          "ml": -309,
           "model": 0.802,
-          "market": 0.734482240368719,
-          "edge": 0.06751775963128104,
+          "market": 0.7267284923965042,
+          "edge": 0.07527150760349588,
           "steam": true
         },
         {
@@ -3051,17 +3051,79 @@
           "key": "home",
           "teamId": "25",
           "oppAbbr": "SEA",
-          "ml": -177,
+          "ml": -172,
           "model": 0.6829999999999999,
-          "market": 0.6140609978682792,
-          "edge": 0.06893900213172077,
+          "market": 0.6077300259590424,
+          "edge": 0.07526997404095759,
           "steam": true
         }
       ],
-      "odds": "+172"
+      "odds": "+174"
     },
     "prop": {
       "legs": [
+        {
+          "ev": {
+            "id": "401873088",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "NYG @ IND",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "11",
+                      "abbreviation": "IND"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "19",
+                      "abbreviation": "NYG"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "4429084",
+          "type": "Total Passing Yards (incl. overtime)",
+          "t": {
+            "stat": "passingYards",
+            "label": "passing yards",
+            "min": 150
+          },
+          "line": 164.5,
+          "open": 172.5,
+          "games": [
+            {
+              "v": 0.0,
+              "opp": "HOU"
+            },
+            {
+              "v": 8.0,
+              "opp": "JAX"
+            },
+            {
+              "v": 0.0,
+              "opp": "BAL"
+            }
+          ],
+          "avg": 2.6666666666666665,
+          "side": "under",
+          "hits": 3,
+          "hitRate": 1.0,
+          "move": -8.0,
+          "moveAgrees": 1,
+          "edge": 0.9837892603850051,
+          "name": "Anthony Richardson Sr.",
+          "pos": "QB",
+          "teamAbbr": "IND",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429084.png",
+          "score": 0.88
+        },
         {
           "ev": {
             "id": "401873086",
@@ -3095,7 +3157,7 @@
             "label": "passing yards",
             "min": 150
           },
-          "line": 191.5,
+          "line": 192.5,
           "open": 194.5,
           "games": [
             {
@@ -3123,178 +3185,76 @@
           "side": "under",
           "hits": 4,
           "hitRate": 0.8,
-          "move": -3.0,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.5216710182767624,
+          "edge": 0.5241558441558442,
           "name": "Fernando Mendoza",
           "pos": "QB",
           "teamAbbr": "LV",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4837248.png",
-          "score": 0.7216710182767624
+          "score": 0.7241558441558441
         },
         {
           "ev": {
-            "id": "401873084",
+            "id": "401873087",
             "date": "2026-11-29T18:00Z",
-            "shortName": "ATL @ MIN",
+            "shortName": "NO @ CIN",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "16",
-                      "abbreviation": "MIN"
+                      "id": "4",
+                      "abbreviation": "CIN"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "1",
-                      "abbreviation": "ATL"
+                      "id": "18",
+                      "abbreviation": "NO"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4262921",
+          "ath": "4880281",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 84.5,
-          "open": 85.5,
+          "line": 44.5,
+          "open": 46.5,
           "games": [
             {
-              "v": 86.0,
-              "opp": "SF"
-            },
-            {
-              "v": 74.0,
-              "opp": "GB"
-            },
-            {
-              "v": 58.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 33.0,
-              "opp": "DET"
-            },
-            {
-              "v": 44.0,
-              "opp": "IND"
-            },
-            {
-              "v": 79.0,
-              "opp": "NO"
-            },
-            {
-              "v": 32.0,
-              "opp": "TB"
-            },
-            {
-              "v": 55.0,
+              "v": 6.0,
               "opp": "CHI"
             },
             {
-              "v": 92.0,
-              "opp": "GB"
+              "v": 80.0,
+              "opp": "CAR"
+            },
+            {
+              "v": 30.0,
+              "opp": "CLE"
             }
           ],
-          "avg": 61.44444444444444,
+          "avg": 38.666666666666664,
           "side": "under",
-          "hits": 7,
-          "hitRate": 0.7777777777777778,
-          "move": -1.0,
+          "hits": 2,
+          "hitRate": 0.6666666666666666,
+          "move": -2.0,
           "moveAgrees": 1,
-          "edge": 0.2728468113083498,
-          "name": "Justin Jefferson",
+          "edge": 0.13108614232209742,
+          "name": "Jordyn Tyson",
           "pos": "WR",
-          "teamAbbr": "MIN",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4262921.png",
-          "score": 0.46395792241946093
-        },
-        {
-          "ev": {
-            "id": "401873089",
-            "date": "2026-11-29T18:00Z",
-            "shortName": "NYJ @ MIA",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "15",
-                      "abbreviation": "MIA"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "20",
-                      "abbreviation": "NYJ"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4869645",
-          "type": "Total Receptions (incl. overtime)",
-          "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
-          },
-          "line": 4.5,
-          "open": 4.5,
-          "games": [
-            {
-              "v": 2.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 3.0,
-              "opp": "IND"
-            },
-            {
-              "v": 6.0,
-              "opp": "DET"
-            },
-            {
-              "v": 4.0,
-              "opp": "NE"
-            },
-            {
-              "v": 2.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 2.0,
-              "opp": "SF"
-            },
-            {
-              "v": 5.0,
-              "opp": "LV"
-            }
-          ],
-          "avg": 3.4285714285714284,
-          "side": "under",
-          "hits": 5,
-          "hitRate": 0.7142857142857143,
-          "move": 0.0,
-          "moveAgrees": 0,
-          "edge": 0.23809523809523814,
-          "name": "Caleb Douglas",
-          "pos": "WR",
-          "teamAbbr": "MIA",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4869645.png",
-          "score": 0.3238095238095239
+          "teamAbbr": "NO",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4880281.png",
+          "score": 0.2777528089887641
         }
       ],
       "odds": "+596"
@@ -3314,6 +3274,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-25T08:36:43Z",
+  "updated": "2026-11-25T19:17:54Z",
   "since": "Week 3, 2026"
 }

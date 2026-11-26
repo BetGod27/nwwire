@@ -2981,10 +2981,10 @@
           "key": "home",
           "teamId": "34",
           "oppAbbr": "BAL",
-          "ml": -322,
+          "ml": -333,
           "model": 0.8340000000000001,
-          "market": 0.7331140905641286,
-          "edge": 0.1008859094358715,
+          "market": 0.7383859683042214,
+          "edge": 0.09561403169577865,
           "steam": true
         },
         {
@@ -3018,8 +3018,8 @@
           "oppAbbr": "ATL",
           "ml": -309,
           "model": 0.802,
-          "market": 0.7267284923965042,
-          "edge": 0.07527150760349588,
+          "market": 0.7261631371393756,
+          "edge": 0.07583686286062441,
           "steam": true
         },
         {
@@ -3051,14 +3051,14 @@
           "key": "home",
           "teamId": "25",
           "oppAbbr": "SEA",
-          "ml": -172,
+          "ml": -147,
           "model": 0.6829999999999999,
-          "market": 0.6077300259590424,
-          "edge": 0.07526997404095759,
+          "market": 0.5713889081696397,
+          "edge": 0.11161109183036022,
           "steam": true
         }
       ],
-      "odds": "+174"
+      "odds": "+189"
     },
     "prop": {
       "legs": [
@@ -3095,7 +3095,7 @@
             "label": "passing yards",
             "min": 150
           },
-          "line": 164.5,
+          "line": 162.5,
           "open": 172.5,
           "games": [
             {
@@ -3115,9 +3115,9 @@
           "side": "under",
           "hits": 3,
           "hitRate": 1.0,
-          "move": -8.0,
+          "move": -10.0,
           "moveAgrees": 1,
-          "edge": 0.9837892603850051,
+          "edge": 0.9835897435897436,
           "name": "Anthony Richardson Sr.",
           "pos": "QB",
           "teamAbbr": "IND",
@@ -3150,49 +3150,73 @@
               }
             ]
           },
-          "ath": "4837248",
-          "type": "Total Passing Yards (incl. overtime)",
+          "ath": "4428718",
+          "type": "Total Receiving Yards (incl. overtime)",
           "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
+            "stat": "receivingYards",
+            "label": "receiving yards",
+            "min": 30
           },
-          "line": 192.5,
-          "open": 194.5,
+          "line": 31.5,
+          "open": 30.5,
           "games": [
             {
-              "v": 267.0,
+              "v": 50.0,
               "opp": "DEN"
             },
             {
-              "v": 143.0,
+              "v": 9.0,
               "opp": "SEA"
             },
             {
-              "v": 48.0,
+              "v": 55.0,
+              "opp": "SF"
+            },
+            {
+              "v": 0.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 103.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 97.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 41.0,
               "opp": "NE"
             },
             {
-              "v": 0.0,
+              "v": 44.0,
+              "opp": "KC"
+            },
+            {
+              "v": 43.0,
+              "opp": "NO"
+            },
+            {
+              "v": 119.0,
               "opp": "LAC"
             },
             {
-              "v": 0.0,
+              "v": 27.0,
               "opp": "MIA"
             }
           ],
-          "avg": 91.6,
-          "side": "under",
-          "hits": 4,
-          "hitRate": 0.8,
-          "move": -2.0,
+          "avg": 53.45454545454545,
+          "side": "over",
+          "hits": 8,
+          "hitRate": 0.7272727272727273,
+          "move": 1.0,
           "moveAgrees": 1,
-          "edge": 0.5241558441558442,
-          "name": "Fernando Mendoza",
-          "pos": "QB",
+          "edge": 0.6969696969696969,
+          "name": "Tre Tucker",
+          "pos": "WR",
           "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4837248.png",
-          "score": 0.7241558441558441
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
+          "score": 0.7709090909090909
         },
         {
           "ev": {
@@ -3227,7 +3251,7 @@
             "label": "receiving yards",
             "min": 30
           },
-          "line": 44.5,
+          "line": 42.5,
           "open": 46.5,
           "games": [
             {
@@ -3247,14 +3271,14 @@
           "side": "under",
           "hits": 2,
           "hitRate": 0.6666666666666666,
-          "move": -2.0,
+          "move": -4.0,
           "moveAgrees": 1,
-          "edge": 0.13108614232209742,
+          "edge": 0.0901960784313726,
           "name": "Jordyn Tyson",
           "pos": "WR",
           "teamAbbr": "NO",
           "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4880281.png",
-          "score": 0.2777528089887641
+          "score": 0.23686274509803928
         }
       ],
       "odds": "+596"
@@ -3274,6 +3298,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-25T19:17:54Z",
+  "updated": "2026-11-26T03:34:45Z",
   "since": "Week 3, 2026"
 }

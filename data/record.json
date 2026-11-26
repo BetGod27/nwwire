@@ -2982,9 +2982,9 @@
           "teamId": "34",
           "oppAbbr": "BAL",
           "ml": -333,
-          "model": 0.8340000000000001,
+          "model": 0.8320000000000001,
           "market": 0.7383859683042214,
-          "edge": 0.09561403169577865,
+          "edge": 0.09361403169577864,
           "steam": true
         },
         {
@@ -3016,10 +3016,10 @@
           "key": "home",
           "teamId": "16",
           "oppAbbr": "ATL",
-          "ml": -309,
-          "model": 0.802,
-          "market": 0.7261631371393756,
-          "edge": 0.07583686286062441,
+          "ml": -311,
+          "model": 0.8079999999999999,
+          "market": 0.7270408840953165,
+          "edge": 0.08095911590468341,
           "steam": true
         },
         {
@@ -3051,14 +3051,14 @@
           "key": "home",
           "teamId": "25",
           "oppAbbr": "SEA",
-          "ml": -147,
-          "model": 0.6829999999999999,
-          "market": 0.5713889081696397,
-          "edge": 0.11161109183036022,
+          "ml": -150,
+          "model": 0.6809999999999999,
+          "market": 0.5766299745977985,
+          "edge": 0.10437002540220142,
           "steam": true
         }
       ],
-      "odds": "+189"
+      "odds": "+186"
     },
     "prop": {
       "legs": [
@@ -3126,100 +3126,6 @@
         },
         {
           "ev": {
-            "id": "401873086",
-            "date": "2026-11-30T01:20Z",
-            "shortName": "LV @ CLE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4428718",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 31.5,
-          "open": 30.5,
-          "games": [
-            {
-              "v": 50.0,
-              "opp": "DEN"
-            },
-            {
-              "v": 9.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 55.0,
-              "opp": "SF"
-            },
-            {
-              "v": 0.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 103.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 97.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 41.0,
-              "opp": "NE"
-            },
-            {
-              "v": 44.0,
-              "opp": "KC"
-            },
-            {
-              "v": 43.0,
-              "opp": "NO"
-            },
-            {
-              "v": 119.0,
-              "opp": "LAC"
-            },
-            {
-              "v": 27.0,
-              "opp": "MIA"
-            }
-          ],
-          "avg": 53.45454545454545,
-          "side": "over",
-          "hits": 8,
-          "hitRate": 0.7272727272727273,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.6969696969696969,
-          "name": "Tre Tucker",
-          "pos": "WR",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4428718.png",
-          "score": 0.7709090909090909
-        },
-        {
-          "ev": {
             "id": "401873087",
             "date": "2026-11-29T18:00Z",
             "shortName": "NO @ CIN",
@@ -3281,7 +3187,7 @@
           "score": 0.23686274509803928
         }
       ],
-      "odds": "+596"
+      "odds": "+264"
     },
     "locked": false,
     "lockAt": "2026-11-29T14:00:00Z"
@@ -3298,6 +3204,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-26T03:34:45Z",
+  "updated": "2026-11-26T16:55:30Z",
   "since": "Week 3, 2026"
 }

@@ -2954,6 +2954,41 @@
       "legs": [
         {
           "ev": {
+            "id": "401873091",
+            "date": "2026-11-29T21:25Z",
+            "shortName": "SEA @ SF",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "25",
+                      "abbreviation": "SF"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "26",
+                      "abbreviation": "SEA"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "home",
+          "teamId": "25",
+          "oppAbbr": "SEA",
+          "ml": 101,
+          "model": 0.6829999999999999,
+          "market": 0.477967655339488,
+          "edge": 0.20503234466051196,
+          "steam": false
+        },
+        {
+          "ev": {
             "id": "401873085",
             "date": "2026-11-29T18:00Z",
             "shortName": "BAL @ HOU",
@@ -3016,284 +3051,20 @@
           "key": "home",
           "teamId": "16",
           "oppAbbr": "ATL",
-          "ml": -311,
+          "ml": -310,
           "model": 0.799,
-          "market": 0.7276035073533798,
-          "edge": 0.07139649264662029,
-          "steam": true
-        },
-        {
-          "ev": {
-            "id": "401873091",
-            "date": "2026-11-29T21:25Z",
-            "shortName": "SEA @ SF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "26",
-                      "abbreviation": "SEA"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "25",
-          "oppAbbr": "SEA",
-          "ml": -152,
-          "model": 0.6829999999999999,
-          "market": 0.5800559925343287,
-          "edge": 0.10294400746567123,
+          "market": 0.7268851585398347,
+          "edge": 0.07211484146016534,
           "steam": true
         }
       ],
-      "odds": "+185"
+      "odds": "+246"
     },
     "prop": {
       "legs": [
-        {
-          "ev": {
-            "id": "401873088",
-            "date": "2026-11-29T18:00Z",
-            "shortName": "NYG @ IND",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "11",
-                      "abbreviation": "IND"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "19",
-                      "abbreviation": "NYG"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4429084",
-          "type": "Total Passing Yards (incl. overtime)",
-          "t": {
-            "stat": "passingYards",
-            "label": "passing yards",
-            "min": 150
-          },
-          "line": 162.5,
-          "open": 172.5,
-          "games": [
-            {
-              "v": 0.0,
-              "opp": "HOU"
-            },
-            {
-              "v": 8.0,
-              "opp": "JAX"
-            },
-            {
-              "v": 0.0,
-              "opp": "BAL"
-            }
-          ],
-          "avg": 2.6666666666666665,
-          "side": "under",
-          "hits": 3,
-          "hitRate": 1.0,
-          "move": -10.0,
-          "moveAgrees": 1,
-          "edge": 0.9835897435897436,
-          "name": "Anthony Richardson Sr.",
-          "pos": "QB",
-          "teamAbbr": "IND",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4429084.png",
-          "score": 0.88
-        },
-        {
-          "ev": {
-            "id": "401873086",
-            "date": "2026-11-30T01:20Z",
-            "shortName": "LV @ CLE",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "5",
-                      "abbreviation": "CLE"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "13",
-                      "abbreviation": "LV"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "4432665",
-          "type": "Total Receptions (incl. overtime)",
-          "t": {
-            "stat": "receptions",
-            "label": "receptions",
-            "min": 2.5
-          },
-          "line": 5.5,
-          "open": 4.5,
-          "games": [
-            {
-              "v": 2.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 7.0,
-              "opp": "SF"
-            },
-            {
-              "v": 7.0,
-              "opp": "NYJ"
-            },
-            {
-              "v": 6.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 4.0,
-              "opp": "BUF"
-            },
-            {
-              "v": 8.0,
-              "opp": "NE"
-            },
-            {
-              "v": 6.0,
-              "opp": "KC"
-            },
-            {
-              "v": 10.0,
-              "opp": "NO"
-            }
-          ],
-          "avg": 6.25,
-          "side": "over",
-          "hits": 6,
-          "hitRate": 0.75,
-          "move": 1.0,
-          "moveAgrees": 1,
-          "edge": 0.13636363636363635,
-          "name": "Brock Bowers",
-          "pos": "TE",
-          "teamAbbr": "LV",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
-          "score": 0.31636363636363635
-        },
-        {
-          "ev": {
-            "id": "401873092",
-            "date": "2026-11-29T21:25Z",
-            "shortName": "WSH @ ARI",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "22",
-                      "abbreviation": "ARI"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "28",
-                      "abbreviation": "WSH"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "ath": "2976212",
-          "type": "Total Receiving Yards (incl. overtime)",
-          "t": {
-            "stat": "receivingYards",
-            "label": "receiving yards",
-            "min": 30
-          },
-          "line": 43.5,
-          "open": 41.5,
-          "games": [
-            {
-              "v": 45.0,
-              "opp": "CIN"
-            },
-            {
-              "v": 83.0,
-              "opp": "NYG"
-            },
-            {
-              "v": 51.0,
-              "opp": "LAR"
-            },
-            {
-              "v": 38.0,
-              "opp": "PHI"
-            },
-            {
-              "v": 44.0,
-              "opp": "SF"
-            },
-            {
-              "v": 35.0,
-              "opp": "IND"
-            },
-            {
-              "v": 33.0,
-              "opp": "SEA"
-            },
-            {
-              "v": 47.0,
-              "opp": "DAL"
-            },
-            {
-              "v": 55.0,
-              "opp": "PHI"
-            }
-          ],
-          "avg": 47.888888888888886,
-          "side": "over",
-          "hits": 6,
-          "hitRate": 0.6666666666666666,
-          "move": 2.0,
-          "moveAgrees": 1,
-          "edge": 0.10089399744572151,
-          "name": "Stefon Diggs",
-          "pos": "WR",
-          "teamAbbr": "WSH",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png",
-          "score": 0.2475606641123882
-        }
+
       ],
-      "odds": "+596"
+      "odds": null
     },
     "locked": false,
     "lockAt": "2026-11-29T14:00:00Z"
@@ -3310,6 +3081,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-27T12:23:56Z",
+  "updated": "2026-11-27T23:28:10Z",
   "since": "Week 3, 2026"
 }

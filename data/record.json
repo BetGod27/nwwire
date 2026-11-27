@@ -2982,9 +2982,9 @@
           "teamId": "34",
           "oppAbbr": "BAL",
           "ml": -332,
-          "model": 0.8320000000000001,
+          "model": 0.831,
           "market": 0.7382516177504179,
-          "edge": 0.09374838224958215,
+          "edge": 0.09274838224958204,
           "steam": true
         },
         {
@@ -3016,32 +3016,32 @@
           "key": "home",
           "teamId": "16",
           "oppAbbr": "ATL",
-          "ml": -310,
-          "model": 0.8079999999999999,
-          "market": 0.7268851585398347,
-          "edge": 0.08111484146016523,
+          "ml": -311,
+          "model": 0.799,
+          "market": 0.7276035073533798,
+          "edge": 0.07139649264662029,
           "steam": true
         },
         {
           "ev": {
-            "id": "401873093",
-            "date": "2026-11-29T21:05Z",
-            "shortName": "NE @ LAC",
+            "id": "401873091",
+            "date": "2026-11-29T21:25Z",
+            "shortName": "SEA @ SF",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "24",
-                      "abbreviation": "LAC"
+                      "id": "25",
+                      "abbreviation": "SF"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "17",
-                      "abbreviation": "NE"
+                      "id": "26",
+                      "abbreviation": "SEA"
                     }
                   }
                 ]
@@ -3049,16 +3049,16 @@
             ]
           },
           "key": "home",
-          "teamId": "24",
-          "oppAbbr": "NE",
-          "ml": 116,
-          "model": 0.601,
-          "market": 0.44471965773474437,
-          "edge": 0.1562803422652556,
-          "steam": false
+          "teamId": "25",
+          "oppAbbr": "SEA",
+          "ml": -152,
+          "model": 0.6829999999999999,
+          "market": 0.5800559925343287,
+          "edge": 0.10294400746567123,
+          "steam": true
         }
       ],
-      "odds": "+272"
+      "odds": "+185"
     },
     "prop": {
       "legs": [
@@ -3310,6 +3310,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-27T01:44:31Z",
+  "updated": "2026-11-27T12:23:56Z",
   "since": "Week 3, 2026"
 }

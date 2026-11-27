@@ -2981,10 +2981,10 @@
           "key": "home",
           "teamId": "34",
           "oppAbbr": "BAL",
-          "ml": -333,
+          "ml": -332,
           "model": 0.8320000000000001,
-          "market": 0.7383859683042214,
-          "edge": 0.09361403169577864,
+          "market": 0.7382516177504179,
+          "edge": 0.09374838224958215,
           "steam": true
         },
         {
@@ -3016,32 +3016,32 @@
           "key": "home",
           "teamId": "16",
           "oppAbbr": "ATL",
-          "ml": -311,
+          "ml": -310,
           "model": 0.8079999999999999,
-          "market": 0.7270408840953165,
-          "edge": 0.08095911590468341,
+          "market": 0.7268851585398347,
+          "edge": 0.08111484146016523,
           "steam": true
         },
         {
           "ev": {
-            "id": "401873091",
-            "date": "2026-11-29T21:25Z",
-            "shortName": "SEA @ SF",
+            "id": "401873093",
+            "date": "2026-11-29T21:05Z",
+            "shortName": "NE @ LAC",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
+                      "id": "24",
+                      "abbreviation": "LAC"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "26",
-                      "abbreviation": "SEA"
+                      "id": "17",
+                      "abbreviation": "NE"
                     }
                   }
                 ]
@@ -3049,16 +3049,16 @@
             ]
           },
           "key": "home",
-          "teamId": "25",
-          "oppAbbr": "SEA",
-          "ml": -150,
-          "model": 0.6809999999999999,
-          "market": 0.5766299745977985,
-          "edge": 0.10437002540220142,
-          "steam": true
+          "teamId": "24",
+          "oppAbbr": "NE",
+          "ml": 116,
+          "model": 0.601,
+          "market": 0.44471965773474437,
+          "edge": 0.1562803422652556,
+          "steam": false
         }
       ],
-      "odds": "+186"
+      "odds": "+272"
     },
     "prop": {
       "legs": [
@@ -3126,68 +3126,174 @@
         },
         {
           "ev": {
-            "id": "401873087",
-            "date": "2026-11-29T18:00Z",
-            "shortName": "NO @ CIN",
+            "id": "401873086",
+            "date": "2026-11-30T01:20Z",
+            "shortName": "LV @ CLE",
             "competitions": [
               {
                 "competitors": [
                   {
                     "homeAway": "home",
                     "team": {
-                      "id": "4",
-                      "abbreviation": "CIN"
+                      "id": "5",
+                      "abbreviation": "CLE"
                     }
                   },
                   {
                     "homeAway": "away",
                     "team": {
-                      "id": "18",
-                      "abbreviation": "NO"
+                      "id": "13",
+                      "abbreviation": "LV"
                     }
                   }
                 ]
               }
             ]
           },
-          "ath": "4880281",
+          "ath": "4432665",
+          "type": "Total Receptions (incl. overtime)",
+          "t": {
+            "stat": "receptions",
+            "label": "receptions",
+            "min": 2.5
+          },
+          "line": 5.5,
+          "open": 4.5,
+          "games": [
+            {
+              "v": 2.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 7.0,
+              "opp": "SF"
+            },
+            {
+              "v": 7.0,
+              "opp": "NYJ"
+            },
+            {
+              "v": 6.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 4.0,
+              "opp": "BUF"
+            },
+            {
+              "v": 8.0,
+              "opp": "NE"
+            },
+            {
+              "v": 6.0,
+              "opp": "KC"
+            },
+            {
+              "v": 10.0,
+              "opp": "NO"
+            }
+          ],
+          "avg": 6.25,
+          "side": "over",
+          "hits": 6,
+          "hitRate": 0.75,
+          "move": 1.0,
+          "moveAgrees": 1,
+          "edge": 0.13636363636363635,
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "teamAbbr": "LV",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4432665.png",
+          "score": 0.31636363636363635
+        },
+        {
+          "ev": {
+            "id": "401873092",
+            "date": "2026-11-29T21:25Z",
+            "shortName": "WSH @ ARI",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "22",
+                      "abbreviation": "ARI"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "28",
+                      "abbreviation": "WSH"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "ath": "2976212",
           "type": "Total Receiving Yards (incl. overtime)",
           "t": {
             "stat": "receivingYards",
             "label": "receiving yards",
             "min": 30
           },
-          "line": 42.5,
-          "open": 46.5,
+          "line": 43.5,
+          "open": 41.5,
           "games": [
             {
-              "v": 6.0,
-              "opp": "CHI"
+              "v": 45.0,
+              "opp": "CIN"
             },
             {
-              "v": 80.0,
-              "opp": "CAR"
+              "v": 83.0,
+              "opp": "NYG"
             },
             {
-              "v": 30.0,
-              "opp": "CLE"
+              "v": 51.0,
+              "opp": "LAR"
+            },
+            {
+              "v": 38.0,
+              "opp": "PHI"
+            },
+            {
+              "v": 44.0,
+              "opp": "SF"
+            },
+            {
+              "v": 35.0,
+              "opp": "IND"
+            },
+            {
+              "v": 33.0,
+              "opp": "SEA"
+            },
+            {
+              "v": 47.0,
+              "opp": "DAL"
+            },
+            {
+              "v": 55.0,
+              "opp": "PHI"
             }
           ],
-          "avg": 38.666666666666664,
-          "side": "under",
-          "hits": 2,
+          "avg": 47.888888888888886,
+          "side": "over",
+          "hits": 6,
           "hitRate": 0.6666666666666666,
-          "move": -4.0,
+          "move": 2.0,
           "moveAgrees": 1,
-          "edge": 0.0901960784313726,
-          "name": "Jordyn Tyson",
+          "edge": 0.10089399744572151,
+          "name": "Stefon Diggs",
           "pos": "WR",
-          "teamAbbr": "NO",
-          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/4880281.png",
-          "score": 0.23686274509803928
+          "teamAbbr": "WSH",
+          "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2976212.png",
+          "score": 0.2475606641123882
         }
       ],
-      "odds": "+264"
+      "odds": "+596"
     },
     "locked": false,
     "lockAt": "2026-11-29T14:00:00Z"
@@ -3204,6 +3310,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-26T16:55:30Z",
+  "updated": "2026-11-27T01:44:31Z",
   "since": "Week 3, 2026"
 }

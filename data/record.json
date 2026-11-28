@@ -2954,41 +2954,6 @@
       "legs": [
         {
           "ev": {
-            "id": "401873091",
-            "date": "2026-11-29T21:25Z",
-            "shortName": "SEA @ SF",
-            "competitions": [
-              {
-                "competitors": [
-                  {
-                    "homeAway": "home",
-                    "team": {
-                      "id": "25",
-                      "abbreviation": "SF"
-                    }
-                  },
-                  {
-                    "homeAway": "away",
-                    "team": {
-                      "id": "26",
-                      "abbreviation": "SEA"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "key": "home",
-          "teamId": "25",
-          "oppAbbr": "SEA",
-          "ml": 101,
-          "model": 0.6829999999999999,
-          "market": 0.477967655339488,
-          "edge": 0.20503234466051196,
-          "steam": false
-        },
-        {
-          "ev": {
             "id": "401873085",
             "date": "2026-11-29T18:00Z",
             "shortName": "BAL @ HOU",
@@ -3017,9 +2982,9 @@
           "teamId": "34",
           "oppAbbr": "BAL",
           "ml": -332,
-          "model": 0.831,
+          "model": 0.8340000000000001,
           "market": 0.7382516177504179,
-          "edge": 0.09274838224958204,
+          "edge": 0.09574838224958215,
           "steam": true
         },
         {
@@ -3052,13 +3017,48 @@
           "teamId": "16",
           "oppAbbr": "ATL",
           "ml": -310,
-          "model": 0.799,
+          "model": 0.8029999999999999,
           "market": 0.7268851585398347,
-          "edge": 0.07211484146016534,
+          "edge": 0.07611484146016523,
+          "steam": true
+        },
+        {
+          "ev": {
+            "id": "401873089",
+            "date": "2026-11-29T18:00Z",
+            "shortName": "NYJ @ MIA",
+            "competitions": [
+              {
+                "competitors": [
+                  {
+                    "homeAway": "home",
+                    "team": {
+                      "id": "15",
+                      "abbreviation": "MIA"
+                    }
+                  },
+                  {
+                    "homeAway": "away",
+                    "team": {
+                      "id": "20",
+                      "abbreviation": "NYJ"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "key": "away",
+          "teamId": "20",
+          "oppAbbr": "MIA",
+          "ml": -258,
+          "model": 0.693,
+          "market": 0.6921648208020912,
+          "edge": 0.0008351791979087642,
           "steam": true
         }
       ],
-      "odds": "+246"
+      "odds": "+139"
     },
     "prop": {
       "legs": [
@@ -3081,6 +3081,6 @@
       "units": 5.92
     }
   },
-  "updated": "2026-11-27T23:28:10Z",
+  "updated": "2026-11-28T07:51:08Z",
   "since": "Week 3, 2026"
 }
